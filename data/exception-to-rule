@@ -1,0 +1,10 @@
+The real story of exceptions... (or, the Why of Die and Try)
+<p>
+I had always chosen return codes over exceptions, even against the recommendations of PBP.
+At each YAPC, I attended talks on CPAN Exception modules, and thought "...but *why* would I want to do *that*?"
+<p>
+For 5 years, I researched and re-examined my position, ending in my complete embrace of exceptions.
+<p>
+This talk recreates that journey, leading the audience to the same conclusions, but this time in under 1 hour.
+<p>
+I also highlight the elements of Perl 5 culture that act as strange attractors toward return codes, and what can be done to change it. The <a href="http://www.yapcna.org/yn2013/talk/4744">original</a>

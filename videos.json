@@ -1,22 +1,40 @@
 {
   "videos" : [
     {
-      "url" : "http://www.youtube.com/watch?v=jEzgzMzgekU",
+      "id" : "jEzgzMzgekU",
+      "src" : "youtube",
       "title" : "Perl Meets Modern Web UI",
+      "path" : "perl-meets-modern-web-ui",
       "speaker" : "Bill Humphries (whump)",
       "length" : "22:11",
-      "description" : "Creating Single Page Webapps with Perl as the back-end.",
-      "tags" : [, "Backbone.js", "Mojolicious::Lite"],
+      "tags" : ["Backbone.js", "Mojolicious::Lite"],
       "source" : "YAPC::NA 2013"
     },
     {
-      "url" : "http://www.youtube.com/watch?v=8IDK4Fro7_M"
-      "title" : "Exception to Rule"
+      "id" : "8IDK4Fro7_M",
+      "src" : "youtube",
+      "title" : "Exception to Rule",
+      "path" : "exception-to-rule",
       "speaker" : "Bruce Gray (Util)",
       "length" : "45:14",
-      "description" : "The real story of exceptions...",
-      "tags" : ["die", "autodie", "TryCatch", "Fatal", "Try::Tiny", "Exception::Class"],
+      "tags" : ["die", "autodie", "TryCatch", "Fatal", "Try::Tiny", "Exception::Class", "Lexical::Failure", "Params::Validate"],
       "source" : "YAPC::NA 2013"
+    },
+    {
+      "id" : "ju1IMxGSuNE",
+      "src" : "youtube",
+      "title" : "Why Perl Is Like a Human Language",
+      "path" : "why-perl-is-like-a-human-language",
+      "speaker" : "Larry Wall (TimToady)",
+      "length" : "5:58"
+    },
+    {
+      "id" : "aNAtbYSxzuA",
+      "src" : "youtube",
+      "title" : "Hacker Interviews: Larry Wall",
+      "path" : "hacker-interviews-larry-wall",
+      "speaker" : "Larry Wall",
+      "length" : "32:32"
     }
   ]
 }
