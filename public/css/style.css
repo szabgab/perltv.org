@@ -4,7 +4,6 @@ margin: 0;
 margin-bottom: 25px;
 padding: 0;
 background-color: #ddd;
-background-image: url("/images/perldancer-bg.jpg");
 background-repeat: no-repeat;
 background-position: top left;
 
@@ -54,7 +53,6 @@ padding-right: 30px;
 
 
 #header {
-background-image: url("/images/perldancer.jpg");
 background-repeat: no-repeat;
 background-position: top left;
 height: 64px;
