@@ -1,0 +1,22 @@
+{
+  "videos" : [
+    {
+      "url" : "http://www.youtube.com/watch?v=jEzgzMzgekU",
+      "title" : "Perl Meets Modern Web UI",
+      "speaker" : "Bill Humphries (whump)",
+      "length" : "22:11",
+      "description" : "Creating Single Page Webapps with Perl as the back-end.",
+      "tags" : [, "Backbone.js", "Mojolicious::Lite"],
+      "source" : "YAPC::NA 2013"
+    },
+    {
+      "url" : "http://www.youtube.com/watch?v=8IDK4Fro7_M"
+      "title" : "Exception to Rule"
+      "speaker" : "Bruce Gray (Util)",
+      "length" : "45:14",
+      "description" : "The real story of exceptions...",
+      "tags" : ["die", "autodie", "TryCatch", "Fatal", "Try::Tiny", "Exception::Class"],
+      "source" : "YAPC::NA 2013"
+    }
+  ]
+}
