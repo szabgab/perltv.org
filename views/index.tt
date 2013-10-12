@@ -15,13 +15,17 @@
 
       <div id="content">
         <div id="header">
-          <h1>Welcome to the Perl TV</h1>
+          <h1>Welcome to the <a href="/">Perl TV</a></h1>
             <iframe width="560" height="315" src="http://www.youtube.com/embed/<% video.id %>" frameborder="0" allowfullscreen></iframe>
         </div>
 
-<% video.id %>
         <div id="getting-started">
-          <h1><a href="/<% video.path %>"><% video.title %></a></h1>
+          <h1><% video.speaker %>: <a href="/<% video.path %>"><% video.title %></a></h1>
+           <% video.length %> <% video.source %><br>
+          <% FOR t IN video.tags %>
+              <% t %>
+          <% END %>
+          <br>
           <% video.description %>
         </div>
       </div>

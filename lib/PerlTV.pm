@@ -28,7 +28,11 @@ get '/' => sub {
 
 	my $data = setting('data');
 	my $i = int rand scalar @{ $data->{videos} };
-	my $video = $data->{videos}[$i];
+	_show($data->{videos}[$i]);
+};
+
+sub _show {
+	my $video = shift;
 	$video->{description} = '';
 	if ($video->{path}) {
 		my $path = Path::Tiny::path(abs_path(config->{appdir}) . "/data/$video->{path}");
@@ -39,4 +43,18 @@ get '/' => sub {
 	template 'index', { video => $video };
 };
 
+get '/:path' => sub {
+	my $data = setting('data');
+	# would it be better to keep a hash in video.json or to convert it to a hash on load
+	my $path = params->{path};
+	my ($video) = grep {$_->{path} eq $path } @{ $data->{videos} };
+	if ($video) {
+		_show($video);
+	} else {
+		warn "Could not find '$path'";
+		return template 'error';
+	}
+};
+
 true;
+
