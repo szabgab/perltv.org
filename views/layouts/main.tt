@@ -10,7 +10,29 @@
 <body>
 <a href="https://github.com/szabgab/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
+<div id="page">
+  <div id="sidebar">
+    <ul id="sidebar-items">
+      <li>
+        <h3>Other sites</h3>
+        <ul>
+          <li><a href="http://yapc.tv/">YAPC.TV</a></li>
+          <li><a href="http://www.presentingperl.org/">Presenting Perl</a></li>
+          <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
+        </ul>
+        <h3>Videos</h3>
+        <ul>
+          <li><a href="/all">All</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 <% content %>
+</div>
+    </div>
+
+
+
 <div id="footer">
 Source code: <a href="">GitHub</a> | <a href="http://perlmaven.com/">Perl programming</a>
 </div>

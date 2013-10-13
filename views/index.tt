@@ -1,18 +1,3 @@
-<div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Other sites</h3>
-
-            <ul>
-                <li><a href="http://yapc.tv/">YAPC.TV</a></li>
-                <li><a href="http://www.presentingperl.org/">Presenting Perl</a></li>
-                <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
       <div id="content">
         <div id="header">
           <h1>Welcome to the <a href="/">Perl TV</a></h1>
@@ -28,5 +13,3 @@
           <br>
           <% video.description %>
         </div>
-      </div>
-    </div>
