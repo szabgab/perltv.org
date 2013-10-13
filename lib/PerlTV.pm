@@ -31,6 +31,11 @@ get '/' => sub {
 	_show($data->{videos}[$i]);
 };
 
+get '/all' => sub {
+	my $data = setting('data');
+	template 'list', { videos => $data->{videos} };
+};
+
 sub _show {
 	my $video = shift;
 	$video->{description} = '';
