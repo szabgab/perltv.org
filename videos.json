@@ -7,7 +7,8 @@
       "path" : "perl-meets-modern-web-ui",
       "speaker" : "Bill Humphries (whump)",
       "length" : "22:11",
-      "tags" : ["Backbone.js", "Mojolicious::Lite"],
+      "modules" : ["Mojolicious::Lite"],
+      "tags" : ["Backbone.js"],
       "source" : "YAPC::NA 2013"
     },
     {
@@ -17,7 +18,8 @@
       "path" : "exception-to-rule",
       "speaker" : "Bruce Gray (Util)",
       "length" : "45:14",
-      "tags" : ["die", "autodie", "TryCatch", "Fatal", "Try::Tiny", "Exception::Class", "Lexical::Failure", "Params::Validate"],
+      "modules" : ["TryCatch", "Fatal", "Try::Tiny", "Exception::Class", "Lexical::Failure", "Params::Validate"],
+      "tags" : ["die", "autodie"],
       "source" : "YAPC::NA 2013"
     },
     {
@@ -35,6 +37,24 @@
       "path" : "hacker-interviews-larry-wall",
       "speaker" : "Jonathan Schiefer",
       "length" : "32:32"
+    },
+    {
+      "id" : "FMSpV34Gw7I",
+      "src" : "youtube",
+      "title" : "The Eco-System of CPAN Testers",
+      "path" : "the-eco-system-of-cpan-testers",
+      "speaker" : "Barbie",
+      "length" : "18:50",
+      "modules" : ["CPAN", "CPAN::Reporter", "CPANPLUS", "CPANPLUS::YACSmoke", "App::cpantesters", "Test::Reporter", "CPAN::Testers::Report", "CPAN::Testers::Common::Client", "CPAN::Testers::Data::Generator", "CPAN::Testers::WWW::Reports", "CPAN::Testers::WWW::Reports::Parser", "CPAN::Testers::Data::Release", "CPAN::Testers::WWW::Reports::Query::Reports"],
+      "tags" : ["NoSQL"],
+      "source" : "YAPC::EU2012",
+      "date" : "2012-08-20"
+    }
+  ],
+  "channels" : [
+    {
+      "title" : "YAPC::NA",
+      "url"   : "http://www.youtube.com/yapcna"
     }
   ]
 }
