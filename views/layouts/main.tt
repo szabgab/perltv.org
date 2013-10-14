@@ -24,6 +24,12 @@
         <ul>
           <li><a href="/all">All</a></li>
         </ul>
+        <h3>Channels</h3>
+        <ul>
+          <% FOR c in channels %>
+            <li><a href="<% c.url %>"><% c.title %></li>
+          <% END %>
+        </ul>
       </li>
     </ul>
   </div>

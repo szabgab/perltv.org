@@ -18,6 +18,12 @@ hook before => sub {
 	}
 };
 
+hook before_template => sub {
+	my $t = shift;
+	my $data = setting('data');
+	$t->{channels} = $data->{channels};
+	return;
+};
 
 get '/' => sub {
 	my $error = setting('error');
