@@ -28,23 +28,24 @@ hook before_template => sub {
 	return;
 };
 
-get '/' => sub {
-	my $error = setting('error');
-	if ($error) {
-		warn $error;
-		return template 'error';
-	}
+#	my $error = setting('error');
+#	if ($error) {
+#		warn $error;
+#		return template 'error';
+#	}
 
+get '/all' => sub {
+	my $data = setting('data');
+	template 'list', { videos => $data->{videos} };
+};
+
+
+get '/' => sub {
 	# select a random entry
 	my $all = setting('data');
 	my $i = int rand scalar @{ $all->{videos} };
 
 	_show($all->{videos}[$i]{path});
-};
-
-get '/all' => sub {
-	my $data = setting('data');
-	template 'list', { videos => $data->{videos} };
 };
 
 get '/v/:path' => sub {
@@ -120,7 +121,14 @@ sub _show {
 	my $path = shift;
 
 	my $appdir = abs_path config->{appdir};
-	my $data = read_file( "$appdir/data/$path" );
+	my $data;
+	eval {
+		$data = read_file( "$appdir/data/$path" );
+	};
+	if ($@) {
+		#warn $@;
+		return template 'error';
+	}
 	$data->{path} = $path;
 	template 'index', { video => $data };
 };
