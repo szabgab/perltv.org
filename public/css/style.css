@@ -64,11 +64,13 @@ height: 364px;
 #header h1 {
   margin-bottom: 20px;
 }
+/*
 #header h2 {
 color: #888;
 font-weight: normal;
 font-size: 16px;
 }
+*/
 
 #about h3 {
 margin: 0;
@@ -113,6 +115,7 @@ padding-top: 15px;
 margin: 0;
 font-size: 20px;
 }
+/*
 #getting-started h2 {
 margin: 0;
 font-size: 14px;
@@ -120,6 +123,7 @@ font-weight: normal;
 color: #333;
 margin-bottom: 25px;
 }
+*/
 #getting-started ol {
 margin-left: 0;
 padding-left: 0;

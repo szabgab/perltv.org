@@ -12,6 +12,7 @@ use PerlTV::Tools qw(read_file);
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
+	set channels => $json->decode( Path::Tiny::path("$appdir/channels.json")->slurp_utf8 );
 	my $data = $json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
 	if (defined $data) {
 		set data => $data;
@@ -22,8 +23,7 @@ hook before => sub {
 
 hook before_template => sub {
 	my $t = shift;
-	my $data = setting('data');
-	$t->{channels} = $data->{channels};
+	$t->{channels} = setting('channels');
 	return;
 };
 
