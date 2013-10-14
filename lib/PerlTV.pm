@@ -7,6 +7,8 @@ use Path::Tiny ();
 use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 
+use PerlTV::Tools qw(read_file);
+
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
@@ -32,9 +34,11 @@ get '/' => sub {
 		return template 'error';
 	}
 
-	my $data = setting('data');
-	my $i = int rand scalar @{ $data->{videos} };
-	_show($data->{videos}[$i]);
+	# select a random entry
+	my $all = setting('data');
+	my $i = int rand scalar @{ $all->{videos} };
+
+	_show($all->{videos}[$i]{path});
 };
 
 get '/all' => sub {
@@ -42,30 +46,24 @@ get '/all' => sub {
 	template 'list', { videos => $data->{videos} };
 };
 
-sub _show {
-	my $video = shift;
-	$video->{description} = '';
-	if ($video->{path}) {
-		my $path = Path::Tiny::path(abs_path(config->{appdir}) . "/data/$video->{path}");
-		if (-e $path) {
-			$video->{description} = $path->slurp_utf8;
-		}
-	}
-	template 'index', { video => $video };
-};
-
-get '/:path' => sub {
-	my $data = setting('data');
-	# would it be better to keep a hash in video.json or to convert it to a hash on load
+get '/v/:path' => sub {
 	my $path = params->{path};
-	my ($video) = grep {$_->{path} eq $path } @{ $data->{videos} };
-	if ($video) {
-		_show($video);
+	if ($path =~ /^[A-Za-z_-]+$/) {
+		return _show($path);
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
 	}
 };
+
+sub _show {
+	my $path = shift;
+
+	my $data = read_file( "data/$path" );
+	$data->{path} = $path;
+	template 'index', { video => $data };
+};
+
 
 true;
 

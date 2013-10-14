@@ -1,37 +1,34 @@
 #!/usr/bin/env perl
-use Moo;
+use strict;
+use warnings;
+
 use Path::Tiny qw(path);
 use JSON::Tiny ();
+use Data::Dumper qw(Dumper);
+
+use lib path($0)->absolute->parent->parent->child('lib')->stringify;
+use PerlTV::Tools qw(read_file);
 
 
 
-my @files = glob "data/*";
-my %data;
-foreach my $f (@files) {
-	my $section;
-	my %video;
-	foreach my $line (path($f)->lines_utf8) {
-		if ($line =~ /^__(\w+)__$/) {
-			$section = $1;
-			next;
-		}
-		if ($section) {
-			$video{$section} .= $line;
-			next;
-		}
-		next if $line =~ /^\s*(#.*)?$/;
-		chomp $line;
-		$line =~ s/\s+$//;
-		my ($key, $value) = split /:\s*/, $line, 2;
-		if ($key =~ /^(modules|tags)$/) {
-			$video{$key} = split /\s*,\s*/, $value;
-		} else {
-			$video{$key} = $value;
-		}
-	}
-	$data{$f} = \%video;
+my $dir = path($0)->absolute->parent->parent->child('data');
+my @videos;
+foreach my $f ($dir->children) {
+	my $video = read_file($f);
+	#warn Dumper $video;
+	my %entry = (
+		title => $video->{title},
+		path  => $f->basename,
+	);
+
+	push @videos, \%entry;
 }
 
 my $json = JSON::Tiny->new;
-$data{_comment} = 'This is a generated file, please do NOT edit directly';
-path('video.json')->spew_utf8(  $json->encode({ videos => \%data }) );
+my %data = (
+	_comment => 'This is a generated file, please do NOT edit directly',
+	videos => \@videos,
+);
+path('videos.json')->spew_utf8(  $json->encode(\%data) );
+
+

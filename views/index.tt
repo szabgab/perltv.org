@@ -5,7 +5,7 @@
         </div>
 
         <div id="getting-started">
-          <h1><% video.speaker %>: <a href="/<% video.path %>"><% video.title %></a></h1>
+          <h1><% video.speaker %>: <a href="/v/<% video.path %>"><% video.title %></a></h1>
            <% video.length %> <% video.source %><br>
           <% FOR t IN video.tags %>
               <% t %>
