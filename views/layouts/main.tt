@@ -39,14 +39,15 @@
       </li>
     </ul>
   </div>
-<% content %>
+  <div id="content">
+    <% content %>
+  </div>
 </div>
-    </div>
 
 
 
 <div id="footer">
-Source code: <a href="https://github.com/szabgab/perltv.org">GitHub</a> | <a href="http://perlmaven.com/">Perl programming</a>
+<a href="https://github.com/szabgab/perltv.org">Source code</a> | <a href="/daily.atom">RSS</a> | <a href="http://perlmaven.com/">Perl programming</a>
 </div>
 
 

@@ -1,13 +1,9 @@
-      <div id="content">
-        <div id="header">
-          <h1>Welcome to the <a href="/">Perl TV</a></h1>
-          <ul>
-          <% FOR v IN videos %>
-              <li><a href="/v/<% v.path %>"><% v.title %></a></li>
-          <% END %>
-          </ul>
-        </div>
-
-        <div id="getting-started">
-        </div>
+<div id="header">
+  <h1>Welcome to the <a href="/">Perl TV</a></h1>
+  <ul>
+  <% FOR v IN videos %>
+      <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+  <% END %>
+  </ul>
+</div>
 

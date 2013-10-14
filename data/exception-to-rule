@@ -3,8 +3,8 @@ src: youtube
 title: Exception to Rule
 speaker: Bruce Gray (Util)
 length: 45:14
-modules: TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
-tags: die, autodie
+modules: autodie, TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
+tags: die
 source: YAPC::NA 2013
 
 __DESCRIPTION__
