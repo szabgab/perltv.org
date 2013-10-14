@@ -57,15 +57,6 @@ get '/v/:path' => sub {
 	}
 };
 
-sub _show {
-	my $path = shift;
-
-	my $appdir = abs_path config->{appdir};
-	my $data = read_file( "$appdir/data/$path" );
-	$data->{path} = $path;
-	template 'index', { video => $data };
-};
-
 get '/daily.atom' => sub {
 	my $featured = setting('featured');
 	my $appdir = abs_path config->{appdir};
@@ -124,6 +115,16 @@ get '/sitemap.xml' => sub {
 	$xml .= qq{</urlset>\n};
 	return $xml;
 };
+
+sub _show {
+	my $path = shift;
+
+	my $appdir = abs_path config->{appdir};
+	my $data = read_file( "$appdir/data/$path" );
+	$data->{path} = $path;
+	template 'index', { video => $data };
+};
+
 
 true;
 
