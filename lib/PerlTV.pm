@@ -25,6 +25,10 @@ hook before => sub {
 hook before_template => sub {
 	my $t = shift;
 	$t->{channels} = setting('channels');
+	if (not $t->{title} or request->path eq '/') {
+		$t->{title} = 'Perl TV';
+	}
+	
 	return;
 };
 
@@ -130,7 +134,7 @@ sub _show {
 		return template 'error';
 	}
 	$data->{path} = $path;
-	template 'index', { video => $data };
+	template 'index', { video => $data, title => $data->{title} };
 };
 
 
