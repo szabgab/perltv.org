@@ -103,6 +103,27 @@ get '/daily.atom' => sub {
 	return $xml;
 };
 
+get '/sitemap.xml' => sub {
+	my $data = setting('data');
+	my $url = request->base;
+	$url =~ s{/$}{};
+	content_type 'application/xml';
+
+	my $xml = qq{<?xml version="1.0" encoding="UTF-8"?>\n};
+	$xml .= qq{<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n};
+	$xml .= qq{  <url>\n};
+	$xml .= qq{    <loc>$url/</loc>\n};
+	$xml .= qq{  </url>\n};
+	foreach my $p (@{ $data->{videos} }) {
+		$xml .= qq{  <url>\n};
+		$xml .= qq{    <loc>$url/v/$p->{path}</loc>\n};
+		#$xml .= qq{    <changefreq>monthly</changefreq>\n};
+		#$xml .= qq{    <priority>0.8</priority>\n};
+		$xml .= qq{  </url>\n};
+	}
+	$xml .= qq{</urlset>\n};
+	return $xml;
+};
 
 true;
 
