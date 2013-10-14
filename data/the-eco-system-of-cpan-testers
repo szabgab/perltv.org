@@ -1,3 +1,14 @@
+id: FMSpV34Gw7I
+src: youtube
+title: The Eco-System of CPAN Testers
+speaker: Barbie
+length: 18:50
+modules: CPAN, CPAN::Reporter, CPANPLUS, CPANPLUS::YACSmoke, App::cpantesters, Test::Reporter, CPAN::Testers::Report, CPAN::Testers::Common::Client, CPAN::Testers::Data::Generator, CPAN::Testers::WWW::Reports, CPAN::Testers::WWW::Reports::Parser, CPAN::Testers::Data::Release, CPAN::Testers::WWW::Reports::Query::Reports
+tags: NoSQL
+source: YAPC::EU2012
+date: 2012-08-20
+
+__DESCRIPTION__
 After many questions relating to this topic, this talk will explain many of the
 components of the CPAN Testers eco-system. What databases, websites and APIs are available,
 and how they integrate with each other, and perhaps most importantly how you can help contribute code.

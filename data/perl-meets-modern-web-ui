@@ -1,3 +1,13 @@
+id: jEzgzMzgekU
+src: youtube
+title: Perl Meets Modern Web UI
+speaker: Bill Humphries (whump)
+length: 22:11
+modules: Mojolicious::Lite
+tags: Backbone.js
+source: YAPC::NA 2013
+
+__DESCRIPTION__
 Creating Single Page Webapps with Perl as the back-end.
 <p>
 Web Frameworks for the client such as Backbone, Knockout, and Angular have changed how we build web applications.

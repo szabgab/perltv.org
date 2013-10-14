@@ -1,3 +1,13 @@
+id: 8IDK4Fro7_M
+src: youtube
+title: Exception to Rule
+speaker: Bruce Gray (Util)
+length: 45:14
+modules: TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
+tags: die, autodie
+source: YAPC::NA 2013
+
+__DESCRIPTION__
 The real story of exceptions... (or, the Why of Die and Try)
 <p>
 I had always chosen return codes over exceptions, even against the recommendations of PBP.
