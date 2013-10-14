@@ -9,6 +9,8 @@ background-position: top left;
 font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
 font-size: 13px;
 color: #333;
+
+text-decoration: none;
 }
 
 h1 {
@@ -59,6 +61,9 @@ background-position: top left;
 height: 364px;
 }
 #header h1, #header h2 {margin: 0}
+#header h1 {
+  margin-bottom: 20px;
+}
 #header h2 {
 color: #888;
 font-weight: normal;

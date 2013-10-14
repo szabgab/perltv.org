@@ -1,3 +1,6 @@
 After many questions relating to this topic, this talk will explain many of the
 components of the CPAN Testers eco-system. What databases, websites and APIs are available,
 and how they integrate with each other, and perhaps most importantly how you can help contribute code.
+<p>
+See also the CPAN Testers <a href="http://devel.cpantesters.org/">developer site</a>,
+and the main page of <a href="http://cpantesters.org/">CPAN Testers</a>.

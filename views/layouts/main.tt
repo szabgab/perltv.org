@@ -27,7 +27,7 @@
         <h3>Channels</h3>
         <ul>
           <% FOR c in channels %>
-            <li><a href="<% c.url %>"><% c.title %></li>
+            <li><a href="<% c.url %>"><% c.title %></a></li>
           <% END %>
         </ul>
       </li>
