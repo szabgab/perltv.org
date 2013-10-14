@@ -59,7 +59,8 @@ get '/v/:path' => sub {
 sub _show {
 	my $path = shift;
 
-	my $data = read_file( "data/$path" );
+	my $appdir = abs_path config->{appdir};
+	my $data = read_file( "$appdir/data/$path" );
 	$data->{path} = $path;
 	template 'index', { video => $data };
 };
