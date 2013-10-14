@@ -46,10 +46,13 @@ get '/all' => sub {
 
 get '/' => sub {
 	# select a random entry
-	my $all = setting('data');
-	my $i = int rand scalar @{ $all->{videos} };
+	#my $all = setting('data');
+	#my $i = int rand scalar @{ $all->{videos} };
+	#_show($all->{videos}[$i]{path});
 
-	_show($all->{videos}[$i]{path});
+	# show the currently featured item
+	my $featured = setting('featured');
+	_show($featured->[0]{path});
 };
 
 get '/v/:path' => sub {
