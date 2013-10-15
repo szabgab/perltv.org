@@ -4,8 +4,13 @@
 </div>
 
 <div id="text">
-  <h1><% video.speaker %>: <a href="/v/<% video.path %>"><% video.title %></a></h1>
-   <% video.length %> <% video.source %><br>
+  <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
+   Length: <% video.length %> <% video.source %><br>
+   <% IF video.home %>
+     Speaker: <a href="<% video.home %>"><% video.speaker %></a>
+   <% ELSE %>
+     Speaker: <% video.speaker %>
+   <% END %>
   <br>
   <% video.description %>
 </div>
