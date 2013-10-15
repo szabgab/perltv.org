@@ -7,10 +7,15 @@ TODO
 - list all the entries mentioning a module (?) and link to MetaCPAN
 - Add the copyright and license information to the site as well.
 - Add social icons (G+, Twitter, FB)
-- Add (automatically?) a thumbnail from the video to get it displayed
+- Add a thumbnail from the video to get it displayed
   when sharing on Google+ and Facebook.
+  http://stackoverflow.com/questions/2068344/how-to-get-thumbnail-of-youtube-video-link-using-youtube-api/2068371#2068371
+
 - Either add an about page or on the main page explain what the site is about
   and how to contribute.
+- The front page should have a large thumbnail of the current video
+  and smaller thumbnails for a few of the older ones. The real
+  content including the video will be only on the internal pages only.
 
 
 Contributing videos?
