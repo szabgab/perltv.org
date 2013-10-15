@@ -1,7 +1,8 @@
 id: 8IDK4Fro7_M
 src: youtube
 title: Exception to Rule
-speaker: Bruce Gray (Util)
+speaker: Bruce Gray
+nickname: Util
 length: 45:14
 modules: autodie, TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
 tags: die

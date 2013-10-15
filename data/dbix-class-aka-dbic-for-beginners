@@ -1,7 +1,8 @@
 id: N-tbMPyNlM8
 src: youtube
 title: DBIx::Class (aka DBIC) for beginners
-speaker: Leo Lapworth (Ranguard)
+speaker: Leo Lapworth
+nickname: Ranguard
 home: http://leo.cuckoo.org/
 source: YAPC::EU 2012
 modules: DBIx::Class, DBD::mysql, SQL::Abstract, Schema::Loader

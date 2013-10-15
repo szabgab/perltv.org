@@ -1,7 +1,9 @@
 id: jEzgzMzgekU
 src: youtube
 title: Perl Meets Modern Web UI
-speaker: Bill Humphries (whump)
+speaker: Bill Humphries
+nickname: whump
+home: http://whump.com/
 length: 22:11
 modules: Mojolicious::Lite
 tags: Backbone.js

@@ -11,6 +11,7 @@
    <% ELSE %>
      Speaker: <% video.speaker %>
    <% END %>
+   <% IF video.nickname %><% video.nickname %><% END %>
   <br>
   <% video.description %>
 </div>

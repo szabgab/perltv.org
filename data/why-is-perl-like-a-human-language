@@ -1,7 +1,9 @@
 id: ju1IMxGSuNE
 src: youtube
 title: Why Perl Is Like a Human Language
-speaker: Larry Wall (TimToady)
+speaker: Larry Wall
+nickname: TimToady
+home: http://wall.org/~larry/
 length: 5:58
 
 __DESCRIPTION__
