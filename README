@@ -17,6 +17,13 @@ TODO
   and smaller thumbnails for a few of the older ones. The real
   content including the video will be only on the internal pages only.
 
+- On the page of the video, when the vidoe is finished display something 
+  else and not the default "select a video" option of YouTube.
+  Show another random video, or show some info page?
+- Check if we could display some other picture in place of the video before
+  even it starts. (e.g. some information about the site?
+- Create a logo for the site and a favicon.
+
 
 Contributing videos?
 
