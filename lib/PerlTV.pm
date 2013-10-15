@@ -14,8 +14,13 @@ hook before => sub {
 	my $json = JSON::Tiny->new;
 	set channels => $json->decode( Path::Tiny::path("$appdir/channels.json")->slurp_utf8 );
 	set featured => $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
-	my $data = $json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
-	if (defined $data) {
+	my $data;
+	eval {
+		$json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
+	};
+	if ($@) {
+		set error => 'Could not load videos.json, have you generated it?';
+	} elsif (defined $data) {
 		set data => $data;
 	} else {
 		set error => $json->error;
