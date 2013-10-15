@@ -2,5 +2,9 @@
     {
       "date" : "2013-10-14",
       "path"   : "why-is-perl-like-a-human-language"
+    },
+    {
+      "date" : "2013-10-15",
+      "path" : "dbix-class-aka-dbic-for-beginners"
     }
 ]

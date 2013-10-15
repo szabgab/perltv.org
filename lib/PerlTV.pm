@@ -13,7 +13,8 @@ hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
 	set channels => $json->decode( Path::Tiny::path("$appdir/channels.json")->slurp_utf8 );
-	set featured => $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
+	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
+	set featured => [ sort {$b->{date} cmp $a->{date} }  @$featured ];
 	my $data;
 	eval {
 		$data = $json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
