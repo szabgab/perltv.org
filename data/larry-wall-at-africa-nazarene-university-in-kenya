@@ -1,0 +1,184 @@
+__DESCRIPTION__
+
+Charles Ouma interview Larry Wall while he visited the
+<a href="http://www.anu.ac.ke/">Africa Nazarene University</a> in Kenya.
+
+<div class="charles_ouma">
+I wanted to know how do you combine the Perl programming language,
+since you initiated it, into a tool of ministry, or how does it help
+with ministry?
+</div>
+
+<div class="larry_wall">
+Well, you know a programming language is not really necessarily spititual on its
+own, but it has more to do with how I think the community should work,
+and the fact that I as the believer can hear what peoples needs are and
+meet them.
+</div>
+
+<div class="charles_ouma">
+....I wanted to ask how did you get started Perl programming?
+You talked about it often but
+</div>
+
+<div class="larry_wall">
+Sure, well I had an itch to scratch and I had a problem to solve and the
+tools that I was working with weren't up to the ...
+
+Started off with a beginning of an idea, and then as people started using it
+and liking it I started to recognize what the real need was and developed
+Perl into that need that people had for a text processing language.
+</div>
+
+<div class="charles_ouma">
+To a layman, how does 
+</div>
+
+<div class="larry_wall">
+Well, if you are not familiar with programming, in normal terms it's like following
+a recepie, or writing a recepie. Perl is a particular kind of cooking, if you will,
+Perl, as a programming language is about cooking text files.
+
+Files like language or files of ... that the computer would spit out that are logging
+information 
+
+anything that's happening periodically.
+
+And you might want to just scan through that and do something. That is the sort of...
+that Perl was initially written for, and still at its heart is a text processing
+language.
+words, and sentences and lines of text.
+and makes it very easy to deal with that sort of "food".
+
+There is even a book, I did not write it, called the Perl Cookbook.
+
+A friend of mine wrote that. It has recepies 
+</div>
+
+<div class="charles_ouma">
+I just wanted to know what   living  you give it out as open source.
+What exactly how do you make your profit?
+</div>
+
+<!-- 3:34 -->
+<div class="larry_wall">
+There's various way you can make money. In my case I wrote a book and I get royalties
+and sometimes a company will pay you back in terms of stock options or
+something like that.
+You can offer to support people so you can have support contracts
+or sell things that are associated with,
+you know peole sell t-shirts and goodies of various sorts that are
+associted with various open source projects.
+
+Mostly though people make a living by persuading a company to hire
+them to do open source software.
+
+I actually do it myself mostly right now.
+I work for a very nice company called ... Logic Microsystems 
+and mostly they pay me to work on Perl and that's becaus they use Perl a lot
+so it helps them I can tell them how to program Perl better
+and when they have ideas I can feed that back to the Perl community in
+ways that will help them.
+So its a two-way street, in biological terms, symbiosis and so
+its often in the companies best interest to have some experts
+
+if you can learn one well enough a company will be interested
+in hiring you just to take care of that relationship.
+</div>
+
+<div class="charles_ouma">
+It's almost, like you said a symbiotic relationship.
+</div>
+
+<div class="larry_wall">
+Yes, and it's actually very difficult for a company to give money to a project.
+It is difficult to set that up. It is very easy for a company to hire somebody
+to work on a project. 
+</div>
+
+<div class="charles_ouma">
+Great, so I wanted to know, is that all that you do,
+other programming language coming out is Perl your baby 
+</div>
+
+<div class="larry_wall">
+Perl is my big baby. It is probably my life work I've done other things
+other programs I wrote and gave away, somewhat successful.
+
+You there are two kinds of writers. There are people who write a story and put it away.
+Then write another story and put that away.
+
+Then there are writers who are more like Toolkin where everything they do
+ends up in the same story.
+More or less.
+I am more like that. So instead of just making more projects out there
+make it an aspect of perl.
+I am interested in an awful lot of things.
+That's one of my problems that I am interested in too many things.
+I play ... at the church. I play the drums I don't know how I ... that up
+
+One of the way I hook(?) a lot of thing in is 
+talks at the open source conference every year, and I usually talk 
+about Perl and something else, so 
+Perl and Chemistry, Perl and Music, Perl and Games, Perl and this and that and
+the other thing so, you know, if you can't figure out 
+
+pick something random and look at the relationship of that to the thing you are
+interested in.
+That's a very easy way to ... up with ideas.
+At least it works for me.
+</div>
+
+<!-- 07:36  -->
+<div class="charles_ouma">
+What is the stranges comments you received from people that just walking on the
+street Larry ... 
+</div>
+
+
+<div class="larry_wall">
+We went to a movie to an art theatre in Cupertino I don't remember the movie,
+but the guy who sold the movie tickets <i>you are Larry Wall</i>
+You know, sometimes people ask for autographs or pictures, and 
+I am quite happy to do that it is meaningful for them and it is not 
+a problem for me. You know, fame is just another thing that happens,
+when you look back to your life and you see that's God that 
+putting you in that position you can't take credit yourself 
+I am more happy to what God wants ...
+and I'll use the fame as one more tool to try doing thing that
+... doing certainly not something to celebrate 
+</div>
+
+<div class="charles_ouma">
+Now, what are some of the benefits that people have gained from using Perl
+</div>
+
+<!-- 09:10 -->
+<div class="larry_wall">
+Well, you know, it has been said that every computer language teaches
+you to think differently and so on that level 
+...
+people ...
+I think that the sort of comments 
+I used to hate programming and then I starte to use Perl and now
+I love programming. some of that is because the culture is fun
+and some the language makes it easy to do certain kind of things
+That's sort of on a psychological level that is the benefit
+on a financial benefit, many people make their livings 
+programming Perl for company for
+
+A lot of web designers use Perl these days still.
+A lot of people sort of a hobby
+
+or they might use another language, but 
+I think just the fact that it makes some things easy 
+that no other language makes it easy 
+what makes people like Perl.
+</div>
+
+<div class="charles_ouma">
+</div>
+
+<div class="larry_wall">
+</div>
+
