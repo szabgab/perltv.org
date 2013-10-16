@@ -36,6 +36,8 @@
         <ul>
           <li><a href="/all">All</a></li>
         </ul>
+
+          <% INCLUDE incl/social_share.tt %>
       </li>
     </ul>
   </div>

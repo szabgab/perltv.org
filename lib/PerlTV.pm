@@ -36,6 +36,9 @@ hook before_template => sub {
 	if (not $t->{title} or request->path eq '/') {
 		$t->{title} = 'Perl TV';
 	}
+
+	$t->{social} = 1;
+	$t->{request} = request;
 	
 	return;
 };
