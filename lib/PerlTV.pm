@@ -43,6 +43,10 @@ hook before_template => sub {
 	return;
 };
 
+get '/legal' => sub {
+	template 'legal';
+};
+
 #	my $error = setting('error');
 #	if ($error) {
 #		warn $error;

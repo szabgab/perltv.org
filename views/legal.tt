@@ -1,0 +1,14 @@
+<div id="header">
+  <h1>Copyright and License of the <a href="/">Perl TV</a></h1>
+PerlTV.org - Copyright <a href="http://szabgab.com/">Gabor Szabo</a>
+<p>
+License of the source code:
+The same as Perl 5.10
+<p>
+License of the data/ files (the content of the web site):
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">CC BY SA</a>.
+<p>
+Copyright and License of the videos - their respective authors
+See the original site for each video.
+</div>
+

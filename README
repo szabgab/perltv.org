@@ -1,7 +1,42 @@
 The code behind http://perltv.org/
 
 
+Contributing videos?
+=====================
+
+Please add files to the data/ directory.
+The file names will be the page URLs.
+Please fill as many as the fields as you can and add some nice __DESCRIPTION__
+For YAPC talk this can be based on the YAPC talk descriptions -
+if they are available.
+
+Please list the CPAN modules mentioned in the videos!
+
+If you can, write a summary of the video, or if you really have time,
+create a transcription. Not everyone can hear well, and not everyone can
+easily understand the spoken English.
+It also makes the site more searchable.
+
+
+Copyright and License
+=======================
+
+PerlTV.org - Copyright Gabor Szabo
+
+License of the source code:
+The same as Perl 5.10
+
+License of the data/ files (the content of the web site):
+http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+Copyright and License of the videos - their respective authors
+See the original site for each video.
+
+
+
+
 TODO
+=====
 
 - list all the entries with specific tag
 - list all the entries mentioning a module (?) and link to MetaCPAN
@@ -22,34 +57,4 @@ TODO
 - Check if we could display some other picture in place of the video before
   even it starts. (e.g. some information about the site?
 - Create a logo for the site and a favicon.
-
-
-Contributing videos?
-
-Please add files to the data/ directory.
-The file names will be the page URLs.
-Please fill as many as the fields as you can and add some nice __DESCRIPTION__
-For YAPC talk this can be based on the YAPC talk descriptions -
-if they are available.
-
-Please list the CPAN modules mentioned in the videos!
-
-If you can, write a summary of the video, or if you really have time,
-create a transcription. Not everyone can hear well, and not everyone can
-easily understand the spoken English.
-It also makes the site more searchable.
-
-
-
-PerlTV.org - Copyright Gabor Szabo
-
-License of the source code:
-The same as Perl 5.10
-
-License of the data/ files (the content of the web site):
-http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-
-
-Copyright and License of the videos - their respective authors
-See the original site for each video.
 
