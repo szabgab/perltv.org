@@ -1,0 +1,41 @@
+<div id="header">
+  <h1>Welcome to the <a href="/">Perl TV</a></h1>
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/<% video.id %>" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="text">
+  <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
+   Length: <% video.length %> <% video.source %><br>
+   <% IF video.home %>
+     Speaker: <a href="<% video.home %>"><% video.speaker %></a>
+   <% ELSE %>
+     Speaker: <% video.speaker %>
+   <% END %>
+   <% IF video.nickname %>(<% video.nickname %>)<% END %>
+  <br>
+  <% video.description %>
+</div>
+
+<div id="modules">
+  <% if video.modules %>
+    <h2>Modules mentioned</h2>
+    <ul>
+      <% FOR t IN video.modules %>
+        <li><a href="http://metacpan.org/module/<% t %>"><% t %></a></li>
+      <% END %>
+    </ul>
+  <% END %>
+</div>
+
+<div id="tags">
+  <% if video.tags %>
+    <h2>Tags</h2>
+    <ul>
+      <% FOR t IN video.tags %>
+        <li><% t %></li>
+      <% END %>
+    </ul>
+  <% END %>
+</div>
+
+

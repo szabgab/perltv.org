@@ -6,6 +6,7 @@ use Cwd qw(abs_path);
 use Path::Tiny ();
 use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
+use List::Util qw(min);
 
 use PerlTV::Tools qw(read_file);
 
@@ -39,6 +40,9 @@ hook before_template => sub {
 
 	$t->{social} = 1;
 	$t->{request} = request;
+	my $featured = setting('featured');
+	my $end = min(4, @$featured-1);
+	$t->{featured} = [ @{$featured}[1 .. $end] ];
 	
 	return;
 };
@@ -60,20 +64,15 @@ get '/all' => sub {
 
 
 get '/' => sub {
-	# select a random entry
-	#my $all = setting('data');
-	#my $i = int rand scalar @{ $all->{videos} };
-	#_show($all->{videos}[$i]{path});
-
 	# show the currently featured item
 	my $featured = setting('featured');
-	_show($featured->[0]{path});
+	_show('index', $featured->[0]{path});
 };
 
 get '/v/:path' => sub {
 	my $path = params->{path};
 	if ($path =~ /^[A-Za-z_-]+$/) {
-		return _show($path);
+		return _show('page', $path);
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
@@ -140,7 +139,7 @@ get '/sitemap.xml' => sub {
 };
 
 sub _show {
-	my $path = shift;
+	my ($template, $path) = @_;
 
 	my $appdir = abs_path config->{appdir};
 	my $data;
@@ -152,7 +151,7 @@ sub _show {
 		return template 'error';
 	}
 	$data->{path} = $path;
-	template 'index', { video => $data, title => $data->{title} };
+	template $template, { video => $data, title => $data->{title} };
 };
 
 

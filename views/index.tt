@@ -1,41 +1,31 @@
 <div id="header">
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
+  <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
     <iframe width="560" height="315" src="http://www.youtube.com/embed/<% video.id %>" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id="text">
-  <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
-   Length: <% video.length %> <% video.source %><br>
+   Length: <% video.length %> <% video.source %>
+   <a href="/v/<% video.path %>">details</a></h2>
+   <br>
    <% IF video.home %>
      Speaker: <a href="<% video.home %>"><% video.speaker %></a>
    <% ELSE %>
      Speaker: <% video.speaker %>
    <% END %>
    <% IF video.nickname %>(<% video.nickname %>)<% END %>
-  <br>
-  <% video.description %>
-</div>
+   <br>
 
-<div id="modules">
-  <% if video.modules %>
-    <h2>Modules mentioned</h2>
+<div id="featured">
+  <% if featured %>
+    <h2>Other featured videos</h2>
     <ul>
-      <% FOR t IN video.modules %>
-        <li><a href="http://metacpan.org/module/<% t %>"><% t %></a></li>
+      <% FOR v IN featured %>
+        <li><a href="/v/<% v.path %>"><img src="http://img.youtube.com/vi/<% v.id %>/default.jpg" /></li>
       <% END %>
     </ul>
   <% END %>
 </div>
 
-<div id="tags">
-  <% if video.tags %>
-    <h2>Tags</h2>
-    <ul>
-      <% FOR t IN video.tags %>
-        <li><% t %></li>
-      <% END %>
-    </ul>
-  <% END %>
 </div>
-
 

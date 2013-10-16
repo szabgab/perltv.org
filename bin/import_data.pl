@@ -24,6 +24,7 @@ foreach my $f ($dir->children) {
 
 	if ($video->{featured}) {
 		push @featured, {
+			id   => $video->{id},
 			date => $video->{featured},
 			path => $f->basename,
 		}
