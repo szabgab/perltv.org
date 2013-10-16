@@ -1,10 +1,10 @@
 <div id="header">
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
-  <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
     <iframe width="560" height="315" src="http://www.youtube.com/embed/<% video.id %>" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id="text">
+  <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
    Length: <% video.length %> <% video.source %>
    <a href="/v/<% video.path %>">details</a></h2>
    <br>
