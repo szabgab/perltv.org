@@ -47,14 +47,6 @@ TODO
 - Either add an about page or on the main page explain what the site is about
   and how to contribute.
 
-- The front page should have a large thumbnail of the current video
-  and smaller thumbnails for a few of the older ones. The real
-  content including the video will be only on the internal pages only.
-  
-  Automatically starting the replay will not be counted by YouTube so we cannot have
-  a link on the front page to the specific page and autostart the video there. :(
-  Therefore we keep the video on the front page.
-
 - On the page of the video, when the video is finished display something 
   else and not the default "select a video" option of YouTube.
   Show another random video, or show some info page?
@@ -64,4 +56,20 @@ TODO
   even it starts. (e.g. some information about the site?
 
 - Create a logo for the site and a favicon.
+
+- Script to bootstrap a data file by fetching data from youtube.
+- Script to update data from youtub (eg. viewer count, what else?) from yourube.
+
+NOT TODO
+=========
+- The front page should have a large thumbnail of the current video
+  The real content including the video will be only on the internal pages only.
+
+  Automatically starting the replay will not be counted by YouTube so we cannot have
+  a link on the front page to the specific page and autostart the video there. :(
+  Therefore we keep the video on the front page.
+  See the update here: https://developers.google.com/youtube/js_api_reference
+
+
+
 
