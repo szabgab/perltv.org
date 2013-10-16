@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use 5.010;
 
 use Path::Tiny qw(path);
 use JSON::Tiny ();
@@ -42,4 +43,6 @@ my %data = (
 );
 path('videos.json')->spew_utf8( $json->encode(\%data) );
 path('featured.json')->spew_utf8( $json->encode(\@featured) );
+
+say "Latest featured: $featured[0]{date}";
 

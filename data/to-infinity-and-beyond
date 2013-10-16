@@ -1,0 +1,80 @@
+id: Lrrp4ZmZB44
+src: youtube
+title: To infinity and beyond: A practical guide for Mooseherds
+speaker: Clinton Gormley 
+nickname: DrTech
+source: YAPC::EU 2012
+modules: Elastic::Model, Elastic::Doc
+tags: NoSQL, ElasticSearch
+length: 40:03
+
+__DESCRIPTION__
+
+
+To follow the presentation check out the
+<a href="https://speakerdeck.com/clintongormley/to-infinity-and-beyond">slides</a>.
+<p>
+
+<a href="http://metacpan.org/module/Elastic::Model">Elastic::Model</a>
+is a new framework to store your <a href="http://metacpan.org/module/Moose">Moose</a> objects,
+which uses ElasticSearch as a NoSQL document store and flexible search engine.
+<p>
+
+It is designed to make small beginnings simple, but to scale easily to Big Data
+requirements without needing to rearchitect your application. No job too big or small!
+<p>
+
+This talk will introduce Elastic::Model, demonstrate how to develop a simple application,
+introduce some more advanced techniques, and discuss how it uses ElasticSearch to scale.
+<p>
+Elastic Model on <a href="https://github.com/clintongormley/Elastic-Model">GitHub</a>.
+<p>
+<ul>
+ <li>Do you have an idea for a <b>killer app</b>?</li>
+ <li>Marvellous success!</li>
+ <li>Need scaling!</li>
+</ul>
+<p>
+Do you really need a relational DB? (faster horse?)
+
+<h2>NoSQL</h2>
+
+<ul>
+  <li>No transaction</li>
+  <li>No joins</li>
+  <li>Denorlamized data</li>
+</ul>
+
+<h2>ElasticSearch</h2>
+
+<a href="http://www.elasticsearch.org/">Elastic Search</a> is a
+<a href="http://lucene.apache.org/">Lucene</a> based product.
+
+A powerful full text search (Near real time: < second)
+
+Real time document store
+
+<ul>
+  <li>Easy sharding</li>
+  <li>Start small, Scale massively</li>
+</ul>
+
+<h3>ElasticSearch terminology</h3>
+
+<ul>
+ <li><b>index</b> is like a <b>database</b></li>
+ <li><b>type</b> is like a <b>table</b></li>
+ <li><b>doc</b> is like a <b>row</b> in a table</li>
+ <li><b>alias</b> is like a <b>symbolic link</b>, points to one or more indices</li>
+</ul>
+
+<h3>Elastic::Model terminology</h3>
+
+<ul>
+ <li><b>domain</b> - An <b>index</b> or and <b>alias</b>, used for CRUD</li>
+ <li><b>namespace</b> - Maps <b>type &lt;=&gt; class</b> for all associated domains</li>
+ <li><b>model</b> - Connects your app to elasticsearch</li>
+</ul>
+
+
+
