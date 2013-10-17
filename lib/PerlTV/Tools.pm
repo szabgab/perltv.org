@@ -3,6 +3,7 @@ use strict;
 use warnings;
 
 use Path::Tiny ();
+use Text::Markdown ();
 
 use base 'Exporter';
 our @EXPORT_OK = qw(read_file);
@@ -32,7 +33,14 @@ sub read_file {
 		}
 	}
 
+	$video{format} ||= 'html';
 
+	if ($video{description}) {
+		if ($video{format} eq 'markdown') {
+			my $md = Text::Markdown->new;
+			$video{description} = $md->markdown( $video{description} );
+		}
+	}
 
 	return \%video;
 }

@@ -22,6 +22,7 @@ WriteMakefile(
         'Dancer2'     => 0.10,
         'Path::Tiny'  => 0,
         'JSON::Tiny'  => 0,
+		'Text::Markdown' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'PerlTV-*' },
