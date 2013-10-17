@@ -40,6 +40,18 @@
 
           <% INCLUDE incl/social_share.tt %>
       </li>
+      <li>
+        <div id="side-tags">
+          <% if video.tags %>
+            <h2>Tags</h2>
+            <ul>
+              <% FOR t IN video.tags %>
+                <li><a href="/tag/<% t FILTER lower %>"><% t %></a></li>
+              <% END %>
+            </ul>
+          <% END %>
+        </div>
+      </li>
     </ul>
   </div>
   <div id="content">

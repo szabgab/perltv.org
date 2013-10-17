@@ -1,6 +1,7 @@
 *.swp
 videos.json
 featured.json
+tags.json
 MYMETA.json
 MYMETA.yml
 Makefile

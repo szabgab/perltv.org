@@ -15,6 +15,7 @@ use PerlTV::Tools qw(read_file);
 my $dir = path($0)->absolute->parent->parent->child('data');
 my @videos;
 my @featured;
+my %tags;
 foreach my $f ($dir->children) {
 	my $video = read_file($f);
 	#warn Dumper $video;
@@ -30,6 +31,14 @@ foreach my $f ($dir->children) {
 			path => $f->basename,
 		}
 	}
+	if ($video->{tags}) {
+		foreach my $tag (@{ $video->{tags} }) {
+			push @{ $tags{lc $tag} }, {
+				title => $video->{title},
+				path  => $f->basename,
+			};
+		}
+	}
 
 	push @videos, \%entry;
 }
@@ -43,6 +52,7 @@ my %data = (
 );
 path('videos.json')->spew_utf8( $json->encode(\%data) );
 path('featured.json')->spew_utf8( $json->encode(\@featured) );
+path('tags.json')->spew_utf8( $json->encode(\%tags) );
 
 say "Latest featured: $featured[0]{date}";
 
