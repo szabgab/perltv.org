@@ -1,0 +1,50 @@
+id: dE4bYcoNWk0
+src: youtube
+title: Introduction to DBIx::Class
+speaker: Doran Barton
+home: http://www.fozzilinymoo.org/
+view_count: 70
+favorite_count: 0
+length: 32:21
+source: Salt Lake Perl Mongers - 2013-06-11
+modules: DBI, DBIx::Class
+format: markdown
+
+__DESCRIPTION__
+
+Doran Barton's presentation is a brief introduction to DBIx::Class, Perl's incredible ORM module. 
+
+The [Salt Lake Perl Mongers group](http://saltlake.pm.org/), recently revived,
+currently meets the second Tuesday of each month in space provided by Bluehost.
+
+The presentation starts with a short review of what is [DBI](http://metacpan.org/module/DBI).
+Then he gives an overview of DBIx::Class and then shows how to build the database part
+of a small blog engine.
+
+DBI
+----
+
+* Abstraction layer between code and database
+* "Easy" to migrate code from one RDBMS to another. In theory
+
+
+DBIx::Class
+-----------
+
+ORM = Object Relational Mapper
+
+* Database tables become objects
+* Table data and relationships between tables become object methods
+
+Example ORMs
+--------------
+
+* Hibernate (Java)
+* SQLAlchemy (Python)
+* CakePHP (PHP)
+* DBIx::Class (Perl) (also called DBIC)
+
+[DBIC](http://www.dbix-class.org/)
+
+
+
