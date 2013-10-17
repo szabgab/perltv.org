@@ -11,6 +11,7 @@ modules: MetaCPAN::API, MetaCPAN::API::Tiny, ElasticSearch
 tags: api, cpan, elasticsearch, metacpan,
 source: YAPC::NA 2013
 format: markdown
+featured: 2013-10-17
 
 __DESCRIPTION__
 
