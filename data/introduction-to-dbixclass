@@ -21,6 +21,9 @@ The presentation starts with a short review of what is [DBI](http://metacpan.org
 Then he gives an overview of DBIx::Class and then shows how to build the database part
 of a small blog engine.
 
+The [slides](http://www.slideshare.net/fozzmoo/introduction-to-dbixclass)
+are also available to make it easier to follow the presentation.
+
 DBI
 ----
 
