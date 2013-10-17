@@ -21,14 +21,7 @@
           <li><a href="http://www.presentingperl.org/">Presenting Perl</a></li>
           <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
         </ul>
-<!--
-        <h3>Channels</h3>
-        <ul>
-          <% FOR c in channels %>
-            <li><a href="<% c.url %>"><% c.title %></a></li>
-          <% END %>
-        </ul>
--->
+
         <h3>Daily video</h3>
         <a href="/daily.atom"><img src="/images/feed-icon32.png" /></a><br>
         Get daily selected video via 

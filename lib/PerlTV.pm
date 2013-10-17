@@ -13,7 +13,6 @@ use PerlTV::Tools qw(read_file);
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
-	set channels => $json->decode( Path::Tiny::path("$appdir/channels.json")->slurp_utf8 );
 	set tags => $json->decode( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
 	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
 	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
@@ -35,7 +34,6 @@ hook before => sub {
 
 hook before_template => sub {
 	my $t = shift;
-	$t->{channels} = setting('channels');
 	if (not $t->{title} or request->path eq '/') {
 		$t->{title} = 'Perl TV';
 	}
