@@ -27,15 +27,16 @@
   <% END %>
 </div>
 
+<!--
 <div id="tags">
   <% if video.tags %>
     <h2>Tags</h2>
     <ul>
       <% FOR t IN video.tags %>
-        <li><% t %></li>
+        <li><a href="/tag/<% t %>"><% t %></a></li>
       <% END %>
     </ul>
   <% END %>
 </div>
-
+-->
 

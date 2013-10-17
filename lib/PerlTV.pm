@@ -80,7 +80,7 @@ get '/' => sub {
 get '/v/:path' => sub {
 	my $path = params->{path};
 	if ($path =~ /^[A-Za-z_-]+$/) {
-		return _show('page', $path);
+		return _show('page', $path, {show_tags => 1});
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
@@ -147,7 +147,7 @@ get '/sitemap.xml' => sub {
 };
 
 sub _show {
-	my ($template, $path) = @_;
+	my ($template, $path, $params) = @_;
 
 	my $appdir = abs_path config->{appdir};
 	my $data;
@@ -159,7 +159,11 @@ sub _show {
 		return template 'error';
 	}
 	$data->{path} = $path;
-	template $template, { video => $data, title => $data->{title} };
+	template $template, { 
+		video => $data,
+		title => $data->{title},
+		%$params,
+	};
 };
 
 
