@@ -3,7 +3,7 @@ src: youtube
 title: (Ab)using the MetaCPAN API for Fun and Profit
 speaker: Olaf Alders
 nickname: oalders
-source: 
+source:
 view_count: 18
 favorite_count: 0
 length: 45:35
@@ -17,17 +17,16 @@ __DESCRIPTION__
 
 [MetaCPAN](http://metacpan.org/) aims to make it fun and easy to
 get data about CPAN modules, distributions, favourites and even CPAN authors themselves,
-but sometimes it's just not easy enough. This talk will show you how to avoid 
+but sometimes it's just not easy enough. This talk will show you how to avoid
 some of the pitfalls of working with the MetaCPAN API,
 creating ElasticSearch queries and building your own MetaCPAN powered application.
-We'll do this by walking through the process of creating an application which uses the API.
 Some sample code will be made available prior to the talk for any who'd like to review
 it ahead of time, but it's by no means compulsory for attendance.
-The links to some prep code and slides are posted at 
+The links to some prep code and slides are posted at
 [blogs.perl.org](http://blogs.perl.org/users/olaf_alders/2013/06/abusing-the-metacpan-api-for-fun-and-profit-v2013.html)
 
 The aim of this session is to arm both MetaCPAN beginners and intermediate users
-with enough knowledge to build the next MetaCPAN-powered web app, mobile app or 
+with enough knowledge to build the next MetaCPAN-powered web app, mobile app or
 even contribute back to MetaCPAN itself.
 
 [original](http://www.yapcna.org/yn2013/talk/4663) talk announcement.
@@ -35,10 +34,10 @@ even contribute back to MetaCPAN itself.
 
 
 Tha architecture of MetaCPAN: it uses
-[ElasticSearch](http://www.elasticsearch.org/) and 
+[ElasticSearch](http://www.elasticsearch.org/) and
 [Catalyst](http://www.catalystframework.org/) as a thin wrapper.
 
-++ on MetaCPAN is favoring a distribution, even when it is shown on the page of a module.
+++ on MetaCPAN is favoriting a distribution, even when it is shown on the page of a module.
 
 Base URL [http://api.metacpan.org/v0](http://api.metacpan.org/v0)
 
@@ -48,7 +47,7 @@ Endpoints
 Two different types of endpoints: convenience endpoints and ElasticSearch endpoints.
 There is some overlap though.
 Every type in the system has a corresponding endpoint. You've got
-distributions, modules, releases, favories, etc. But not every endpoint has a corresponding type.
+distributions, modules, releases, favorites, etc, but not every endpoint has a corresponding type.
 
 Convenience Endpoints
 ---------------------
@@ -62,12 +61,12 @@ Convenience Endpoints
 * [/search/reverse_dependencies/Moose](http://api.metacpan.org/v0/search/reverse_dependencies/Moose)
 
 There are actually no module and pod types.
-The above will retreive the latest authorized verison of Moose.
+The above will retrieve the latest authorized verison of Moose.
 
 Versioned Convenience Endpoints
 -------------------------------
 
-You might want specific version of Moos:
+You might want a specific version of Moose:
 
 * [/release/DOY/Moose-2.0001](http://api.metacpan.org/v0/release/DOY/Moose-2.0001)
 * [/module/DOY/Moose-2.0001/lib/Moose.pm](http://api.metacpan.org/v0/module/DOY/Moose-2.0001/lib/Moose.pm)
@@ -117,7 +116,7 @@ MetaCPAN Explorer
 * [Explorer](http://explorer.metacpan.org/?url=/author/OALDERS)
 * [/author/OALDERS](http://api.metacpan.org/v0/author/OALDERS)  (the API result)
 * [/author](http://api.metacpan.org/v0/author) (the first few authors)
-* [/author/_mapping](http://api.metacpan.org/v0/author/_mapping) 
+* [/author/_mapping](http://api.metacpan.org/v0/author/_mapping)
 * [/author/_search](http://api.metacpan.org/v0/author/_search) (the first 10 results)
 * [MetaCPAN::Document::Author](https://github.com/CPAN-API/cpan-api/blob/master/lib/MetaCPAN/Document/Author.pm) (the source code)
 
@@ -134,7 +133,7 @@ Scrolling request
 
 Send a query that will calculate the results and give an id back. Then use that id
 to fetch parts of the result. (The result set is normally limited to 5,000 entries.)
-The [ElasticSearch](https://metacpan.org/module/ElasticSearch) module abstract this away.
+The [ElasticSearch](https://metacpan.org/module/ElasticSearch) module abstracts this away.
 
 Query vs filter
 ----------------
@@ -165,6 +164,8 @@ About and resources
 
 * [About](https://metacpan.org/about/)
 * [Resources](https://metacpan.org/about/resources)
+* [Wiki](https://github.com/CPAN-API/cpan-api/wiki/API-docs)
+* [Slides for this video](http://www.slideshare.net/oalders/abusing-metacpan2013)
 
 
 Q&A
