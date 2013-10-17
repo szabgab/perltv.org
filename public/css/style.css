@@ -51,7 +51,7 @@ a:hover {
   width: 175px;
 }
 
-#header, #about, #text, #modules, #tags {
+#header, #text, #modules, #tags {
  padding-left: 75px;
  padding-right: 30px;
 }
@@ -65,40 +65,6 @@ a:hover {
 #header h1, #header h2 {margin: 0}
 #header h1 {
   margin-bottom: 20px;
-}
-
-#about h3 {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-#about-content {
-  background-color: #ffd;
-  border: 1px solid #fc0;
-  margin-left: -11px;
-}
-#about-content table {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 11px;
-  border-collapse: collapse;
-}
-#about-content td {
-  padding: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-#about-content td.name  {color: #555}
-#about-content td.value {color: #000}
-
-#about-content.failure {
-  background-color: #fcc;
-  border: 1px solid #f00;
-}
-#about-content.failure p {
-  margin: 0;
-  padding: 10px;
 }
 
 #text {
