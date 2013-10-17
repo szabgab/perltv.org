@@ -1,0 +1,46 @@
+id: Rjy2Q4qRdz4
+src: youtube
+title: Perl's Functional Functions
+speaker: David Oswald
+source: Salt Lake Perl Mongers 2013-06-11
+view_count: 56
+favorite_count: 0
+length: 25:19
+modules: List::Util, List::MoreUtils
+tags: grep, map, sort, Schwartzian Transform
+
+__DESCRIPTION__
+
+David Oswald's presentation, aimed at newer Perl Monger attendees, discusses Perl
+built-ins map, grep, and sort as well as examples from List::Util and List::MoreUtils.
+
+The [Salt Lake Perl Mongers group](http://saltlake.pm.org/), recently revived,
+currently meets the second Tuesday of each month in space provided by Bluehost.
+
+The talk is especially fun as it is directed to someone fairly new to to Perl
+who was present at this meeting.
+[Slides](http://www.slideshare.net/daoswald/perls-functional-functions)
+are also available.
+
+The common core functional functions
+------------------------------------
+
+* grep - filters a list using filtering subroutine
+* map - creates or transforms a list
+* sort - sort a list
+
+
+From List::Util (core module)
+-----------------------------
+* first - Like grep, but returns the first one found
+* reduce - Summarizes a list
+
+
+List::MoreUtils (on CPAN)
+-------------------------
+* any - Return true if any element in the list matches
+* all - Return true if all elements match
+* pairwise - Transform two lists, pairwise, into one
+* part - Partitions one list to a bunch of smaller lists
+* natatime - Itterates over a list fetching n element in every iteration
+ 
