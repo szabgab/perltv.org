@@ -15,6 +15,7 @@ hook before => sub {
 	my $json = JSON::Tiny->new;
 	set channels => $json->decode( Path::Tiny::path("$appdir/channels.json")->slurp_utf8 );
 	set tags => $json->decode( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
+	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
 	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
 	set featured => [ sort {$b->{date} cmp $a->{date} }  @$featured ];
 	my $data;
@@ -68,6 +69,15 @@ get '/tag/:tag' => sub {
 	my $tag = params->{tag};
 	pass if not $tags->{$tag};
 	template 'list', { videos => $tags->{$tag}, tag => $tag };
+};
+
+get '/module/:name' => sub {
+	my $modules = setting('modules');
+	my $name = params->{name};
+#die $name;
+#die Dumper $modules;
+	pass if not $modules->{$name};
+	template 'list', { videos => $modules->{$name}, module => $name };
 };
 
 
@@ -149,6 +159,8 @@ get '/sitemap.xml' => sub {
 sub _show {
 	my ($template, $path, $params) = @_;
 
+	$params ||= {};
+
 	my $appdir = abs_path config->{appdir};
 	my $data;
 	eval {
@@ -158,6 +170,7 @@ sub _show {
 		#warn $@;
 		return template 'error';
 	}
+
 	$data->{path} = $path;
 	template $template, { 
 		video => $data,

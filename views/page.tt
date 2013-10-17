@@ -17,7 +17,7 @@
 </div>
 
 <div id="modules">
-  <% if video.modules %>
+  <% IF video.modules %>
     <h2>Modules mentioned</h2>
     <ul>
       <% FOR t IN video.modules %>
@@ -29,7 +29,7 @@
 
 <!--
 <div id="tags">
-  <% if video.tags %>
+  <% IF video.tags %>
     <h2>Tags</h2>
     <ul>
       <% FOR t IN video.tags %>

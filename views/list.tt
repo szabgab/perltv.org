@@ -4,6 +4,11 @@
   <% IF tag %>
   List of videos related to <b><% tag %></b>.
   <% END %>
+
+  <% IF module %>
+  List of videos related to <b><a href="http://metacpan.org/module/<% module %>"><% module %></a></b>.
+  <% END %>
+
   <ul>
   <% FOR v IN videos %>
       <li><a href="/v/<% v.path %>"><% v.title %></a></li>

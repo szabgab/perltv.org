@@ -16,6 +16,7 @@ my $dir = path($0)->absolute->parent->parent->child('data');
 my @videos;
 my @featured;
 my %tags;
+my %modules;
 foreach my $f ($dir->children) {
 	my $video = read_file($f);
 	#warn Dumper $video;
@@ -33,10 +34,12 @@ foreach my $f ($dir->children) {
 	}
 	if ($video->{tags}) {
 		foreach my $tag (@{ $video->{tags} }) {
-			push @{ $tags{lc $tag} }, {
-				title => $video->{title},
-				path  => $f->basename,
-			};
+			push @{ $tags{lc $tag} }, \%entry;
+		}
+	}
+	if ($video->{modules}) {
+		foreach my $module (@{ $video->{modules} }) {
+			push @{ $modules{$module} }, \%entry;
 		}
 	}
 
@@ -53,6 +56,7 @@ my %data = (
 path('videos.json')->spew_utf8( $json->encode(\%data) );
 path('featured.json')->spew_utf8( $json->encode(\@featured) );
 path('tags.json')->spew_utf8( $json->encode(\%tags) );
+path('modules.json')->spew_utf8( $json->encode(\%modules) );
 
 say "Latest featured: $featured[0]{date}";
 
