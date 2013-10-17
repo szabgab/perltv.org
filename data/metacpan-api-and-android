@@ -1,0 +1,37 @@
+id: gQJs-JwTjUI
+src: youtube
+title: MetaCPAN API and Android - CPAN Sidekick
+speaker: Sterling Hanenkamp
+home: http://contentment.org/
+view_count: 17
+favorite_count: 0
+length: 20:28
+source: YACP::NA 2012
+tags: MetaCPAN, Android, Java
+format: markdown
+
+__DESCRIPTION__
+
+You can buy the app on 
+[Google Play](https://play.google.com/store/apps/details?id=com.qubling.sidekick)
+for Android devices, or you can check out the
+[source code](https://github.com/zostay/CPAN-Sidekick) and build it yourself.
+
+<img src="/images/cpan_sidekick.jpg" />
+
+A couple of comments from the talk
+
+*"Tou must read the code"* by [Masaaki Mizuno](http://people.cis.ksu.edu/~masaaki/)
+
+The Secret to using the MetaCPAN API is to read the code!
+
+Building JSON in Java is HARD!
+
+Instead of trying to build JSON va gson or JSONObject, he created a micro-templating language.
+
+
+See also
+[(Ab)using the MetaCPAN API for Fun and Profit](/v/abusing-the-metacpan-api-for-fun-and-profit)
+for a lot more details about the MetaCPAN API.
+
+
