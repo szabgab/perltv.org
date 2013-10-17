@@ -8,6 +8,7 @@ favorite_count: 0
 length: 25:19
 modules: List::Util, List::MoreUtils
 tags: grep, map, sort, Schwartzian Transform
+format: makrdown
 
 __DESCRIPTION__
 
