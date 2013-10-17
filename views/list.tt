@@ -1,5 +1,9 @@
 <div id="header">
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
+
+  <% IF tag %>
+  List of videos related to <b><% tag %></b>.
+  <% END %>
   <ul>
   <% FOR v IN videos %>
       <li><a href="/v/<% v.path %>"><% v.title %></a></li>

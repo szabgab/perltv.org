@@ -67,7 +67,7 @@ get '/tag/:tag' => sub {
 	my $tags = setting('tags');
 	my $tag = params->{tag};
 	pass if not $tags->{$tag};
-	template 'list', { videos => $tags->{$tag} };
+	template 'list', { videos => $tags->{$tag}, tag => $tag };
 };
 
 
