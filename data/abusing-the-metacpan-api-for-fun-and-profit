@@ -1,0 +1,175 @@
+id: J8ymBuFlHQg
+src: youtube
+title: (Ab)using the MetaCPAN API for Fun and Profit
+speaker: Olaf Alders
+nickname: oalders
+source: 
+view_count: 18
+favorite_count: 0
+length: 45:35
+modules: MetaCPAN::API, MetaCPAN::API::Tiny, ElasticSearch
+tags: api, cpan, elasticsearch, metacpan,
+source: YAPC::NA 2013
+format: markdown
+
+__DESCRIPTION__
+
+[MetaCPAN](http://metacpan.org/) aims to make it fun and easy to
+get data about CPAN modules, distributions, favourites and even CPAN authors themselves,
+but sometimes it's just not easy enough. This talk will show you how to avoid 
+some of the pitfalls of working with the MetaCPAN API,
+creating ElasticSearch queries and building your own MetaCPAN powered application.
+We'll do this by walking through the process of creating an application which uses the API.
+Some sample code will be made available prior to the talk for any who'd like to review
+it ahead of time, but it's by no means compulsory for attendance.
+The links to some prep code and slides are posted at 
+[blogs.perl.org](http://blogs.perl.org/users/olaf_alders/2013/06/abusing-the-metacpan-api-for-fun-and-profit-v2013.html)
+
+The aim of this session is to arm both MetaCPAN beginners and intermediate users
+with enough knowledge to build the next MetaCPAN-powered web app, mobile app or 
+even contribute back to MetaCPAN itself.
+
+[original](http://www.yapcna.org/yn2013/talk/4663) talk announcement.
+
+
+
+Tha architecture of MetaCPAN: it uses
+[ElasticSearch](http://www.elasticsearch.org/) and 
+[Catalyst](http://www.catalystframework.org/) as a thin wrapper.
+
+++ on MetaCPAN is favoring a distribution, even when it is shown on the page of a module.
+
+Base URL [http://api.metacpan.org/v0](http://api.metacpan.org/v0)
+
+Endpoints
+---------
+
+Two different types of endpoints: convenience endpoints and ElasticSearch endpoints.
+There is some overlap though.
+Every type in the system has a corresponding endpoint. You've got
+distributions, modules, releases, favories, etc. But not every endpoint has a corresponding type.
+
+Convenience Endpoints
+---------------------
+
+* [/author/DOY](http://api.metacpan.org/v0/author/DOY) - get the author record that has this ID
+* [/distribution/Moose](http://api.metacpan.org/v0/distribution/Moose)
+* [/release/Moose](http://api.metacpan.org/v0/release/Moose)
+* [/module/Moose](http://api.metacpan.org/v0/module/Moose)
+* [/pod/Moose](http://api.metacpan.org/v0/pod/Moose)
+* [/search/autocomplete?q=Moose](http://api.metacpan.org/v0/search/autocomplete?q=Moose)  (JSON reply)
+* [/search/reverse_dependencies/Moose](http://api.metacpan.org/v0/search/reverse_dependencies/Moose)
+
+There are actually no module and pod types.
+The above will retreive the latest authorized verison of Moose.
+
+Versioned Convenience Endpoints
+-------------------------------
+
+You might want specific version of Moos:
+
+* [/release/DOY/Moose-2.0001](http://api.metacpan.org/v0/release/DOY/Moose-2.0001)
+* [/module/DOY/Moose-2.0001/lib/Moose.pm](http://api.metacpan.org/v0/module/DOY/Moose-2.0001/lib/Moose.pm)
+* [/pod/DOY/Moose-2.0001/lib/Moose.pm](http://api.metacpan.org/v0/pod/DOY/Moose-2.0001/lib/Moose.pm)
+* [/search/reverse_dependencies/DOY/Moose-2.0001](http://api.metacpan.org/v0/search/reverse_dependencies/DOY/Moose-2.0001)
+
+
+GET /pod
+
+Don't send JSON in your request. Don't expect JSON in your response.
+
+By default it sends back HTML. You can pass a content-type in the query parameter:
+
+* [/pod/Moose?content-type=text/plain](http://api.metacpan.org/v0/pod/Moose?content-type=text/plain)
+* [/pod/Moose?content-type=text/x-markdown](http://api.metacpan.org/v0/pod/Moose?content-type=text/x-markdown)
+
+Or send a content-type header.
+
+The easy way to do it is to use the
+[MetaCPAN::API::Tiny](https://metacpan.org/module/MetaCPAN::API::Tiny) module.
+
+The (real) Endpoints
+--------------------
+
+* /author
+* /distribution
+* /favorite
+* /file
+* /rating
+* /release
+
+A module is a file.
+
+The user endpoint
+------------------
+
+* [/user](https://api.metacpan.org/v0/user)
+
+You need to be logged in and you need to use https!
+
+MetaCPAN Explorer
+-----------------
+
+[MetaCPAN Explorer](http://explorer.metacpan.org/)
+
+* [/author/OALDERS](https://metacpan.org/author/OALDERS) (the html result page)
+* [Explorer](http://explorer.metacpan.org/?url=/author/OALDERS)
+* [/author/OALDERS](http://api.metacpan.org/v0/author/OALDERS)  (the API result)
+* [/author](http://api.metacpan.org/v0/author) (the first few authors)
+* [/author/_mapping](http://api.metacpan.org/v0/author/_mapping) 
+* [/author/_search](http://api.metacpan.org/v0/author/_search) (the first 10 results)
+* [MetaCPAN::Document::Author](https://github.com/CPAN-API/cpan-api/blob/master/lib/MetaCPAN/Document/Author.pm) (the source code)
+
+
+Enable compression
+------------------
+
+* [WWW::Mechanize::Gzip](http://metacpan.org/module/WWW::Mechanize::Gzip)
+* [WWW::Mechanize::Cached::Gzip](http://metacpan.org/module/WWW::Mechanize::Cached::Gzip)
+* Or set the appropriate  Accept: gzip request header
+
+Scrolling request
+------------------
+
+Send a query that will calculate the results and give an id back. Then use that id
+to fetch parts of the result. (The result set is normally limited to 5,000 entries.)
+The [ElasticSearch](https://metacpan.org/module/ElasticSearch) module abstract this away.
+
+Query vs filter
+----------------
+
+Use a query if you need to sort your results by relevance.
+
+Generally you want to use a filter. (e.g. all the distributions on CPAN)
+
+Filters use less resources and are faster.
+
+Code Examples
+--------------
+
+[MetaCPAN examples on Github](https://github.com/CPAN-API/metacpan-examples)
+
+See the README there for insttructions.
+
+Hack on MetaCPAN
+-----------------
+
+* Download the pre-configured VM
+* Require VirtualBox + Vagrant
+* See more details on [GitHub](https://github.com/CPAN-API/metacpan-developer)
+
+
+About and resources
+-------------------
+
+* [About](https://metacpan.org/about/)
+* [Resources](https://metacpan.org/about/resources)
+
+
+Q&A
+-----
+
+latest, cpan, backpan are separate
+
+
+
