@@ -23,9 +23,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  background-color: #03c;
-  color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #page {
