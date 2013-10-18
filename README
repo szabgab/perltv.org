@@ -38,9 +38,6 @@ See the original site for each video.
 TODO
 =====
 
-- list all the entries with specific tag
-- list all the entries mentioning a module (?) and link to MetaCPAN
-
 - Either add an about page or on the main page explain what the site is about
   and how to contribute.
 
@@ -49,16 +46,16 @@ TODO
   Show another random video, or show some info page?
   https://developers.google.com/youtube/js_api_reference
 
-- Check if we could display some other picture in place of the video before
-  even it starts. (e.g. some information about the site?
-
 - Create a logo for the site and a favicon.
 
-- Script to bootstrap a data file by fetching data from youtube.
-- Script to update data from youtub (eg. viewer count, what else?) from yourube.
+- Script to update data from youtube (eg. viewer count, what else?) from yourube.
+
 
 NOT TODO
 =========
+- Check if we could display some other picture in place of the video before
+  even it starts. (e.g. some information about the site?
+
 - The front page should have a large thumbnail of the current video
   The real content including the video will be only on the internal pages only.
 
