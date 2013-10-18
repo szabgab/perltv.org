@@ -9,7 +9,6 @@ length: 25:19
 modules: List::Util, List::MoreUtils
 tags: grep, map, sort, Schwartzian Transform
 format: markdown
-featured: 2013-10-18
 
 __DESCRIPTION__
 
