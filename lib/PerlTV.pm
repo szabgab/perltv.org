@@ -78,8 +78,6 @@ get '/tag/:tag' => sub {
 get '/module/:name' => sub {
 	my $modules = setting('modules');
 	my $name = params->{name};
-#die $name;
-#die Dumper $modules;
 	pass if not $modules->{$name};
 	template 'list', { videos => $modules->{$name}, module => $name };
 };
@@ -88,13 +86,20 @@ get '/module/:name' => sub {
 get '/' => sub {
 	# show the currently featured item
 	my $featured = setting('featured');
-	_show('index', $featured->[0]{path});
+	my @modules = sort {lc $a cmp lc $b} keys %{ setting('modules') };
+	my @tags    = sort {lc $a cmp lc $b} keys %{ setting('tags') };
+	_show('index', $featured->[0]{path}, {
+		show_tags    => 1,
+		show_modules => 1,
+		tags         => \@tags,
+		modules      => \@modules,
+	});
 };
 
 get '/v/:path' => sub {
 	my $path = params->{path};
 	if ($path =~ /^[A-Za-z_-]+$/) {
-		return _show('page', $path, {show_tags => 1});
+		return _show('page', $path, {show_tags => 1, show_modules => 1});
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
@@ -177,8 +182,10 @@ sub _show {
 
 	$data->{path} = $path;
 	template $template, { 
-		video => $data,
-		title => $data->{title},
+		video   => $data,
+		tags    => $data->{tags},
+		modules => $data->{modules},
+		title   => $data->{title},
 		%$params,
 	};
 };

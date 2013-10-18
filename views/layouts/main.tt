@@ -36,10 +36,10 @@
       <% IF show_tags %>
         <li>
           <div id="side-tags">
-            <% IF video.tags %>
+            <% IF tags %>
               <h2>Tags</h2>
               <ul>
-                <% FOR t IN video.tags %>
+                <% FOR t IN tags %>
                   <li><a href="/tag/<% t FILTER lower %>"><% t %></a></li>
                 <% END %>
               </ul>
@@ -48,13 +48,13 @@
         </li>
       <% END %>
 
-      <% IF show_tags %>
+      <% IF show_modules %>
         <li>
           <div id="side-modules">
-            <% IF video.modules %>
+            <% IF modules %>
               <h2>Modules</h2>
               <ul>
-                <% FOR t IN video.modules %>
+                <% FOR t IN modules %>
                   <li><a href="/module/<% t %>"><% t %></a></li>
                 <% END %>
               </ul>
