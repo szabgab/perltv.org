@@ -1,0 +1,20 @@
+id: iJW1bDduk-U
+src: youtube
+title: Parsing JSON with a Regex
+speaker: brian d foy
+source: Houston Perl Mongers 2013-10-17
+view_count: 
+favorite_count: 
+length: 36:30
+start: 6:55
+
+__DESCRIPTION__
+
+In September 2012 Randal Schwartz posted a 
+[JSON parser as a single Perl Regex](http://www.perlmonks.org/?node_id=995856) on PerlMonks.
+
+In this presentation by brian d foy at the meeting of the
+[Houston Perl Mongers](http://houston.pm.org/)
+explains the regex.
+
+

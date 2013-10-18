@@ -44,6 +44,11 @@ hook before_template => sub {
 	my $featured = setting('featured');
 	my $end = min($THUMBNAILS, @$featured-1);
 	$t->{featured} = [ @{$featured}[1 .. $end] ];
+
+	if ($t->{video} and $t->{video}{start}) {
+		my ($min, $sec) = split /:/, $t->{video}{start};
+		$t->{video}{start} = $min * 60 + $sec;
+	}
 	
 	return;
 };
