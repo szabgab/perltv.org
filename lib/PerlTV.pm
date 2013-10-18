@@ -38,10 +38,11 @@ hook before_template => sub {
 		$t->{title} = 'Perl TV';
 	}
 
+	my $THUMBNAILS = 4; # shown at the bottom of the front page
 	$t->{social} = 1;
 	$t->{request} = request;
 	my $featured = setting('featured');
-	my $end = min(4, @$featured-1);
+	my $end = min($THUMBNAILS, @$featured-1);
 	$t->{featured} = [ @{$featured}[1 .. $end] ];
 	
 	return;
