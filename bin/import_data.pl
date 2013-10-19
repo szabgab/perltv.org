@@ -12,7 +12,7 @@ use PerlTV::Tools qw(read_file);
 
 
 
-my $dir = path($0)->absolute->parent->parent->child('data');
+my $dir = path($0)->absolute->parent->parent->child('data/videos');
 my @videos;
 my @featured;
 my %tags;

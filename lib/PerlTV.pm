@@ -124,7 +124,7 @@ get '/daily.atom' => sub {
 	$xml .= qq{<updated>${ts}Z</updated>\n};
 	foreach my $entry (@$featured) {
 
-		my $data = read_file( "$appdir/data/$entry->{path}" );
+		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
 
 		$xml .= qq{<entry>\n};
 
@@ -173,7 +173,7 @@ sub _show {
 	my $appdir = abs_path config->{appdir};
 	my $data;
 	eval {
-		$data = read_file( "$appdir/data/$path" );
+		$data = read_file( "$appdir/data/videos/$path" );
 	};
 	if ($@) {
 		#warn $@;
