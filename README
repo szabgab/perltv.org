@@ -38,6 +38,32 @@ See the original site for each video.
 TODO
 =====
 
+Plan for hierarchy:
+/v/        one page for each video
+/sources   one page for each "source" such as
+           "YAPC::NA 2013", or "Salt Lake Perl Mongers"
+           or "
+           or "Perl Maven Interviews"
+
+/module/Module::Name
+           A quick description of the module (fetched from MetaCPAN)
+           and the list of videos mentioning that module.
+/tag/TAG
+           list of videos having that tag
+
+/people ??? There are speakers at confernces,
+     there are interviewers, there are interviewees,
+     there might be several participants in a round-table discussion.
+     For each person create a page with their name, some links,
+     and a list of talks.
+
+The lists of talks should include
+   title, link,
+   speaker (or people involved)
+   source
+   short description
+
+
 - Either add an about page or on the main page explain what the site is about
   and how to contribute.
 

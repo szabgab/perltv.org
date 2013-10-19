@@ -1,0 +1,86 @@
+id: KxLsgK70tpM
+src: youtube
+title: Continuously integrating Perl projects with Vagrant
+speaker: Mike Schilli
+source: YAPC::NA 2013
+view_count: 29
+favorite_count: 0
+length: 20:40
+format: markdown
+tags: testing, Vagrant, Chef, Puppet, Bats, Test Kitchen, TAP
+
+__DESCRIPTION__
+
+To make sure your Perl applications really install and work in new environments,
+they need to be tested in VMs created from scratch. But unless test and staging
+environments can be spun up quickly, automatically, and reproducably,
+that's not going to happen. [Vagrant](http://www.vagrantup.com/),
+a VM command line frontend, and provisioning
+tools like [Puppet](http://puppetlabs.com/),
+[Chef](http://www.opscode.com/chef/),
+[Salt](http://saltstack.com/)
+let you store your test VM configurations
+in your source control system alongside with your project,
+and make sure they evolve in lockstep. 
+
+Speaker: [Mike Schilli](http://perlmeister.com/)
+and [Venkat Venkataraju](http://www.linkedin.com/in/venkataraju).
+
+Working at Yahoo!
+
+Summary
+--------
+* Unit Tests vs. Integration tests
+* Infrastructure as Code
+* What is [Vargrant](http://www.vagrantup.com/)?
+* Provisioning tools (Puppet, Chef, Salt)
+* Example and Demo
+
+
+* The Limitations of Unit Testing: there is no integration
+* CI Pipeline
+
+* you on your development box
+* 
+
+Integration tests
+------------------
+* Full application stack installed
+* Do it often and early as it is very costly to find out later if the parts don't fit together.
+* Problem: Can't configure your devbox for many different project environments, can't have external systems on your laptop
+
+Other People's code, other servies, (Database services, MongoDB etc), different configurations.
+
+Virtual Machines
+------------------
+
+Easy to spin up on many platforms, the step need to be documented how to set up
+a development or testing environment. It would be easier to just a command that
+will set up the environment.
+
+[Vagrant](http://www.vagrantup.com/) is command-line front-end for the
+open source [VirtualBox](https://www.virtualbox.org/).
+
+The Vagrant file comes with your project. It is written in Ruby.
+There are pre-configure Virtual Boxes one can download from
+[Vagrant Boxes](http://www.vagrantbox.es/).
+
+vagrantbox add
+
+vagrantbox up
+
+
+
+Vagrant Mahic Mount, to mount the directory /vagrant inside the Virtual Machine to the start directory on the host
+system.
+
+Test kitchen
+-------------
+* A testing framework for the Chef community
+
+
+[Test Kitchen](https://github.com/opscode/test-kitchen) integrates with
+[Bats (Bash Automated Testing System)](https://github.com/sstephenson/bats)
+A TAP compatible test framework written in Bash
+
+
