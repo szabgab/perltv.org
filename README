@@ -48,7 +48,27 @@ TODO
 
 - Create a logo for the site and a favicon.
 
+- Create a file about each speaker and list videos by speakers
+- Create a file about each source (YAPC::NA 2013, Salt Lake Perl Mongers, etc)
+  and list all the videos of this event.
+
 - Script to update data from youtube (eg. viewer count, what else?) from yourube.
+
+- Take idea from http://www.confreaks.com/
+
+?- Allow people to upvode videos using their YouTube account on youtube
+
+- Add comments ? (Disqus could be used as a start)
+
+- Add keyword/module search.
+
+- Integrate videos from other sources:
+  http://www.presentingperl.org/
+  http://yapc.tv/
+
+- Languages:
+  As an experiment add a video in Hebrew, and then ask for help to add videos
+  in other languages as well.
 
 
 NOT TODO
