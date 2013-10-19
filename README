@@ -40,7 +40,7 @@ TODO
 
 Plan for hierarchy:
 /v/        one page for each video
-/sources   one page for each "source" such as
+/source/   one page for each "source" such as
            "YAPC::NA 2013", or "Salt Lake Perl Mongers"
            or "
            or "Perl Maven Interviews"
@@ -51,11 +51,12 @@ Plan for hierarchy:
 /tag/TAG
            list of videos having that tag
 
-/people ??? There are speakers at confernces,
+/people ??? There are speakers at conferences,
      there are interviewers, there are interviewees,
-     there might be several participants in a round-table discussion.
+     there might be several participants in a round-table discussion
+     or several speakers in a single video.
      For each person create a page with their name, some links,
-     and a list of talks.
+     and a list of talks. (have the twitter account a G+ link in data fields)
 
 The lists of talks should include
    title, link,
