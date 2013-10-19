@@ -4,7 +4,7 @@ title: DBIx::Class (aka DBIC) for beginners
 speaker: Leo Lapworth
 nickname: Ranguard
 home: http://leo.cuckoo.org/
-source: YAPC::EU 2012
+source: yapc-eu-2012
 modules: DBIx::Class, DBD::mysql, SQL::Abstract, Schema::Loader
 tags: SQL, RDBM
 length: 21:39

@@ -7,7 +7,7 @@ home: http://whump.com/
 length: 22:11
 modules: Mojolicious::Lite
 tags: Backbone.js
-source: YAPC::NA 2013
+source: yapc-na-2013
 
 __DESCRIPTION__
 Creating Single Page Webapps with Perl as the back-end.

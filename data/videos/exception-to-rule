@@ -6,7 +6,7 @@ nickname: Util
 length: 45:14
 modules: autodie, TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
 tags: die
-source: YAPC::NA 2013
+source: yapc-na-2013
 
 __DESCRIPTION__
 The real story of exceptions... (or, the Why of Die and Try)

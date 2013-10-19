@@ -6,7 +6,7 @@ home: http://barbie.missbarbell.co.uk/
 length: 18:50
 modules: CPAN, CPAN::Reporter, CPANPLUS, CPANPLUS::YACSmoke, App::cpantesters, Test::Reporter, CPAN::Testers::Report, CPAN::Testers::Common::Client, CPAN::Testers::Data::Generator, CPAN::Testers::WWW::Reports, CPAN::Testers::WWW::Reports::Parser, CPAN::Testers::Data::Release, CPAN::Testers::WWW::Reports::Query::Reports
 tags: NoSQL
-source: YAPC::EU2012
+source: yapc-eu-2012
 date: 2012-08-20
 
 __DESCRIPTION__

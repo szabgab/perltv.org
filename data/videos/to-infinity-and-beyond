@@ -3,7 +3,7 @@ src: youtube
 title: To infinity and beyond: A practical guide to ElasticSearch
 speaker: Clinton Gormley 
 nickname: DrTech
-source: YAPC::EU 2012
+source: yapc-eu-2012
 modules: Elastic::Model, Elastic::Doc
 tags: NoSQL, ElasticSearch
 length: 40:03

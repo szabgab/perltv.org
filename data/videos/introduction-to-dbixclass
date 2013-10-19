@@ -6,7 +6,8 @@ home: http://www.fozzilinymoo.org/
 view_count: 70
 favorite_count: 0
 length: 32:21
-source: Salt Lake Perl Mongers - 2013-06-11
+source: salt-lake-perl-mongers
+date: 2013-06-11
 modules: DBI, DBIx::Class
 format: markdown
 
