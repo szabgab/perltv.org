@@ -5,7 +5,7 @@
 
 <div id="text">
   <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
-   Length: <% video.length %> <% video.source %>
+   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
    <a href="/v/<% video.path %>">details</a></h2>
    <br>
    <% IF video.home %>

@@ -9,6 +9,8 @@
   List of videos related to <b><a href="http://metacpan.org/module/<% module %>"><% module %></a></b>.
   <% END %>
 
+  <% description %>
+
   <ul>
   <% FOR v IN videos %>
       <li><a href="/v/<% v.path %>"><% v.title %></a></li>

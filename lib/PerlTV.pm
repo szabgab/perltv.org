@@ -53,7 +53,7 @@ hook before_template => sub {
 
 	if ($t->{video} and $t->{video}{source}) {
 		my $sources = setting('sources');
-		$t->{video}{source} = $sources->{ $t->{video}{source} }{name};
+		$t->{video}{source_name} = $sources->{ $t->{video}{source} }{name};
 	}
 	
 	return;
@@ -86,6 +86,13 @@ get '/module/:name' => sub {
 	my $name = params->{name};
 	pass if not $modules->{$name};
 	template 'list', { videos => $modules->{$name}, module => $name };
+};
+
+get '/source/:name' => sub {
+	my $sources = setting('sources');
+	my $name = params->{name};
+	pass if not $sources->{$name};
+	template 'list', { videos => [], %{ $sources->{$name} } };
 };
 
 
