@@ -66,7 +66,10 @@ sub import_videos {
 			}
 		}
 	
-		push @videos, \%entry;
+		push @videos, {
+			%entry,
+			source => $video->{source},
+		};
 	}
 	
 	@featured = sort { $b->{date} cmp $a->{date} } @featured;
