@@ -1,0 +1,65 @@
+id: aqVS4C8hpNg
+src: youtube
+title: Continuously Integrating the Camel
+speaker: Hugh Esco
+home: http://www.campaignfoundations.com/
+source: YAPC::NA 2013 
+view_count: 22
+favorite_count: 0
+length: 20:21
+format: markdown
+modules: Pinto
+tags: Jenkins, CI, Continous Integration, Cucumber
+
+__DESCRIPTION__
+
+[Slides](http://campaignfoundations.com/system/files/Continuously_Integrating_the_Camel.pdf)
+
+[Blog post](http://campaignfoundations.com/blog/hesco/Continuously_Integrating_the_Camel_YAPC_NA_2013)
+
+How to use [Jenkins](http://jenkins-ci.org/)
+and [Pinto](https://metacpan.org/module/Pinto) in order to do continous integration,
+and deployent of Perl based applications.
+
+Jenkins for CI Continous Integration. How to use [Jenkins for
+Perl](https://wiki.jenkins-ci.org/display/JENKINS/Perl+Projects).
+
+The recommended Book: Continous Delivery
+
+Quotes
+---------
+
+Nothing ever gets rolled out on a Friday.
+
+Nothing ever gets rolled out later than Wednesday.
+
+If it hurts, Do it More Frequently, and Bring the Pain Forward.
+And Automate it.
+
+The Deployment Pipeline
+-----------------------
+* We develop
+* We push our code to a repository
+* Our CI server is watching our repository for updates (polling every few minutes)
+* Every time it finds new commit in the repository it creates a full check-out
+* Builds a clean environment from scratch
+* If it passes the unit tests then the build gets archived in a repository
+* The build moves to the next stage of the deploymet pipeline.
+* Where we can run automated acceptance test or manual test etc.
+
+
+Pinto - Curate a Perl Rerpository
+
+For Acceptance test use a language that users can speak (and not code).
+Sources on Cucumber BBD: Specification by Example, The Cucumber book
+
+There are a number of modules on CPAN that can do similar things.
+
+Maturity Model
+---------------
+* Do you use version control?
+* etc...
+
+See the [Maturity Model](http://campaignfoundations.com/blog/hesco/Continuously_Integrating_the_Camel)
+
+
