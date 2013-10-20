@@ -1,0 +1,12 @@
+<div id="header">
+  <h1>List of Perl Modules and related videos <a href="/">Perl TV</a></h1>
+
+  <ul>
+  <% FOR m IN modules.keys.sort %>
+      <li><a href="/module/<% m %>"><% m %></a></li>
+  <% END %>
+  </ul>
+</div>
+
+
+

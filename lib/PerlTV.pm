@@ -74,11 +74,21 @@ get '/all' => sub {
 	template 'list', { videos => $data->{videos} };
 };
 
+get '/tag/?' => sub {
+	my $tags = setting('tags');
+	template 'list_tags', { tags => $tags };
+};
+
 get '/tag/:tag' => sub {
 	my $tags = setting('tags');
 	my $tag = params->{tag};
 	pass if not $tags->{$tag};
 	template 'list', { videos => $tags->{$tag}, tag => $tag };
+};
+
+get '/module/?' => sub {
+	my $modules = setting('modules');
+	template 'list_modules', { modules => $modules };
 };
 
 get '/module/:name' => sub {
@@ -109,10 +119,10 @@ get '/' => sub {
 	my @modules = sort {lc $a cmp lc $b} keys %{ setting('modules') };
 	my @tags    = sort {lc $a cmp lc $b} keys %{ setting('tags') };
 	_show('index', $featured->[0]{path}, {
-		show_tags    => 1,
-		show_modules => 1,
-		tags         => \@tags,
-		modules      => \@modules,
+		#show_tags    => 1,
+		#show_modules => 1,
+		#tags         => \@tags,
+		#modules      => \@modules,
 	});
 };
 

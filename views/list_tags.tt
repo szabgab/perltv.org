@@ -1,0 +1,12 @@
+<div id="header">
+  <h1>Tags of videos <a href="/">Perl TV</a></h1>
+
+  <ul>
+  <% FOR t IN tags.keys.sort %>
+      <li><a href="/tag/<% t %>"><% t %></a></li>
+  <% END %>
+  </ul>
+</div>
+
+
+
