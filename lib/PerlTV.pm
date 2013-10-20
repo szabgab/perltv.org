@@ -88,6 +88,11 @@ get '/module/:name' => sub {
 	template 'list', { videos => $modules->{$name}, module => $name };
 };
 
+get '/source/?' => sub {
+	my $sources = setting('sources');
+	template 'list_sources', { sources => $sources };
+};
+
 get '/source/:name' => sub {
 	my $sources = setting('sources');
 	my $name = params->{name};

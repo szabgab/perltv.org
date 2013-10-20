@@ -1,0 +1,11 @@
+<div id="header">
+  <h1>Sources of videos <a href="/">Perl TV</a></h1>
+
+  <ul>
+  <% FOR s IN sources.keys %>
+      <li><a href="/source/<% s %>"><% sources.$s.name %></a></li>
+  <% END %>
+  </ul>
+</div>
+
+
