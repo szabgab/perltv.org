@@ -37,7 +37,7 @@ $txt .= $video->description . "\n";
 if (not $file) {
 	$file = lc $video->title;
 	$file =~ s/\s+/-/g;
-	$file =~ s/[^a-z-]//g;
+	$file =~ s/[^a-z0-9-]//g;
 	$file = "data/videos/$file";
 	say $file;
 }

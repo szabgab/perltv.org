@@ -1,0 +1,84 @@
+id: UScm9avQM1Y
+src: youtube
+title: Computer Programming in 5 Minutes
+speaker: larry-wall
+source:  bigthink
+view_count: 108182
+favorite_count: 0
+length: 05:23
+format: markdown
+
+__DESCRIPTION__
+
+[BigThink](http://bigthink.com)
+
+Computer programming is a lot like writing a recipe.
+If you've read a recipe, you know what the structure of a recipe is and you
+can copy the format to create your own. But then you can take it a lot further.
+
+<h2>Question: Can you explain the basics of the computer programming in five minutes?</h2>
+
+Larry Wall:
+
+Well, I can certainly try.  Computer programming is really a lot like writing a recipe.
+If you've read a recipe, you know what the structure of a recipe is, it's got some
+things up at the top that are your ingredients, and below that, the directions
+for how to deal with those ingredients.
+
+Well, a very similar thing happens in a computer program.
+You have, you list out the various things that you're going to be dealing with,
+typically, and then you have some instructions that say what to do with those ingredients.
+So, if you can understand a recipe and follow it in, you know, in your kitchen, then you can program on that level.
+But you can take it a lot farther than that.
+Many of you, I'm sure, have seen theÂ Iron Chef show, I love to watch that, especially
+if they are given strange ingredients. I'm not sure I would like trout ice cream either,
+but one of the things that happens there, if you follow along, is that the Iron Chef,
+or whoever the chef is, doesn't actually do all the work.
+They have what are called sous chefs, that they farm out, subdivide the jobs to,
+and they'll do the kind of busy work.  And programming is kind of like that, too.
+You are the head chef, but there are bits and pieces of the computer out there that will do things for you.
+Now, it's not quite likeÂ Iron Chef, becauseÂ Iron Chef, you have some fairly intelligent sous chefs
+who know how to coddle an egg or chop up a fish.
+But your computer tends to be more like a bunch of really efficient robots, but they're
+very stupid robots and very literal minded.
+So you have to, at some level, you know, tell them exactly what to do.
+But once you've told them, that you can just point to the robot and it'll do the same thing over
+and over and over again, and do it exactly the same.
+And computers are like that, that's how they are valuable, they sort of take over all
+the boring bits of our thinking.
+And then you can kind of take it beyond that, instead of just thinking of yourself as the chef
+that's in control, sometimes you want to program more like you're thinking about how the food
+actually goes through the process. And maybe even take it up a notch and say, here's
+a factory that produces some food items Twinkies, or whatever you have raw ingredients coming in
+that's assuming you think Twinkies are food you have raw ingredients coming in,
+and they go on various conveyor belts and get chopped up in various ways
+and get recombined and there's this flow of the materials through the factory.
+And eventually it comes back out with some sort of a product that we considered to be food.
+So there's programming languages that work like that, too, that just talk about how the
+data runs around in the program.
+
+For instance, your Excel spreadsheet: you're putting data into little cells, and you have other cells that say,
+"Well, just make a little conveyor belt of these cells and add them up in this cell."
+You're really doing programming, even if you think you're just writing cell macros.
+So that's like a little factory on your desktop there.
+Now going beyond that, there's various ways that you can get into, you know, sort of more highfalutin
+concepts that you would learn if you were taking a computer science degree.
+The whole idea of programming on this level is you're saying one thing,
+some abstract thing, and that controls a bunch of other things.
+
+So the next step that happens is that instead of just thinking about data as the pieces of things
+you're working with strings, text, your phone numbers, whatever. You start thinking about
+those bits of recipe, and those recipes can also be considered data and can be sent
+around on the conveyor belt in your factory.
+So it's like a little conveyor that you might have in your caffe,
+you put little things up there that order things up.
+
+So when you start talking about actions and abstracting them, then you can start talking
+about doing the multiple times and looping and this action may do this action, which
+may do that action, which might come back and do the thing, and you get a recursive, sort
+of fractal pattern.
+And so these are the basis of the more mathematical views of programming, but you don't have
+to do all that at the beginning.
+You can just start off with the simple recipe idea and add things on as you go and learn as you go.
+And then you'll do fine.
+
