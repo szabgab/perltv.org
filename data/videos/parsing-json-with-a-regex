@@ -1,21 +1,22 @@
 id: 77267876
 src: vimeo
-title: Parsing JSON with a Regex
+title: Parsing JSON with a single Regex
 speaker: brian-d-foy
 source: houston-perl-mongers
+view_count: 1
 date: 2013-10-17
 length: 29:34
 format: markdown
-tags: regex, tokenizer, grammar
+thumbnail: http://b.vimeocdn.com/ts/452/486/452486605_200.jpg
+tags: randal schwartz, json, regex, perl, houston perl mongers, grammar
 
 __DESCRIPTION__
 
 In September 2012 Randal Schwartz posted a 
 [JSON parser as a single Perl Regex](http://www.perlmonks.org/?node_id=995856) on PerlMonks.
 
-In this presentation by brian d foy at the meeting of the
-[Houston Perl Mongers](http://houston.pm.org/)
-explains the regex.
+In this presentation by brian d foy explains the regex
+at the meeting of the [Houston Perl Mongers](http://houston.pm.org/)
 
 See also the <a href="http://houston.pm.org/talks/2013talks/1310Talk/index.html">write-up</a>
 about the meeting and the <a href="http://www.slideshare.net/brian_d_foy/json-regex">slides</a>
