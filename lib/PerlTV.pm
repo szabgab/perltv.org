@@ -82,6 +82,21 @@ get '/all' => sub {
 	template 'list', { videos => $data->{videos} };
 };
 
+get '/people/?' => sub {
+	my $people = setting('people');
+	template 'list_people', { people => $people };
+};
+
+get '/people/:person' => sub {
+	my $people = setting('people');
+	my $person = params->{person};
+	pass if not $people->{$person};
+
+	my $data = setting('data');
+	my @entries = grep { $_->{speaker} eq $person} @{ $data->{videos} };
+	template 'list', { videos => \@entries, %{ $people->{$person} } };
+};
+
 get '/tag/?' => sub {
 	my $tags = setting('tags');
 	template 'list_tags', { tags => $tags };

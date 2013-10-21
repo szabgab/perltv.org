@@ -84,7 +84,8 @@ sub import_videos {
 	
 		push @videos, {
 			%entry,
-			source => $video->{source},
+			source  => $video->{source},
+			speaker => $video->{speaker},
 		};
 	}
 	
