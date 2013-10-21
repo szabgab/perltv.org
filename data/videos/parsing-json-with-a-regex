@@ -1,14 +1,12 @@
-id: iJW1bDduk-U
-src: youtube
+id: 77267876
+src: vimeo
 title: Parsing JSON with a Regex
 speaker: brian-d-foy
 source: houston-perl-mongers
 date: 2013-10-17
-view_count: 
-favorite_count: 
-length: 36:30
-start: 6:55
+length: 29:34
 format: markdown
+tags: regex, tokenizer, grammar
 
 __DESCRIPTION__
 
@@ -22,5 +20,31 @@ explains the regex.
 See also the <a href="http://houston.pm.org/talks/2013talks/1310Talk/index.html">write-up</a>
 about the meeting and the <a href="http://www.slideshare.net/brian_d_foy/json-regex">slides</a>
 brian d foy put online.
+
+[Mastering Perl](http://chimera.labs.oreilly.com/books/1234000001527/index.html)
+Advanced Regular expressions is a chapter of that book
+
+Some of the items
+------------------
+* Uses grammars: (?(DEFINED))
+* Recurses: (?&KV), et alia
+* Runs code during the regex: (?{ ... })
+* Builds up a data structure: $^R
+* At the end, replaces the string with a data structure: (?{ $_ = $^R->[1] })
+
+
+The comments
+-------------
+* Named captures: (?<LABEL>)
+* Backreference to \1  ($1)
+* Independent subpattern reference, (?PARNO)  for example: (?1)
+* Named capture backreference \g{LABEL}
+* ++ Is a non-backtracking + quantifier
+* Independent subpattern reference (?R) - the entire pattern
+* Grammars - (?(DEFINE)...)
+* Last captured substring $^N  (the previous captured substring)
+* Grammars - (?&NAME)
+* Result of last (?{...}) goes into $^R
+* (?&VALUE)
 
 

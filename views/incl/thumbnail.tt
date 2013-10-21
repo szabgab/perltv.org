@@ -1,0 +1,5 @@
+   <% IF video.src == 'youtube' %>
+        <img src="http://img.youtube.com/vi/<% video.id %>/default.jpg" />
+   <% ELSIF video.src == 'vimeo' %>
+   <% ELSE %>
+   <% END %>

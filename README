@@ -97,6 +97,11 @@ The lists of talks should include
   As an experiment add a video in Hebrew, and then ask for help to add videos
   in other languages as well.
 
+vimeo API: https://developer.vimeo.com/apis/simple#video-request
+http://vimeo.com/api/v2/video/video_id.output
+where the "video_id" is something like 77267876 
+and the "output" is json, php or xml
+
 
 NOT TODO
 =========

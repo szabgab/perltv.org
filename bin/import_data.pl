@@ -93,7 +93,7 @@ sub import_videos {
 	
 	my %data = (
 		_comment => 'This is a generated file, please do NOT edit directly',
-		videos => \@videos,
+		videos => [ sort { $a->{title} cmp $b->{title} } @videos ],
 	);
 	path('videos.json')->spew_utf8( $json->encode(\%data) );
 	path('featured.json')->spew_utf8( $json->encode(\@featured) );

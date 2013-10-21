@@ -11,31 +11,38 @@ my ($url, $file) = @ARGV;
 die "Usage: $0 URL [FILE]\n" if not $url;
 
 # http://www.youtube.com/watch?v=QFV7X1tep5I
+# https://vimeo.com/77267876
 my $u = URI->new($url);
-my %form = $u->query_form;
-my $id = $form{v} or die "Could not find id\n";
+my $txt = '';
+my $title = '';
+if ($u->host, 'www.youtube.com') {
+	my %form = $u->query_form;
+	my $id = $form{v} or die "Could not find id\n";
+	
+	my $yt = WebService::GData::YouTube->new();
+	my $video = $yt->get_video_by_id($id);
+	
+	$txt .= "id: $id\n";
+	$txt .= "src: youtube\n";
+	$txt .= "title: " . $video->title . "\n";
+	$txt .= "speaker: \n";
+	#$txt .= "nickname: \n";
+	#$txt .= "home: \n";
+	$txt .= "source: \n";
+	$txt .= "view_count: " . $video->view_count . "\n";
+	$txt .= "favorite_count: " . $video->favorite_count . "\n";
+	my $length = seconds_to_time($video->duration);   # in seconds
+	$txt .= "length: $length\n";
+	$txt .= "format: markdown\n";
+	#my $keywords = $video->keywords;
+	$txt .= "\n__DESCRIPTION__\n\n";
+	$txt .= $video->description . "\n";
 
-my $yt = WebService::GData::YouTube->new();
-my $video = $yt->get_video_by_id($id);
-
-my $txt = "id: $id\n";
-$txt .= "src: youtube\n";
-$txt .= "title: " . $video->title . "\n";
-$txt .= "speaker: \n";
-#$txt .= "nickname: \n";
-#$txt .= "home: \n";
-$txt .= "source: \n";
-$txt .= "view_count: " . $video->view_count . "\n";
-$txt .= "favorite_count: " . $video->favorite_count . "\n";
-my $length = seconds_to_time($video->duration);   # in seconds
-$txt .= "length: $length\n";
-$txt .= "format: markdown\n";
-#my $keywords = $video->keywords;
-$txt .= "\n__DESCRIPTION__\n\n";
-$txt .= $video->description . "\n";
+	$title = $video->title;
+}
 
 if (not $file) {
-	$file = lc $video->title;
+	$file = lc $title;
 	$file =~ s/\s+/-/g;
 	$file =~ s/[^a-z0-9-]//g;
 	$file = "data/videos/$file";

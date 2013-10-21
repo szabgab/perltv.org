@@ -13,7 +13,7 @@
   <div id="sidebar">
     <ul id="sidebar-items">
       <li>
-        <img src="http://img.youtube.com/vi/<% video.id %>/default.jpg" />
+        <% INCLUDE incl/thumbnail.tt %>
          
         <h3>Other sites</h3>
         <ul>
