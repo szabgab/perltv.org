@@ -35,7 +35,6 @@ if ($u->host eq 'www.youtube.com') {
 	my $length = seconds_to_time($video->duration);   # in seconds
 	$txt .= "length: $length\n";
 	$txt .= "format: markdown\n";
-	$txt .= "thumbnail: \n";
 	#my $keywords = $video->keywords;
 	$txt .= "\n__DESCRIPTION__\n\n";
 	$txt .= $video->description . "\n";

@@ -63,7 +63,11 @@ hook before_template => sub {
 		$t->{video}{speaker_home} = $people->{ $t->{video}{speaker} }{home};
 		$t->{video}{speaker_nickname} = $people->{ $t->{video}{speaker} }{nickname};
 	}
-		
+	if ($t->{video} and not $t->{video}{thumbnail}) {
+		$t->{video}{thumbnail} = "http://img.youtube.com/vi/$t->{video}{id}/default.jpg";
+	#die $t->{video}{thumbnail};
+	}
+
 	return;
 };
 
