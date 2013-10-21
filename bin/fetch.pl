@@ -29,6 +29,7 @@ $txt .= "view_count: " . $video->view_count . "\n";
 $txt .= "favorite_count: " . $video->favorite_count . "\n";
 my $length = seconds_to_time($video->duration);   # in seconds
 $txt .= "length: $length\n";
+$txt .= "format: markdown\n";
 #my $keywords = $video->keywords;
 $txt .= "\n__DESCRIPTION__\n\n";
 $txt .= $video->description . "\n";
@@ -37,7 +38,7 @@ if (not $file) {
 	$file = lc $video->title;
 	$file =~ s/\s+/-/g;
 	$file =~ s/[^a-z-]//g;
-	$file = "data/$file";
+	$file = "data/videos/$file";
 	say $file;
 }
 die "'$file' already exists" if -e $file;
