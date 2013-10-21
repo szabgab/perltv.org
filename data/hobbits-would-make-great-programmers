@@ -1,0 +1,58 @@
+id: G49RUPv5-NU
+src: youtube
+title: Hobbits Would Make Great Programmers
+speaker: larry-wall
+source: bigthink
+view_count: 43558
+favorite_count: 0
+length: 04:31
+featured: 2013-10-21
+
+__DESCRIPTION__
+
+The "Lord of the Rings" characters embody what Wall sees as the three virtues 
+of good programmers: laziness, impatience, and hubris.
+
+Question: What skills or characteristics do you need to be a great programmer?
+
+Larry Wall: 
+Well, laziness, impatience, and hubris.
+These originated as sort of a joke in the first edition of what we call the
+Camel Book, Programming Perl, and in a sense, they are the three virtues of a programmer.
+A lazy person will try to always find some way to do something; they'll always be looking
+for ways of doing something faster, more efficiently, and if you really want to control
+the world, that's a really sort of hubristic notion, excessive pride,
+the thing that Zeus zaps you for having.
+But it really was sort of a joke, in the Japanese edition, the translated edition of the Camel Book,
+they actually had to put "laziness, impatience, and hubris -- this is a joke,"
+because they felt that they would take it seriously.
+So really what makes a good programmer is much more than those three things.
+If you've either read theÂ Lord of the Rings or seen the movies, you know about hobbits,
+and hobbits manifest many of the virtues that you need as a programmer.
+You know, you need to have persistence, when the going gets rough, to keep slogging through,
+a kind of innate stubbornness in a happy way, not in a mean way.
+You have to be smart enough to outwit your enemies occasionally.
+And you have to be able to be social, you have to be able to deal with a group, your team members,
+some of which are like you, they're other hobbits, some of which are elves, and dwarves, or even men,
+and they think very differently from you.
+So you have to be able to contribute your part as a hobbit, but also be able to understand other things.
+So the day is long past when most programming is done individually.
+Almost all programming is done in teams and so you need to be literate in a sense of, the hobbit sense 
+of knowing your letters.
+You have to be able to read documentation; you have to be able to write documentation that others can understand.
+But mostly you have to be just slightly insane in the way that hobbits are, where they can view the long term,
+you know, the goal is to get back to your comfy burrow, and view all the, everything between here and there,
+at the same time, forget about all that and just deal with the problem you have at hand.
+
+So in more concrete terms on a computer, you're telling it to do various things by name, and it's going
+off and doing those. You have to simultaneously be aware of what it's doing down underneath,
+but if you're always aware of everything it's doing, you go really nuts.
+So you also have to be able to shut that out and work on the high level abstraction.
+And doing both of those simultaneously gives the best result in programming.
+If you ignore either one of those, you end up messing up.Â  So, that's what you really need.
+And like a hobbit, laziness, a hobbit is lazy in a very industrious way, and a hobbit is
+very impatient in a very patient way, and a hobbit is proud in a very humble way.
+It sort of seems like contradictions, but to the extent that you can increase
+your dynamic range on all of those, you'll be a better programmer.
+
+

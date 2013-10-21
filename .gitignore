@@ -1,9 +1,4 @@
 *.swp
-videos.json
-featured.json
-tags.json
-modules.json
-sources.json
-MYMETA.json
-MYMETA.yml
+*.json
+MYMETA.*
 Makefile
