@@ -8,7 +8,7 @@ use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 
 use lib path($0)->absolute->parent->parent->child('lib')->stringify;
-use PerlTV::Tools qw(read_file);
+use PerlTV::Tools qw(read_file youtube_thumbnail);
 
 my %sources;
 my %people;
@@ -65,11 +65,17 @@ sub import_videos {
 		);
 	
 		if ($video->{featured}) {
-			push @featured, {
+			my %item = (
 				id   => $video->{id},
 				date => $video->{featured},
 				path => $f->basename,
+			);
+			if ($video->{thumbnail}) {
+				$item{thumbnail} = $video->{thumbnail};
+			} else {
+				$item{thumbnail} = youtube_thumbnail($video->{id});
 			}
+			push @featured, \%item;
 		}
 		if ($video->{tags}) {
 			foreach my $tag (@{ $video->{tags} }) {

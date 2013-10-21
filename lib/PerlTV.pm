@@ -8,7 +8,7 @@ use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 use List::Util qw(min);
 
-use PerlTV::Tools qw(read_file);
+use PerlTV::Tools qw(read_file youtube_thumbnail);
 
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
@@ -64,7 +64,7 @@ hook before_template => sub {
 		$t->{video}{speaker_nickname} = $people->{ $t->{video}{speaker} }{nickname};
 	}
 	if ($t->{video} and not $t->{video}{thumbnail}) {
-		$t->{video}{thumbnail} = "http://img.youtube.com/vi/$t->{video}{id}/default.jpg";
+		$t->{video}{thumbnail} = youtube_thumbnail($t->{video}{id});
 	#die $t->{video}{thumbnail};
 	}
 

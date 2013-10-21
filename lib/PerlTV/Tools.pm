@@ -6,7 +6,7 @@ use Path::Tiny ();
 use Text::Markdown ();
 
 use base 'Exporter';
-our @EXPORT_OK = qw(read_file);
+our @EXPORT_OK = qw(read_file youtube_thumbnail);
 
 sub read_file {
 	my ($file) = @_;
@@ -43,6 +43,11 @@ sub read_file {
 	}
 
 	return \%video;
+}
+
+sub youtube_thumbnail {
+	my ($id) = @_;
+	return "http://img.youtube.com/vi/$id/default.jpg";
 }
 
 1;
