@@ -8,12 +8,7 @@
    Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
    <a href="/v/<% video.path %>">details</a></h2>
    <br>
-   <% IF video.home %>
-     Speaker: <a href="<% video.home %>"><% video.speaker %></a>
-   <% ELSE %>
-     Speaker: <% video.speaker %>
-   <% END %>
-   <% IF video.nickname %>(<% video.nickname %>)<% END %>
+   <% INCLUDE incl/speaker.tt %>
    <br>
 
 <div id="featured">

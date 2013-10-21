@@ -1,8 +1,7 @@
 id: FMSpV34Gw7I
 src: youtube
 title: The Eco-System of CPAN Testers
-speaker: Barbie
-home: http://barbie.missbarbell.co.uk/
+speaker: barbie
 length: 18:50
 modules: CPAN, CPAN::Reporter, CPANPLUS, CPANPLUS::YACSmoke, App::cpantesters, Test::Reporter, CPAN::Testers::Report, CPAN::Testers::Common::Client, CPAN::Testers::Data::Generator, CPAN::Testers::WWW::Reports, CPAN::Testers::WWW::Reports::Parser, CPAN::Testers::Data::Release, CPAN::Testers::WWW::Reports::Query::Reports
 tags: NoSQL

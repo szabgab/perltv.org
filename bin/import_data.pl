@@ -11,8 +11,10 @@ use lib path($0)->absolute->parent->parent->child('lib')->stringify;
 use PerlTV::Tools qw(read_file);
 
 my %sources;
+my %people;
 
 my $json = JSON::Tiny->new;
+import_people();
 import_sources();
 import_videos();
 exit;
@@ -29,6 +31,17 @@ sub import_sources {
 }
 
 
+sub import_people {
+	my $dir = path($0)->absolute->parent->parent->child('data/people');
+	foreach my $f ($dir->children) {
+		next if $f =~ /\.swp$/;
+		my $person = read_file($f);
+		$people{ $f->basename } = $person;
+	}
+	path('people.json')->spew_utf8( $json->encode(\%people) );
+}
+
+
 sub import_videos {
 	my $dir = path($0)->absolute->parent->parent->child('data/videos');
 	my @videos;
@@ -41,6 +54,9 @@ sub import_videos {
 		die "Missing source in $f" if not $video->{source};
 		die "Unindentified source '$video->{source}' in $f"
 			if not $sources{ $video->{source} };
+		die "Missing speaker in $f" if not $video->{speaker};
+		die "Unindentified speaker '$video->{speaker}' in $f"
+			if not $people{ $video->{speaker} };
 
 		#warn Dumper $video;
 		my %entry = (

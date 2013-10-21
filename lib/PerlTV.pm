@@ -13,6 +13,7 @@ use PerlTV::Tools qw(read_file);
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
+	set people => $json->decode( Path::Tiny::path("$appdir/people.json")->slurp_utf8 );
 	set sources => $json->decode( Path::Tiny::path("$appdir/sources.json")->slurp_utf8 );
 	set tags => $json->decode( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
 	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
@@ -55,7 +56,14 @@ hook before_template => sub {
 		my $sources = setting('sources');
 		$t->{video}{source_name} = $sources->{ $t->{video}{source} }{name};
 	}
-	
+
+	if ($t->{video} and $t->{video}{speaker}) {
+		my $people = setting('people');
+		$t->{video}{speaker_name} = $people->{ $t->{video}{speaker} }{name};
+		$t->{video}{speaker_home} = $people->{ $t->{video}{speaker} }{home};
+		$t->{video}{speaker_nickname} = $people->{ $t->{video}{speaker} }{nickname};
+	}
+		
 	return;
 };
 
