@@ -1,0 +1,83 @@
+id: LR8fQiskYII
+src: youtube
+title: Larry Wall: 5 Programming Languages Everyone Should Know
+speaker: larry-wall
+source: bigthink
+view_count: 282478
+favorite_count: 0
+length: 06:13
+format: markdown
+
+__DESCRIPTION__
+
+[BigThink](http://bigthink.com)
+
+Java is "heavyweight, verbose, and everyone loves to hate it," but Larry Wall still thinks you should know it.
+
+<h2>Question: What are the five programming languages everyone, even non-programmers, should know about and why?</h2>
+
+Larry Wall:
+
+Oh, boy, that's a really tough question. It's kind of like asking what are the five countries you
+should know about if you're not interested in geology, or geography, or politics,
+and the answer varies depending on what your actual interests are, or what are the
+five companies you should know. And the answer changes over time, too.
+
+Back when I was getting started, lo these many decades ago, the answers would've been
+Fortran, Cobalt, Basic, Lisp, and maybe APL, and those were very formative languages back
+then and people learned a lot from those, but these days, it might be more important
+for you to know JavaScript, even if the only reason you know that is that you know whether
+or not to click the "enable JavaScript" button in your browser.
+But JavaScript is a nice, lightweight, object-oriented language and that's why it can
+fit in a browser and do these things such as run little programs
+that help you input your data and then send it off to a web server somewhere.
+
+There are heavier-weight object-oriented languages and the elephant in the room is sort of Java,
+you can't really make a list of modern languages without talking about it.
+Java is sort of the Cobalt of the 21st century, I think. It's kind of heavyweight, verbose,
+and everyone loves to hate it, though not everyone will admit that.
+But managers kind of like it because it looks like you're getting a lot done, you know,
+if 100 lines of Java code accomplish a task, then it looks like you've written 100 lines,
+even though in a different language, it might only take 5 lines.
+You know, it's like, you know, you can eat a 1-pound steak or you can eat, you know, 100 pounds of
+shoe leather and you feel a greater sense of accomplishment after the shoe leather,
+but, you know, maybe they're some downsides.
+
+But it also, because it is sort of considered an industrial language and programmers are
+sort of interchangeable parts, managers like it for that reason, and for that reason,
+a lot of Java jobs have been outsourced from the United States.
+
+Oh, what other languages?  I think going in a different direction, coming more from academia,
+we have a language like Haskell, which we call a functional programming language.
+That means function in a mathematical sense, not in the sense the other languages are dysfunctional.
+But a function mathematically has an input and an output and it maps to, you know,
+with a great deal of mathematical certainty what those are.
+Haskell is one of those languages that mathematician-type-minded people love; it's sort of a
+language for geniuses, by geniuses.
+So you should probably know about it, if only to be able to say, "Well, is this kind of like Haskell?"
+And if so, then you know you have to hire some really smart people to program in it.
+Haskell is sort of a modern kind of Lisp in that sense.
+
+What else?  Well, we can't leave off modern languages without talking about C.
+The C language, that's just spelled with the letter C, is actually about 40 years old,
+but people have tried to replace C with other languages that are like it and have by
+and large not succeeded because C is a very minimalistic language and very
+close to the metal, as we say, on a machine, and lets you get down and
+do very fine grain stuff, very efficiently, but it's a lot of hard work.
+But once you've done that work, you can run it pretty much everywhere.
+So almost all the other languages that you see, Java, Perl, whatever, actually if you look down underneath,
+they're actually implemented in C, or in a closely related language.
+So that continues to be a very fundamental language, if only because everyone
+is trying to reinvent it and not succeeding in doing so.
+
+And finally, for a fifth language, well, you'd probably want to pick one of the scripting languages.
+There's several to choose from, there's Python, there's Ruby, but of course,
+I am prejudiced in favor of Perl, because I think it has the liveliest community and because
+we have intentionally been redesigning it lately to leapfrog all the other languages.
+For the last number of years, we've been redesigning it to out all the warts that we've noticed over time.
+And we figured it was just our one chance to break backward compatibility, break the things that
+need breaking, keep all the things that make Perl, Perl, keep it a joy to use, and with this redesign,
+make it a language that will be able to be useful and enjoyable for decades.
+And so I'd recommend Perl, but I'm known to be prejudiced in the matter.
+
+
