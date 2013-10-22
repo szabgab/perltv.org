@@ -49,29 +49,20 @@ a:hover {
   width: 175px;
 }
 
-#header, #text, #modules, #tags {
+#text, #modules, #tags {
  padding-left: 75px;
  padding-right: 30px;
 }
 
-
-#header {
+#text {
   background-repeat: no-repeat;
   background-position: top left;
-  height: 364px;
-}
-#header h1, #header h2 {margin: 0}
-#header h1 {
-  margin-bottom: 20px;
-}
-
-#text {
   border-top: 1px solid #ccc;
-  margin-top: 25px;
   padding-top: 15px;
 }
 #text h1 {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 

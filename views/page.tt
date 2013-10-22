@@ -1,9 +1,7 @@
-<div id="header">
+<div id="text">
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
    <% INCLUDE incl/embed.tt %>
-</div>
 
-<div id="text">
   <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
    Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
    <% INCLUDE incl/speaker.tt %>
