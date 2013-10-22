@@ -48,6 +48,7 @@ sub import_videos {
 	my @featured;
 	my %tags;
 	my %modules;
+	my %meta;
 	foreach my $f ($dir->children) {
 		next if $f =~ /\.swp$/;
 		my $video = read_file($f);
@@ -64,17 +65,15 @@ sub import_videos {
 			path  => $f->basename,
 		);
 	
+		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
+
 		if ($video->{featured}) {
 			my %item = (
 				id   => $video->{id},
 				date => $video->{featured},
 				path => $f->basename,
+				thumbnail => $thumbnail,
 			);
-			if ($video->{thumbnail}) {
-				$item{thumbnail} = $video->{thumbnail};
-			} else {
-				$item{thumbnail} = youtube_thumbnail($video->{id});
-			}
 			push @featured, \%item;
 		}
 		if ($video->{tags}) {
@@ -85,6 +84,11 @@ sub import_videos {
 		if ($video->{modules}) {
 			foreach my $module (@{ $video->{modules} }) {
 				push @{ $modules{$module} }, \%entry;
+				push @{ $meta{modules}{$module} }, {
+					title => $video->{title},
+					url   => 'http://perltv.org/v/' . $f->basename,
+					thumbnail => $thumbnail,
+				};
 			}
 		}
 	
@@ -105,6 +109,7 @@ sub import_videos {
 	path('featured.json')->spew_utf8( $json->encode(\@featured) );
 	path('tags.json')->spew_utf8( $json->encode(\%tags) );
 	path('modules.json')->spew_utf8( $json->encode(\%modules) );
+	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
 	
 	say "Latest featured: $featured[0]{date}";
 }
