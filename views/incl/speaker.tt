@@ -4,4 +4,5 @@
      Speaker: <% video.speaker_name %>
    <% END %>
    <% IF video.speaker_nickname %>(<% video.speaker_nickname %>)<% END %>
+   <% IF video.speaker_gplus %><a href="https://plus.google.com/<% video.speaker_gplus %>">speaker</a><% END %>
 
