@@ -1,10 +1,11 @@
 
 <div id="embed">
    <% IF video.src == 'youtube' %>
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/<% video.id %><% IF video.start %>?start=<% video.start %><% END %>" frameborder="0" allowfullscreen></iframe>
+     <iframe  src="http://www.youtube.com/embed/<% video.id %><% IF video.start %>?start=<% video.start %><% END %>"
+     frameborder="0" allowfullscreen></iframe>
    <% ELSIF video.src == 'vimeo' %>
-     <iframe src="//player.vimeo.com/video/77267876" width="560"
-     height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen
+     <iframe src="//player.vimeo.com/video/77267876"
+     frameborder="0" webkitallowfullscreen mozallowfullscreen
      allowfullscreen></iframe>
    <% ELSE %>
      Unknown video

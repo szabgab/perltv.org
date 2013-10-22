@@ -35,38 +35,10 @@
           <li><a href="/people">People</a></li>
         </ul>
 
-          <% INCLUDE incl/social_share.tt %>
+        <% INCLUDE incl/social_share.tt %>
       </li>
-      <% IF show_tags %>
-        <li>
-          <div id="side-tags">
-            <% IF tags %>
-              <h2>Tags</h2>
-              <ul>
-                <% FOR t IN tags %>
-                  <li><a href="/tag/<% t FILTER lower %>"><% t %></a></li>
-                <% END %>
-              </ul>
-            <% END %>
-          </div>
-        </li>
-      <% END %>
-
-      <% IF show_modules %>
-        <li>
-          <div id="side-modules">
-            <% IF modules %>
-              <h2>Modules</h2>
-              <ul>
-                <% FOR t IN modules %>
-                  <li><a href="/module/<% t %>"><% t %></a></li>
-                <% END %>
-              </ul>
-            <% END %>
-          </div>
-        </li>
-      <% END %>
-
+      <% INCLUDE incl/tags.tt %>
+      <% INCLUDE incl/modules.tt %>
     </ul>
   </div>
   <div id="content">

@@ -1,0 +1,15 @@
+      <% IF show_tags %>
+        <li>
+          <div id="side-tags">
+            <% IF tags %>
+              <h2>Tags</h2>
+              <ul>
+                <% FOR t IN tags %>
+                  <li><a href="/tag/<% t FILTER lower %>"><% t %></a></li>
+                <% END %>
+              </ul>
+            <% END %>
+          </div>
+        </li>
+      <% END %>
+

@@ -1,0 +1,15 @@
+      <% IF show_modules %>
+        <li>
+          <div id="side-modules">
+            <% IF modules %>
+              <h2>Modules</h2>
+              <ul>
+                <% FOR t IN modules %>
+                  <li><a href="/module/<% t %>"><% t %></a></li>
+                <% END %>
+              </ul>
+            <% END %>
+          </div>
+        </li>
+      <% END %>
+
