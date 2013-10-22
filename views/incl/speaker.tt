@@ -1,5 +1,5 @@
    <% IF video.speaker_home %>
-     Speaker: <a href="<% video.speaker_home %>"><% video.speaker_name %></a>
+     Speaker: <a href="/people/<% video.speaker %>"><% video.speaker_name %></a>
    <% ELSE %>
      Speaker: <% video.speaker_name %>
    <% END %>
