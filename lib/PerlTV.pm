@@ -98,7 +98,7 @@ get '/people/:person' => sub {
 
 	my $data = setting('data');
 	my @entries = grep { $_->{speaker} eq $person} @{ $data->{videos} };
-	template 'list', { videos => \@entries, %{ $people->{$person} } };
+	template 'list', { videos => \@entries, person => $people->{$person} };
 };
 
 get '/tag/?' => sub {

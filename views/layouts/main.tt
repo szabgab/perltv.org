@@ -32,6 +32,7 @@
           <li><a href="/source">Sources</a></li>
           <li><a href="/tag">Tags</a></li>
           <li><a href="/module">Modules</a></li>
+          <li><a href="/people">People</a></li>
         </ul>
 
           <% INCLUDE incl/social_share.tt %>

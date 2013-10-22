@@ -9,6 +9,14 @@
   List of videos related to <b><a href="http://metacpan.org/module/<% module %>"><% module %></a></b>.
   <% END %>
 
+  <% IF person %>
+   <% IF person.home %>
+     <a href="<% person.home %>"><% person.name %></a>
+   <% ELSE %>
+     <% person.name %>
+   <% END %>
+  <% END %>
+
   <% description %>
 
   <ul>
