@@ -56,10 +56,16 @@ hook before_template => sub {
 	}
 
 	if ($t->{video} and $t->{video}{speaker}) {
+		my $appdir = abs_path config->{appdir};
+		my $person = read_file( "$appdir/data/people/$t->{video}{speaker}" );
 		my $people = setting('people');
-		$t->{video}{speaker_name} = $people->{ $t->{video}{speaker} }{name};
-		$t->{video}{speaker_home} = $people->{ $t->{video}{speaker} }{home};
-		$t->{video}{speaker_nickname} = $people->{ $t->{video}{speaker} }{nickname};
+#die Dumper $person;
+#die Dumper $people->{ $t->{video}{speaker} };
+		$t->{video}{speaker_name} = $person->{name};
+		$t->{video}{speaker_home} = $person->{home};
+		$t->{video}{speaker_nickname} = $person->{nickname};
+		$t->{video}{speaker_twitter} = $person->{twitter};
+		$t->{video}{speaker_gplus} = $person->{gplus};
 	}
 	if ($t->{video} and not $t->{video}{thumbnail}) {
 		$t->{video}{thumbnail} = youtube_thumbnail($t->{video}{id});

@@ -16,7 +16,8 @@
   
   <div class="fb-like" data-href="<% request.uri_base %><% request.path %>"
        data-send="false" data-layout="box_count"
-       data-width="450" data-show-faces="false">
+       data-width="450" data-show-faces="false"
+  >
   </div>
 
   <!--
@@ -26,7 +27,13 @@
   -->
   
   <a href="http://twitter.com/share" class="twitter-share-button"
-  data-text="<% video.title %>" data-url="<% request.uri_base  %><% request.path %>" data-count="vertical">Tweet</a>
+     data-text="<% video.title %>"
+     data-url="<% request.uri_base  %><% request.path %>"
+     data-count="vertical"
+     <% IF video.speaker_twitter %>
+       data-via="<% video.speaker_twitter %>"
+     <% END %>
+   >Tweet</a>
   <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
   </script>
   
