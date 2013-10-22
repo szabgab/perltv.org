@@ -2,7 +2,7 @@ The code behind http://perltv.org/
 
 
 Contributing videos?
-=====================
+---------------------
 
 Please add files to the data/ directory.
 The file names will be the page URLs.
@@ -19,7 +19,7 @@ It also makes the site more searchable.
 
 
 Copyright and License
-=======================
+---------------------
 
 PerlTV.org - Copyright Gabor Szabo
 
@@ -33,10 +33,19 @@ Copyright and License of the videos - their respective authors
 See the original site for each video.
 
 
+Notes
+-----
+
+vimeo API: https://developer.vimeo.com/apis/simple#video-request
+http://vimeo.com/api/v2/video/video_id.output
+where the "video_id" is something like 77267876 
+and the "output" is json, php or xml
+
+
 
 
 TODO
-=====
+-----
 
 Plan for hierarchy:
 /v/        one page for each video
@@ -64,10 +73,6 @@ The lists of talks should include
    source
    short description
 
-
-- Either add an about page or on the main page explain what the site is about
-  and how to contribute.
-
 - On the page of the video, when the video is finished display something 
   else and not the default "select a video" option of YouTube.
   Show another random video, or show some info page?
@@ -75,11 +80,7 @@ The lists of talks should include
 
 - Create a logo for the site and a favicon.
 
-- Create a file about each speaker and list videos by speakers
-- Create a file about each source (YAPC::NA 2013, Salt Lake Perl Mongers, etc)
-  and list all the videos of this event.
-
-- Script to update data from youtube (eg. viewer count, what else?) from yourube.
+- Script to update data from youtube and vimeo (probably only viewer count and likes) 
 
 - Take idea from http://www.confreaks.com/
 
@@ -97,14 +98,10 @@ The lists of talks should include
   As an experiment add a video in Hebrew, and then ask for help to add videos
   in other languages as well.
 
-vimeo API: https://developer.vimeo.com/apis/simple#video-request
-http://vimeo.com/api/v2/video/video_id.output
-where the "video_id" is something like 77267876 
-and the "output" is json, php or xml
-
 
 NOT TODO
-=========
+---------
+
 - Check if we could display some other picture in place of the video before
   even it starts. (e.g. some information about the site?
 
@@ -115,7 +112,5 @@ NOT TODO
   a link on the front page to the specific page and autostart the video there. :(
   Therefore we keep the video on the front page.
   See the update here: https://developers.google.com/youtube/js_api_reference
-
-
 
 
