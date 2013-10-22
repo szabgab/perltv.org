@@ -36,9 +36,7 @@ hook before => sub {
 
 hook before_template => sub {
 	my $t = shift;
-	if (not $t->{title} or request->path eq '/') {
-		$t->{title} = 'Perl TV';
-	}
+	$t->{title} //= 'Perl TV';
 
 	my $THUMBNAILS = 4; # shown at the bottom of the front page
 	$t->{social} = 1;
@@ -74,6 +72,9 @@ hook before_template => sub {
 get '/legal' => sub {
 	template 'legal';
 };
+get '/about' => sub {
+	template 'about', {title => "About the Perl TV"};
+};
 
 #	my $error = setting('error');
 #	if ($error) {
@@ -83,12 +84,18 @@ get '/legal' => sub {
 
 get '/all' => sub {
 	my $data = setting('data');
-	template 'list', { videos => $data->{videos} };
+	template 'list', {
+		videos => $data->{videos},
+		title  => 'All the videos listed in the Perl TV',
+	};
 };
 
 get '/people/?' => sub {
 	my $people = setting('people');
-	template 'list_people', { people => $people };
+	template 'list_people', {
+		people => $people,
+		title  => 'All the speakers, interviewers and interviewees',
+	};
 };
 
 get '/people/:person' => sub {
@@ -146,6 +153,7 @@ get '/' => sub {
 	my @modules = sort {lc $a cmp lc $b} keys %{ setting('modules') };
 	my @tags    = sort {lc $a cmp lc $b} keys %{ setting('tags') };
 	_show('index', $featured->[0]{path}, {
+		title => 'Perl TV, the source for videos, interviews, and screencasts abot the Perl programming language',
 		#show_tags    => 1,
 		#show_modules => 1,
 		#tags         => \@tags,
@@ -236,7 +244,6 @@ sub _show {
 		#warn $@;
 		return template 'error';
 	}
-
 	$data->{path} = $path;
 	template $template, { 
 		video   => $data,

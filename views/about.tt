@@ -1,0 +1,28 @@
+<div id="header">
+
+<h2>About the Perl TV</h2>
+
+There are plenty of videos on YouTube, Vimeo and elsewhere
+providing very useful and entertaining content about the
+<b>Perl programming language</b>. Unfortunately in many cases
+they are hard to find, and it is even more difficult to
+know if they are any good.
+<p>
+The <b>Perl TV</b> is an attempt to collect and tag those videos
+to make them easier to find for you.
+<p>
+
+<h2>Background</h2>
+
+OK, so I just wanted to watch presentations about
+specific subjects in Perl, and I was not sure where to look.
+I found I can remember what the video is about if I take notes.
+Even better if I can later
+find the same video and my notes. So for every video I try to
+add some notes, <a href="/tag">tags</a>,
+and the list of <a href="/module">modules</a> they discuss.
+<br>
+~ <a href="http://szabgab.com/">Gabor Szabo</a>
+
+</div>
+
