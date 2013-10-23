@@ -131,12 +131,10 @@ font-size: 10px;
   width: 560px;
   height: 315px;
 }
-
-/* @media (min-width: 1281px) and (min-height: 800px) { */
 @media (min-width: 1281px) {
    #embed iframe {
      width: 720px;
-     height: 433x;
+     height: 433px;
    }
 }
 
