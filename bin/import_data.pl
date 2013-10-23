@@ -65,6 +65,9 @@ sub import_videos {
 			title => $video->{title},
 			path  => $f->basename,
 		);
+		if ($video->{language}) {
+			$entry{language} = $video->{language};
+		}
 	
 		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
 

@@ -7,12 +7,9 @@ use Path::Tiny ();
 use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 use List::Util qw(min);
+use List::MoreUtils qw(uniq);
 
-use PerlTV::Tools qw(read_file youtube_thumbnail);
-
-my %languages = (
-	he => 'Hebrew',
-);
+use PerlTV::Tools qw(read_file youtube_thumbnail %languages);
 
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
@@ -70,7 +67,13 @@ hook before_template => sub {
 	}
 	if ($t->{video} and not $t->{video}{thumbnail}) {
 		$t->{video}{thumbnail} = youtube_thumbnail($t->{video}{id});
-	#die $t->{video}{thumbnail};
+	}
+	if ($t->{videos}) {
+		$t->{languages} = {
+			map { $_ => $languages{$_} }
+			uniq
+			map { $_->{language} }
+			grep { $_->{language} } @{ $t->{videos} }};
 	}
 
 	return;
@@ -247,15 +250,13 @@ sub _show {
 		#warn $@;
 		return template 'error';
 	}
-	if ($data->{language}) {
-		$data->{language_in_english} = $languages{ $data->{language} };
-	}
+	my $title = $data->{title};
 	$data->{path} = $path;
 	template $template, { 
 		video   => $data,
 		tags    => $data->{tags},
 		modules => $data->{modules},
-		title   => $data->{title},
+		title   => $title,
 		%$params,
 	};
 };

@@ -32,8 +32,21 @@
 
   <ul>
   <% FOR v IN videos %>
-      <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+      <% UNLESS v.language %>
+         <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+      <% END %>
   <% END %>
   </ul>
+
+  <% FOR lang IN languages.keys %>
+    <h2><% languages.$lang %></h2>
+      <ul>
+      <% FOR v IN videos %>
+          <% IF v.language == lang %>
+             <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+          <% END %>
+      <% END %>
+      </ul>
+  <% END %>
 </div>
 

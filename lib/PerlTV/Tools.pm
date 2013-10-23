@@ -6,7 +6,11 @@ use Path::Tiny ();
 use Text::Markdown ();
 
 use base 'Exporter';
-our @EXPORT_OK = qw(read_file youtube_thumbnail);
+our @EXPORT_OK = qw(read_file youtube_thumbnail %languages);
+
+our %languages = (
+	he => 'Hebrew',
+);
 
 sub read_file {
 	my ($file) = @_;
@@ -31,6 +35,11 @@ sub read_file {
 		} else {
 			$video{$key} = $value;
 		}
+	}
+
+	if ($video{language}) {
+		$video{language_in_english} = $languages{ $video{language} };
+		$video{title} .= " ($video{language_in_english})";
 	}
 
 	$video{format} ||= 'html';
