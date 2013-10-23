@@ -130,13 +130,27 @@ code, tt {
 }
 
 #embed iframe {
-  width: 560px;
-  height: 315px;
+  width: 320px;
+  height: 180px;
 }
-@media (min-width: 1081px) {
+@media (min-width: 840px) {
    #embed iframe {
-     width: 720px;
-     height: 433px;
+     width: 560px;
+     height: 315px;
+   }
+}
+
+@media (min-width: 960px) {
+   #embed iframe {
+     width: 640px;
+     height: 360px;
+   }
+}
+
+@media (min-width: 1260px) {
+   #embed iframe {
+     width: 853px;
+     height: 480px;
    }
 }
 
