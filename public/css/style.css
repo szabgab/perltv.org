@@ -54,15 +54,13 @@ a:hover {
 }
 
 #text {
-  padding-left: 75px;
+  padding-left: 15px;
   padding-right: 30px;
-}
-
-#text {
   background-repeat: no-repeat;
   background-position: top left;
   border-top: 1px solid #ccc;
   padding-top: 15px;
+  max-width: 600px;
 }
 #text h1 {
   margin: 0;
