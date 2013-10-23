@@ -1,0 +1,21 @@
+id: VCyfWlD29ws
+src: youtube
+title: Asynchronous Programming FTW!
+speaker: sawyer
+source: israel-pm
+view_count: 60
+favorite_count: 0
+length: 01:02:08
+format: markdown
+languag: he
+modules: AnyEvent
+
+__DESCRIPTION__
+
+The new age is all about non-blocking asynchronous creative responsive
+deconstructive refactored decoupled conjectured applications. If you're not on
+the event loop wagon loop, you're missing out!
+
+What the hell am I talking about? Am I just drunk? How many of the above words
+are totally made-up? These questions and more will be answered at this talk!
+

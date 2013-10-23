@@ -98,6 +98,27 @@ The lists of talks should include
   As an experiment add a video in Hebrew, and then ask for help to add videos
   in other languages as well.
 
+Thinking aloud:
+  Have each video as /v/video-name     and inside the video have a field defining
+   the language of the talk (language=he  meaning Hebrew)  There are going to
+   be videos having the same subject that were given in multiple languages
+   so the video-name might still need to cover. YouTube and Vimeo can handle that :)
+   But they both have criptic URLs and I'd like to have meaningful ones.
+  /v/he/video-name    clear indication on the URL as of language,
+  There can be duplicate videos with the same title anyway and we'll have to
+  map them to different video-names even if both are in English.
+
+  What about the /module, /module/Module-Name   /tag /tag/TAG   pages?
+  Should we Filter them based on language, or is it ok for now to keep all the
+  videos in the list and indicate the language on the page (Eg.
+
+  English
+    - video
+    - video
+  Hebrew
+    - video
+    - video
+  etc.
 
 NOT TODO
 ---------
