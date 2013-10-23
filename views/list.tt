@@ -15,6 +15,17 @@
    <% ELSE %>
      <% person.name %>
    <% END %>
+   <% IF person.nickname %>
+     (<% person.nickname %>)
+   <% END %>
+   <br>
+
+   <% IF person.twitter %>
+     <a href="http://twitter.com/<% person.twitter %>">Twitter</a><br>
+   <% END %>
+   <% IF person.gplus %>
+     <a href="https://plus.google.com/<% person.gplus %>">G+</a><br>
+   <% END %>
   <% END %>
 
   <% description %>

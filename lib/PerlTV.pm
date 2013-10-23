@@ -54,13 +54,10 @@ hook before_template => sub {
 		my $sources = setting('sources');
 		$t->{video}{source_name} = $sources->{ $t->{video}{source} }{name};
 	}
-
 	if ($t->{video} and $t->{video}{speaker}) {
 		my $appdir = abs_path config->{appdir};
 		my $person = read_file( "$appdir/data/people/$t->{video}{speaker}" );
 		my $people = setting('people');
-#die Dumper $person;
-#die Dumper $people->{ $t->{video}{speaker} };
 		$t->{video}{speaker_name} = $person->{name};
 		$t->{video}{speaker_home} = $person->{home};
 		$t->{video}{speaker_nickname} = $person->{nickname};
@@ -82,12 +79,6 @@ get '/about' => sub {
 	template 'about', {title => "About the Perl TV"};
 };
 
-#	my $error = setting('error');
-#	if ($error) {
-#		warn $error;
-#		return template 'error';
-#	}
-
 get '/all' => sub {
 	my $data = setting('data');
 	template 'list', {
@@ -106,12 +97,14 @@ get '/people/?' => sub {
 
 get '/people/:person' => sub {
 	my $people = setting('people');
-	my $person = params->{person};
-	pass if not $people->{$person};
+	my $person_code = params->{person};
+	pass if not $people->{$person_code};
 
+	my $appdir = abs_path config->{appdir};
+	my $person = read_file( "$appdir/data/people/$person_code" );
 	my $data = setting('data');
-	my @entries = grep { $_->{speaker} eq $person} @{ $data->{videos} };
-	template 'list', { videos => \@entries, person => $people->{$person} };
+	my @entries = grep { $_->{speaker} eq $person_code} @{ $data->{videos} };
+	template 'list', { videos => \@entries, person => $person };
 };
 
 get '/tag/?' => sub {
