@@ -45,6 +45,7 @@ sub import_people {
 sub import_videos {
 	my $dir = path($0)->absolute->parent->parent->child('data/videos');
 	my @videos;
+	my @not_featured;
 	my @featured;
 	my %tags;
 	my %modules;
@@ -75,6 +76,8 @@ sub import_videos {
 				thumbnail => $thumbnail,
 			);
 			push @featured, \%item;
+		} else {
+			push @not_featured, $f->basename;
 		}
 		if ($video->{tags}) {
 			foreach my $tag (@{ $video->{tags} }) {
@@ -111,6 +114,11 @@ sub import_videos {
 	path('modules.json')->spew_utf8( $json->encode(\%modules) );
 	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
 	
-	say "Latest featured: $featured[0]{date}";
+	say "Latest featured: $featured[0]{date}\n";
+
+	if (@not_featured) {
+		say 'Not yet featured:';
+		say for @not_featured;
+	}
 }
 

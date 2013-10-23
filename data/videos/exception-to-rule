@@ -6,8 +6,10 @@ length: 45:14
 modules: autodie, TryCatch, Fatal, Try::Tiny, Exception::Class, Lexical::Failure, Params::Validate
 tags: die
 source: yapc-na-2013
+featured: 2013-10-23
 
 __DESCRIPTION__
+
 The real story of exceptions... (or, the Why of Die and Try)
 <p>
 I had always chosen return codes over exceptions, even against the recommendations of PBP.
