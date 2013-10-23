@@ -48,11 +48,12 @@ a:hover {
   float: left;
   width: 220px;
 /*  border: 1px solid;*/
+  padding-left: 20px;
   top 0;
   right 0;
 }
 
-#text, #modules, #tags {
+#text {
   padding-left: 75px;
   padding-right: 30px;
 }

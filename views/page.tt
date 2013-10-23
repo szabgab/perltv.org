@@ -7,29 +7,30 @@
    <% INCLUDE incl/speaker.tt %>
   <br>
   <% video.description %>
-</div>
-
-<div id="modules">
-  <% IF video.modules %>
-    <h2>Modules mentioned</h2>
-    <ul>
-      <% FOR t IN video.modules %>
-        <li><a href="http://metacpan.org/module/<% t %>"><% t %></a></li>
-      <% END %>
-    </ul>
-  <% END %>
-</div>
 
 <!--
-<div id="tags">
-  <% IF video.tags %>
-    <h2>Tags</h2>
-    <ul>
-      <% FOR t IN video.tags %>
-        <li><a href="/tag/<% t %>"><% t %></a></li>
-      <% END %>
-    </ul>
-  <% END %>
-</div>
+  <div id="modules">
+    <% IF video.modules %>
+      <h2>Modules mentioned</h2>
+      <ul>
+        <% FOR t IN video.modules %>
+          <li><a href="http://metacpan.org/module/<% t %>"><% t %></a></li>
+        <% END %>
+      </ul>
+    <% END %>
+  </div>
+
+
+  <div id="tags">
+    <% IF video.tags %>
+      <h2>Tags</h2>
+      <ul>
+        <% FOR t IN video.tags %>
+          <li><a href="/tag/<% t %>"><% t %></a></li>
+        <% END %>
+      </ul>
+    <% END %>
+  </div>
 -->
 
+</div>
