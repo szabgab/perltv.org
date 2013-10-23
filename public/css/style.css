@@ -28,11 +28,11 @@ a:hover {
 
 #page {
   background-color: #ddd;
-  width: 950px;
   margin: auto;
   margin-left: auto;
   padding-left: 0px;
   margin-right: auto;
+  clear: both;
 }
 
 #content {
@@ -40,13 +40,17 @@ a:hover {
   border: 3px solid #aaa;
   border-top: none;
   padding: 0px;
-  width: 700px;
+  float: left;
+  width: 70%;
 }
 
 #sidebar {
-  margin-top: 20px;
-  float: right;
-  width: 175px;
+/*  margin-top: 20px;*/
+  float: left;
+  width: 220px;
+/*  border: 1px solid;*/
+  top 0;
+  right 0;
 }
 
 #text, #modules, #tags {
@@ -131,7 +135,7 @@ font-size: 10px;
   width: 560px;
   height: 315px;
 }
-@media (min-width: 1281px) {
+@media (min-width: 1081px) {
    #embed iframe {
      width: 720px;
      height: 433px;

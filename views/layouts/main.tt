@@ -10,6 +10,10 @@
 <body>
 
 <div id="page">
+  <div id="content">
+    <% content %>
+  </div>
+
   <div id="sidebar">
     <ul id="sidebar-items">
       <li>
@@ -41,11 +45,7 @@
       <% INCLUDE incl/modules.tt %>
     </ul>
   </div>
-  <div id="content">
-    <% content %>
-  </div>
 </div>
-
 
 
 <div id="footer">
