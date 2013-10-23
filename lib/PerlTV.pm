@@ -10,6 +10,10 @@ use List::Util qw(min);
 
 use PerlTV::Tools qw(read_file youtube_thumbnail);
 
+my %languages = (
+	he => 'Hebrew',
+);
+
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
 	my $json = JSON::Tiny->new;
@@ -242,6 +246,9 @@ sub _show {
 	if ($@) {
 		#warn $@;
 		return template 'error';
+	}
+	if ($data->{language}) {
+		$data->{language_in_english} = $languages{ $data->{language} };
 	}
 	$data->{path} = $path;
 	template $template, { 

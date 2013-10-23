@@ -2,6 +2,10 @@
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
    <% INCLUDE incl/embed.tt %>
 
+   <% IF video.language %>
+      This video is in <b><% video.language_in_english %>.</b>
+   <% END %>
+
   <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
    Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
    <% INCLUDE incl/speaker.tt %>

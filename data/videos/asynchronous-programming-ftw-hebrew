@@ -7,7 +7,7 @@ view_count: 60
 favorite_count: 0
 length: 01:02:08
 format: markdown
-languag: he
+language: he
 modules: AnyEvent
 
 __DESCRIPTION__
