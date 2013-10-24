@@ -1,0 +1,29 @@
+id: Tk-VebYr4Ok
+src: youtube
+title: Asynchronous programming FTW!
+speaker: sawyer
+source: yapc-eu-2012
+view_count: 34
+favorite_count: 0
+length: 38:03
+format: markdown
+tags: asynchronous, callbacks, Twisted, IOC
+modules: AnyEvent, WWW::Mechanize, Juno, Algotighm::Diff::Callback
+
+__DESCRIPTION__
+
+First Sawyer tries to help one of his family members to pick a movie,
+and then writes down the algorithm using
+[WWW::Mechanize](https://metacpan.org/module/WWW::Mechanize).
+
+Then he explains what are <b>callbacks</b> and shows code how WWW::Mechanize would
+work if it allowed asynchronous operations.
+
+Then he shows [Juno](https://metacpan.org/release/Juno) a testing library that works
+in an asynchornous way and
+[Algotighm::Diff::Callback](http://metacpan.org/module/Algotighm::Diff::Callback)
+which is an asynchronous version of [Algotighm::Diff](http://metacpan.org/module/Algotighm::Diff)
+to compare two data structures.
+
+[IOC - Inversion of Control](http://en.wikipedia.org/wiki/Inversion_of_control)
+
