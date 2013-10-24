@@ -8,7 +8,8 @@ favorite_count: 0
 length: 38:03
 format: markdown
 tags: asynchronous, callbacks, Twisted, IOC
-modules: AnyEvent, WWW::Mechanize, Juno, Algotighm::Diff::Callback
+modules: AnyEvent, WWW::Mechanize, Juno, Algotighm::Diff::Callback, IO::Async, POE, Reflex, WWW::xkcd
+featured: 2013-10-24
 
 __DESCRIPTION__
 
@@ -23,7 +24,18 @@ Then he shows [Juno](https://metacpan.org/release/Juno) a testing library that w
 in an asynchornous way and
 [Algotighm::Diff::Callback](http://metacpan.org/module/Algotighm::Diff::Callback)
 which is an asynchronous version of [Algotighm::Diff](http://metacpan.org/module/Algotighm::Diff)
-to compare two data structures.
+to compare two data structures. Giving you the control via callbacks.
 
 [IOC - Inversion of Control](http://en.wikipedia.org/wiki/Inversion_of_control)
+
+
+Explaining what *Asynchronous programming* - just and *event loop*.
+
+Then there are examples using
+[IO::Async](http://metacpan.org/module/IO::Async), 
+[POE](http://metacpan.org/module/POE), 
+[Reflex](http://metacpan.org/module/Peflex) (which like POE just using Moose),
+and [AnyEvent](http://metacpan.org/module/AnyEvent).
+
+Also check out [WWW::xkcd](http://metacpan.org/module/WWW::xkcd).
 
