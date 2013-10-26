@@ -94,6 +94,25 @@ get '/all' => sub {
 	};
 };
 
+get '/featured' => sub {
+	my $featured = setting('featured');
+	my $data = setting('data');
+	my %path_to_title = map {
+		$_->{path} => $_->{title}
+		} @{ $data->{videos} };
+	my @videos = map { {
+		path  => $_->{path},
+		title => $path_to_title{$_->{path}},
+		featured  => $_->{date},	
+		} } @$featured;
+#die Dumper \%path_to_title;
+	template 'list', {
+		videos => \@videos,
+		title  => 'Featured videos',
+	};
+
+};
+
 get '/people/?' => sub {
 	my $people = setting('people');
 	template 'list_people', {
