@@ -26,7 +26,7 @@ The Secret to using the MetaCPAN API is to read the code!
 
 Building JSON in Java is HARD!
 
-Instead of trying to build JSON va gson or JSONObject, he created a micro-templating language.
+Instead of trying to build JSON via gson or JSONObject, he created a micro-templating language.
 
 
 See also

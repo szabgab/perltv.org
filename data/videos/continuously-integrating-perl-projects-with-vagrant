@@ -32,7 +32,7 @@ Summary
 --------
 * Unit Tests vs. Integration tests
 * Infrastructure as Code
-* What is [Vargrant](http://www.vagrantup.com/)?
+* What is [Vagrant](http://www.vagrantup.com/)?
 * Provisioning tools (Puppet, Chef, Salt)
 * Example and Demo
 
@@ -49,7 +49,7 @@ Integration tests
 * Do it often and early as it is very costly to find out later if the parts don't fit together.
 * Problem: Can't configure your devbox for many different project environments, can't have external systems on your laptop
 
-Other People's code, other servies, (Database services, MongoDB etc), different configurations.
+Other People's code, other services, (Database services, MongoDB, etc.), different configurations.
 
 Virtual Machines
 ------------------
@@ -71,7 +71,7 @@ vagrantbox up
 
 
 
-Vagrant Mahic Mount, to mount the directory /vagrant inside the Virtual Machine to the start directory on the host
+Vagrant Magic Mount, to mount the directory /vagrant inside the Virtual Machine to the start directory on the host
 system.
 
 Test kitchen

@@ -45,5 +45,5 @@ List::MoreUtils (on CPAN)
 * all - Return true if all elements match
 * pairwise - Transform two lists, pairwise, into one
 * part - Partitions one list to a bunch of smaller lists
-* natatime - Itterates over a list fetching n element in every iteration
+* natatime - Iterates over a list fetching n element in every iteration
  
