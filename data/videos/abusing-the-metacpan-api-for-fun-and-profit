@@ -31,7 +31,7 @@ even contribute back to MetaCPAN itself.
 
 
 
-Tha architecture of MetaCPAN: it uses
+The architecture of MetaCPAN: it uses
 [ElasticSearch](http://www.elasticsearch.org/) and
 [Catalyst](http://www.catalystframework.org/) as a thin wrapper.
 

@@ -23,7 +23,7 @@ and deployent of Perl based applications.
 Jenkins for CI Continous Integration. How to use [Jenkins for
 Perl](https://wiki.jenkins-ci.org/display/JENKINS/Perl+Projects).
 
-The recommended Book: Continous Delivery
+The recommended Book: Continuous Delivery
 
 Quotes
 ---------
@@ -43,11 +43,11 @@ The Deployment Pipeline
 * Every time it finds new commit in the repository it creates a full check-out
 * Builds a clean environment from scratch
 * If it passes the unit tests then the build gets archived in a repository
-* The build moves to the next stage of the deploymet pipeline.
+* The build moves to the next stage of the deployment pipeline.
 * Where we can run automated acceptance test or manual test etc.
 
 
-Pinto - Curate a Perl Rerpository
+Pinto - Curate a Perl Repository
 
 For Acceptance test use a language that users can speak (and not code).
 Sources on Cucumber BBD: Specification by Example, The Cucumber book

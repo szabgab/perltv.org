@@ -30,14 +30,14 @@ You have, you list out the various things that you're going to be dealing with,
 typically, and then you have some instructions that say what to do with those ingredients.
 So, if you can understand a recipe and follow it in, you know, in your kitchen, then you can program on that level.
 But you can take it a lot farther than that.
-Many of you, I'm sure, have seen theÂ Iron Chef show, I love to watch that, especially
+Many of you, I'm sure, have seen the Iron Chef show, I love to watch that, especially
 if they are given strange ingredients. I'm not sure I would like trout ice cream either,
 but one of the things that happens there, if you follow along, is that the Iron Chef,
 or whoever the chef is, doesn't actually do all the work.
 They have what are called sous chefs, that they farm out, subdivide the jobs to,
 and they'll do the kind of busy work.  And programming is kind of like that, too.
 You are the head chef, but there are bits and pieces of the computer out there that will do things for you.
-Now, it's not quite likeÂ Iron Chef, becauseÂ Iron Chef, you have some fairly intelligent sous chefs
+Now, it's not quite like Iron Chef, because Iron Chef, you have some fairly intelligent sous chefs
 who know how to coddle an egg or chop up a fish.
 But your computer tends to be more like a bunch of really efficient robots, but they're
 very stupid robots and very literal minded.
@@ -70,7 +70,7 @@ So the next step that happens is that instead of just thinking about data as the
 you're working with strings, text, your phone numbers, whatever. You start thinking about
 those bits of recipe, and those recipes can also be considered data and can be sent
 around on the conveyor belt in your factory.
-So it's like a little conveyor that you might have in your caffe,
+So it's like a little conveyor that you might have in your café,
 you put little things up there that order things up.
 
 So when you start talking about actions and abstracting them, then you can start talking
