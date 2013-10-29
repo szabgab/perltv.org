@@ -223,8 +223,9 @@ get '/daily.atom' => sub {
 		$xml .= qq{  <updated>$entry->{date}T12:00:00Z</updated>\n};
 		my $url = "$URL/v/$entry->{path}";
 		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
-		$xml .= qq{  <id>$entry->{path}</id>\n};
+		$xml .= qq{  <id>$URL/v/$entry->{path}</id>\n};
 		$xml .= qq{  <content type="html"><![CDATA[$data->{description}]]></content>\n};
+		$xml .= qq{  <author>$data->{speaker}</author>\n};
 		$xml .= qq{</entry>\n};
 	}
 	$xml .= qq{</feed>\n};
