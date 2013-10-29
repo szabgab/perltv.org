@@ -211,7 +211,7 @@ get '/daily.atom' => sub {
 	$xml .= qq{<link href="$URL/daily.atom" rel="self" />\n};
 	$xml .= qq{<title>$title</title>\n};
 	$xml .= qq{<id>$URL/</id>\n};
-	$xml .= qq{<updated>${ts}Z12:00:00</updated>\n};
+	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
 	foreach my $entry (@$featured) {
 
 		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
@@ -220,7 +220,7 @@ get '/daily.atom' => sub {
 
 		$xml .= qq{  <title>$data->{title}</title>\n};
 		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
-		$xml .= qq{  <updated>$entry->{date}Z12:00:00</updated>\n};
+		$xml .= qq{  <updated>$entry->{date}T12:00:00Z</updated>\n};
 		my $url = "$URL/v/$entry->{path}";
 		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
 		$xml .= qq{  <id>$entry->{path}</id>\n};
