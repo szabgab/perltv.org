@@ -1,0 +1,111 @@
+id: 68O0Wso_XuU
+src: youtube
+title: How To Be A Web UI Developer
+speaker: casey-west 
+source: yapc-na-2013
+view_count: 156
+favorite_count: 0
+length: 48:55
+format: markdown
+tags: Node.js, Bootstrap, Modernizr, HTML5 Boilerplate, Mimosa, Bower, Require, CoffeeScript, Backbone
+
+__DESCRIPTION__
+
+In this talk I'll show how to use tools to build web application
+interfaces that will make you look like a rockstar.
+Your UI can be beautiful, functional, and well tested, too.
+
+Much like our first time on CPAN, it can be difficult
+to know what tools are going to make your life easy, and make you a rockstar, and which won't.
+
+If you're building web applications with Perl you'll want to have these time saving, happy-user creating tips, tricks, and tools at the ready. We will build a simple app using these tools so you can see them in action.
+
+[slides](https://speakerdeck.com/caseywest/how-to-be-a-web-ui-developer)
+
+
+Notes
+-----
+
+[Node.js](http://nodejs.org/)
+
+[Twitter Bootstrap](http://getbootstrap.com/)
+
+[HTML5 Boilerplate](http://html5boilerplate.com/)
+For gettng started with good looking web site.
+General guidelines and downloadable project that you can use to get roliin.
+
+[Boilerplate Initializer](http://www.initializr.com/)
+provides a template of a responsive design that will look good both on computers and on mobile devices. It also uses [Modernizr](http://modernizr.com/)
+
+[Shims](http://en.wikipedia.org/wiki/Shim_(computing))
+
+<b>Sprites</b> - Instead of adding million small image files it
+lets you create one big image and then you use style
+sheets to show specific areas of the image.
+
+HTML Header - with lots of conditional statement specifically for IE.
+
+[Modernizr](http://modernizr.com/) detects HTML5 and CSS3 features and will tell you if
+the current web browser specific features. If the feature is not supported you
+can use [Polyfills](http://en.wikipedia.org/wiki/Polyfill) to support them.
+
+[Respond.js](https://github.com/scottjehl/Respond) is a Pollyfill for the min an max width media query style sheets.
+
+Modernizr has a [long list of Pollyfiles](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
+
+Grid system
+-----------
+It is like using tables but is uses divs so it is good because we are using a differen word.
+
+
+[Mimosa](http://mimosa.io/) it will compile lots of Javascript and CSS files into nicely packed files that are easie for the clients to download.
+
+Install Node.js and NPM using homebrew on a Mac
+
+    shell> brew install npm
+    shell> cd crit.do
+    shell> mimosa config
+
+    shell> mimosa watch --server --optimize --minify
+
+[Stylus](http://learnboost.github.io/stylus/) is a Meta language for style sheets
+likes [Sass](http://sass-lang.com/), SCSS or [less](http://lesscss.org/).
+
+[Compass](http://compass-style.org/)
+
+
+[jQuery](http://jquery.com/), [plugins](http://plugins.jquery.com/), and
+[jQuery UI](http://jqueryui.com/).
+
+
+[Bower](http://bower.io/) is a bit like CPAN for Javascript -
+package management system.
+
+[Bower components](http://sindresorhus.com/bower-components)
+
+    shell> npm install -g bower
+    shell> echo '{"directory": "src/js/vendor/bower"}' > .bowerrc
+    shell> bower init
+    shell> bower install requirejs
+
+[Require](http://requirejs.org/)
+
+[CoffeeScript](http://coffeescript.org/) a meta language that compiles down to JavaScript.
+
+[Backbone](http://backbonejs.org/) (See also the talk of [Bill Humphries](/people/bill-humphries) called [Perl Meets Modern Web UI](/v/perl-meets-modern-web-ui). An MVC-style framework for JavaScript.
+
+    shell> bower install underscore
+    shell> bower install backbone
+    shell> bower install backbone.localStorage
+
+
+[Underscore](http://underscorejs.org/) 
+
+[Moment](http://momentjs.com/)
+
+[Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
+
+[Mocha](http://visionmedia.github.io/mocha/) testing framework for JavaScript.
+
+[PhantomJS](http://phantomjs.org/) a headless browser.
+
