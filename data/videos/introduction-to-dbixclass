@@ -9,6 +9,7 @@ source: salt-lake-perl-mongers
 date: 2013-06-11
 modules: DBI, DBIx::Class
 format: markdown
+featured: 2013-10-31
 
 __DESCRIPTION__
 
