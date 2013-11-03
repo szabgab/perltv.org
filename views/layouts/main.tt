@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel=alternate type="application/atom+xml" title="Perl TV" href="<% request.uri_base %>/atom.xml">
 
   <title><% title %></title>
   <link rel="stylesheet" href="/css/style.css" />
@@ -26,10 +27,10 @@
           <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
         </ul>
 
-        <h3>Daily video</h3>
-        <a href="/daily.atom"><img src="/images/feed-icon32.png" /></a><br>
-        Get daily selected video via 
-        <a href="/daily.atom">atom feed</a>.
+        <h3>Featured videos</h3>
+        <a href="/atom.xml"><img src="/images/feed-icon32.png" /></a><br>
+        Get regular selected videos via 
+        <a href="/atom.xml">atom feed</a>.
         <h3>Videos</h3>
         <ul>
           <li><a href="/featured">Featured</a></li>

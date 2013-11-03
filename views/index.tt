@@ -4,7 +4,7 @@
 
   <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
-  <a href="/v/<% video.path %>">details</a></h2>
+  <a href="/v/<% video.path %>">details</a>
   <br>
   <% INCLUDE incl/speaker.tt %>
   <br>
@@ -14,7 +14,7 @@
       <h2>Other featured videos</h2>
       <ul>
         <% FOR v IN featured %>
-          <li><a href="/v/<% v.path %>"><img  width="120" height="90" src="<% v.thumbnail %>" /></li>
+          <li><a href="/v/<% v.path %>"><img  width="120" height="90" src="<% v.thumbnail %>" /></a></li>
         <% END %>
       </ul>
     <% END %>

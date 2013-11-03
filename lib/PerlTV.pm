@@ -197,18 +197,22 @@ get '/v/:path' => sub {
 };
 
 get '/daily.atom' => sub {
+	forward '/atom.xml';
+};
+
+get '/atom.xml' => sub {
 	my $featured = setting('featured');
 	my $appdir = abs_path config->{appdir};
 
 	my $URL = request->base;
 	$URL =~ s{/$}{};
-	my $title = 'PerlTV daily';
+	my $title = 'Perl TV Featured videos';
 	my $ts = $featured->[0]{date};
 
 	my $xml = '';
 	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
 	$xml .= qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
-	$xml .= qq{<link href="$URL/daily.atom" rel="self" />\n};
+	$xml .= qq{<link href="$URL/atom.xml" rel="self" />\n};
 	$xml .= qq{<title>$title</title>\n};
 	$xml .= qq{<id>$URL/</id>\n};
 	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
