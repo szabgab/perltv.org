@@ -7,6 +7,7 @@ modules: CPAN, CPAN::Reporter, CPANPLUS, CPANPLUS::YACSmoke, App::cpantesters, T
 tags: NoSQL
 source: yapc-eu-2012
 date: 2012-08-20
+featured: 2013-11-07
 
 __DESCRIPTION__
 After many questions relating to this topic, this talk will explain many of the
