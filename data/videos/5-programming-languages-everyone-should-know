@@ -35,7 +35,7 @@ that help you input your data and then send it off to a web server somewhere.
 
 There are heavier-weight object-oriented languages and the elephant in the room is sort of Java,
 you can't really make a list of modern languages without talking about it.
-Java is sort of the Cobalt of the 21st century, I think. It's kind of heavyweight, verbose,
+Java is sort of the Cobol of the 21st century, I think. It's kind of heavyweight, verbose,
 and everyone loves to hate it, though not everyone will admit that.
 But managers kind of like it because it looks like you're getting a lot done, you know,
 if 100 lines of Java code accomplish a task, then it looks like you've written 100 lines,
@@ -53,6 +53,7 @@ we have a language like Haskell, which we call a functional programming language
 That means function in a mathematical sense, not in the sense the other languages are dysfunctional.
 But a function mathematically has an input and an output and it maps to, you know,
 with a great deal of mathematical certainty what those are.
+
 Haskell is one of those languages that mathematician-type-minded people love; it's sort of a
 language for geniuses, by geniuses.
 So you should probably know about it, if only to be able to say, "Well, is this kind of like Haskell?"
@@ -75,7 +76,7 @@ And finally, for a fifth language, well, you'd probably want to pick one of the 
 There's several to choose from, there's Python, there's Ruby, but of course,
 I am prejudiced in favor of Perl, because I think it has the liveliest community and because
 we have intentionally been redesigning it lately to leapfrog all the other languages.
-For the last number of years, we've been redesigning it to out all the warts that we've noticed over time.
+For the last number of years, we've been redesigning it to take out all the warts that we've noticed over time.
 And we figured it was just our one chance to break backward compatibility, break the things that
 need breaking, keep all the things that make Perl, Perl, keep it a joy to use, and with this redesign,
 make it a language that will be able to be useful and enjoyable for decades.
