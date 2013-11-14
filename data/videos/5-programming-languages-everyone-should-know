@@ -7,6 +7,7 @@ view_count: 282478
 favorite_count: 0
 length: 06:13
 format: markdown
+featured: 2013-11-14
 
 __DESCRIPTION__
 
@@ -24,7 +25,7 @@ and the answer varies depending on what your actual interests are, or what are t
 five companies you should know. And the answer changes over time, too.
 
 Back when I was getting started, lo these many decades ago, the answers would've been
-Fortran, Cobalt, Basic, Lisp, and maybe APL, and those were very formative languages back
+Fortran, Cobol, Basic, Lisp, and maybe APL, and those were very formative languages back
 then and people learned a lot from those, but these days, it might be more important
 for you to know JavaScript, even if the only reason you know that is that you know whether
 or not to click the "enable JavaScript" button in your browser.
