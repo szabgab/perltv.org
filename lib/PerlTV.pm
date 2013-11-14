@@ -188,7 +188,7 @@ get '/' => sub {
 
 get '/v/:path' => sub {
 	my $path = params->{path};
-	if ($path =~ /^[A-Za-z_-]+$/) {
+	if ($path =~ /^[A-Za-z0-9_-]+$/) {
 		return _show('page', $path, {show_tags => 1, show_modules => 1});
 	} else {
 		warn "Could not find '$path'";
