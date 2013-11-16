@@ -1,0 +1,48 @@
+id: rf1yfZ2yUFo
+src: youtube
+title: Introduction to the Perl Data Language (PDL)
+speaker: david-mertens
+source: yapc-na-2012
+view_count: 767
+favorite_count: 0
+length: 51:22
+format: markdown
+modules: PDL, PDL::Graphics::Prima, PDL::NiceSlice
+tags: Galaxy, Star, data visualization
+featured: 2013-11-16
+
+__DESCRIPTION__
+
+David Mertens is one of the core contributors to PDL.
+The first 28 minutes of is an introductory talk, mostly based on the PDL Book written by
+[Karl Glazebrook](http://en.wikipedia.org/wiki/Karl_Glazebrook). After that David Mertens
+answers questions and provides pointers for resources.
+
+The source of the talk is available on [GitHub](https://github.com/run4flat/yapc2012).
+
+
+Some Notes
+----------
+
+The example is the Luminosity distribution of a Galaxy, of a star and near the end of the talk
+(starting at about 40:30) he talks about visualizing blood glucose readings.
+
+PDL provides 2 main things to Perl:
+
+Speed and Compact data storage.
+
+Because loops are running in C and data is stored in C variables.
+
+If you are writing a for loop it is a sign that you are doing something wrong
+and it is time to send an e-mail to the [PDL mailing list](http://pdl.perl.org/?page=mailing-lists).
+
+PDL has support for *bad numbers*.
+
+
+Resources
+----------
+
+* [PDL web site](http://pdl.perl.org/)
+* Look for the [PDL Book](http://pdl.perl.org/?page=FirstSteps) on the web site
+* [PDL Course](http://pdl.perl.org/?docs=Course&title=PDL::Course)
+
