@@ -23,7 +23,7 @@ Rendering's on the client now.
 Do you want to take advantage of that?
 How do you take advantage of that?
 
-In this talk I'll walk you through an example web application
+In this talk I'll walk you through [an example web application](https://github.com/whump/yapcna2013)
 that sends a skeletal UI over the wire to the browser,
 then builds grid and detail views using JavaScript,
 out of data returned over a API implemented in Perl.
