@@ -24,7 +24,7 @@
      <a href="http://twitter.com/<% person.twitter %>">Twitter</a><br>
    <% END %>
    <% IF person.gplus %>
-     <a href="https://plus.google.com/<% person.gplus %>">G+</a><br>
+     <a href="https://plus.google.com/<% person.gplus %>?rel=author">G+</a><br>
    <% END %>
   <% END %>
 
