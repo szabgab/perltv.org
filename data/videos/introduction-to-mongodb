@@ -1,0 +1,27 @@
+id: 1NtOblB_b7M
+src: youtube
+title: Introduction to MongoDB
+speaker: brendan-mcadams
+source: perl-oasis-2012
+view_count: 154
+favorite_count: 0
+length: 48:05
+format: markdown
+modules: MongoDB
+tags: NoSQL
+
+__DESCRIPTION__
+
+Recorded at the Perl Oasis 2012.
+
+This talk will introduce the features of MongoDB by walking through how
+one can building a simple location-based application using MongoDB.
+The talk will cover the basics of MongoDB's document model, query language,
+map-reduce framework, using the Perl driver and deployment architecture.
+
+The talk will be made up of a bunch of different talks and will
+be a great blend for those people in the Perl community!
+
+[slides](https://speakerdeck.com/bwmcadams/perl-oasis-introduction-to-mongodb)
+
+
