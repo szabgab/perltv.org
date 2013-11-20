@@ -1,0 +1,56 @@
+id: G5TnlcNCcBQ
+src: youtube
+title: A Date with Perl
+speaker: dave-rolsky
+source: yapc-na-2013
+view_count: 41
+favorite_count: 0
+length: 52:18
+format: markdown
+modules: DataTime, DateTime::Calendar::Chinese, DateTime::Duration 
+tags: Calendar
+
+__DESCRIPTION__
+
+Dates and times are confusing and crazy. What nut invented Daylight Saving Time?
+Someone who'd never imagined a computer, that's who!
+
+Dealing with dates and times might seem simple at first, but there's a lot of gotchas.
+
+This talk will start by covering some concepts worth knowing about
+(What is an Olson timezone? What's the Gregorian Calendar?).
+
+After that we'll talk about how the DateTime suite of modules can make your life a little easier.
+I'll show you some best practices for working with dates and times,
+and highlight some gotchas in DateTime's API, and with datetimes in general. 
+
+[slides](http://www.houseabsolute.com/presentations/dates-times-perl-and-you/index.html)
+
+Notes
+------
+
+Leap Seconds are not known ahead of time.They are announced every 6 months, so the modules that handle these
+need to be released in a timely fassion.
+
+
+UTC = TAI (atomic time) + leap seconds to date (34)
+
+UTC - that does not stand for anything means Coordinated Universal Time.
+
+
+Dealing with dates only
+-------------------------
+There is no DateTime::Date Class, so there is always a time part in a DateTime object.
+If you only care about the date then use *floating* time zone and
+delta_md() and delta_days() methods for math.
+
+
+How to Do DateTime Math Safely (at 39:05)
+------------------------------------------
+* Always use add(), delta_days(), subtract(), etc.
+* Never write something like this:  $dt->set( day => $dt->day() + 1 )
+* Use the floating time zone if you can
+* Use UTC if you can - UTC has no DST changes
+
+
+
