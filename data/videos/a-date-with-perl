@@ -9,6 +9,7 @@ length: 52:18
 format: markdown
 modules: DataTime, DateTime::Calendar::Chinese, DateTime::Duration 
 tags: Calendar
+featured: 2013-11-23
 
 __DESCRIPTION__
 
