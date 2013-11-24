@@ -24,6 +24,7 @@ sub import_sources {
 	my $dir = path($0)->absolute->parent->parent->child('data/sources');
 	foreach my $f ($dir->children) {
 		next if $f =~ /\.swp$/;
+		next if $f =~ /\.bak$/;
 		my $source = read_file($f);
 		$sources{ $f->basename } = $source;
 	}
@@ -35,6 +36,7 @@ sub import_people {
 	my $dir = path($0)->absolute->parent->parent->child('data/people');
 	foreach my $f ($dir->children) {
 		next if $f =~ /\.swp$/;
+		next if $f =~ /\.bak$/;
 		my $person = read_file($f);
 		$people{ $f->basename } = $person;
 	}
@@ -52,6 +54,7 @@ sub import_videos {
 	my %meta;
 	foreach my $f ($dir->children) {
 		next if $f =~ /\.swp$/;
+		next if $f =~ /\.bak$/;
 		my $video = read_file($f);
 		die "Missing source in $f" if not $video->{source};
 		die "Unindentified source '$video->{source}' in $f"
