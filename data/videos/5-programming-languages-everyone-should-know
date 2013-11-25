@@ -60,7 +60,7 @@ So you should probably know about it, if only to be able to say, "Well, is this 
 And if so, then you know you have to hire some really smart people to program in it.
 Haskell is sort of a modern kind of Lisp in that sense.
 
-What else?  Well, we can't leave off modern languages without talking about C.
+What else? Well, we can't leave off modern languages without talking about C.
 The C language, that's just spelled with the letter C, is actually about 40 years old,
 but people have tried to replace C with other languages that are like it and have by
 and large not succeeded because C is a very minimalistic language and very
