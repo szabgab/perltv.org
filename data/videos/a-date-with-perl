@@ -7,7 +7,7 @@ view_count: 41
 favorite_count: 0
 length: 52:18
 format: markdown
-modules: DataTime, DateTime::Calendar::Chinese, DateTime::Duration 
+modules: DateTime, DateTime::Calendar::Chinese, DateTime::Duration 
 tags: Calendar
 featured: 2013-11-23
 
