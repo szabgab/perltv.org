@@ -11,4 +11,38 @@ featured: 2013-11-27
 
 __DESCRIPTION__
 
+What is MongoDB?
+-----------------
+
+* MongoDB is a Document Oriented Database
+* Open Source
+* High Performance
+* Horizontally Scalable (Web Scale, Sharding)
+* Full Featured (buzzword compilance!)
+
+MongoDB is a good choice if you have a lot of data that you want to get at quickly.
+
+Library - a demo application
+-----------------------------
+
+* Users
+* Books
+* Authors
+* Publishers
+
+Download
+---------
+
+* [MongoDB - the database](http://www.mongodb.org/)
+* [Mojolicious::Lite](https://metacpan.org/pod/Mojolicious::Lite)
+* [MongoDB - Perl client](https://metacpan.org/pod/MongoDB)
+
+Inside the MongoDB Perl client
+
+* [MongoDB::Client](https://metacpan.org/pod/MongoDB::Client) - Encapsulates connection and server info
+* [MongoDB::Database](https://metacpan.org/pod/MongoDB::Database) - Represents a database (namespace) on the MongoDB server
+* [MongoDB::Collection](https://metacpan.org/pod/MongoDB::Collection) - Represents a collection (table? kinda) in a database
+* [MongoDB::Cursor](https://metacpan.org/pod/MongoDB::Cursor) - Retreives documents (rows? kinda) from a collection
+
+
 
