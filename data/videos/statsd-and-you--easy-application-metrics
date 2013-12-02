@@ -1,0 +1,26 @@
+id: -4djvtwuSNk
+src: youtube
+title: StatsD and You - Easy Application Metrics
+speaker: andrew-rodland
+source: pittsburgh-perl-workshop-2013
+view_count: 17
+favorite_count: 0
+length: 24:57
+format: markdown
+tags: StatsD, Graphite, Docker
+modules: Net::Statsd, Net::Statsd::Client
+
+__DESCRIPTION__
+
+Andrew Rodland (hobbs) presents this talk at the 2013 Pittsburgh Perl Workshop
+
+StatsD is a nice tool from Etsy that helps you keep track of counters and timings
+from all different kinds of apps in different languages. Learn why it's cool,
+see how to set it up, and learn about my new Perl client for it.
+
+[StatsD](https://github.com/etsy/statsd/) and [Graphite](https://github.com/graphite-project)
+
+[Docker](http://www.docker.io/)
+
+
+

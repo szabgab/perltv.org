@@ -1,0 +1,24 @@
+id: vgLmCYUDYxQ
+src: youtube
+title: Dancer Hello World
+speaker: geoffrey-avery
+source: pittsburgh-perl-workshop-2013
+view_count: 11
+favorite_count: 0
+length: 22:29
+format: markdown
+modules: Dancer
+tags: cpanm
+
+__DESCRIPTION__
+
+R Geoffrey Avery (rGeoffrey) presents this talk at the 2013 Pittsburg Perl Workshop
+
+When attempting to learn Dancer I ran into the problem that all the documentation started from
+"Here is a 'Hello World' script". But that was assuming many things were set up and configured
+and that just was not true, at least not on my server.
+
+This is a collection of what I learned.
+
+Plus a few comments of what would be different if you wanted to use Mojolicious rather than Dancer.
+
