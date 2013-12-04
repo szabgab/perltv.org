@@ -1,0 +1,30 @@
+id: yBe94Kk5Odc
+src: youtube
+title: Distributed Applications With Perl & Gearman
+speaker: issac-goldstand
+source: israel-pm 
+view_count: 48
+favorite_count: 0
+length: 33:05
+format: markdown
+modules: Gearman::Client, Gearman::Task, Gearman::XS, Gearman::Server, AnyEvent::Gearman, AnyEvent::Gearman::Client
+tags: Gearman
+
+__DESCRIPTION__
+
+Presentation given at TelAviv.pm meeting, Oct 23, 2013 in <b>English</b>.
+
+<a href="http://www.itsgoodconsulting.com/blog/issac-presenting-distributed-apps-with-gearman-at-telaviv-pm/">slides</a>.
+
+Breathing exercises start at 1:50, the actual talk starts at 2:40
+
+Why Distribute?
+
+You can mix languages.
+
+Several use-cases.
+
+An example in Perl.
+
+
+
