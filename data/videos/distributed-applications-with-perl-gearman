@@ -9,6 +9,7 @@ length: 33:05
 format: markdown
 modules: Gearman::Client, Gearman::Task, Gearman::XS, Gearman::Server, AnyEvent::Gearman, AnyEvent::Gearman::Client
 tags: Gearman
+featured: 2013-12-05
 
 __DESCRIPTION__
 
