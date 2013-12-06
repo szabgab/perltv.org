@@ -217,10 +217,10 @@ get '/atom.xml' => sub {
 	$xml .= qq{<id>$URL/</id>\n};
 	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
 	foreach my $entry (@$featured) {
-		my $title = $data->{title};
-		$title =~ s/&/and/g;
 
 		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
+		my $title = $data->{title};
+		$title =~ s/&/and/g;
 
 		$xml .= qq{<entry>\n};
 
