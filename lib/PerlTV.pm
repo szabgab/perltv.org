@@ -206,23 +206,25 @@ get '/atom.xml' => sub {
 
 	my $URL = request->base;
 	$URL =~ s{/$}{};
-	my $title = 'Perl TV Featured videos';
+	my $site_title = 'Perl TV Featured videos';
 	my $ts = $featured->[0]{date};
 
 	my $xml = '';
 	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
 	$xml .= qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
 	$xml .= qq{<link href="$URL/atom.xml" rel="self" />\n};
-	$xml .= qq{<title>$title</title>\n};
+	$xml .= qq{<title>$site_title</title>\n};
 	$xml .= qq{<id>$URL/</id>\n};
 	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
 	foreach my $entry (@$featured) {
+		my $title = $data->{title};
+		$title =~ /&/and/g;
 
 		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
 
 		$xml .= qq{<entry>\n};
 
-		$xml .= qq{  <title>$data->{title}</title>\n};
+		$xml .= qq{  <title>$title</title>\n};
 		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
 		$xml .= qq{  <updated>$entry->{date}T12:00:00Z</updated>\n};
 		my $url = "$URL/v/$entry->{path}";
@@ -274,13 +276,13 @@ sub _show {
 		#warn $@;
 		return template 'error';
 	}
-	my $title = $data->{title};
+	my $site_title = $data->{title};
 	$data->{path} = $path;
 	template $template, { 
 		video   => $data,
 		tags    => $data->{tags},
 		modules => $data->{modules},
-		title   => $title,
+		title   => $site_title,
 		%$params,
 	};
 };
