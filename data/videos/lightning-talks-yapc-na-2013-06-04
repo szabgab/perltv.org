@@ -10,6 +10,46 @@ format: markdown
 
 __DESCRIPTION__
 
+<a href="http://www.yapcna.org/yn2013/talk/4534">Lightning Talks Day 2</a>
+
+
 0:00-2:20  JT Smith - Build a start up!
+
+(2:38-3:30 Booking.com beer invitation and job ad)
+
+(3:38-4:00 Wendy announcing visit to the Wooden Nickel company)
+
+(4:25-5:00 Texas Yihaa)
+
+
+5:30-11:00 Henry Van Styn (vanstyn) -
+ <a href="http://www.rapidapp.info/">RapidApp Application framework</a> based on Perl,
+ <a href="http://www.catalystframework.org/">Catalyst</a>,
+ <a href="http://www.sencha.com/products/extjs/">ExtJs</a>,
+ <a href="http://www.dbix-class.org/">DBIC</a>
+ Live Demo!
+
+(11:00-11:40 A call for bat watching)
+
+11:40-17:30 Mike Greb (mikegrb) - Monitoring EMS/Fire Dispatch w/ Perl
+  <a href="https://metacpan.org/pod/Audio::Analyzer">Audio::Analyzer</a>
+  Live demo at <a href="http://gallowaynow.com/">Galloway now</a>
+
+Andrew Dougherty (aindilis) - Free software social artificial intelligence
+
+Adam Dutko (StylusEater) - Introduction to Jenkins/Hudson
+
+Martin Holste (mcholste) - Simple, Scalable Web Services with Parallel Recursion
+
+Jason McIntosh - Just Make Your Thing
+
+Tommy Stanton (tstanton) - Mojo::DOM: XML parsing is fun again!
+
+Ingy döt Net (ingy) - RosettaCode is on GitHub
+
+Perrin Harkins (perrin) - A Fond Goodbye to CGI.pm
+
+
+
 
 
