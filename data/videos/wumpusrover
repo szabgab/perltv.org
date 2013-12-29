@@ -1,0 +1,21 @@
+id: yeDwb-6ASxw
+src: youtube
+title: Wumpus Rover
+speaker: timm-murray
+source: other
+view_count: 11
+favorite_count: 0
+length: 08:09
+format: markdown
+modules: UAV::Pilot
+tags: Raspbery Pi, Arduino
+featured: 2013-12-29
+
+__DESCRIPTION__
+
+[Raspberry Pi](http://www.raspberrypi.org/) running [UAV::Pilot](https://metacpan.org/pod/UAV::Pilot) on the server on the device.
+
+This is the [Arduino](http://arduino.cc/) based Wumpus Rover.
+
+See the [full article](http://www.wumpus-cave.net/2013/12/28/uavpilot-v0-8-released-now-supports-wumpusrover/)
+
