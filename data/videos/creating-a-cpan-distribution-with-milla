@@ -1,0 +1,16 @@
+id: 7ap71XZiuFY
+src: youtube
+title: Creating a CPAN distribution with Milla
+speaker: tatsuhiko-miyagawa
+source: other
+view_count: 617
+favorite_count: 0
+length: 13:58
+format: markdown
+module: Dist::Milla
+tags: CPAN
+featured: 2014-01-02
+
+__DESCRIPTION__
+
+This screencast shows how to use [Dist::Milla](https://metacpan.org/pod/Dist::Milla) to make a new CPAN distribution.
