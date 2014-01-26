@@ -1,0 +1,20 @@
+id: k--m1K-8rDY
+src: youtube
+title: David Oswald - "Regular Expressions"
+speaker: david-oswald 
+source: salt-lake-perl-mongers
+view_count: 73
+favorite_count: 0
+length: 55:16
+format: markdown
+modules: Regexp::Debugger
+featured: 2014-01-26
+
+__DESCRIPTION__
+
+What is backtracking? How do character classes work? What is the "Little 
+Engine that Could(n't)"?
+
+[slides](http://www.slideshare.net/daoswald/regex-talk-30408635)
+
+The star of the show was Damian Conway's "rxrx" utility, provided by the CPAN module Regexp::Debugger.
