@@ -1,0 +1,25 @@
+id: duF_mCYSvJ4
+src: youtube
+title: Tom Hukins. Monitoring Your Code with Log4perl
+speaker: tom-hukins
+source: yapc-eu-2013
+view_count: 77
+favorite_count: 0
+length: 16:57
+format: markdown
+modules: Log::Log4perl, Log::Dispatch, Log::Any, Log::Log4perl::MDC
+tags: logging
+
+__DESCRIPTION__
+
+[YAPC::Europe 2013 in Kiev](http://act.yapc.eu/ye2013/talk/4951)
+
+By Tom Hukins from [London.pm](http://london.pm.org/)
+
+When applications break, it's helpful to have informative logs to look through to find out what happened.
+
+This talk will describe how the speaker has used Log4perl to monitor various applications in production and whilst developing and testing. You will learn how to direct your log statements to files, email, log servers, as well as how to incorporate Log4perl easily into applications using Catalyst, Dancer or Moose.
+
+If you have no experience using logging, have used a logging tool other than Log4perl or if you're just starting to use Log4perl you might find this talk interesting.
+
+[MDC = Mapped Diagnostic Context](https://metacpan.org/pod/Log::Log4perl::MDC)
