@@ -1,0 +1,31 @@
+id: GrS8mXVW2lw
+src: youtube
+title: Open Street Map for Perl Developers
+speaker: tom-hukins
+source: london-perl-workshop-2013
+view_count: 44
+favorite_count: 0
+length: 26:48
+format: markdown
+tags: OpenStreetMap
+modules: Geo::Parse::OSM, Geo::Openstreetmap::Parser, XML::LibXML::Reader
+
+__DESCRIPTION__
+
+[OpenStreetMap](http://www.openstreetmap.org/) creates and distributes free geographic data for the world. Despite its name, OSM offers much more than a map of streets.
+
+This talk will begin with a summary of OpenStreetMap's data model, APIs, editing tools and map rendering process.
+
+After that, we'll explore how Perl developers might use the data model and APIs within their own programs and look at existing parts of OpenStreetMap's toolchain that use Perl.
+
+Attendees should have some experience of programming, ideally with Perl, but the talk assumes no experience of OpenStreetMap or other geographic information systems.
+
+The speaker has many years experience programming Perl, a few years experience editing OpenStreetMap and a recent interest in the technical side of the map's data and interfaces.
+
+XML or Protocol buffers [Planet OSM](http://planet.openstreetmap.org/)
+
+[Tirex (pronounced T-Rex)](https://github.com/openstreetmap/tirex) a suite of programs for running a tile server written in Perl.
+
+* [Switch 2 osm](http://switch2osm.org/)
+* [wiki](http://wiki.openstreetmap.org/)
+
