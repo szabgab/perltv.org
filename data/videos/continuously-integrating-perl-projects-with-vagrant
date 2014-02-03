@@ -8,6 +8,7 @@ favorite_count: 0
 length: 20:40
 format: markdown
 tags: testing, Vagrant, Chef, Puppet, Bats, Test Kitchen, TAP, DevOps
+featured: 2014-02-02
 
 __DESCRIPTION__
 
