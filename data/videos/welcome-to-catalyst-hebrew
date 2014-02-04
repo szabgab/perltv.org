@@ -1,0 +1,21 @@
+id: ii_fbvoNe5I
+src: youtube
+title: Welcome to Catalyst (Hebrew)
+speaker: ynon-perek 
+source: israel-pm
+view_count: 13
+favorite_count: 0
+length: 01:16:38
+format: markdown
+language: he
+modules: Catalyst
+
+__DESCRIPTION__
+
+[Tel Aviv Perl Mongers](http://telaviv.pm.org/)
+
+* A small comparison with other web frameworks (or why you should choose catalyst)
+* Writing a dead simple REST API
+* Integrating with plack
+
+[code example](https://github.com/ynonp/catalyst-talk-examples)
