@@ -1,0 +1,17 @@
+id: Tsy9m_f-op8
+src: youtube
+title: Interview with Michael Schwern on automated testing and Git
+speaker: michael-schwern
+source: perl-maven
+view_count: 660
+favorite_count: 0
+length: 24:36
+format: markdown
+modules: Test::More, Test::Simple
+
+__DESCRIPTION__
+
+For notes and links see the [Perl Maven site](http://perlmaven.com/videos/michael-schwern-on-test-automation-and-git)
+[More interviews](http://perlmaven.com/tv)
+
+
