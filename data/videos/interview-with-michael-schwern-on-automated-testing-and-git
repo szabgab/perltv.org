@@ -7,6 +7,7 @@ view_count: 660
 favorite_count: 0
 length: 24:36
 format: markdown
+tags: interview
 modules: Test::More, Test::Simple
 
 __DESCRIPTION__

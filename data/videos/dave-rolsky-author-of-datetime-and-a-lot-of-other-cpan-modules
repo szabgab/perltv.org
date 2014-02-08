@@ -1,0 +1,17 @@
+id: d-K_uoIrUKQ
+src: youtube
+title: Dave Rolsky author of DateTime and a lot of other CPAN modules
+speaker: dave-rolsky
+source: perl-maven
+view_count: 476
+favorite_count: 0
+length: 19:19
+format: markdown
+modules: Log::Dispatch, Pg::CLI, Specio, Moose, Courriel, DateTime
+tags: inerview
+
+__DESCRIPTION__
+
+[Links and show notes](http://perlmaven.com/dave-rolsky)
+For more [interviews](http://perlmaven.com/tv)
+

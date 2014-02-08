@@ -7,7 +7,7 @@ view_count: 36
 favorite_count: 0
 length: 31:11
 format: markdown
-modules: Attribute::Handlers
+modules: Attribute::Handlers, Sub::Attribute
 featured: 2014-02-08
 
 __DESCRIPTION__
