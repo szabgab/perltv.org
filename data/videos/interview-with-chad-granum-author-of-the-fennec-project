@@ -1,0 +1,16 @@
+id: yjZiR03zckk
+src: youtube
+title: Inteview with Chad Granum, author of the Fennec project
+speaker: chad-granum
+source: perl-maven
+view_count: 134
+favorite_count: 0
+length: 31:06
+format: markdown
+module: Fennec, Fennec::Declare, Child, Parallel::Runner, Mock::Quick
+
+__DESCRIPTION__
+
+Links and [notes](http://perlmaven.com/chad-granum)
+Other [interviews and articles](http://perlmaven.com/tv)
+
