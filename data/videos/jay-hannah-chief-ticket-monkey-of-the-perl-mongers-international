@@ -8,10 +8,11 @@ favorite_count: 0
 length: 24:17
 format: markdown
 tags: Perl Mongers
+featured: 2014-02-14
 
 __DESCRIPTION__
 
-Links and notes: http://perlmaven.com/jay-hannah
-Other interviews and articles: http://perlmaven.com/
+Links and notes [Interview with Jay Hannah](http://perlmaven.com/jay-hannah)
+Other [interviews and articles](http://perlmaven.com/)
 
-About Perl Programming and Perl programmers.
+
