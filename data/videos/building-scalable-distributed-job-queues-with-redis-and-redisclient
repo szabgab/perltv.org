@@ -1,0 +1,59 @@
+id: ztyyn7hmcJo
+src: youtube
+title: Mike Friedman   Building Scalable, Distributed Job Queues with Redis and Redis::Client
+speaker: mike-friedman 
+source: yapc-na-2012
+view_count: 526
+favorite_count: 0
+length: 32:45
+format: markdown
+modules: Redis, Redis::Client, Redis::hiredis
+tags: Redis
+featured: 2014-02-28
+
+__DESCRIPTION__
+
+
+In this talk Mike Friedman firts describes Redis itself, the datatypes of Redis and the protocols one can use to talk 
+to Redis. Then mentiones the 3 Perl distributions that were available (back in 2012) to talk to Redis and describes the
+modules in Redis::Client he wrote. Then he shows some Perl examples using Redis::Client, including one using *tie*,
+basically mapping the Redis data into a Perl hash.
+
+At around 18:27 he starts to talk about Job Queues.
+
+
+Redis
+------
+
+[Redis](http://redis.io/) is a BSD licensed, advanced key-value store.
+Stores everything in memory, flashes it to disk, but you can loose data. (But apparently newer versions of Redis can have journaling storing data in the disk)
+
+Not over HTTP, it has its own protocol.
+
+Redis Data Types
+-----------------
+
+* Strings ('foo', '42', a JSON blob) thing scalar in Perl
+* Lists (zero or more strings, ordered) operations: RPUSH, RPOP, LPUSH, LPOP
+* Hashes (zero or morekey-value pairs, unordered, unique) operations: HDEL, HEXISTS, HKEYS, HVALS
+* Sets (zero or more keys, unordered, unique, no separate values) operations: SREM, SISMEMBER, SMEMBERS, Union, Intersection, Add/remove, Cardinality
+* Sorted sets (zsets) (zero or more keys, each with a numeric "score". No values.) operations: ZREM, ZRANK, ZRANGE
+
+
+Old text based protocol
+-----------------------
+
+
+New protocol - Unified Request Protocol (URP)
+---------------------------------------------
+Much better!
+Binary round-trip safe.
+
+
+
+CPAN
+-----
+* [Redis](https://metacpan.org/pod/Redis)
+* [Redis::hiredis](https://metacpan.org/pod/Redis::hiredis) (Wrapper around hiredis binary client)
+* [Redis::Client](https://metacpan.org/pod/Redis::Client)
+
