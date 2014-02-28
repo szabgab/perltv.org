@@ -1,6 +1,6 @@
 id: ztyyn7hmcJo
 src: youtube
-title: Mike Friedman   Building Scalable, Distributed Job Queues with Redis and Redis::Client
+title: Building Scalable, Distributed Job Queues with Redis and Redis::Client
 speaker: mike-friedman 
 source: yapc-na-2012
 view_count: 526
