@@ -1,0 +1,27 @@
+id: Nmtgky0ZWSE
+src: youtube
+title: Perl Encryption Primer
+speaker: timm-murray
+source: madmongers 
+view_count: 55
+favorite_count: 0
+length: 01:02:06
+format: markdown
+modules: Digest::Adler32, Digest::CRC, Digest::SHA3, Crypt::Random, Crypt::Rijndael
+tags: random, encryption
+featured: 2014-04-12
+
+__DESCRIPTION__
+
+Timm Murray's talk on using encryption in Perl for the Madison Perl Mongers
+2014 April 09.
+
+The talk is based on the <b>Perl Encryption Primer</b> articles:
+
+* [The Importance of Randomness](http://www.wumpus-cave.net/2014/03/12/perl-encryption-primer-the-importance-of-randomness/)
+* [One Time Pads Are Too Awesome To Use](http://www.wumpus-cave.net/2014/03/19/perl-encryption-primer-one-time-pads-are-too-awesome-to-use/)
+* [Block Ciphers](http://www.wumpus-cave.net/2014/03/21/perl-encryption-primer-block-ciphers/)
+* [Public Key Encryption](http://www.wumpus-cave.net/2014/03/25/perl-encryption-primer-public-key-encryption/)
+* [Hashes](http://www.wumpus-cave.net/2014/03/27/perl-encryption-primer-hashes/)
+* [Passwords](http://www.wumpus-cave.net/2014/03/31/perl-encryption-primer-passwords/)
+
