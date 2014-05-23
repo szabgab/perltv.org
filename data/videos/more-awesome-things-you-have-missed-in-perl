@@ -1,0 +1,19 @@
+id: vgvMd4nuHTg
+src: youtube
+title: More Awesome Things You've Missed in Perl
+speaker: paul-fenwick
+source: plug
+view_count: 191
+favorite_count: 0
+length: 01:22:51
+format: markdown
+modules: Moose, Moose::Util::TypeConstraints, Regexp::Common, Weather::Google, Moose::Role, MooseX::Method::Signatures, autobox, autobox::Core, Moose::Autobox, autodie
+tags: roles, interfaces, mixins, MooseX
+featured: 2014-05-23
+
+__DESCRIPTION__
+
+PLUG Talk for May 2012.
+
+Paul Fenwick explains Moose, autobox, autodie
+
