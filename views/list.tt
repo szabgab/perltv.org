@@ -1,5 +1,6 @@
 <div id="text">
   <h1>Welcome to the <a href="/">Perl TV</a></h1>
+  Total <% videos.size %><br>
 
   <% IF tag %>
   List of videos related to <b><% tag %></b>.
