@@ -1,0 +1,25 @@
+id: oo-gA9Z9SaA
+src: youtube
+title: Regexes in Perl 6 - Zero to Perl 6 Training
+speaker: carl-masak
+source: yapc-na-2013
+view_count: 226
+favorite_count: 0
+length: 43:35
+format: markdown
+
+__DESCRIPTION__
+
+Everybody stand back. I know regular expressions.
+
+*swoop* *PERL!*
+
+\o/ \o/
+
+So, here's the thing.
+
+I've given entire talks whose point was "hey, don't do it the quick-and-dirty way with regexes -- do it the nice-and-readable way". So the irony-meter really went all jittery when, a month back, I found myself writing a syntax highlighter the Quick-And-Dirty way. Again.
+
+I've done it both ways, folks. I've looked into the abyss, and it's looked back at me. And I've been shone upon by the beacon of structure, and seen what good it does. At the end of the work day, which method would I rather write? I don't know.
+
+But I sure as heck know which one I'd rather maintain.
