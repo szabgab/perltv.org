@@ -1,0 +1,17 @@
+id: sDUnWGuJn5A
+src: youtube
+title: Techniques to speed up large test suites
+speaker: mark-stosberg
+source: yapc-na-2013
+view_count: 95
+favorite_count: 0
+length: 44:21
+format: markdown
+
+__DESCRIPTION__
+
+<a href="https://docs.google.com/presentation/d/1isXUyBbhxcw_0t9KNlFUb9MW5wA0Yco3RE5Q0NMOsQ0/pub?start=false&loop=false&delayms=3000#slide=id.p">slidea</a>
+
+Learn many of the techniques used to speed up a test suite with more than 20,000 tests. With years of experience building and maintaining the test suite, many techniques were used to get the run time down from over 30 minutes to under 5 minutes, allowing us to run the entire suite for every commit. Topics covered will include unit testing, WWW::Mechanize, Selenium, parallel testing, Test::Class and Moose load time.
+
+(Reading the talk online? Press "S" to see the speaker notes).

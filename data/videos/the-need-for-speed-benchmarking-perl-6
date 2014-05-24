@@ -1,0 +1,14 @@
+id: h5sSuL9OueE
+src: youtube
+title: The Need for Speed: Benchmarking Perl 6
+speaker: geoffrey-broadwell
+source: yapc-na-2013
+view_count: 334
+favorite_count: 0
+length: 25:34
+format: markdown
+tags: Perl 6
+
+__DESCRIPTION__
+
+Comparison of the various Perl 6-related implementations and VMs, using microbenchmarks attempting to measure very small runtimes of particular features (such as invocation, taking closures, passing arguments, boxing, compilation, coercion, aggregate access/storage, lexical access/storage, unicode property lookup, regexes, etc). Also microbenchmarks of the usual "toy" programs in Perl 6 versus several other languages/environments. Discussion of general measurement and optimization strategies.

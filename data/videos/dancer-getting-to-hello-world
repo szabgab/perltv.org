@@ -1,0 +1,19 @@
+id: RRKAQs4__6Y
+src: youtube
+title: Dancer: Getting to Hello World
+speaker: geoffrey-avery
+source: yapc-na-2013
+view_count: 61
+favorite_count: 0
+length: 25:04
+format: markdown
+
+__DESCRIPTION__
+
+<a href="http://platypiventures.com/perl/present">slides</a>
+
+When attempting to learn Dancer I ran into the problem that all the documentation started from "Here is a 'Hello World' script". But that was assuming many things were set up and configured and that just was not true, at least not on my server.
+
+This is a collection of what I learned.
+
+Plus a few comments of what would be different if you wanted to use Mojolicious rather than Dancer.
