@@ -83,7 +83,13 @@ sub import_videos {
 			);
 			push @featured, \%item;
 		} else {
-			push @not_featured, $f->basename;
+			my %item = (
+				id   => $video->{id},
+				date => '',
+				path => $f->basename,
+				thumbnail => $thumbnail,
+			);
+			push @not_featured, \%item;
 		}
 		if ($video->{tags}) {
 			foreach my $tag (@{ $video->{tags} }) {
@@ -109,6 +115,7 @@ sub import_videos {
 	}
 	
 	@featured = sort { $b->{date} cmp $a->{date} } @featured;
+	@not_featured = sort { $b->{id} cmp $a->{id} } @not_featured;
 	
 	my %data = (
 		_comment => 'This is a generated file, please do NOT edit directly',
@@ -116,6 +123,7 @@ sub import_videos {
 	);
 	path('videos.json')->spew_utf8( $json->encode(\%data) );
 	path('featured.json')->spew_utf8( $json->encode(\@featured) );
+	path('not_featured.json')->spew_utf8( $json->encode(\@not_featured) );
 	path('tags.json')->spew_utf8( $json->encode(\%tags) );
 	path('modules.json')->spew_utf8( $json->encode(\%modules) );
 	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
@@ -124,7 +132,7 @@ sub import_videos {
 
 	if (@not_featured) {
 		say 'Not yet featured:';
-		say for @not_featured;
+		say "  $_->{path}" for @not_featured;
 	}
 }
 

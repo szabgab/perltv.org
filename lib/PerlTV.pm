@@ -20,6 +20,7 @@ hook before => sub {
 	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
 	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
 	set featured => [ sort {$b->{date} cmp $a->{date} }  @$featured ];
+	set not_featured => $json->decode( Path::Tiny::path("$appdir/not_featured.json")->slurp_utf8 );
 	my $data;
 	eval {
 		$data = $json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
@@ -112,6 +113,26 @@ get '/featured' => sub {
 	};
 
 };
+
+get '/nyf' => sub {
+	my $not_featured = setting('not_featured');
+	my $data = setting('data');
+	my %path_to_title = map {
+		$_->{path} => $_->{title}
+		} @{ $data->{videos} };
+	my @videos = map { {
+		path  => $_->{path},
+		title => $path_to_title{$_->{path}},
+		featured  => '',
+		} } @$not_featured;
+#die Dumper \%path_to_title;
+	template 'list', {
+		videos => \@videos,
+		title  => 'Not yet featured videos',
+	};
+
+};
+
 
 get '/people/?' => sub {
 	my $people = setting('people');
