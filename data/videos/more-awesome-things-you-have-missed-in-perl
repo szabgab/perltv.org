@@ -7,13 +7,18 @@ view_count: 191
 favorite_count: 0
 length: 01:22:51
 format: markdown
-modules: Moose, Moose::Util::TypeConstraints, Regexp::Common, Weather::Google, Moose::Role, MooseX::Method::Signatures, autobox, autobox::Core, Moose::Autobox, autodie
-tags: roles, interfaces, mixins, MooseX
+modules: Moose, Moose::Util::TypeConstraints, Regexp::Common, Weather::Google, Moose::Role, MooseX::Method::Signatures, autobox, autobox::Core, Moose::Autobox, autodie, Try::Tiny, cpanm, local::lib, Regexp::Grammars, Dancer, App::SweeperBot, PAR, FatPacker, Devel::NYTProf, Perl::Critic, Test::Perl::Critic
+tags: roles, interfaces, mixins, MooseX, named capture, grammars
 featured: 2014-05-23
 
 __DESCRIPTION__
 
 PLUG Talk for May 2012.
 
-Paul Fenwick explains Moose, autobox, autodie
+Paul Fenwick explains Moose, autobox, autodie, Try::Tiny, <a href="http://cpanmin.us/">cpanm</a>, local::lib,
+<a href="http://metacpan.org/">MetaCPAN</a>, named capture, grammars, Regexp::Grammars, <a href="http://perldancer.org/">Dancer</a>,
+<a href="https://metacpan.org/pod/App::SweeperBot">automating Minsweeper</a>, PAR, Devel::NYTProf that provides profiles on subroutine, block and line level,
+Perl::Critic.
+
+He also mentions perl5i.
 
