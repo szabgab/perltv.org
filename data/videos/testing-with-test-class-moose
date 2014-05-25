@@ -7,8 +7,21 @@ view_count: 102
 favorite_count: 0
 length: 47:45
 format: markdown
-module:: Test::Class::Moose
+modules: Test::Class::Moose
 tags: testing
 
 __DESCRIPTION__
+
+36 minutes of talk and then Q&A.
+
+See also
+* [Test::Class](https://metacpan.org/pod/Test::Class)
+* [Test::Routine](https://metacpan.org/pod/Test::Routine)
+* [Test::Roo](https://metacpan.org/pod/Test::Roo)
+* [Test::Most](https://metacpan.org/pod/Test::Most)
+* [Fennec](https://metacpan.org/pod/Fennec)
+
+* [Liskov substitution principle)](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
+
+The original <a href="http://www.yapcna.org/yn2013/talk/4596">abstract</a>.
 
