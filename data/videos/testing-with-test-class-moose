@@ -1,6 +1,6 @@
 id: S1Z5_Ba860g
 src: youtube
-title: Curtis Poe (Ovid) - Testing with Test::Class::Moose
+title: Testing with Test::Class::Moose
 speaker: curtis-ovid-poe
 source: yapc-na-2013
 view_count: 102
@@ -8,6 +8,7 @@ favorite_count: 0
 length: 47:45
 format: markdown
 module:: Test::Class::Moose
+tags: testing
 
 __DESCRIPTION__
 
