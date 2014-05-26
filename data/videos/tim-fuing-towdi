@@ -8,9 +8,21 @@ favorite_count: 0
 length: 20:42
 date: 2014-04-25
 format: markdown
+featured: 2014-05-26
 
 __DESCRIPTION__
 
 NLPW::2014::Utrecht Nederlandse Perl Workshop
 
 by: Sawyer X
+
+* Searching CPAN: Use [MetaCPAN](https://metacpan.org/)  instead of [search.cpan.org](http://search.cpan.org/)
+* Inheritance: Use [parent](https://metacpan.org/pod/parent) instead of [base](https://metacpan.org/pod/base) 
+* Objects: use [Moose](https://metacpan.org/pod/Moose) or [Moo](https://metacpan.org/pod/Moo), but no [Mouse](https://metacpan.org/pod/Mouse) and never [Any::Moose](https://metacpan.org/pod/Any::Moose), nor [Mo](https://metacpan.org/pod/Mo).
+* Serialization: JSON, YAML, Sereal but not Storable and never XML
+* HTTP User Agents: [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent), [WWW::Mechanie](https://metacpan.org/pod/WWW::Mechanize), [HTTP::Tiny](https://metacpan.org/pod/HTTP::Tiny)
+* Templates: [Template::Toolkit](https://metacpan.org/pod/Template::Toolkit) or [Xslate](https://metacpan.org/pod/Text::Xslate), but don't use [HTML::Template](https://metacpan.org/pod/HTML::Template), [Mason](https://metacpan.org/pod/Mason)
+* Web: Use [PSGI](http://plackperl.org/) and not CGI.
+* Threads, signals, and CPU parallel execution:
+
+
