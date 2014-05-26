@@ -8,10 +8,15 @@ favorite_count: 0
 length: 17:20
 date: 2014-04-25
 format: markdown
+tags: CSS, YUIcompressor 
+modules: CSS::Compressor
 
 __DESCRIPTION__
 
-NLPW::2014
+Beeting the perfomance of YUIcompressor by [CSS::Compressor](https://metacpan.org/pod/CSS::Compressor)
+See also the [reverse dependencies](https://metacpan.org/requires/distribution/CSS-Compressor).
 
-Nederlandse Perl Workshop, 25-April, Utrecht
+* [Booking.com article](http://blog.booking.com/efficient-css-compression-in-perl.html)
+* [Reddit discussion](http://www.reddit.com/r/programming/comments/14uh56/yuicompressor_rewritten_from_java_perl_for_50/)
+
 
