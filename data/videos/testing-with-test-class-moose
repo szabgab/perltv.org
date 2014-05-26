@@ -23,5 +23,9 @@ See also
 
 * [Liskov substitution principle)](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
+The home page of [Test::Class::Moose](http://ovid.github.io/test-class-moose/)
+
+See also the [Zen of test suites](http://ovid.github.io/zen-of-test-suites/) by Ovid.
+
 The original <a href="http://www.yapcna.org/yn2013/talk/4596">abstract</a>.
 
