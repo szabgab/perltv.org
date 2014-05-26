@@ -1,0 +1,17 @@
+id: FKmwe72g0yg
+src: youtube
+title: Digest::SHA is broken
+speaker: mark-overmeer
+source: nlpw2014
+view_count: 9
+favorite_count: 0
+length: 24:38
+date: 2014-04-25
+format: markdown
+modules: Digest::SHA
+
+__DESCRIPTION__
+
+NLPW::2014::Utrecht Nederlandse Perl Workshop
+
+New programmers all forgot about bits and bytes. Some of our core modules are more broken than you expect.
