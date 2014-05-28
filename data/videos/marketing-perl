@@ -9,6 +9,7 @@ length: 16:53
 date: 2014-04-25
 format: markdown
 tags: marketing, community
+featured: 2014-05-27
 
 __DESCRIPTION__
 
@@ -19,3 +20,5 @@ Just talk about the projects you built using Perl.
 
 See the largest tuit in the world and a lot of camels!
 
+[Article by Wendy](http://blogs.perl.org/users/wendy/2014/05/marketing-for-perl-is-easy-because-perl-is-awesome.html)
+on their efforts in promoting Perl.
