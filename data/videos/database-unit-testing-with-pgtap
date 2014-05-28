@@ -8,10 +8,20 @@ favorite_count: 0
 length: 20:50
 date: 2014-04-25
 format: markdown
+modules: TAP::Parser::SourceHandler::pgTAP
+tags: testing, TAP, PgTAP
+#featured: 2014-05-28
 
 __DESCRIPTION__
 
-NLPW::2014
+[David Wheeler](http://justatheory.com/)'s [PgTAP](http://pgtap.org/) (as well as [MyTAP](http://theory.github.io/mytap/) for MySQL) is a handy,
+easy to use and easy to learn TAP testing framework which should be part of the toolbox of every Perl developer. 
 
-Nederlandse Perl Workshop, Utrecht
+Staying within the TAP testing style we are used to in Perl, PgTAP makes it very easy to whip up simple and not-so-simple database unit tests. 
+
+This is an overview of the features of PgTAP and a couple of common test cases which might come in handy in everyday use of a database. 
+
+Examples are shown in Postgres/PgTAP.
+
+[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5496)
 
