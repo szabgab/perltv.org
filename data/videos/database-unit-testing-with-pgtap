@@ -10,7 +10,7 @@ date: 2014-04-25
 format: markdown
 modules: TAP::Parser::SourceHandler::pgTAP
 tags: testing, TAP, PgTAP
-#featured: 2014-05-28
+featured: 2014-05-28
 
 __DESCRIPTION__
 
