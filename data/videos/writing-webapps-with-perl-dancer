@@ -8,7 +8,9 @@ favorite_count: 0
 length: 49:19
 format: markdown
 modules: Dancer
+featured: 2014-05-29
 
 __DESCRIPTION__
 
 Writing Webapps with <a href="http://perldancer.org/">Perl Dancer</a>.
+
