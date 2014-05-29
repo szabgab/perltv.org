@@ -1,6 +1,6 @@
 id: nS4o30_gi_w
 src: youtube
-title: Perl Data Language
+title: Perl Data Language (PDL)
 speaker: jan-hoogenraad
 source:nlpw2014 
 view_count: 15
@@ -8,7 +8,30 @@ favorite_count: 0
 length: 22:53
 date: 2014-04-25
 format: markdown
+modules: PDL
+keywords: Matlab, Octave
 
 __DESCRIPTION__
 
-[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5453)
+
+A small primer there on what PDL is, and for who.
+
+* What exists outside perl: matlab / octave, c/c++, numpy, R, mathematica / maxima
+* Benefits of Perl as basis compared to other languages (regexp, I/O, data cleaning, flexio)
+* Great performance
+* Known uses and library stacks based on PDL taken from [here](http://pdl.perl.org/?page=users).
+* A solution of running this in a multiple processor environment.
+* Some examples of what [Spoorgloren](http://spoorgloren.nl/) uses it for.
+
+
+A large part of the work that need to be done even before the scientific analysis is cleaning up bad data.
+For this Perl is much better than the other languages (FORTRANT/Pascal/C/C++/Matlab) used by scientists.
+
+* Perl is fast for text handling: [Perl, Python, Ruby, PHP, C, C++, Lua, tcl, javascript and Java comparison](http://raid6.com.au/~onlyjob/posts/arena/)
+* PDL perfomance is also good: [Generating cool fractals](http://www.freesoftwaremagazine.com/articles/cool_fractals_with_perl_pdl_a_benchmark)
+
+
+[slides in pdf](http://www.hoogenraad.net/NLPW/pdlprim02.pdf)
+
+[abstract from](http://www.perlworkshop.nl/nlpw2014/talk/5453)
+
