@@ -8,10 +8,21 @@ favorite_count: 0
 length: 20:45
 date: 2014-04-25
 format: markdown
+module: Dancer, Dancer2, AnyEvent, Twiggy, PSGI
 
 __DESCRIPTION__
 
-NLPW::2014
+* Perlfully beautiful
 
-Nederlandse Perl Workshop
+* Dancer is awesome.
+
+The main problem with Dancer is that almost everything is implemented as a Singleton which means they are basically globals.
+That's where Dancer2 comes in. It is a clean and nice rewrite of Dancer without any globals.
+
+
+Dancer 2 becoming a business priority where the business of a company depends on it. This will let people
+to devote some company time to working on Dancer 2, and even secure company financing.
+
+Including an example of an asynchronous application using Dancer2, AnyEvent and Twiggy.
+
 
