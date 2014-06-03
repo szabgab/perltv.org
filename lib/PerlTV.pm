@@ -142,15 +142,15 @@ get '/people/?' => sub {
 	};
 };
 
-get '/people/:person' => sub {
+get '/people/:name' => sub {
 	my $people = setting('people');
-	my $person_code = params->{person};
-	pass if not $people->{$person_code};
+	my $name = params->{name};
+	pass if not $people->{$name};
 
 	my $appdir = abs_path config->{appdir};
-	my $person = read_file( "$appdir/data/people/$person_code" );
+	my $person = read_file( "$appdir/data/people/$name" );
 	my $data = setting('data');
-	my @entries = grep { $_->{speaker} eq $person_code} @{ $data->{videos} };
+	my @entries = grep { $_->{speaker} eq $name} @{ $data->{videos} };
 	template 'list', { videos => \@entries, person => $person };
 };
 
