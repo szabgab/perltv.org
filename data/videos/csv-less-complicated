@@ -8,10 +8,16 @@ favorite_count: 0
 length: 39:07
 date: 2014-04-25
 format: markdown
+tags: csv, RFC 7111
+modules: Text::CSV_XS, Text::CSV
+featured: 2014-06-03
 
 __DESCRIPTION__
 
-NLPW::2014
+Merijn Brand (Tux) starts by showing the default way to use Text::CSV to read and write CSV files.
+Then he explains how those 8-10 lines of code were turned into a single function to make it simpler.
 
-Nederlandse Perl Workshop
+Implemented the RFC 7111 specification, [URI Fragment Identifiers for the text/csv Media Type](http://tools.ietf.org/html/rfc7111).
+
+
 
