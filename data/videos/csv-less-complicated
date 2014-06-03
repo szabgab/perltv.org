@@ -19,5 +19,9 @@ Then he explains how those 8-10 lines of code were turned into a single function
 
 Implemented the RFC 7111 specification, [URI Fragment Identifiers for the text/csv Media Type](http://tools.ietf.org/html/rfc7111).
 
+    $csv->fragment($io, "col=3:8");
 
+Callback to be called after each logical line was processed.
+
+[slides](http://tux.nl/Talks/CSVu/)
 
