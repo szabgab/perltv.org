@@ -1,0 +1,17 @@
+id: UGufeknRHjQ
+src: youtube
+title: Code Reuse in a Non-Blocking Application
+speaker: joel-berger
+source: mojoconf2014
+view_count: 41
+favorite_count: 0
+length: 25:29
+format: markdown
+
+__DESCRIPTION__
+
+When we write blocking applications code reuse is easy: abstract the logic and encapsulate it in a method. Why should this be any different in a non-blocking application? In this talk I will demonstrate how to use Mojo::IOLoop::Delay to write methods to share non-blocking logic between parts of your non-blocking Mojolicious application. With a little care, you can easily control workflow, exceptions, nested non-blocking method calls, even make your methods work in a blocking application. 
+
+Of course this talk will require Mojolicious. It will also use the spin-off project Mango as a non-blocking interface to MongoDB. It may use the very young project Mandel as an Object Document Mapper (ODM) for Mongo. If you would like to play along, bring a laptop with this software installed. Hope to see you there! Happy Perling!
+
+http://www.mojoconf.org/mojo2014/talk/5414

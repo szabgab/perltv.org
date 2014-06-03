@@ -1,0 +1,25 @@
+id: nueYDGVQy8g
+src: youtube
+title: Case Study: The Move from Axis2 to Mojo
+speaker: richard-elberger
+source: mojoconf2014
+view_count: 40
+favorite_count: 0
+length: 21:12
+format: markdown
+
+__DESCRIPTION__
+
+Case Study: The Move from Ajax2 to Mojo
+
+Several years ago, we designed a service management and automation engine integration using web services. At the time, Perl wasn't a natural choice for us since the platform maturity for developing web services and real time transactions was relatively weak, and much of the framework services we would have to develop ourselves. The next choice was Apache Tomcat and Axis2, which enabled the solution, but came with a lot of operational overhead, upgrade challenges, longer turnaround times, and even larger systems support problems.
+
+After more than two years of Mojo under our belt with another one of our service offerings, we decided to change the integration solution to the Mojo platform. In this talk, we discuss:
+
+1. Our approach to making the switch
+2. Enabling core services in Mojo such as security to meet as-is requirements
+3. How moving to Mojo increased our development and test turnaround times
+
+Plus a demo.
+
+http://www.mojoconf.org/mojo2014/talk/5498

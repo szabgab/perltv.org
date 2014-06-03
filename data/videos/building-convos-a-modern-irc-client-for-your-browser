@@ -1,0 +1,15 @@
+id: mL4pJEfs7ls
+src: youtube
+title: Building Convos, a modern IRC client for your browser
+speaker: marcus-ramberg
+source: mojoconf2014
+view_count: 24
+favorite_count: 0
+length: 25:46
+format: markdown
+
+__DESCRIPTION__
+
+Convos is a modern IRC client for your browser, built in the Mojolicious framework using HTML5 Web Technologies like Web Sockets, Desktop Notifications, Media Queries, and Push State. It's always on, storing your messages in a Redis backend even when you are not connected. In my presentation, I will go through some of our technology choices and challenges in building a fully asynchronous Node.js-like application in Perl. Updated and extended version.
+
+http://www.mojoconf.org/mojo2014/talk/5412

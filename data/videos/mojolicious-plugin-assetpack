@@ -1,0 +1,22 @@
+id: GMeKxwHzw40
+src: youtube
+title: Mojolicious::Plugin::AssetPack
+speaker: jan-henning-thorsen
+source: mojoconf2014 
+view_count: 36
+favorite_count: 0
+length: 29:58
+format: markdown
+modules: Mojolicious::Plugin::AssetPack, Mojolicious::Plugin::Bootstrap3
+
+__DESCRIPTION__
+
+This presentation will go through what Mojolicious::Plugin::AssetPack is and what it can be used for.
+
+The presentation includes:
+* Code examples with custom preprocessor
+* Tricks on how to change the asset names
+* Cache issues in browsers
+* How to create an example application with Mojolicious::Plugin::Bootstrap3
+
+http://www.mojoconf.org/mojo2014/talk/5411

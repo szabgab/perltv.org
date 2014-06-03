@@ -1,0 +1,23 @@
+id: SsakylMNv4U
+src: youtube
+title: Refactoring tools for Perl code
+speaker: dagfinn-reiersol
+source: mojoconf2014
+view_count: 11
+favorite_count: 0
+length: 19:07
+format: markdown
+
+__DESCRIPTION__
+
+Refactoring is a structured discipline for improving code quality. In my opinion, it is too often taken for granted.
+
+Tool support for refactoring is clearly useful, but differs much between programming languages. Java has good refactoring tools. This is partly due to the structure and restrictions of the language.
+
+Perl is not particularly well-endowed in this area, but there is an implementation of some simple refactorings in PPIx::EditorTools. However, it does not help with the refactoring that I consider most important, but is also significantly more difficult to automate: Extract Class. So I implemented it. It is currently in the "works for me" stage.
+
+The logic required is complex, and there is surely no way to make it work perfectly in all possible cases. But it should be possible to make it work well enough that the result of the refactoring is buggy only in rare cases. In other words a "safe" refactoring process.
+
+In this talk, I will demonstrate how to do the available refactorings and how they can help improve code. I will also show some of the technical challenges.
+
+http://www.mojoconf.org/mojo2014/talk/5416
