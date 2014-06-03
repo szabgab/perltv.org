@@ -151,7 +151,7 @@ get '/people/:name' => sub {
 	my $person = read_file( "$appdir/data/people/$name" );
 	my $data = setting('data');
 	my @entries = grep { $_->{speaker} eq $name} @{ $data->{videos} };
-	template 'list', { videos => \@entries, person => $person };
+	template 'list', { videos => \@entries, %{ $people->{$name} } , person => $person };
 };
 
 get '/tag/?' => sub {
@@ -187,6 +187,7 @@ get '/source/:name' => sub {
 	my $sources = setting('sources');
 	my $name = params->{name};
 	pass if not $sources->{$name};
+
 	my $data = setting('data');
 	my @entries = grep { $_->{source} eq $name} @{ $data->{videos} };
 	template 'list', { videos => \@entries, %{ $sources->{$name} } };
