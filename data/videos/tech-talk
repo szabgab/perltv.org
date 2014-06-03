@@ -11,7 +11,8 @@ format: markdown
 
 __DESCRIPTION__
 
-NLPW::2014
-
-Nederlandse Perl Workshop, 25-April, Utrecht
-
+<ul>
+  <li>Step 0 [local::lib](https://metacpan.org/pod/local::lib)</li>
+  <li>Step 0.5 [carton](https://metacpan.org/pod/Carton)</li>
+  <li>Stpe 1 [App::FatPacker](https://metacpan.org/pod/App::FatPacker)</li>
+</ul>

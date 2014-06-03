@@ -1,0 +1,19 @@
+id: f11vdNnSjZs
+src: youtube
+title: APIs. Very dangerous. You go first...
+speaker: jeffrey-goff
+source: nlpw2014
+view_count: 34
+favorite_count: 0
+length: 32:34
+format: markdown
+modules: B::Deparse
+
+__DESCRIPTION__
+
+Join me in exploring the deep, dark caverns of the perl-5.12 keyword API as we implement qw(): The Next Generation.
+
+We'll implement and test qqw(), a version of the qw() we all know and love, but with the ability to interpolate variables, just like qq(). Make a torch out of the perl optree and follow me (recursively, depth first) into the dark world of XS macros as you learn how to implement your own Perl syntax.
+
+Some examples using [B::Deparse](https://metacpan.org/pod/B::Deparse).
+
