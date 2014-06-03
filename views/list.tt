@@ -30,6 +30,9 @@
   <% END %>
 
   <% description %>
+  <% IF description %>
+   <hr>
+  <% END %>
 
   <ul>
   <% FOR v IN videos %>
