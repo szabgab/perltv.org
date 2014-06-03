@@ -8,10 +8,17 @@ favorite_count: 0
 length: 22:16
 date: 2014-04-25
 format: markdown
+modules: Number::Fraction
 
 __DESCRIPTION__
 
-NLPW::2014
+Have you ever had 0.125 pizza? Maybe 1/8th of a pizza?
+Theo van Hoesel who is a Math teacher explains the difference between the two.
+Showing what 9/4/1/2 is, and what it is not.
 
-Nederlandse Perl Workshop, Utrecht
+Then he introduces [Number::Fraction](https://metacpan.org/pod/Number::Fraction)
+
+[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5308)
+
+
 
