@@ -8,11 +8,11 @@ favorite_count: 0
 length: 40:18
 date: 2014-04-25
 format: markdown
+featured: 2014-06-04
 
 __DESCRIPTION__
 
-<ul>
-  <li>Step 0 [local::lib](https://metacpan.org/pod/local::lib)</li>
-  <li>Step 0.5 [carton](https://metacpan.org/pod/Carton)</li>
-  <li>Stpe 1 [App::FatPacker](https://metacpan.org/pod/App::FatPacker)</li>
-</ul>
+* Step 0 [local::lib](https://metacpan.org/pod/local::lib)
+* Step 0.5 [carton](https://metacpan.org/pod/Carton)
+* Stpe 1 [App::FatPacker](https://metacpan.org/pod/App::FatPacker)
+
