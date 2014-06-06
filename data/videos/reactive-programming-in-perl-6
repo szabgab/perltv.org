@@ -8,9 +8,21 @@ favorite_count: 0
 length: 43:26
 date: 2014-04-25
 format: markdown
+tags: Perl 6
 
 __DESCRIPTION__
 
-NLPW::2014
+In the first 20 minutes Jonathan explains the difficulties with Asynchronous programming,
+and shows some examples using higher order programming techniques. Then he shows
+the <b>Supply</b> class of Perl 6 and how one can combine the two ideas.
 
-Nederlandse Perl Workshop, Utrecht
+In the second half of the talk he walk through two examples.
+
+The first example is a system that monitors the filesystem and backs up files before they are committed to Git.
+
+The second one is a Code golf assistant.
+
+and BTW he wrote a GTK binding for Perl 6 on his way to the conference...
+
+[source code](https://github.com/jnthn/perl6-reactive-samples)
+
