@@ -80,6 +80,10 @@ hook before_template => sub {
 	return;
 };
 
+get '/v/dancer-and-dbix' => sub {
+	redirect 'http://perltv.org/v/dancer-and-dbix-class';
+};
+
 get '/legal' => sub {
 	template 'legal';
 };
