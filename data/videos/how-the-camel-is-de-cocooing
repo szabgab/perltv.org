@@ -8,7 +8,16 @@ favorite_count: 0
 length: 40:12
 date: 2014-04-25
 format: markdown
+tags: Perl 6
 
 __DESCRIPTION__
 
 [abstract](http://www.perlworkshop.nl/nlpw2014/talk/5452)
+
+* Quick recap of Perl 5 releases
+* Releases of Perl 6 and related projects
+* Then Liz shows a number of code examples of syntax in Perl 5.20 and Perl 6
+* How Perl 5 code translates to Perl 6
+* How Perl 5 code can be executed by implementations of Perl 6 (interoperability)
+* The speed of the implementations.
+
