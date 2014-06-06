@@ -8,10 +8,8 @@ favorite_count: 0
 length: 41:38
 date: 2014-04-25
 format: markdown
+language: nl
 
 __DESCRIPTION__
 
-NLPW::2014
-
-Nederlandse Perl Workshop, 25-April, Utrecht
-
+The video is in Dutch.
