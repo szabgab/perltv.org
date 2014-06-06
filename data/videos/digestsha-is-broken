@@ -12,6 +12,12 @@ modules: Digest::SHA
 
 __DESCRIPTION__
 
-NLPW::2014::Utrecht Nederlandse Perl Workshop
-
 New programmers all forgot about bits and bytes. Some of our core modules are more broken than you expect.
+
+* [Parity-bits](http://en.wikipedia.org/wiki/Parity_bit) to recognized errors
+* [CRC-Codes](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) - to even fix errors
+* Crypto Checksums: [MD4](http://en.wikipedia.org/wiki/MD4), [MD5](http://en.wikipedia.org/wiki/MD5), [SHA1](http://en.wikipedia.org/wiki/SHA1), [SHA256](http://en.wikipedia.org/wiki/SHA256)  - "one way functions", "hashing"
+* Some suggestions at the end of the presentation
+* [abstract](http://www.perlworkshop.nl/nlpw2014/talk/5390)
+
+
