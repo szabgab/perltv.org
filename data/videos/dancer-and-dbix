@@ -8,9 +8,19 @@ favorite_count: 0
 length: 36:05
 date: 2014-04-25
 format: markdown
+modules: Dancer, DBIx::Class, Dancer::Plugin::Dropbox, Dancer::Plugin::DBIC, DBIx::Class::Schema::Loader, Dancer::Plugin::Auth::Extensible
+tags: DBIC
+fetatured: 2014-06-06
 
 __DESCRIPTION__
 
-NLPW::2014::Utrecht Nederlandse Perl Workshop Utrecht
 
-Stefan Hornburg Dancer & DBIx::Class
+* Quick introduction to Dancer and a couple of examples built using Dancer
+* DBIx::Class - ORM - Objects instead of SQL
+* Showing a [Table Editor](https://github.com/interchange/TableEditor) for database tables
+* [Angular](https://angularjs.org/), [Bootstrap](http://getbootstrap.com/)
+* [Interchange](http://www.icdevgroup.org/)
+* Configuring [Dancer::Plugin::DBIC](https://metacpan.org/pod/Dancer::Plugin::DBIC)
+* [abstract](http://www.perlworkshop.nl/nlpw2014/talk/5462)
+* [slides](http://www.linuxia.de/talks/nlpw2014/dancer-dbic-en-beamer.pdf)
+
