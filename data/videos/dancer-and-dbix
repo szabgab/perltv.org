@@ -10,7 +10,7 @@ date: 2014-04-25
 format: markdown
 modules: Dancer, DBIx::Class, Dancer::Plugin::Dropbox, Dancer::Plugin::DBIC, DBIx::Class::Schema::Loader, Dancer::Plugin::Auth::Extensible
 tags: DBIC
-fetatured: 2014-06-06
+featured: 2014-06-06
 
 __DESCRIPTION__
 
