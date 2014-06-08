@@ -83,6 +83,9 @@ hook before_template => sub {
 get '/v/dancer-and-dbix' => sub {
 	redirect 'http://perltv.org/v/dancer-and-dbix-class';
 };
+get '/v//how-the-camel-is-de-cocooing' => sub {
+	redirect '/v//how-the-camel-is-de-cocooning';
+};
 
 get '/legal' => sub {
 	template 'legal';
