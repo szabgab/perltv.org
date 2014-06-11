@@ -6,6 +6,7 @@ source: perl-maven
 view_count: 134
 favorite_count: 0
 length: 31:06
+date: 2013-07-21
 format: markdown
 module: Fennec, Fennec::Declare, Child, Parallel::Runner, Mock::Quick
 

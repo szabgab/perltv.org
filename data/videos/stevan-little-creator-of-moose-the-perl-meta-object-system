@@ -6,6 +6,7 @@ source: perl-maven
 view_count: 610
 favorite_count: 0
 length: 24:32
+date: 2013-05-11
 format: markdown
 modules: Moose, Moe, Class::MOP
 
