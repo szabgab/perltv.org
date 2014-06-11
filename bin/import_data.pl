@@ -78,6 +78,7 @@ sub import_videos {
 			my %item = (
 				id        => $video->{id},
 				featured  => $video->{featured},
+				date      => $video->{date},
 				path      => $f->basename,
 				thumbnail => $thumbnail,
 			);
@@ -86,6 +87,7 @@ sub import_videos {
 			my %item = (
 				id        => $video->{id},
 				featured  => '',
+				date      => $video->{date},
 				path      => $f->basename,
 				thumbnail => $thumbnail,
 			);
@@ -115,7 +117,12 @@ sub import_videos {
 	}
 	
 	@featured = sort { $b->{featured} cmp $a->{featured} } @featured;
-	@not_featured = sort { $b->{id} cmp $a->{id} } @not_featured;
+	#@not_featured = sort { $b->{id} cmp $a->{id} } @not_featured;
+	{
+		my @dated = sort { $b->{date} cmp $a->{date} } grep { $_->{date} } @not_featured;
+		my @undated = sort { $b->{id} cmp $a->{id} } grep { ! $_->{date} } @not_featured;
+		@not_featured = (@dated, @undated);
+	}
 	
 	my %data = (
 		_comment => 'This is a generated file, please do NOT edit directly',
