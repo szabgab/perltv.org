@@ -6,6 +6,7 @@ source: london-perl-workshop-2013
 view_count: 44
 favorite_count: 0
 length: 26:48
+date: 2013-11-30
 format: markdown
 tags: OpenStreetMap
 modules: Geo::Parse::OSM, Geo::Openstreetmap::Parser, XML::LibXML::Reader
@@ -28,4 +29,4 @@ XML or Protocol buffers [Planet OSM](http://planet.openstreetmap.org/)
 
 * [Switch 2 osm](http://switch2osm.org/)
 * [wiki](http://wiki.openstreetmap.org/)
-
+* [absract](http://act.yapc.eu/lpw2013/talk/5152)

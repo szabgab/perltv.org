@@ -6,6 +6,7 @@ source: other
 view_count: 11
 favorite_count: 0
 length: 08:09
+date: 2013-12-28
 format: markdown
 modules: UAV::Pilot
 tags: Raspbery Pi, Arduino

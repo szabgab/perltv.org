@@ -6,6 +6,7 @@ source: madmongers
 view_count: 55
 favorite_count: 0
 length: 01:02:06
+date: 2014-04-09
 format: markdown
 modules: Digest::Adler32, Digest::CRC, Digest::SHA3, Crypt::Random, Crypt::Rijndael
 tags: random, encryption
