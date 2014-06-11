@@ -19,7 +19,7 @@ hook before => sub {
 	set tags => $json->decode( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
 	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
 	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
-	set featured => [ sort {$b->{date} cmp $a->{date} }  @$featured ];
+	set featured => [ sort {$b->{featured} cmp $a->{featured} }  @$featured ];
 	set not_featured => $json->decode( Path::Tiny::path("$appdir/not_featured.json")->slurp_utf8 );
 	my $data;
 	eval {
@@ -109,9 +109,9 @@ get '/featured' => sub {
 		$_->{path} => $_->{title}
 		} @{ $data->{videos} };
 	my @videos = map { {
-		path  => $_->{path},
-		title => $path_to_title{$_->{path}},
-		featured  => $_->{date},	
+		path      => $_->{path},
+		title     => $path_to_title{$_->{path}},
+		featured  => $_->{featured},	
 		} } @$featured;
 #die Dumper \%path_to_title;
 	template 'list', {
@@ -128,8 +128,8 @@ get '/nyf' => sub {
 		$_->{path} => $_->{title}
 		} @{ $data->{videos} };
 	my @videos = map { {
-		path  => $_->{path},
-		title => $path_to_title{$_->{path}},
+		path      => $_->{path},
+		title     => $path_to_title{$_->{path}},
 		featured  => '',
 		} } @$not_featured;
 #die Dumper \%path_to_title;
@@ -236,7 +236,7 @@ get '/atom.xml' => sub {
 	my $URL = request->base;
 	$URL =~ s{/$}{};
 	my $site_title = 'Perl TV Featured videos';
-	my $ts = $featured->[0]{date};
+	my $ts = $featured->[0]{featured};
 
 	my $xml = '';
 	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
@@ -255,7 +255,7 @@ get '/atom.xml' => sub {
 
 		$xml .= qq{  <title>$title</title>\n};
 		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
-		$xml .= qq{  <updated>$entry->{date}T12:00:00Z</updated>\n};
+		$xml .= qq{  <updated>$entry->{featured}T12:00:00Z</updated>\n};
 		my $url = "$URL/v/$entry->{path}";
 		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
 		$xml .= qq{  <id>$URL/v/$entry->{path}</id>\n};

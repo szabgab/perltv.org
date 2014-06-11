@@ -76,17 +76,17 @@ sub import_videos {
 
 		if ($video->{featured}) {
 			my %item = (
-				id   => $video->{id},
-				date => $video->{featured},
-				path => $f->basename,
+				id        => $video->{id},
+				featured  => $video->{featured},
+				path      => $f->basename,
 				thumbnail => $thumbnail,
 			);
 			push @featured, \%item;
 		} else {
 			my %item = (
-				id   => $video->{id},
-				date => '',
-				path => $f->basename,
+				id        => $video->{id},
+				featured  => '',
+				path      => $f->basename,
 				thumbnail => $thumbnail,
 			);
 			push @not_featured, \%item;
@@ -114,7 +114,7 @@ sub import_videos {
 		};
 	}
 	
-	@featured = sort { $b->{date} cmp $a->{date} } @featured;
+	@featured = sort { $b->{featured} cmp $a->{featured} } @featured;
 	@not_featured = sort { $b->{id} cmp $a->{id} } @not_featured;
 	
 	my %data = (
@@ -128,11 +128,14 @@ sub import_videos {
 	path('modules.json')->spew_utf8( $json->encode(\%modules) );
 	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
 	
-	say "Latest featured: $featured[0]{date}\n";
+	say "Latest featured: $featured[0]{featured}\n";
 
 	if (@not_featured) {
 		say 'Not yet featured:';
-		say "  $_->{path}" for @not_featured;
+		for my $v (@not_featured) {
+			print $v->{date} ? $v->{date} : '          ';
+			say "  $v->{path}";
+		}
 	}
 }
 
