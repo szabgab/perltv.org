@@ -34,6 +34,7 @@ if ($u->host eq 'www.youtube.com') {
 	$txt .= "favorite_count: " . ($video->favorite_count||0) . "\n";
 	my $length = seconds_to_time($video->duration);   # in seconds
 	$txt .= "length: $length\n";
+	$txt .= "date: \n";
 	$txt .= "format: markdown\n";
 	#my $keywords = $video->keywords;
 	$txt .= "\n__DESCRIPTION__\n\n";
@@ -61,6 +62,7 @@ if ($u->host eq 'www.youtube.com') {
 	$txt .= "favorite_count: $data->{stats_number_of_likes}\n";
 	my $length = seconds_to_time($data->{duration});   # in seconds
 	$txt .= "length: $length\n";
+	$txt .= "date: \n";
 	$txt .= "format: markdown\n";
 	$txt .= "thumbnail: $data->{thumbnail_medium}\n";
 	$txt .= "tags: $data->{tags}}\n";
@@ -84,8 +86,7 @@ path($file)->spew_utf8($txt);
 
 say "Please update the following fields:";
 say "speaker: ";
-say "nickname: ";
-say "home: ";
+say "date: ";
 say "source: ";
 say "modules: ";
 say "tags: ";

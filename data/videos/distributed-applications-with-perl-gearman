@@ -6,6 +6,7 @@ source: israel-pm
 view_count: 48
 favorite_count: 0
 length: 33:05
+date: 2013-10-23
 format: markdown
 modules: Gearman::Client, Gearman::Task, Gearman::XS, Gearman::Server, AnyEvent::Gearman, AnyEvent::Gearman::Client
 tags: Gearman

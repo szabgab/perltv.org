@@ -6,6 +6,7 @@ source: israel-pm
 view_count: 60
 favorite_count: 0
 length: 01:02:08
+date: 2013-05-31
 format: markdown
 language: he
 modules: AnyEvent
