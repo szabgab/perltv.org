@@ -1,0 +1,21 @@
+id: ojoYtzi6wB0
+src: youtube
+title: GPW 2013 - List::FullCompare - Vergleich von Listen
+speaker: max-maischein
+source: german-perl-workshop-2013
+view_count: 51
+favorite_count: 0
+length: 26:28
+format: markdown
+language: de
+
+__DESCRIPTION__
+
+
+"Ein Mann mit nur einer Uhr weiss immer die Zeit. Ein Mann mit zwei Uhren ist sich nie sicher."
+
+Wenn Geschäftsdaten von einem System an das nächste übergeben werden, ist es oft nötig, die Konsistenz der beiden Systeme zu kontrollieren, indem Reports aus beiden Systemen gegeneinander abgeglichen werden.
+
+Der Vortrag stellt das Modul "List::FullCompare" vor, welches den Abgleich von zwei Listen ("symmetrische Differenz") implementiert. Es werden die Problemstellung und die Anwendungsfälle gezeigt. Weiter werden die Mechanismen zur Implementation eigener Vergleichsmethoden und die algorithmische Komplexität diskutiert.
+
+Die Slides sind <a href="http://corion.net/talks/List-FullCompare/list-fullcompare.de.html">hier</a>

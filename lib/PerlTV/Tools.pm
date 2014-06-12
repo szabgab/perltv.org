@@ -11,6 +11,7 @@ our @EXPORT_OK = qw(read_file youtube_thumbnail %languages);
 our %languages = (
 	he => 'Hebrew',
 	nl => 'Dutch',
+	de => 'German',
 );
 
 sub read_file {
