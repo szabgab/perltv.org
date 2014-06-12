@@ -1,21 +1,93 @@
 The code behind http://perltv.org/
 
+The objective of PerlTV.org is to collect, tag, annotate, and distribute good, Perl-related videos.
+
+
+How to run the server?
+----------------------
+* cpanm  --installdeps .     (Install the prerequsites)
+* perl bin/import_data.pl    (will create a bunch of json files)
+* perl bin/app.pl            (or plackup bin/app.pl)
+
 
 Contributing videos?
 ---------------------
 
-Please add files to the data/ directory.
-The file names will be the page URLs.
-Please fill as many as the fields as you can and add some nice __DESCRIPTION__
-For YAPC talk this can be based on the YAPC talk descriptions -
-if they are available.
+* Fork and clone this repository.
+* Add files
+* Send pull request
 
-Please list the CPAN modules mentioned in the videos!
 
-If you can, write a summary of the video, or if you really have time,
-create a transcription. Not everyone can hear well, and not everyone can
-easily understand the spoken English.
-It also makes the site more searchable.
+* Add files to the data/ directory.
+  Each video is described in a single file in the data/videos/ directory.
+  The file names will be the page URLs. We prefer to use dash (-) to separate words in the URL rather than (_)
+
+In order to reduce the manual work, running 
+
+    perl bin/fetch.pl https://www.youtube.com/watch?v=abcdef
+
+will create the skeleton file for the video. Some fields will need to be changed and filled. Even the filename might need to be changed.
+
+
+* Fields in the video files:
+  id:              The ID on YouTube, Vimeo or other video sharing sites
+  src:             [youtube|vimeo|ustream]    (the type of the source where the video is hosted)
+  title:           What wi
+  speaker:         file-name            the name of a file in the data/people directory, usually the full name of the speaker.
+  source:          file-name            the name of the source (usually event) where the talk was given. in the data/sources/ directory.
+  view_count:      number               As counted on YouTube. Filled by the fetch.pl script. Not really used now.
+  favorite_count:  number               As counted on YouTube. Filled by the fetch.pl script. Not really used now.
+  length:          MM::SS               The length of the video.
+  date:            YYYY-MM-DD           The date when the video was recored. (Approximate if you don't have the exact date)
+  format:          markdown             Shold be always markdown. Probably we should not need that field at all and just let 
+  featured:        YYYY-MM-DD           Added later. See below.
+  modules:         M::N, Module::Name   A list of CPAN modules mentioned in the talk
+  language:        [he|nl|de|...]       The language of the video, Currently we don't use this field if the video is in English.
+  tags:            tag, tag             Comma separated list of keywords
+
+After the header fields there should be a __DESCRIPTION__ string at the beginning of a line. Everything below this mark
+will be included as the body of the text on the video page. The format of the text is declared in the "format:" field
+above.  (I am not sure if we need to allow anything else or markdown is enough?)
+
+For YAPC talk this can be based on the YAPC talk descriptions - if they are available.
+
+If you can, write a summary of the video, or if you really have time, create a transcription. Not everyone can hear well, and not everyone can
+easily understand the spoken English.  It also makes the site more searchable.
+
+
+Featured videos
+---------------
+Once in a while (not more than once a day, to allow people to watch) we can 'feature' a video by
+adding the 'featured:' field to the video file.
+This will put the video on the front page of the side and include it in the RSS feed. 
+This should be done after the video was annotated (by adding text and links to the __DESCRIPTION__) and tagged.
+We should use this opportunity to distribute the URL of this video. Currently only English videos should be featured.
+(TODO: create separate RSS feed for featured  videos in other languages? Separate main page for videos in other languages?)
+
+Places where we can promote the featured English video:
+  Reddit Perl channel: http://www.reddit.com/r/perl
+  Perl Developers on Facebook: https://www.facebook.com/groups/100858186649890/
+  GooglePlus (of the Perl Weekly) https://plus.google.com/+Perlweekly
+  Twitter (of the Perl Weekly) https://twitter.com/perlweekly
+  Many of the videos are also included the Perl Weekly newsletter.
+
+Videos in other languages can probably have other, more relevant channels.
+
+
+Languages
+---------
+
+While most of the videos are in English, we have started to add videos in other languages as well. In order to mark the language of
+the video we have a field called 'language:'. A mapping of the languages is currently hard-coded in lib/PerlTV/Tools.pm
+(TODO: shoule be in some external file?)
+(TODO: probably there should be pages listing all the videos in a specific language)
+
+Renaming video files
+---------------------
+After a video was uploaded we would probably want to make sure incoming links are not going to be broken. So if we want to change
+the name of the video file (and thus the URL) we should also set up redirection. Currently redirection is done
+using hard-coded Dancer routes in lib/PerlTV.pm . Search for 'redirect'.  Updating this need s server restart.
+(TODO: this should be move to some config file)
 
 
 Copyright and License
@@ -40,7 +112,6 @@ vimeo API: https://developer.vimeo.com/apis/simple#video-request
 http://vimeo.com/api/v2/video/video_id.output
 where the "video_id" is something like 77267876 
 and the "output" is json, php or xml
-
 
 
 
