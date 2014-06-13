@@ -37,7 +37,7 @@
   <ul>
   <% FOR v IN videos %>
       <% UNLESS v.language %>
-         <li><% IF v.featured %><% v.featured %> - <% END %><a href="/v/<% v.path %>"><% v.title %></a></li>
+         <li><a href="/v/<% v.path %>"><% v.title %></a></li>
       <% END %>
   <% END %>
   </ul>
