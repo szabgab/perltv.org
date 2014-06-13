@@ -41,8 +41,6 @@ hook before_template => sub {
 	$t->{title} //= 'Perl TV';
 
 	my $THUMBNAILS = 4; # shown at the bottom of the front page
-	$t->{social} = 1;
-	$t->{statisics} = 1;
 	$t->{request} = request;
 	my $featured = setting('featured');
 	my $end = min($THUMBNAILS, @$featured-1);
@@ -79,9 +77,9 @@ hook before_template => sub {
 	}
 
 	# on development machine turn these off.
-	if (request->base !~ m{http://perltv.org/}) {
-		$t->{social} = 0;
-		$t->{statistics} = 0;
+	if (request->base =~ m{http://perltv.org/}) {
+		$t->{social} = 1;
+		$t->{statistics} = 1;
 	}
 
 	return;
