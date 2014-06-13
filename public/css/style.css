@@ -164,3 +164,7 @@ ul {
 	float: left;
 	width: 85px;
 }
+
+#sort_date, #sort_featured, #sort_title {
+	cursor: pointer;
+
