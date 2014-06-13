@@ -17,7 +17,7 @@ our %languages = (
 sub read_file {
 	my ($file) = @_;
 
-	my %video;
+	my %data;
 	my $section;
 	foreach my $line (Path::Tiny::path($file)->lines_utf8) {
 		if ($line =~ /^__(\w+)__$/) {
@@ -25,7 +25,7 @@ sub read_file {
 			next;
 		}
 		if ($section) {
-			$video{$section} .= $line;
+			$data{$section} .= $line;
 			next;
 		}
 		next if $line =~ /^\s*(#.*)?$/;
@@ -33,27 +33,27 @@ sub read_file {
 		$line =~ s/\s+$//;
 		my ($key, $value) = split /:\s*/, $line, 2;
 		if ($key =~ /^(modules|tags)$/) {
-			$video{$key} = [ split /\s*,\s*/, $value ];
+			$data{$key} = [ split /\s*,\s*/, $value ];
 		} else {
-			$video{$key} = $value;
+			$data{$key} = $value;
 		}
 	}
 
-	if ($video{language}) {
-		$video{language_in_english} = $languages{ $video{language} };
-		$video{title} .= " ($video{language_in_english})";
+	if ($data{language}) {
+		$data{language_in_english} = $languages{ $data{language} };
+		$data{title} .= " ($data{language_in_english})";
 	}
 
-	$video{format} ||= 'html';
+	$data{format} ||= 'html';
 
-	if ($video{description}) {
-		if ($video{format} eq 'markdown') {
+	if ($data{description}) {
+		if ($data{format} eq 'markdown') {
 			my $md = Text::Markdown->new;
-			$video{description} = $md->markdown( $video{description} );
+			$data{description} = $md->markdown( $data{description} );
 		}
 	}
 
-	return \%video;
+	return \%data;
 }
 
 sub youtube_thumbnail {
