@@ -35,9 +35,12 @@
   <% END %>
 
   <ul>
+     <li><span class="date">date</span><span class="featured">featured</span>title</li>
   <% FOR v IN videos %>
+      <% DEFAULT v.featured = '&nbsp;' %>
+      <% DEFAULT v.date = '&nbsp;' %>
       <% UNLESS v.language %>
-         <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+         <li><span class="date"><% v.date %></span><span class="featured"><% v.featured %></span><a href="/v/<% v.path %>"><% v.title %></a></li>
       <% END %>
   <% END %>
   </ul>

@@ -117,6 +117,7 @@ get '/featured' => sub {
 		path      => $_->{path},
 		title     => $path_to_title{$_->{path}},
 		featured  => $_->{featured},	
+		date      => $_->{date},	
 		} } @$featured;
 #die Dumper \%path_to_title;
 	template 'list', {
