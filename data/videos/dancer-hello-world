@@ -6,6 +6,7 @@ source: pittsburgh-perl-workshop-2013
 view_count: 11
 favorite_count: 0
 length: 22:29
+date: 2013-10-05
 format: markdown
 modules: Dancer
 tags: cpanm
@@ -22,4 +23,6 @@ and that just was not true, at least not on my server.
 This is a collection of what I learned.
 
 Plus a few comments of what would be different if you wanted to use Mojolicious rather than Dancer.
+
+[abstract](http://pghpw.org/ppw2013/talk/5094)
 

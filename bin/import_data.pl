@@ -66,6 +66,8 @@ sub import_videos {
 		#warn Dumper $video;
 		my %entry = (
 			title => $video->{title},
+			date  => $video->{date},
+			featured  => $video->{featured},
 			path  => $f->basename,
 		);
 		if ($video->{language}) {

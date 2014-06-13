@@ -34,12 +34,15 @@
    <hr>
   <% END %>
 
-  <ul>
-  <% FOR v IN videos %>
-      <% UNLESS v.language %>
-         <li><% IF v.featured %><% v.featured %> - <% END %><a href="/v/<% v.path %>"><% v.title %></a></li>
-      <% END %>
-  <% END %>
+  <ul id="videos">
+     <li><span id="sort_date" class="date">date</span><span id="sort_featured" class="featured">featured</span><span id="sort_title">title</span></li>
+     <% FOR v IN videos %>
+         <% DEFAULT v.featured = '&nbsp;' %>
+         <% DEFAULT v.date = '&nbsp;' %>
+         <% UNLESS v.language %>
+            <li><span class="date"><% v.date %></span><span class="featured"><% v.featured %></span><a href="/v/<% v.path %>"><% v.title %></a></li>
+         <% END %>
+     <% END %>
   </ul>
 
   <% FOR lang IN languages.keys %>
