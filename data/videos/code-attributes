@@ -6,6 +6,7 @@ source: phoenix-perl-mongers
 view_count: 36
 favorite_count: 0
 length: 31:11
+date: 2013-12-05
 format: markdown
 modules: Attribute::Handlers, Sub::Attribute
 featured: 2014-02-08

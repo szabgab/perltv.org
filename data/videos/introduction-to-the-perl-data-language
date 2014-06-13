@@ -6,6 +6,7 @@ source: yapc-na-2012
 view_count: 767
 favorite_count: 0
 length: 51:22
+date: 2012-06-13
 format: markdown
 modules: PDL, PDL::Graphics::Prima, PDL::NiceSlice
 tags: Galaxy, Star, data visualization

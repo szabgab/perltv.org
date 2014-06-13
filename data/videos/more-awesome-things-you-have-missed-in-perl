@@ -6,6 +6,7 @@ source: plug
 view_count: 191
 favorite_count: 0
 length: 01:22:51
+date: 2012-05-01
 format: markdown
 modules: Moose, Moose::Util::TypeConstraints, Regexp::Common, Weather::Google, Moose::Role, MooseX::Method::Signatures, autobox, autobox::Core, Moose::Autobox, autodie, Try::Tiny, cpanm, local::lib, Regexp::Grammars, Dancer, App::SweeperBot, PAR, FatPacker, Devel::NYTProf, Perl::Critic, Test::Perl::Critic
 tags: roles, interfaces, mixins, MooseX, named capture, grammars
