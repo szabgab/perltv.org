@@ -6,6 +6,7 @@ source: yapc-na-2013
 view_count: 41
 favorite_count: 0
 length: 52:18
+date: 2013-06-03
 format: markdown
 modules: DateTime, DateTime::Calendar::Chinese, DateTime::Duration 
 tags: Calendar

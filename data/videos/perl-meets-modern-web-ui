@@ -3,6 +3,7 @@ src: youtube
 title: Perl Meets Modern Web UI
 speaker: bill-humphries
 length: 22:11
+date: 2013-06-03
 modules: Mojolicious::Lite
 tags: Backbone.js
 source: yapc-na-2013

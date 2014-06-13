@@ -6,8 +6,9 @@ source: yapc-na-2013
 view_count: 219
 favorite_count: 0
 length: 22:17
+date: 2013-06-03
 format: markdown
 
 __DESCRIPTION__
 
-[see alsp](statsd-and-you--easy-application-metrics)
+[see also](statsd-and-you--easy-application-metrics)
