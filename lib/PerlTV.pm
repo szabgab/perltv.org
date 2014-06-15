@@ -82,6 +82,10 @@ hook before_template => sub {
 		$t->{statistics} = 1;
 	}
 
+	if ($t->{videos}) {
+		$t->{show_toggles} = 1;
+	}
+
 	return;
 };
 
