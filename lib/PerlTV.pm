@@ -210,7 +210,7 @@ get '/source/:name' => sub {
 	template 'list', { videos => \@entries, %{ $sources->{$name} } };
 };
 
-get '/languages/?' => sub {
+get '/language/?' => sub {
 	template 'list_languages', { languages => \%languages };
 };
 
