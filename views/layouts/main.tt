@@ -28,9 +28,11 @@
           <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
         </ul>
 
+      <% IF show_toggles %>
         <h3>Toggles</h3>
         <button id="show_date">date</button>
         <button id="show_featured">featured</button>
+      <% END %>
 
         <h3>Featured videos</h3>
         <a href="/atom.xml"><img src="/images/feed-icon32.png" /></a><br>
