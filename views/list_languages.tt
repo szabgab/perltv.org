@@ -1,0 +1,11 @@
+<div id="text">
+  <h1>Languages of videos <a href="/">Perl TV</a></h1>
+
+  <ul>
+  <% FOR s IN languages.keys.sort %>
+      <li><a href="/language/<% s %>"><% languages.$s %></a></li>
+  <% END %>
+  </ul>
+</div>
+
+

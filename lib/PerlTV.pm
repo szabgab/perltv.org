@@ -206,6 +206,21 @@ get '/source/:name' => sub {
 	template 'list', { videos => \@entries, %{ $sources->{$name} } };
 };
 
+get '/languages/?' => sub {
+	template 'list_languages', { languages => \%languages };
+};
+
+get '/language/:name' => sub {
+	my $name = params->{name};
+	my $sources = setting('sources');
+	my $data = setting('data');
+	pass if not $languages{$name};
+
+	my @entries = grep { $_->{language} eq $name} @{ $data->{videos} };
+	template 'list', { videos => \@entries, };
+};
+
+
 
 get '/' => sub {
 	# show the currently featured item

@@ -12,6 +12,7 @@ our %languages = (
 	he => 'Hebrew',
 	nl => 'Dutch',
 	de => 'German',
+	en => 'English',
 );
 
 sub read_file {
@@ -39,10 +40,11 @@ sub read_file {
 		}
 	}
 
-	if ($data{language}) {
-		$data{language_in_english} = $languages{ $data{language} };
-		$data{title} .= " ($data{language_in_english})";
-	}
+	# default language is English unless language is defined in video
+        $data{language} = 'en' if !defined $data{language};
+
+	$data{language_in_english} = $languages{ $data{language} };
+	$data{title} .= " ($data{language_in_english})";
 
 	$data{format} ||= 'html';
 
