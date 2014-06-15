@@ -13,6 +13,7 @@
 <div id="page">
   <div id="content">
     <% content %>
+
   </div>
 
   <div id="sidebar">
@@ -56,10 +57,10 @@
   </div>
 </div>
 
-
 <div id="footer">
-<a href="https://github.com/szabgab/perltv.org">Source code</a> | <a href="/legal">Legal</a> | <a href="/daily.atom">RSS</a> | <a href="http://perlmaven.com/">Perl programming</a> | <a href="/about">About</a>
+<a href="https://github.com/szabgab/perltv.org">Source code</a> | <a href="/legal">Legal</a> | <a href="/atom.xml">RSS</a> | <a href="http://perlmaven.com/">Perl programming</a> | <a href="/about">About</a>
 </div>
+
 
 <% INCLUDE incl/statistics.tt %>
 </body>

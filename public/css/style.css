@@ -2,10 +2,7 @@ body {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  background-color: #ddd;
-  background-repeat: no-repeat;
-  background-position: top left;
-
+  background-color: #FFF;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
   font-size: 13px;
   color: #333;
@@ -23,7 +20,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  background-color: #EEE;
 }
 
 #page {
@@ -36,9 +33,7 @@ a:hover {
 }
 
 #content {
-  background-color: white;
-  border: 3px solid #aaa;
-  border-top: none;
+  background-color: #FFF;
   padding: 0px;
   float: left;
   width: 70%;
@@ -47,7 +42,6 @@ a:hover {
 #sidebar {
   float: left;
   width: 220px;
-/*  border: 1px solid;*/
   padding-left: 20px;
   top 0;
   right 0;
@@ -58,7 +52,6 @@ a:hover {
   padding-right: 30px;
   background-repeat: no-repeat;
   background-position: top left;
-  border-top: 1px solid #ccc;
   padding-top: 15px;
   max-width: 700px;
 }
@@ -76,7 +69,6 @@ a:hover {
   margin-top: 25px;
   font-size: 16px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
 }
 #sidebar li {
   list-style-type: none;
