@@ -16,6 +16,7 @@
   </div>
 
   <div id="sidebar">
+  <h1><a href="/">Perl TV</a></h1>
     <ul id="sidebar-items">
       <li>
         <% INCLUDE incl/thumbnail.tt %>
