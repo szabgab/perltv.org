@@ -47,6 +47,7 @@
           <li><a href="/tag">Tags</a></li>
           <li><a href="/module">Modules</a></li>
           <li><a href="/people">People</a></li>
+          <li><a href="/languages">Languages</a></li>
         </ul>
 
         <% INCLUDE incl/social_share.tt %>
