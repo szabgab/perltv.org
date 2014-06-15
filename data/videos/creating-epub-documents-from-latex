@@ -1,0 +1,18 @@
+id: esgiHbyqWhk
+src: youtube
+title: Creating EPub Documents from LaTex
+speaker: andrew-ford
+source: london-perl-workshop-2011
+view_count: 517
+favorite_count: 0
+length: 46:51
+date: 2011-11-12
+format: markdown
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Will discuss what ePub is (in its own right and as an input format for conversion to Kindle books) and describe how Perl can be used to convert from LaTeX (using LaTeXML and EBook::EPUB), along with the pitfalls and work-arounds for converting 10-year old book LaTeX sources, originally written with print media in mind.
+
+[abstract](http://conferences.yapceurope.org/lpw2011/talk/3865)
