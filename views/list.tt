@@ -33,7 +33,7 @@
    <hr>
   <% END %>
 
-  <% FOR lang IN languages.keys %>
+  <% FOR lang IN languages.keys.sort %>
     <h2><% languages.$lang %></h2>
       <ul class="videos">
         <li><span class="sort_date date">date</span><span class="sort_featured featured">featured</span><span class="sort_title">title</span></li>
