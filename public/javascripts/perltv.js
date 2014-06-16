@@ -75,14 +75,19 @@ function sort_rows() {
 
 function on_load() {
 	show_date     = document.getElementById('show_date');
-	show_date.addEventListener('click', toggle);
-	show('show_date', 'date');
-	show_featured = document.getElementById('show_featured');
-	show_featured.addEventListener('click', toggle);
-	show('show_featured', 'featured');
 
-	add_listeners();
+	// page with list of videos
+	if (show_date) {
+		show_date.addEventListener('click', toggle);
+		show('show_date', 'date');
+		show_featured = document.getElementById('show_featured');
+		show_featured.addEventListener('click', toggle);
+		show('show_featured', 'featured');
+
+		add_listeners();
+	}
 }
+
 function add_listeners() {
 	['sort_date', 'sort_featured', 'sort_title'].forEach(function(f) {
 		var elements = document.getElementsByClassName(f);

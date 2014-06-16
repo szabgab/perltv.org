@@ -1,5 +1,5 @@
 <div id="text">
-  <h1>Languages of videos <a href="/">Perl TV</a></h1>
+  <h1>Languages of videos</h1>
 
   <ul>
   <% FOR s IN languages.keys.sort %>
