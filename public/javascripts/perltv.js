@@ -27,7 +27,7 @@ function toggle() {
 }
 
 function show(id, cls) {
-	console.log('show ' + id + ' ' + cls);
+	//console.log('show ' + id + ' ' + cls);
 	var state = get_state(id);
 	var elements = document.getElementsByClassName(cls);
 	for (var i=0; i < elements.length; i++) {
@@ -36,15 +36,15 @@ function show(id, cls) {
 }
 
 function sort_rows() {
-	console.log('sort: ' + this.className);
+	//console.log('sort: ' + this.className);
 	var column = 2; // title
 	if (/sort_date/.exec(this.className)) {
 		column = 0;
 	}
-	if (this.className == 'sort_featured') {
+	if (/sort_featured/.exec(this.className)) {
 		column = 1;
 	}
-	if (this.className == 'sort_title') {
+	if (/sort_title/.exec(this.className)) {
 		column = 2;
 	}
 
