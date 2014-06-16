@@ -157,6 +157,7 @@ ul {
 	width: 85px;
 }
 
-#sort_date, #sort_featured, #sort_title {
+.sort_date, .sort_featured, .sort_title {
 	cursor: pointer;
+}
 
