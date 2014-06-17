@@ -112,18 +112,8 @@ get '/all' => sub {
 };
 
 get '/featured' => sub {
-	my $featured = setting('featured');
 	my $data = setting('data');
-	my %path_to_title = map {
-		$_->{path} => $_->{title}
-		} @{ $data->{videos} };
-	my @videos = map { {
-		path      => $_->{path},
-		title     => $path_to_title{$_->{path}},
-		featured  => $_->{featured},	
-		date      => $_->{date},	
-		} } @$featured;
-#die Dumper \%path_to_title;
+	my @videos = grep { $_->{featured} } @{ $data->{videos} };
 	template 'list', {
 		videos => \@videos,
 		title  => 'Featured videos',
@@ -132,22 +122,12 @@ get '/featured' => sub {
 };
 
 get '/nyf' => sub {
-	my $not_featured = setting('not_featured');
 	my $data = setting('data');
-	my %path_to_title = map {
-		$_->{path} => $_->{title}
-		} @{ $data->{videos} };
-	my @videos = map { {
-		path      => $_->{path},
-		title     => $path_to_title{$_->{path}},
-		featured  => '',
-		} } @$not_featured;
-#die Dumper \%path_to_title;
+	my @videos = grep { ! $_->{featured} } @{ $data->{videos} };
 	template 'list', {
 		videos => \@videos,
 		title  => 'Not yet featured videos',
 	};
-
 };
 
 
@@ -332,7 +312,7 @@ sub _show {
 	}
 	my $site_title = $data->{title};
 	$data->{path} = $path;
-	template $template, { 
+	template $template, {
 		video   => $data,
 		tags    => $data->{tags},
 		modules => $data->{modules},

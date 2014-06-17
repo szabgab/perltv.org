@@ -24,7 +24,6 @@ a:hover {
 }
 
 #page {
-  background-color: #ddd;
   margin: auto;
   margin-left: auto;
   padding-left: 0px;
@@ -157,6 +156,7 @@ ul {
 	width: 85px;
 }
 
-#sort_date, #sort_featured, #sort_title {
+.sort_date, .sort_featured, .sort_title {
 	cursor: pointer;
+}
 

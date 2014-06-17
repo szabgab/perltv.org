@@ -6,7 +6,7 @@
       This video is in <b><% video.language_in_english %>.</b>
    <% END %>
 
-   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
+   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a> <% video.date %><br>
    <% INCLUDE incl/speaker.tt %>
   <br>
   <% video.description %>

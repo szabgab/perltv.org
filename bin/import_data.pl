@@ -69,30 +69,21 @@ sub import_videos {
 			date  => $video->{date},
 			featured  => $video->{featured},
 			path  => $f->basename,
+			language => $video->{language},
 		);
-		if ($video->{language}) {
-			$entry{language} = $video->{language};
-		}
 	
 		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
 
+		my %item = (
+			id        => $video->{id},
+			featured  => ($video->{featured} || ''),
+			date      => $video->{date},
+			path      => $f->basename,
+			thumbnail => $thumbnail,
+		);
 		if ($video->{featured}) {
-			my %item = (
-				id        => $video->{id},
-				featured  => $video->{featured},
-				date      => $video->{date},
-				path      => $f->basename,
-				thumbnail => $thumbnail,
-			);
 			push @featured, \%item;
 		} else {
-			my %item = (
-				id        => $video->{id},
-				featured  => '',
-				date      => $video->{date},
-				path      => $f->basename,
-				thumbnail => $thumbnail,
-			);
 			push @not_featured, \%item;
 		}
 		if ($video->{tags}) {
