@@ -9,6 +9,8 @@ length: 02:57
 date: 2009-12-05
 format: markdown
 abstract: http://conferences.yapceurope.org/lpw2009/talk/2444
+modules: CatalystX::SimpleLogin
+featured: 2014-06-18 09:07:00
 
 __DESCRIPTION__
 
