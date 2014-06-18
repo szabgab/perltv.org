@@ -40,8 +40,7 @@
         <% FOR v IN videos %>
           <% IF v.language == lang %>
              <% DEFAULT v.featured = '&nbsp;' %>
-             <% DEFAULT v.date = '&nbsp;' %>
-            <li><span class="date"><% v.date %></span><span class="featured"><% v.featured %></span><a href="/v/<% v.path %>"><% v.title %></a></li>
+            <li><span class="date"><% v.date  %></span><span class="featured"><% v.featured.substr(0,10) %></span><a href="/v/<% v.path %>"><% v.title %></a></li>
           <% END %>
       <% END %>
       </ul>
