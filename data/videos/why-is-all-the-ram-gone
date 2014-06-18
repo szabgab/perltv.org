@@ -1,0 +1,17 @@
+id: zH0kOtH62pM
+src: youtube
+title: Why is All The RAM Gone
+speaker: paul-evans
+source: london-perl-workshop-2013
+view_count: 64
+favorite_count: 0
+length: 24:34
+date: 2013-11-30
+format: markdown
+modules: Devel::MAT
+
+__DESCRIPTION__
+
+A look at my recently-written new module, Devel::MAT; a memory profile and analysing tool, and how it can help find memory leaks and other related bugs.
+
+[abstract](http://act.yapc.eu/lpw2013/talk/5171)

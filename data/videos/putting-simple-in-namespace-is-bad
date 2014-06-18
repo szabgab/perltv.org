@@ -1,0 +1,19 @@
+id: VfiFbB7imBc
+src: youtube
+title: Putting Simple in Namespace is Bad
+speaker: tomas-doran
+source: london-perl-workshop-2009
+view_count: 11
+favorite_count: 0
+length: 02:57
+date: 2009-12-05
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2009/talk/2444
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2009.
+
+I foolishly started a project called 'CatalystX::SimpleLogin', as with the new features offered by Catalyst 5.80, I believed it was sanely possible to provide at least *some* standard components for web application development in a standard way.
+
+So - a login page, simplest possible application component.. Gotta be simple, right? WRONG...

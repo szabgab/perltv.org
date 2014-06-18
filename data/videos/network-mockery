@@ -1,0 +1,18 @@
+id: A2UusrmS1dk
+src: youtube
+title: Network Mockery
+speaker: jason-clifford
+source: london-perl-workshop-2013
+view_count: 13
+favorite_count: 0
+length: 03:41
+date: 2013-11-30
+format: markdown
+
+__DESCRIPTION__
+
+I was recently part of a team writing a new client to a network service which required tests across multiple layers of client code.
+
+We needed a simple way to mock an arbitrary number of responses from the service so our tests would validate our code rather than the network.
+
+Last night I decided to write something similar but a little more configurable.

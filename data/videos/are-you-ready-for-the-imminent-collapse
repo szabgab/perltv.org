@@ -1,0 +1,18 @@
+id: uUWup6Zx1EE
+src: youtube
+title: Peter Rabbitson Are You Ready for the Imminent Collapse?
+speaker: peter-rabbitson
+source: london-perl-workshop-2013
+view_count: 41
+favorite_count: 0
+length: 05:24
+date: 2013-11-30
+format: markdown
+modules: DBIx::Class::ResultSource::RowParser
+
+__DESCRIPTION__
+
+A deep-dive into the guts of DBIx::Class::ResultSource::RowParser
+
+[abstract](http://act.yapc.eu/lpw2013/talk/5226)
+

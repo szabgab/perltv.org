@@ -1,0 +1,16 @@
+id: _KxjaCvllEU
+src: youtube
+title: A Productivity Enhancing Perl Environment
+speaker: paul-johnson
+source: london-perl-workshop-2013
+view_count: 42
+favorite_count: 0
+length: 25:30
+date: 2013-11-30
+format: markdown
+
+__DESCRIPTION__
+
+Over the last couple of years I have been spending almost all of my working time actually coding Perl. This made it worthwhile to optimise my development environment. I'll talk a little about some of the tools I use which allow me to focus more on the actual development problems and less on mechanisms used to create the code.
+
+[abstract](http://act.yapc.eu/lpw2013/talk/5222)

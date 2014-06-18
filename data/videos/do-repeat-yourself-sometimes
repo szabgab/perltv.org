@@ -1,0 +1,19 @@
+id: Hk8RZhdzxVU
+src: youtube
+title: Do Repeat Yourself Sometimes
+speaker: tom-hukins
+source: london-perl-workshop-2009
+view_count: 24
+favorite_count: 0
+length: 03:56
+date: 2009-12-05
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2009/talk/2458
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2009.
+
+Developers often advise "Don't Repeat Yourself", pointing out the dangers of copying and pasting code.
+
+In this talk I explore the ideas of repetition and abstraction from several perspectives, explaining why I disagree with "Don't Repeat Yourself" and find limited amounts of repetition healthy.
