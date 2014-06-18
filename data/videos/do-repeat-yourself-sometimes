@@ -8,6 +8,7 @@ favorite_count: 0
 length: 03:56
 date: 2009-12-05
 format: markdown
+featured: 2014-06-18 10:10:00
 abstract: http://conferences.yapceurope.org/lpw2009/talk/2458
 
 __DESCRIPTION__
@@ -17,3 +18,6 @@ Recorded at the London Perl Workshop 2009.
 Developers often advise "Don't Repeat Yourself", pointing out the dangers of copying and pasting code.
 
 In this talk I explore the ideas of repetition and abstraction from several perspectives, explaining why I disagree with "Don't Repeat Yourself" and find limited amounts of repetition healthy.
+
+* [The Pragmatic Programmer](http://en.wikipedia.org/wiki/The_Pragmatic_Programmer)
+
