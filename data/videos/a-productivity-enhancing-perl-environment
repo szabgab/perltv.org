@@ -8,9 +8,42 @@ favorite_count: 0
 length: 25:30
 date: 2013-11-30
 format: markdown
+abstract: http://act.yapc.eu/lpw2013/talk/5222
 
 __DESCRIPTION__
 
 Over the last couple of years I have been spending almost all of my working time actually coding Perl. This made it worthwhile to optimise my development environment. I'll talk a little about some of the tools I use which allow me to focus more on the actual development problems and less on mechanisms used to create the code.
 
-[abstract](http://act.yapc.eu/lpw2013/talk/5222)
+* Environment: table, chair
+* Dual 24" screen
+* Keyboard with programmable keys - Logitec G15
+* Decent mouse
+* Decent Speaker or headphone
+* Hardware!  Quiet (SSD ?)
+* Operating Systems: Virtual Machines help a lot
+* OS: Whatever needed
+* Window manager
+* Terminal multiplexers: [tmux](http://tmux.sourceforge.net/), [powerline](https://github.com/Lokaltog/powerline) 
+* Shell: [zsh](http://www.zsh.org/) 
+* Font: Monospace: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
+* Colour Scheme: [Solarized dark](http://ethanschoonover.com/solarized)  f.lux
+* Source Code Control: Git (aliases!)
+* Editor: Vim, Emacs
+* Vim Plugins:
+  * [Pathogene](https://github.com/tpope/vim-pathogen)
+  * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+  * [Fugitive](https://github.com/tpope/vim-fugitive)
+  * [GitGutter](https://github.com/jisaacks/GitGutter)
+  * [signature](https://github.com/kshenoy/vim-signature)
+  * tagbar
+  * NERD_commenter
+  * NERD_tree
+  * snipMate
+  * surround
+  * devel-cover
+* ssh
+* mosh
+* Putty (for Windows)
+* Email: mutt
+* IRC: irssi
+
