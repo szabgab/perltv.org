@@ -9,6 +9,7 @@ length: 25:30
 date: 2013-11-30
 format: markdown
 abstract: http://act.yapc.eu/lpw2013/talk/5222
+#featured: 2014-06-19
 
 __DESCRIPTION__
 
@@ -35,15 +36,15 @@ Over the last couple of years I have been spending almost all of my working time
   * [Fugitive](https://github.com/tpope/vim-fugitive)
   * [GitGutter](https://github.com/jisaacks/GitGutter)
   * [signature](https://github.com/kshenoy/vim-signature)
-  * tagbar
-  * NERD_commenter
-  * NERD_tree
-  * snipMate
-  * surround
-  * devel-cover
+  * [tagbar](http://majutsushi.github.io/tagbar/)
+  * [NERD_commenter](http://www.vim.org/scripts/script.php?script_id=1218)
+  * [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658)
+  * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
+  * [surround](http://www.vim.org/scripts/script.php?script_id=1697)
+  * [devel-cover](https://metacpan.org/pod/Devel::Cover::Report::Vim)
 * ssh
-* mosh
-* Putty (for Windows)
-* Email: mutt
-* IRC: irssi
+* [mosh](http://mosh.mit.edu/)
+* [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/) (for Windows)
+* Email: [mutt](http://www.mutt.org/)
+* IRC: [irssi](http://www.irssi.org/)
 
