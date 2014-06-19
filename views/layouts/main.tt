@@ -33,6 +33,7 @@
         <h3>Toggles</h3>
         <button id="show_date">date</button>
         <button id="show_featured">featured</button>
+        <button id="show_length">length</button>
       <% END %>
 
         <h3>Featured videos</h3>

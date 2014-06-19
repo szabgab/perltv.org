@@ -156,7 +156,16 @@ ul {
 	width: 85px;
 }
 
-.sort_date, .sort_featured, .sort_title {
+.length {
+	float: left;
+	text-align: right;
+	width: 65px;
+	padding-right: 5px;
+}
+
+
+.sort_date, .sort_featured, .sort_title, .sort_length {
 	cursor: pointer;
 }
+
 

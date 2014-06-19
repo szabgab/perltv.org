@@ -70,6 +70,7 @@ sub import_videos {
 			featured  => $video->{featured},
 			path  => $f->basename,
 			language => $video->{language},
+			length   => $video->{length},
 		);
 	
 		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
