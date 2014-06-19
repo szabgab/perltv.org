@@ -10,6 +10,7 @@ date: 2013-06-03
 format: markdown
 modules: Test::Class::Moose
 tags: testing
+abstract: http://www.yapcna.org/yn2013/talk/4596
 
 __DESCRIPTION__
 
@@ -28,5 +29,4 @@ The home page of [Test::Class::Moose](http://ovid.github.io/test-class-moose/)
 
 See also the [Zen of test suites](http://ovid.github.io/zen-of-test-suites/) by Ovid.
 
-The original <a href="http://www.yapcna.org/yn2013/talk/4596">abstract</a>.
 

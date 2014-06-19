@@ -10,6 +10,7 @@ date: 2013-10-05
 format: markdown
 tags: StatsD, Graphite, Docker
 modules: Net::Statsd, Net::Statsd::Client
+abstract: http://pghpw.org/ppw2013/talk/5090
 
 __DESCRIPTION__
 
@@ -22,8 +23,5 @@ see how to set it up, and learn about my new Perl client for it.
 [StatsD](https://github.com/etsy/statsd/) and [Graphite](https://github.com/graphite-project)
 
 [Docker](http://www.docker.io/)
-
-
-[abstract](http://pghpw.org/ppw2013/talk/5090)
 
 [see also](statsd-and-you)

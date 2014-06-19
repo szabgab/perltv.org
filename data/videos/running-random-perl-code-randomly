@@ -8,11 +8,11 @@ favorite_count: 0
 length: 07:18
 date: 2013-11-30
 format: markdown
+abstract: http://act.yapc.eu/lpw2013/talk/5026
 
 __DESCRIPTION__
 
 For experimentation it can be useful to run user provided perl code.
 'Safe' is one method however it suffers from some problems, I'll show how lightweight containers as provided by lxc can allow the user more freedom while still being secure.
 
-[abstract](http://act.yapc.eu/lpw2013/talk/5026)
 
