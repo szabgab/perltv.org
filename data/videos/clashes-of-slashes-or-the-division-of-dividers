@@ -10,6 +10,7 @@ date: 2014-04-25
 format: markdown
 modules: Number::Fraction
 featured: 2014-06-05
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5308
 
 __DESCRIPTION__
 
@@ -20,5 +21,4 @@ He is also showing what 9/4/1/2 is, and what it is not.
 
 Then he introduces [Number::Fraction](https://metacpan.org/pod/Number::Fraction) and how he extended it.
 
-[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5308)
 
