@@ -9,10 +9,10 @@ length: 05:24
 date: 2013-11-30
 format: markdown
 modules: DBIx::Class::ResultSource::RowParser
+abstract: http://act.yapc.eu/lpw2013/talk/5226
 
 __DESCRIPTION__
 
 A deep-dive into the guts of DBIx::Class::ResultSource::RowParser
 
-[abstract](http://act.yapc.eu/lpw2013/talk/5226)
 

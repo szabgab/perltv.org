@@ -11,6 +11,7 @@ format: markdown
 modules: Dancer
 tags: cpanm
 featured: 2013-12-03
+abstract: http://pghpw.org/ppw2013/talk/5094
 
 __DESCRIPTION__
 
@@ -24,5 +25,4 @@ This is a collection of what I learned.
 
 Plus a few comments of what would be different if you wanted to use Mojolicious rather than Dancer.
 
-[abstract](http://pghpw.org/ppw2013/talk/5094)
 

@@ -8,6 +8,7 @@ favorite_count: 0
 length: 22:43
 date: 2011-11-12
 format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3707
 
 __DESCRIPTION__
 
@@ -19,4 +20,3 @@ One option would be to monkey-patch new code into the CPAN class you're using - 
 
 This talk examines the problems with this sort of reuse, whether you're trying to use monkey-patching or subclassing. It also offers some solutions that take advantage of Perl's flexibility to make it both easy and safe, regardless of whether you're using Perl's built-in OO or a full-featured object system like Moose.
 
-[abstract](http://conferences.yapceurope.org/lpw2011/talk/3707)

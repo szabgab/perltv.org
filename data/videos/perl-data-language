@@ -11,6 +11,7 @@ format: markdown
 modules: PDL
 keywords: Matlab, Octave
 featured: 2014-05-30
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5453
 
 __DESCRIPTION__
 
@@ -34,5 +35,4 @@ For this Perl is much better than the other languages (FORTRANT/Pascal/C/C++/Mat
 
 [slides in pdf](http://www.hoogenraad.net/NLPW/pdlprim02.pdf)
 
-[abstract from](http://www.perlworkshop.nl/nlpw2014/talk/5453)
 

@@ -8,6 +8,7 @@ favorite_count: 0
 length: 54:44
 date: 2013-11-30
 format: markdown
+abstract: http://act.yapc.eu/lpw2013/talk/4961
 
 __DESCRIPTION__
 
@@ -19,4 +20,3 @@ Devel::SizeMe is my new perl memory profiler. It builds on the detailed memory p
 
 I've been told it has to be seen to be believed. There are pretty visualizations, but it's early days yet and there's much that needs doing.
 
-[abstract](http://act.yapc.eu/lpw2013/talk/4961)

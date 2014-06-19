@@ -11,6 +11,7 @@ format: markdown
 tags: csv, RFC 7111
 modules: Text::CSV_XS, Text::CSV
 featured: 2014-06-03
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5300
 
 __DESCRIPTION__
 
@@ -26,5 +27,4 @@ Callback to be called after each logical line was processed.
 In order to view the [slides](http://tux.nl/Talks/CSVu/) you need to use FireFox with the "Space Next" plugin and then press SPACE for the next page and backspace/delete for the previous page.
 Opera supports it by default. Chrome has a FastForward plugin that ought to support that, but it doesn't work (yet)
 
-[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5300)
 
