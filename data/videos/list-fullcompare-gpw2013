@@ -9,6 +9,7 @@ length: 26:28
 date: 2013-03-13
 format: markdown
 language: de
+abstract: http://act.yapc.eu/gpw2013/talk/4449
 
 __DESCRIPTION__
 
@@ -21,5 +22,4 @@ Der Vortrag stellt das Modul "List::FullCompare" vor, welches den Abgleich von z
 
 Die Slides sind <a href="http://corion.net/talks/List-FullCompare/list-fullcompare.de.html">hier</a>
 
-[abstract](http://act.yapc.eu/gpw2013/talk/4449)
 

@@ -11,12 +11,12 @@ format: markdown
 modules: Mojolicious, Mojo::IOLoop, Mojo::Redis, Mojo::IRC, Mojolicious::Plugin::AssetPack, Mojo::IOLoop::Delay, Unicode::UTF8, Convos::Upgrader, Convos
 tags: IRC, HTML5, Ajax
 featured: 2014-06-17
+abstract: http://www.mojoconf.org/mojo2014/talk/5412
 
 __DESCRIPTION__
 
 [Convos](http://convos.by/) is a modern IRC client for your browser, built in the [Mojolicious](http://mojolicio.us/) framework using HTML5 Web Technologies like Web Sockets, Desktop Notifications, Media Queries, and Push State. It's always on, storing your messages in a [Redis](http://redis.io/) backend even when you are not connected. In my presentation, I will go through some of our technology choices and challenges in building a fully asynchronous Node.js-like application in Perl. Updated and extended version.
 
-[abstract](http://www.mojoconf.org/mojo2014/talk/5412)
 
 * [Carton](https://metacpan.org/pod/Carton)
 * [Docker](http://www.docker.com/)

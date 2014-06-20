@@ -11,6 +11,7 @@ format: markdown
 modules: TAP::Parser::SourceHandler::pgTAP
 tags: testing, TAP, PgTAP
 featured: 2014-05-28
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5496
 
 __DESCRIPTION__
 
@@ -23,5 +24,4 @@ This is an overview of the features of PgTAP and a couple of common test cases w
 
 Examples are shown in Postgres/PgTAP.
 
-[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5496)
 

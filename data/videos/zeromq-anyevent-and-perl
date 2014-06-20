@@ -10,6 +10,7 @@ date: 2013-03-14
 format: markdown
 language: de
 modules: ZMQ::LibZMQ3, ZMQx::Class, AnyEvent::Loop, Event::Lib
+abstract: http://act.yapc.eu/gpw2013/talk/4487
 
 __DESCRIPTION__
 
@@ -20,5 +21,4 @@ In diesem Vortrag werde ich meine bisherigen (und zukünftigen - vom Zeitpunkt d
 
 Die Slides sind <a href="http://domm.plix.at/talks/2013_berlin_zeromq_perl/">hier</a>
 
-[abstract](http://act.yapc.eu/gpw2013/talk/4487)
 

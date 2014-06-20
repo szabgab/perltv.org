@@ -234,6 +234,19 @@ get '/daily.atom' => sub {
 	forward '/atom.xml';
 };
 
+sub fix_ts {
+	my ($ts) = @_;
+
+	if ($ts =~ /^\d\d\d\d-\d\d-\d\d$/) {
+		$ts .= 'T12:00:00Z'; 
+	} elsif ($ts =~ /^(\d\d\d\d-\d\d-\d\d) (\d\d:\d\d:\d\d)$/) {
+		$ts = $1 . 'T' . $2 . 'Z';
+	} else {
+		warn "ts '$ts' incorrect";
+	}
+	return $ts;
+}
+
 get '/atom.xml' => sub {
 	my $featured = setting('featured');
 	my $appdir = abs_path config->{appdir};
@@ -241,7 +254,7 @@ get '/atom.xml' => sub {
 	my $URL = request->base;
 	$URL =~ s{/$}{};
 	my $site_title = 'Perl TV Featured videos';
-	my $ts = $featured->[0]{featured};
+	my $ts = fix_ts($featured->[0]{featured});
 
 	my $xml = '';
 	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
@@ -249,7 +262,7 @@ get '/atom.xml' => sub {
 	$xml .= qq{<link href="$URL/atom.xml" rel="self" />\n};
 	$xml .= qq{<title>$site_title</title>\n};
 	$xml .= qq{<id>$URL/</id>\n};
-	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
+	$xml .= qq{<updated>$ts</updated>\n};
 	foreach my $entry (@$featured) {
 
 		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
@@ -260,7 +273,8 @@ get '/atom.xml' => sub {
 
 		$xml .= qq{  <title>$title</title>\n};
 		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
-		$xml .= qq{  <updated>$entry->{featured}T12:00:00Z</updated>\n};
+		my $ts = fix_ts($entry->{featured});
+		$xml .= qq{  <updated>$ts</updated>\n};
 		my $url = "$URL/v/$entry->{path}";
 		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
 		$xml .= qq{  <id>$URL/v/$entry->{path}</id>\n};

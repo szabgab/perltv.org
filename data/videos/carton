@@ -1,0 +1,18 @@
+id: NVzaFU22OEk
+src: youtube
+title: Tatsuhiko Miyagawa Carton
+speaker: tatsuhiko-miyagawa
+source: london-perl-workshop-2013
+view_count: 65
+favorite_count: 0
+length: 51:21
+date: 2013-11-30
+format: markdown
+abstract: http://act.yapc.eu/lpw2013/talk/5214
+
+__DESCRIPTION__
+
+Carton is a Perl dependency manager for CPAN, made by the author of a popular CPAN installer cpanminus.
+
+Inspired by Ruby's Bundler, Carton lets you manage your application's code and its dependencies version controlled, so that an application will always have the exact CPAN modules (and versions) that it needs to run. Carton is built on top of cpanm, which has evolved a lot in the previous year, to make replicating CPAN dependencies a lot easier.
+

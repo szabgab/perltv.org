@@ -44,6 +44,7 @@ will create the skeleton file for the video. Some fields will need to be changed
   modules:         M::N, Module::Name   A list of CPAN modules mentioned in the talk
   language:        [he|nl|de|...]       The language of the video, Currently we don't use this field if the video is in English.
   tags:            tag, tag             Comma separated list of keywords
+  abstract:        URL                  Link to the original announcement of the talk (if it is available)
 
 After the header fields there should be a __DESCRIPTION__ string at the beginning of a line. Everything below this mark
 will be included as the body of the text on the video page. The format of the text is declared in the "format:" field

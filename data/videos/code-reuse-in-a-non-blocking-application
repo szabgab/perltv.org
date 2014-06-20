@@ -9,6 +9,7 @@ length: 25:29
 date: 2014-05-24
 format: markdown
 modules: Mojo::IOLoop::Delay
+abstract: http://www.mojoconf.org/mojo2014/talk/5414
 
 __DESCRIPTION__
 
@@ -16,7 +17,6 @@ When we write blocking applications code reuse is easy: abstract the logic and e
 
 Of course this talk will require Mojolicious. It will also use the spin-off project Mango as a non-blocking interface to MongoDB. It may use the very young project Mandel as an Object Document Mapper (ODM) for Mongo. If you would like to play along, bring a laptop with this software installed. Hope to see you there! Happy Perling!
 
-[abstract](http://www.mojoconf.org/mojo2014/talk/5414)
 
 [slides](http://mojoconf.joel-berger.com/)
 

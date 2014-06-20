@@ -1,0 +1,20 @@
+id: EiDPX5nXGZM
+src: youtube
+title: Don't Debug Now Debug Later
+speaker: claes-jacobson
+source: london-perl-workshop-2011
+view_count: 28
+favorite_count: 0
+length: 16:44
+date: 2011-11-12
+format: markdown
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Don't you hate it when you encounter a bug in production and you can't see what has been going on up until it happened?
+
+Runops::Recorder is a alternate runloop for perl that writes down what your program does to disk for playback later. As of this moment it mostly records COPs, entersub and dies but eventually (hopefully?) it'll record variable state changes and other meaningful information.The intent is to be lightweight enough for it to be enabled in production at most times.
+
+It also comes with a viewer and some helper classes for you to write your own playback tools such as diffs etc.

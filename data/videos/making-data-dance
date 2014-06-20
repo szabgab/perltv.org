@@ -1,0 +1,23 @@
+id: cCCz4e20gpw
+src: youtube
+title: Making Data Dance
+speaker: carl-masak
+source: london-perl-workshop-2011
+view_count: 647
+favorite_count: 0
+length: 40:48
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3845
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Donald Knuth's "Dancing Links" algorithm deserves wider recognition. It can solve the N-queens problem. It can help us tile pentominoes. It makes solving a Sudoku problem trivial.
+
+There's only one little issue: these problems are all solved in another domain which we can call the "big huge matrix of ones and zeroes domain". Constructing such a matrix manually is about as fun as boning fish.
+
+Solution: I wrote a set of parsers that can understand a given problem type, so that we can always deal with cute ASCII representations of the problems, and never the matrix itself. We become unfettered from the technical specifics of the algorithm, while still reaping all the benefits from it.
+
+The same idea was implemented in Perl 5/Moose (for prototyping), C (for speed), and Perl 6 (for beauty), and I will say a thing or two about what's nice about implementing a small project like this in each of those languages.

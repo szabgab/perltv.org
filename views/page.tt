@@ -8,6 +8,9 @@
 
    Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a> <% video.date %><br>
    <% INCLUDE incl/speaker.tt %>
+  <% IF video.abstract %>
+  <a href="<% video.abstract %>">abstract</a>
+  <% END %>
   <br>
   <% video.description %>
 

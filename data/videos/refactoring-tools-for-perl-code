@@ -11,6 +11,7 @@ format: markdown
 tags: refactoring
 modules: PPIx::EditorTools
 featured: 2014-06-10
+abstract: http://www.mojoconf.org/mojo2014/talk/5416
 
 __DESCRIPTION__
 
@@ -23,8 +24,6 @@ Perl is not particularly well-endowed in this area, but there is an implementati
 The logic required is complex, and there is surely no way to make it work perfectly in all possible cases. But it should be possible to make it work well enough that the result of the refactoring is buggy only in rare cases. In other words a "safe" refactoring process.
 
 In this talk, I will demonstrate how to do the available refactorings and how they can help improve code. I will also show some of the technical challenges.
-
-[abstract](http://www.mojoconf.org/mojo2014/talk/5416)
 
 [Refactoring book](http://martinfowler.com/books/refactoring.html)
 

@@ -1,0 +1,17 @@
+id: lgFjYlwbfU4
+src: youtube
+title: Defensive Perl Programming
+speaker: mike-whitaker 
+source: london-perl-workshop-2009
+view_count: 602
+favorite_count: 0
+length: 23:13
+date: 2009-12-05
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2009/talk/2425
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2009.
+
+A look at a seemingly simple Perl program, what happens when it goes wrong in ways you didn't think of when you wrote it, and how to catch them and stop them happening.

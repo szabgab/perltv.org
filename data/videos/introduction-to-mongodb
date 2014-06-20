@@ -11,6 +11,7 @@ format: markdown
 modules: MongoDB
 tags: NoSQL
 featured: 2014-01-10
+abstract: http://www.perloasis.info/opw2012/talk/3968
 
 __DESCRIPTION__
 
@@ -26,4 +27,3 @@ be a great blend for those people in the Perl community!
 
 [slides](https://speakerdeck.com/bwmcadams/perl-oasis-introduction-to-mongodb)
 
-[abstract](http://www.perloasis.info/opw2012/talk/3968)

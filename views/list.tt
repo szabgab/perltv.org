@@ -36,12 +36,20 @@
   <% FOR lang IN languages.keys.sort %>
     <h2><% languages.$lang %></h2>
       <ul class="videos">
-        <li><span class="sort_date date">date</span><span class="sort_featured featured">featured</span><span class="sort_title">title</span></li>
+        <li>
+           <span class="sort_date date">date</span>
+           <span class="sort_featured featured">featured</span>
+           <span class="sort_length length">length</span>
+           <span class="sort_title">title</span></li>
         <% FOR v IN videos %>
           <% IF v.language == lang %>
              <% DEFAULT v.featured = '&nbsp;' %>
-             <% DEFAULT v.date = '&nbsp;' %>
-            <li><span class="date"><% v.date %></span><span class="featured"><% v.featured %></span><a href="/v/<% v.path %>"><% v.title %></a></li>
+            <li>
+                <span class="date"><% v.date  %></span>
+                <span class="featured"><% v.featured.substr(0,10) %></span>
+                <span class="length"><% v.length %></span>
+                <a href="/v/<% v.path %>"><% v.title %></a>
+            </li>
           <% END %>
       <% END %>
       </ul>
