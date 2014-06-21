@@ -1,0 +1,17 @@
+id: 9c1tZW1P01s
+src: youtube
+title: 9 Things to Remember about PostgreSQL
+speaker: simon-riggs
+source: london-perl-workshop-2010
+view_count: 207
+favorite_count: 0
+length: 18:18
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3104
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+PostgreSQL 9.0 features and capabilities of interest to perl developers. Covers security, performance, operations, and other features.

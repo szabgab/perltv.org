@@ -1,0 +1,19 @@
+id: AXIvom6F0Lk
+src: youtube
+title: IO Async
+speaker: paul-evans
+source: london-perl-workshop-2010
+view_count: 180
+favorite_count: 0
+length: 43:26
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3124
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+IO::Async is a framework for building event-driven programs, based on the idea of continuations.
+
+If you're thinking of attending this talk, you possibly also want the talk on CPS; http://conferences.yapceurope.org/lpw2010/talk/3109
