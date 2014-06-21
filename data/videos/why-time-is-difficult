@@ -1,0 +1,17 @@
+id: OhjOXrFHL7o
+src: youtube
+title: Why Time is Difficult
+speaker: andrew-main
+source: london-perl-workshop-2011
+view_count: 107
+favorite_count: 0
+length: 41:14
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3800
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Dates, times, time intervals, clocks, calendars, and related phenomena are major contributors to hassle in programming, and the source of innumerable bugs. This talk will explain why it's such a complicated area, and how best to think about it to avoid getting confused. Leap seconds will be demystified, and then remystified as the truth turns out to be stranger than you imagined. There will be no code. The first half of the talk was previously presented at YAPC::EU.
