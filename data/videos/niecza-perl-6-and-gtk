@@ -1,0 +1,18 @@
+id: -JpfOS_ombM
+src: youtube
+title: Writing a Tetris game with Niecza Perl 6 and GTK
+speaker: martin-berends
+source: london-perl-workshop-2011
+view_count: 179
+favorite_count: 0
+length: 18:54
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3893
+tags: Perl 6
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Niecza is a relatively new Perl 6 implementation built on the Common Language Runtime (Mono or .NET) and compatible with Linux, OS X and Windows. This presentation uses a simple Tetris game to demonstrate Niecza's CLR Interop facilities. The talk provides background on how graphical user interfaces in general are programmed, and explains all the inner workings of this particular program. Admittedly it's totally off-topic considering the workshop theme, so it may offer light relief from the serious talks.
