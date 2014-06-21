@@ -1,0 +1,31 @@
+id: dwVIpkBHwOo
+src: youtube
+title: TLS mit Perl IO::Socket::SSL
+speaker: steffen-ullrich
+source: german-perl-workshop-2014
+view_count: 43
+favorite_count: 0
+length: 39:47
+date: 2014-03-27
+format: markdown
+language: de
+abstract: http://act.yapc.eu/gpw2014/talk/5192
+modules: IO::Socket::SSL
+
+__DESCRIPTION__
+
+Der Vortragende ist Maintainer des IO::Socket::SSL Modules, welches das am
+meisten direkt genutzte Perl-Module für TLS ist.
+Der Vortrag widmet sich den aktuellen Verbesserungen am Modul, welches
+deutlich mehr Sicherheit mit den Voreinstellungen liefert und damit die
+sichere Nutzung einfacher macht. Der Autor hat auch aktuelle Nutzer des
+Modules auf CPAN analysiert und diverse Probleme entdeckt, z.B. das
+explizite Ausschalten der Zertifikatsverifikation oder das Überschreiben von
+sicheren Defaults mit weniger sicheren Varianten.
+Weiterhin wird der Vortrag auf die Nutzung von Perfect Forward Secrecy mit
+IO::Socket::SSL eingehen und auch zeigen, wie einfach man einen
+Man-In-The-Middle Proxy mit dynamischer Generierung passender Zertifikate
+mit IO::Socket::SSL::Intercept erstellt kann.
+Wenn die Zeit reicht wird auch auf die inherenten Probleme der Nutzung von
+TLS in den Browsern eingegangen, um klarzustellen, das TLS keine perfekte
+Sicherheit bieten kann.
