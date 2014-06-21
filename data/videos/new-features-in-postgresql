@@ -1,0 +1,19 @@
+id: jW3UNCEs6As
+src: youtube
+title: New Features in PostgreSQL
+speaker: tim-bunce
+source: london-perl-workshop-2010
+view_count: 174
+favorite_count: 0
+length: 36:31
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3092
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+PostgreSQL lets you write stored procedures in PL/Perl - a Perl interpreter embedded in the database server. The PostgreSQL 9.0 release includes significant enhancements to PL/Perl.
+
+This talk will show you how to make the best use of the new features. You'll also learn how to use Devel::NYTProf to profile your PL/Perl code, and a new efficient and sugary way to call other stored procedures.
