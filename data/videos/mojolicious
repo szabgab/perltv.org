@@ -1,0 +1,17 @@
+id: _SspKSld5mo
+src: youtube
+title: Mojolicious
+speaker: marcus-ramberg
+source: london-perl-workshop-2010
+view_count: 432
+favorite_count: 0
+length: 33:38
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3076
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+This talk is an introduction to Mojolicious, a next generation web framework for Perl. We will look at how the routes dispatcher works, the built in rendering system as well as cutting edge features like HTTP Web Socket support and the CSS3 XML parser. This talk also covers the Mojo HTTP client.
