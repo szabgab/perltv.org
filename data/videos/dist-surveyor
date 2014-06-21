@@ -1,0 +1,23 @@
+id: w6atf8aCEDI
+src: youtube
+title: Dist Surveyor
+speaker: tim-bunce
+source: london-perl-workshop-2011
+view_count: 8
+favorite_count: 0
+length: 06:28
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3902
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Finding out exactly what CPAN distributions you have installed, including exactly what versions of those distributions, is remarkably tricky.
+
+In this talk I'll show a new utility that leverages metacpan to help it perform this task accurately. It'll even pinpoint remnant files and files that have local modifications.
+
+This utility makes it possible to 'clone' a perl library tree by reinstalling the distributions into a different directory tree. That's very handy when moving between major perl versions where extensions need to be recompiled. The list of specific distributions it generates can be used with carton.
+
+This kind of cloning has the added benefit of re-testing all the specific distribution versions that are being used against all the specific prerequisite versions that are being used. It's surprising how often this re-testing finds problems.

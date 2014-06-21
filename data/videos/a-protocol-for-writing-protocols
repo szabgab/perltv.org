@@ -1,0 +1,17 @@
+id: VuW1wdNnRGA
+src: youtube
+title: A Protocol for Writing Protocols
+speaker: paul-evans
+source: london-perl-workshop-2011
+view_count: 118
+favorite_count: 0
+length: 41:48
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3895
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+A look at various ways to write CPAN modules that wrap networking protocols, focusing on best-practices for how to write solid, unit-testable, reusable, event or async-capable modules.

@@ -1,0 +1,26 @@
+id: -UC9OXeTcBM
+src: youtube
+title: Improving CPAN Modules
+speaker: tom-hukins
+source: london-perl-workshop-2011
+view_count: 27
+favorite_count: 0
+length: 18:14
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3903
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Some CPAN modules contain bugs or lack useful features. Many modules would benefit from better documentation. Most authors welcome contributions from the community.
+
+Yet many Perl developers haven't yet contributed to the modules they use, for various reasons.
+
+This talk will explain how CPAN modules work, how to edit them, how to ask for help and how to submit improvements back to their developers.
+
+You will get the most out of this talk if you:
+* have a basic or intermediate knowledge of Perl
+* use CPAN modules
+* have experience of editing other people's code
