@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 use 5.010;
 
 use Path::Tiny qw(path);
@@ -62,6 +62,15 @@ sub import_videos {
 		die "Missing speaker in $f" if not $video->{speaker};
 		die "Unindentified speaker '$video->{speaker}' in $f"
 			if not $people{ $video->{speaker} };
+		if ($video->{length} !~ /(\d\d:)?\d\d:\d\d$/) {
+			die "Invalid length format '$video->{length}' in file '$f'\n";
+		}
+		if ($video->{date} !~ /^\d\d\d\d-\d\d-\d\d( \d\d:\d\d:\d\d)?$/) {
+			die "Invalid date format '$video->{date}' in file '$f'\n";
+		}
+		if ($video->{featured} and $video->{featured} !~ /^\d\d\d\d-\d\d-\d\d( \d\d:\d\d:\d\d)?$/) {
+			die "Invalid featrued format '$video->{featured}' in file '$f'\n";
+		}
 
 		#warn Dumper $video;
 		my %entry = (
