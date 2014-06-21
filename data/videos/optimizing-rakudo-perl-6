@@ -1,0 +1,21 @@
+id: hyfAxxdYAP8
+src: youtube
+title: Optimizing Rakudo Perl 6
+speaker: jonathan-worthington 
+source: london-perl-workshop-2011
+view_count: 132
+favorite_count: 0
+length: 40:58
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3841
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+Slides: http://6guts.wordpress.com/2011/11/09/slides-from-my-optimizing-rakudo-perl-6-talk/
+
+After much work, the Rakudo implementation of Perl 6 now supports a lot of the features laid out in the Perl 6 language specification. For many potential users, missing features are not a great blocker; today, performance is a much more important one. Now the foundations are laid, current work on Rakudo involves a focus on implementing optimizers, and optimizing the compiler and runtime environment itself.
+
+While there's a long way to go, this work has already produced results; for example, Rakudo at the time of writing runs a Mandelbrot benchmark almost 20 times faster than it could earlier on in the year. In this talk I'll discuss a variety of the optimizations we've already done, are currently working on, and have lined up in the future.
+
