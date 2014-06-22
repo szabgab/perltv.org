@@ -148,7 +148,11 @@ get '/people/:name' => sub {
 	my $person = read_file( "$appdir/data/people/$name" );
 	my $data = setting('data');
 	my @entries = grep { $_->{speaker} eq $name} @{ $data->{videos} };
-	template 'list', { videos => \@entries, %{ $people->{$name} } , person => $person };
+	template 'list', {
+		videos => \@entries, %{ $people->{$name} },
+		person => $person,
+		edit   => "people/$name",
+	};
 };
 
 get '/tag/?' => sub {
@@ -187,7 +191,10 @@ get '/source/:name' => sub {
 
 	my $data = setting('data');
 	my @entries = grep { $_->{source} eq $name} @{ $data->{videos} };
-	template 'list', { videos => \@entries, %{ $sources->{$name} } };
+	template 'list', {
+		videos => \@entries, %{ $sources->{$name} },
+		edit   => "sources/$name",
+	};
 };
 
 get '/language/?' => sub {
@@ -223,7 +230,7 @@ get '/' => sub {
 get '/v/:path' => sub {
 	my $path = params->{path};
 	if ($path =~ /^[A-Za-z0-9_-]+$/) {
-		return _show('page', $path, {show_tags => 1, show_modules => 1});
+		return _show('page', $path, {show_tags => 1, show_modules => 1, edit =>  "videos/$path"});
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
