@@ -43,6 +43,8 @@ sub read_file {
 	# default language is English unless language is defined in video
 	$data{language} ||= 'en';
 
+	die "Missing language '$data{language}' in '$file'" if not $languages{ $data{language} };
+	
 	$data{language_in_english} = $languages{ $data{language} };
 	$data{title} .= " ($data{language_in_english})";
 

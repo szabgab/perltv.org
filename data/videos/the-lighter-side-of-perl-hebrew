@@ -1,0 +1,19 @@
+id: 1-yff9PAcK4
+src: youtube
+title: The lighter side of Perl
+speaker: guy-naamati
+source: israeli-perl-workshop-2013
+view_count: 43
+favorite_count: 0
+length: 12:07
+language: he
+date: 2013-02-25
+format: markdown
+abstract: http://act.perl.org.il/ilpw2013/talk/4513
+
+__DESCRIPTION__
+
+Perl Workshop in Israel, 2013 - http://perl.org.il
+Besides being a great programming language, Perl also has a rich culture of programming dedicated to having fun.
+This includes joke modules, Perl poetry, Perl golf and more.
+In this fun non-technical talk I will give a few highlights of how Perl cannot only get the job done but also make you smile
