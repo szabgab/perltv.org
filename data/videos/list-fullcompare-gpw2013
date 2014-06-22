@@ -17,9 +17,9 @@ __DESCRIPTION__
 
 "Ein Mann mit nur einer Uhr weiss immer die Zeit. Ein Mann mit zwei Uhren ist sich nie sicher."
 
-Wenn Geschäftsdaten von einem System an das nächste übergeben werden, ist es oft nötig, die Konsistenz der beiden Systeme zu kontrollieren, indem Reports aus beiden Systemen gegeneinander abgeglichen werden.
+Wenn Geschaftsdaten von einem System an das nachste ubergeben werden, ist es oft notig, die Konsistenz der beiden Systeme zu kontrollieren, indem Reports aus beiden Systemen gegeneinander abgeglichen werden.
 
-Der Vortrag stellt das Modul "List::FullCompare" vor, welches den Abgleich von zwei Listen ("symmetrische Differenz") implementiert. Es werden die Problemstellung und die Anwendungsfälle gezeigt. Weiter werden die Mechanismen zur Implementation eigener Vergleichsmethoden und die algorithmische Komplexität diskutiert.
+Der Vortrag stellt das Modul "List::FullCompare" vor, welches den Abgleich von zwei Listen ("symmetrische Differenz") implementiert. Es werden die Problemstellung und die Anwendungsfalle gezeigt. Weiter werden die Mechanismen zur Implementation eigener Vergleichsmethoden und die algorithmische Komplexitat diskutiert.
 
 Die Slides sind <a href="http://corion.net/talks/List-FullCompare/list-fullcompare.de.html">hier</a>
 
