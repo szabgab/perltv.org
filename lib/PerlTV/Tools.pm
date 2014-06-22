@@ -44,7 +44,6 @@ sub read_file {
 	$data{language} ||= 'en';
 
 	$data{language_in_english} = $languages{ $data{language} };
-	$data{title} .= " ($data{language_in_english})";
 
 	$data{format} ||= 'html';
 
