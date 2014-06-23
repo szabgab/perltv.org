@@ -8,7 +8,7 @@ favorite_count: 0
 length: 15:30
 date: 2013-06-03
 format: markdown
-tags: plenv
+tags: plenv, perlbrew
 abstract: http://www.yapcna.org/yn2013/talk/4635
 featured: 2014-06-23 08:00:00
 
