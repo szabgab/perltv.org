@@ -12,7 +12,7 @@ use PerlTV::Import;
 
 
 my ($url) = @ARGV;
-die "Usage: $0 URL (of a YouTube Channel) \n" if not $url;
+die "Usage: $0 URL (of a YouTube Channel https://www.youtube.com/playlist?list=PLA9_Hq3zhoFy0zej1j4QZtz5awFKXunZX ) \n" if not $url;
 
 my $m = WWW::Mechanize->new;
 $m->get($url);
@@ -23,6 +23,7 @@ $pi->import_people();
 $pi->import_sources();
 my $videos = $pi->import_videos();
 
+read_file('skip.txt');
 
 foreach my $link ($m->links) {
 	#say $link->url;
@@ -40,6 +41,7 @@ sub read_file {
 	my ($file) = @_;
 	open my $fh, '<', $file;
 	while (my $row = <$fh>) {
+		next if $row =~ /^\s*$/;
 		chomp $row;
 		my ($src, $id) = split /:/, $row;
 		$videos->{$src}{$id}++;
