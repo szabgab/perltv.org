@@ -22,6 +22,7 @@ It is a competitor of perlbrew, but implemented as a Bash script.
 It also allows you to override the Perl version with an environment variable.
 
 plenv is ...
+
 * very fast at (ba|z)shrc
 * switch perl5 version per project, very easily
 
