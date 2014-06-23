@@ -275,10 +275,11 @@ get '/atom.xml' => sub {
 		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
 		my $title = $data->{title};
 		$title =~ s/&/and/g;
+		my $language = $languages{$data->{language}};
 
 		$xml .= qq{<entry>\n};
 
-		$xml .= qq{  <title>$title</title>\n};
+		$xml .= qq{  <title>$title ($language $data->{length})</title>\n};
 		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
 		my $ts = fix_ts($entry->{featured});
 		$xml .= qq{  <updated>$ts</updated>\n};
