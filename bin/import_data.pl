@@ -12,6 +12,7 @@ use PerlTV::Tools qw(read_file youtube_thumbnail);
 
 my %sources;
 my %people;
+my $seen = '';
 
 my $json = JSON::Tiny->new;
 import_people();
@@ -71,6 +72,8 @@ sub import_videos {
 		if ($video->{featured} and $video->{featured} !~ /^\d\d\d\d-\d\d-\d\d( \d\d:\d\d:\d\d)?$/) {
 			die "Invalid featrued format '$video->{featured}' in file '$f'\n";
 		}
+
+		$seen .= "$video->{src}:$video->{id}\n";
 
 		#warn Dumper $video;
 		my %entry = (
@@ -147,5 +150,8 @@ sub import_videos {
 			say "  $v->{path}";
 		}
 	}
+
+	open my $out, '>', 'imported_videos.txt' or die;
+	print $out $seen;
 }
 
