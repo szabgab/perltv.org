@@ -3,16 +3,18 @@
    <% INCLUDE incl/embed.tt %>
 
    <% IF video.language %>
-      This video is in <b><% video.language_in_english %>.</b>
+      This video is in <a href="/language/<%video.language %>"><b><% video.language_in_english %></b></a>.<br>
    <% END %>
 
-   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a> <% video.date %><br>
+   Length: <% video.length %><br>
+   Source: <a href="/source/<% video.source %>"><% video.source_name %></a> on the <% video.date %>.<br>
    <% INCLUDE incl/speaker.tt %>
   <% IF video.abstract %>
+  <br>
   <a href="<% video.abstract %>">abstract</a>
   <% END %>
   <br>
-  <% video.description %>
+  <% video.description %><br>
 
 <!--
   <div id="modules">

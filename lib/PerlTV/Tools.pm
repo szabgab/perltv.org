@@ -46,7 +46,6 @@ sub read_file {
 	die "Missing language '$data{language}' in '$file'" if not $languages{ $data{language} };
 	
 	$data{language_in_english} = $languages{ $data{language} };
-	$data{title} .= " ($data{language_in_english})";
 
 	$data{format} ||= 'html';
 
