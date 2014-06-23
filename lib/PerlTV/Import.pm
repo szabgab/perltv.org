@@ -11,8 +11,10 @@ use PerlTV::Tools qw(read_file youtube_thumbnail);
 
 my %sources;
 my %people;
-my $seen = '';
+my %seen;
 my $json;
+my @not_featured;
+my @featured;
 
 
 sub new {
@@ -48,8 +50,6 @@ sub import_people {
 sub import_videos {
 	my $dir = path($0)->absolute->parent->parent->child('data/videos');
 	my @videos;
-	my @not_featured;
-	my @featured;
 	my %tags;
 	my %modules;
 	my %meta;
@@ -73,7 +73,7 @@ sub import_videos {
 			die "Invalid featrued format '$video->{featured}' in file '$f'\n";
 		}
 
-		$seen .= "$video->{src}:$video->{id}\n";
+		$seen{$video->{src}}{$video->{id}} = 1;
 
 		#warn Dumper $video;
 		my %entry = (
@@ -141,6 +141,10 @@ sub import_videos {
 	path('modules.json')->spew_utf8( $json->encode(\%modules) );
 	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
 	
+	return \%seen;
+}
+
+sub print_not_featured {
 	say "Latest featured: $featured[0]{featured}\n";
 
 	if (@not_featured) {
@@ -150,9 +154,6 @@ sub import_videos {
 			say "  $v->{path}";
 		}
 	}
-
-	open my $out, '>', 'imported_videos.txt' or die;
-	print $out $seen;
 }
 
 
