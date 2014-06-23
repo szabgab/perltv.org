@@ -9,6 +9,11 @@ length: 56:16
 date: 2012-06-15
 format: markdown
 tags: testing
+modules: Test::Simple, Test::More, Test::Builder, Test::Harness
 
 __DESCRIPTION__
+
+[source via ftp](ftp://thenceforward.net/perl/yapc/YAPC-NA-2012/eightytwopercent.tgz)
+
+[QA Hackathons](http://qa-hackathon.org/)
 
