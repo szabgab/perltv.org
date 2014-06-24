@@ -1,0 +1,19 @@
+id: VPvkMk98-eQ
+src: youtube
+title: Droids in the Amazon
+speaker: andrew-solomon
+source: london-perl-workshop-2009
+view_count: 111
+favorite_count: 0
+length: 03:31
+date: 2009-12-05
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2009/talk/2427
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2009.
+
+I'll introduce a new package - "Droids" - which is designed to manage Amazon EC2s as daemon driven web services, and I'll explain how the module is being used as the infrastructure for an e-Learning application.
+
+My hope is that I'll get feedback from attendees who can see uses for the module in a broader context before I put it onto CPAN.

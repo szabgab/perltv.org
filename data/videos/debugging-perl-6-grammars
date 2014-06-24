@@ -1,0 +1,20 @@
+id: s41CgKSDlIs
+src: youtube
+title: Debugging Perl 6 Grammars
+speaker: jonathan-worthington
+source: london-perl-workshop-2011
+view_count: 187
+favorite_count: 0
+length: 27:25
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3842
+tags: Perl 6
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Perl 6 grammars are a powerful way to parse text, and extract structure from it. They take what you already know about regexes and object orientation and bring it together powerfully. It's great, but...what happens when your grammar won't match something you think it should?
+
+In this talk, I'll present a grammar with some subtle bugs, and show you how they can be hunted down.

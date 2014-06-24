@@ -1,0 +1,16 @@
+id: CJJDOrs6v-Y
+src: youtube
+title: Make Flying Robots Do Your Bidding With UAV::Pilot
+speaker: timm-murray
+source: yapc-na-2014
+view_count: 42
+favorite_count: 0
+length: 35:24
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5200
+modules: UAV::Pilot
+
+__DESCRIPTION__
+
+Civilian use of autonomous vehicles, airplanes, and helicopters has become increasingly popular in the last few years for everything from aerial photography to beer keg delivery. Learn about how Perl is entering this new field with UAV::Pilot.

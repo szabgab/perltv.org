@@ -1,0 +1,21 @@
+id: nusC1TnwOlg
+src: youtube
+title: A Date with Perl - (YAPC::NA 2014)
+speaker: dave-rolsky
+source: yapc-na-2014
+view_count: 46
+favorite_count: 0
+length: 50:40
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5312
+
+__DESCRIPTION__
+
+Dates and times are confusing and crazy. What nut invented Daylight Saving Time? Someone who'd never imagined a computer, that's who!
+
+Dealing with dates and times might seem simple at first, but there's a lot of gotchas.
+
+This talk will start by covering some concepts worth knowing about (What is an Olson timezone? What's the Gregorian Calendar?).
+
+After that we'll talk about how the DateTime suite of modules can make your life a little easier. I'll show you some best practices for working with dates and times, and highlight some gotchas in DateTime's API, and with datetimes in general.

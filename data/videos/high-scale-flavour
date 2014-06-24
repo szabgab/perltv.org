@@ -1,0 +1,21 @@
+id: I9kXi4QG4bQ
+src: youtube
+title: High Scale Flavour (Recepies for Message Queueing)
+speaker: tomas-doran
+source: london-perl-workshop-2010
+view_count: 50
+favorite_count: 0
+length: 19:18
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3107
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+This talk will introduce the basics of message queueing, STOMP (the Streamed Text Oriented Messaging Protocol) and AMQP (the Advanced
+Message Queuing Protocol), including why message queuing is a good idea for scalability and reduced latency in web applications.
+
+After the initial theory, an in-depth analysis will be conducted; comprising a number of useful messaging based patterns and a discussion of practical implementations, with reference to
+CPAN modules available to build message based systems.

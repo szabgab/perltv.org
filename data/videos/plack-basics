@@ -1,0 +1,23 @@
+id: qdCmQJCaT0c
+src: youtube
+title: Plack Basics - website best practices
+speaker: leo-lapworth
+source: london-perl-workshop-2011
+view_count: 164
+favorite_count: 0
+length: 41:53
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3714
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+Plack sits between your web server (Apache, Starman, FCGI) and your framework/code (Catalyst, Dancer, Mojo, or Web::Simple or your own raw code).
+
+This makes changing web server easy - but it also means you can use any of the generic Plack::Middleware layers, from access logs to debugging, to serving static content.
+
+You get a standalone web server for free, which make development much easier!
+
+I'll also briefly cover general best practices with server configuration (proxies, caches and fail over).

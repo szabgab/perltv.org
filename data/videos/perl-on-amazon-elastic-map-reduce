@@ -1,0 +1,17 @@
+id: zSOAdny9cb0
+src: youtube
+title: Perl on Amazon Elastic Map Reduce
+speaker: pedro-figueiredo
+source: london-perl-workshop-2011
+view_count: 242
+favorite_count: 0
+length: 22:02
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3850
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+A quick intro to MapReduce and Hadoop, the gotchas of Amazon Elastic MapReduce, and how to write streaming jobs using Perl and non-core modules.

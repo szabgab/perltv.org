@@ -1,0 +1,17 @@
+id: EjC6rJ4lkZQ
+src: youtube
+title: A Brave New Perl World
+speaker: stevan-little
+source: london-perl-workshop-2011
+view_count: 448
+favorite_count: 0
+length: 47:28
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3885
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+This talk will expand upon the plan laid forth by Jesse Vincent at YAPC::NA 2011 where he talked about his ideas for the future of the Perl. In particular we will discuss the ideas for a more simplified core and the possible addition of a new MOP (Meta Object Protocol) powered object system. We will also explore what that would mean for the future of Perl 5 as a language.

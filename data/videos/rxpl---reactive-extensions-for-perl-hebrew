@@ -1,0 +1,34 @@
+id: ymEGZEi4hO4
+src: youtube
+title: Rx.pl - Reactive Extensions for Perl - (hebrew)
+speaker: ran-eilam
+source: israel-pm 
+view_count: 138
+favorite_count: 0
+length: 56:06
+date: 2013-05-25
+format: markdown
+
+__DESCRIPTION__
+
+[source](https://github.com/eilara/Rx.pl)
+
+A library for composing async programs. Because writing async code is hard,
+but working with Perl lists is easy. Lets turn events into lists, and reap
+the benefits:
+
+* Elegant async programming without callback nesting, using operators we
+  all know from working with Perl lists
+
+* Managing and coordinating events, e.g. start an HTTP request when timeout
+  on key press if previous HTTP request was OK and arrived in the last
+  10 seconds
+
+* Programming with stream transformations, instead of objects and methods-
+  say hello to beautiful functional designs with well defined state and
+  side-effects . Replace boring UML diagrams with fun marble diagrams
+
+* Stop writing and rewriting retry, timeout, throttle, buffer, window,
+  counters, caching, and aggregate functions for each project. Instead
+  create your processes as observables, then enjoy a rich library of
+  existing operators

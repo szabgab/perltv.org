@@ -1,0 +1,15 @@
+id: -XITNDvqoTo
+src: youtube
+title: The Perl API for the Mortally Terrified
+speaker: mike-friedman
+source: yapc-na-2014
+view_count: 49
+favorite_count: 0
+length: 40:21
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5302
+
+__DESCRIPTION__
+
+Have you ever wanted to learn the secrets of the dark masters of Perl? Ever been curious about what an *SV is? Maybe you just want to make a subroutine really, really fast, but you're terrified of this thing called XS that stands in your way. This talk presents the Perl API for beginners from the ground up, explaining everything you need to know to get started hacking Perl in C. XS is not required, as the examples use the much smarter Inline module to get right at the core API with nothing in the way.

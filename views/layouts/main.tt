@@ -18,6 +18,10 @@
 
   <div id="sidebar">
   <h1><a href="/">Perl TV</a></h1>
+    <% IF edit %>
+      <a href="https://github.com/szabgab/perltv.org/tree/main/data/<% edit %>">edit this page</a>
+    <% END %>
+
     <ul id="sidebar-items">
       <li>
         <% INCLUDE incl/thumbnail.tt %>
@@ -28,6 +32,7 @@
           <li><a href="http://www.presentingperl.org/">Presenting Perl</a></li>
           <li><a href="http://videos.missbarbell.co.uk/">2006 and 2007 Perl event videos</a></li>
         </ul>
+
 
       <% IF show_toggles %>
         <h3>Toggles</h3>

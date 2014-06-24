@@ -1,0 +1,19 @@
+id: NOdMqz-dq3I
+src: youtube
+title: Packaging Perl
+speaker: paulo-castro
+source: london-perl-workshop-2010
+view_count: 24
+favorite_count: 0
+length: 24:30
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3118
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+A story of how we went about packaging perl and all of the dependencies that our project has.
+Where we were before, the chosen path, and the end result.
+The pitfalls and a view on the pros and cons of the previous state of affairs versus the pros/cons of the end result.

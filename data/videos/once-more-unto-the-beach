@@ -1,0 +1,26 @@
+id: TtDGhRyfKiA
+src: youtube
+title: Once More Unto the Beach
+speaker: hakim-cassimally
+source: london-perl-workshop-2010
+view_count: 53
+favorite_count: 0
+length: 33:08
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3137
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+"A loaf of bread," the Walrus said,
+"Is what we chiefly need:
+Pepper and vinegar besides
+Are very good indeed--
+Now if you're ready, Oysters dear,
+We can begin to feed."
+
+True oysters of the group /Ostreidae/ include the edible kind, favoured not only by Walruses (and Carpenters) but also connoisseurs of seafood all over the world, including London. These oysters definitely provide *flavour*.
+
+But it's another (mostly unrelated) family /Pteriidae/, where we sometimes find Pearls. Pearls grow from irritations; recently the NorthWestEngland perlmongers invited proposals for a project to adopt for the hackday. Some of them were about irritations with Perl's current tools, and about how to improve them. One of these -- the repetitive, laborious provisioning of web-servers -- led to one of the projects adopted for the next year "Oyster - an incubator for Perls in the Cloud". We'll look at the hackday, which took place a fortnight before LPW, and look at the outcome, the technologies, and the people, the community that helped make it happen.

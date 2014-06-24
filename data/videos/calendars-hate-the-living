@@ -1,0 +1,15 @@
+id: 2L1WJTBcI_8
+src: youtube
+title: Calendars Hate the Living
+speaker: ashley-willis
+source: yapc-na-2014
+view_count: 20
+favorite_count: 0
+length: 23:07
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5378
+
+__DESCRIPTION__
+
+You know how email hates the living? iCal hates the living more. recurrence rules are likely turing complete. and the original form of ical is different enough that converting from it to the current model is anything but trivial -- i could find nothing for this task, so i wrote it, which included patches for Data::ICal.

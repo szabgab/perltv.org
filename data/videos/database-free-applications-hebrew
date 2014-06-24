@@ -1,0 +1,29 @@
+id: Q6i5CMk7NYg
+src: youtube
+title: Database free Applications (hebrew)
+speaker: ido-kanner
+source: israeli-perl-workshop-2013
+view_count: 65
+favorite_count: 0
+length: 18:19
+language: he
+date: 2013-02-25
+format: markdown
+abstract: http://act.perl.org.il/ilpw2013/talk/4507
+
+__DESCRIPTION__
+
+Perl Workshop in Israel, 2013 - http://perl.org.il
+Usually applications are designed to have some sort of data storage and set it's
+logic accordingly.
+
+Many times, there is more then one application that does the same thing with 
+the same data, and not always the same database itself.
+
+In this lecture I'm going to explain how to notice such problems, and designing
+a better program without fixating on database based application, and also 
+figuring out when you really need a database and when it's an "over killed" 
+feature.
+
+The lecture will helps brining a new type of mindset into developers, regardless
+of any specific platform or field in the industry

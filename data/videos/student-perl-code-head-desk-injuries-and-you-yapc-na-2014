@@ -1,0 +1,17 @@
+id: rVz-09rCBBM
+src: youtube
+title: Student Perl code, head-desk injuries, and you
+speaker: kevin-metcalf
+source: yapc-na-2014
+view_count: 6
+favorite_count: 0
+length: 32:07
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5337
+
+__DESCRIPTION__
+
+Last year's hilarious talk - update with this year's mistakes, too! Beginning students make beginner mistakes, just like the rest of us. Sometimes comical, sometimes painful, bad code can teach us as much as good code - sometimes more. From eq vs == to fork() while fork(), learn what not to do - preferably before you do it.
+
+(Kevin Metcalf teaches Perl at De Anza College in Cupertino, CA, where he also works as a system administrator.)

@@ -1,0 +1,21 @@
+id: LpyBbkwLRuQ
+src: youtube
+title: What Tak Did
+speaker: matt-s-trout
+source: london-perl-workshop-2011
+view_count: 30
+favorite_count: 0
+length: 29:17
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3906
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+I have IO::Pipeline. I have App::FatPacker. I have IPC::Command::Multiplex. And yet I still couldn't whip up a five line example of bolting them all together that made a compelling argument for a perl-loving sysadmin to stop using fabric.
+
+This problem, among others, will be solved by the conclusion of this talk. 
+
+Shadowcat Systems own Matt S. Trout (@shadowcat_mdk) gives the first generation of this talk.

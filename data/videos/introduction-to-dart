@@ -1,0 +1,18 @@
+id: NdCchnJNfzU
+src: youtube
+title: Introduction to Dart
+speaker: jonathan-rockway
+source: yapc-na-2013
+view_count: 41
+favorite_count: 0
+length: 21:05
+date: 2013-06-05
+format: markdown
+abstract: http://www.yapcna.org/yn2013/talk/4582
+
+__DESCRIPTION__
+
+Dart is a new programming language from Google that you can use where you would usually use Javascript. It has classes, lexical scope, and optional static typing, making it a bit more natural than Javascript for Perl programmers. This talk will show you the basics, including the cool IDE, static analysis tools, and how to write tests.
+
+[slides](https://docs.google.com/presentation/d/1hehfYo29jE7K8oXB2v1nncghLKeiINdKmDW-G1Axlxc/edit#slide=id.p)
+

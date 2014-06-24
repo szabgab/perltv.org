@@ -1,0 +1,15 @@
+id: XaScLywH2CI
+src: youtube
+title: Parsing Made Easyish
+speaker: andrew-rodland
+source: yapc-na-2014
+view_count: 38
+favorite_count: 0
+length: 30:35
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5356
+
+__DESCRIPTION__
+
+An introduction to Marpa, a parsing library for Perl, and some of the cool ways that it can simplify relatively complicated parsing tasks. Includes a little bit of history and covers improvements made since a previous version of this talk in January 2013.

@@ -1,0 +1,15 @@
+id: gTyE-fiHDuQ
+src: youtube
+title: Go GUI or Go Home
+speaker: dave-m
+source: yapc-na-2014
+view_count: 27
+favorite_count: 0
+length: 18:06
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5288
+
+__DESCRIPTION__
+
+Talk brief: Perl is more than just a hodgepodge of modules and sysadmin scripts. Learn just how easy it is to write a graphical user interface for your programs, and attract more than commandline junkies to your programs.

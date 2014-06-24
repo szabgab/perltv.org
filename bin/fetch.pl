@@ -36,6 +36,7 @@ if ($u->host eq 'www.youtube.com') {
 	$txt .= "length: $length\n";
 	$txt .= "date: \n";
 	$txt .= "format: markdown\n";
+	$txt .= "abstract:\n";
 	#my $keywords = $video->keywords;
 	$txt .= "\n__DESCRIPTION__\n\n";
 	$txt .= $video->description . "\n";
@@ -64,6 +65,7 @@ if ($u->host eq 'www.youtube.com') {
 	$txt .= "length: $length\n";
 	$txt .= "date: \n";
 	$txt .= "format: markdown\n";
+	$txt .= "abstract:\n";
 	$txt .= "thumbnail: $data->{thumbnail_medium}\n";
 	$txt .= "tags: $data->{tags}}\n";
 	$txt .= "\n__DESCRIPTION__\n\n";

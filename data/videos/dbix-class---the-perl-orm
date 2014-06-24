@@ -1,0 +1,18 @@
+id: hUD1RMsYrjM
+src: youtube
+title: DBIx::Class - The Perl ORM
+speaker: arthur-schmidt
+source: yapc-na-2014
+view_count: 34
+favorite_count: 0
+length: 51:00
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5364
+modules: DBIx::Class
+
+__DESCRIPTION__
+
+In this talk I'll discuss how DBIx::Class, the most popular ORM in Perl, can be used to the fullest. In the past I've done whirlwind overviews of DBIC features, shown a bunch of DBIC extensions, and even had whole talks based on cpan modules that have DBIC at their core. This year, I will take it a bit slower. I will mention DBIC features as well as some extensions, but the goal will be to have a solid understanding, instead of knowing about all the amazing features DBIC can offer.
+
+A big part of this talk will be explaining powerful SQL features, since ultimately DBIC is a powerful SQL generator with some object inflation tacked on

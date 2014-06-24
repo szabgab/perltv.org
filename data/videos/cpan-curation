@@ -1,0 +1,36 @@
+id: hm-5ILz7Qgg
+src: youtube
+title: CPAN Curation
+speaker: neil-bowers
+source: london-perl-workshop-2011
+view_count: 76
+favorite_count: 0
+length: 25:14
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3860
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+There are lots of modules on CPAN, and this is generally perceived
+to be a Good Thing. The barrier to entry is also relatively low,
+which encourages people to upload early versions, which they'll
+hopefully get feedback on, and maybe even help.
+
+The downside is that for many tasks you will find multiple modules,
+and it's often not clear which is the most appropriate module for
+you. Recently I needed code to randomly generate a temporary
+password, and discovered 12 CPAN modules which I might use.
+TMTOWTDI indeed!
+
+I decided to try a CPAN Curation experiment. Every time I need a
+module and find multiple candidates on CPAN, I'll write a review.
+I'll submit bugs and where possible patches on the modules I
+look at. And I'll keep the reviews up to date as new versions of
+modules are released.
+
+In this talk I'll cover experiences so far, the tools I'm working on
+to help this process, and how I think the approach could be
+extended.
