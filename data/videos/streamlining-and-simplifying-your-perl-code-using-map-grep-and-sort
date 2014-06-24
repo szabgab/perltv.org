@@ -1,0 +1,19 @@
+id: qU-Yxn5hdzM
+src: youtube
+title: Streamlining and simplifying your Perl code using Map, Grep, and Sort
+speaker: daina-pettit
+source: yapc-na-2014
+view_count: 32
+favorite_count: 0
+length: 20:13
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5379
+
+__DESCRIPTION__
+
+Map, Grep, and Sort are powerful Perl built-in functions that can simplify your code and improve performance.
+
+New Perl users often skip learning about these three functions because they are considered an advanced topic and may not use them to their full advantage when they do use them. Experienced Perl users exploit these functions in amazing ways, but often the result is a confusing mess of unreadable and thus unmaintainable code. Refactoring existing code into these functions where appropriate can significantly improve the quality of the code *and* improve performance as well.
+
+This talk will present how to take advantage of these powerful functions and have the resulting code understandable.

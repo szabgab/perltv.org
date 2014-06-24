@@ -1,0 +1,17 @@
+id: P88qXvU2RUA
+src: youtube
+title: DTrace War Stories
+speaker: shawn-moore
+source: yapc-na-2014
+view_count: 41
+favorite_count: 0
+length: 22:03
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5389
+
+__DESCRIPTION__
+
+Several stories of how DTrace saved someone's day when *nothing else* could.
+
+You too can wield this power and be the envy of your community.

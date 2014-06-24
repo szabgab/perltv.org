@@ -1,0 +1,17 @@
+id: ybTFXG9HWUk
+src: youtube
+title: Reading the layercake, an introduction to PerlIO
+speaker: leon-timmermans
+source: yapc-na-2014
+view_count: 31
+favorite_count: 0
+length: 21:52
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5330
+
+__DESCRIPTION__
+
+PerlIO is a part of perl every perl programmer uses, from newbie to Larry himself. Yet still it's something that's rarely given proper attention.
+
+In talk will try to give an overview of the obvious and not so obvious cases.

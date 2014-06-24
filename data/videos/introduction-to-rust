@@ -1,0 +1,17 @@
+id: 5EFCMaEbgX4
+src: youtube
+title: Introduction to Rust
+speaker: jesse-luehrs
+source: yapc-na-2014
+view_count: 133
+favorite_count: 0
+length: 47:39
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5360
+
+__DESCRIPTION__
+
+Rust is a new programming language being developed by Mozilla for low level and systems programming tasks. Its goal is to be a replacement for C or C++ in a lot of the environments that they are currently used in (including embedded systems), while providing much stronger memory safety and concurrency guarantees, as well as other modern programming language features.
+
+This talk will go over the basics of programming in Rust, touching on the major features that make it interesting. Knowledge of C or C++ will be helpful, although not necessary.

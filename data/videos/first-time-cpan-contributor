@@ -1,0 +1,15 @@
+id: dCMHQQgg_Eo
+src: youtube
+title: First Time CPAN Contributor
+speaker: adam-dutko
+source: yapc-na-2014
+view_count: 35
+favorite_count: 0
+length: 23:56
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5322
+
+__DESCRIPTION__
+
+Ever wanted to contribute a module to CPAN but found it difficult to navigate the in's and out's of the labyrinth? I'm a first time contributor that also found it hard to know what to do and what not to do. I still don't know everything but if you come to this talk you should leave knowing at least a little bit more about how to get your code added to CPAN.

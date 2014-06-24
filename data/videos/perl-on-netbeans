@@ -1,0 +1,16 @@
+id: EpGFIgTgBi0
+src: youtube
+title: Perl On NetBeans
+speaker: sudeep-hazra
+source: yapc-na-2014
+view_count: 50
+favorite_count: 0
+length: 19:50
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5299
+
+__DESCRIPTION__
+
+"Perl on NetBeans" is intended for Perl programmers who want the intuitiveness of a great editor with the ease of being able to execute the program without having to do it through a command Interpreter. Also, it has the capability to inspect the austerity of your Perl programs, and format the same in accordance to the best practices and conventions. And it does much more :)
+About me: I am full time employee with an Indian IT services company. I am also a Perl enthusiast and created this software due to the feeling of dire need of something for beginners that works straight out-of-the box.

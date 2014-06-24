@@ -1,0 +1,17 @@
+id: sviIW3Tqe8I
+src: youtube
+title: Growing Perl Developers
+speaker: nicholas-perez
+source: yapc-na-2014
+view_count: 65
+favorite_count: 0
+length: 51:23
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5323
+
+__DESCRIPTION__
+
+We hire lots of really smart people that really know software development, architecture, and scaling critical systems. There is one thing that many of them don't know and that is Perl.
+
+How does an organization such as Booking.com tackle this challenge? In this presentation I'll share our process on growing our own Perl developers, including our successes and our lessons learned.
