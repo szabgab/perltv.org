@@ -1,0 +1,37 @@
+id: ryVvSjaw3Jk
+src: youtube
+title: RapidApp: turn-key ajaxy web apps
+speaker: henry-van-styn
+source: yapc-na-2014
+view_count: 19
+favorite_count: 0
+length: 51:20
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5294
+
+__DESCRIPTION__
+
+Overview and live demonstration of the RapidApp web framework (www.rapidapp.info) which provides turn-key web interfaces (Web 2.0/AJAX using ExtJS) that tie automatically into various backend data models.
+
+The primary focus of RapidApp is on DBIx::Class databases, with full CRUD capabilities, understanding of underlying column types, foreign keys and relationships, etc., but there is also built-in support for templating, CMS, authentication and permissions, saved views, reports and so on.
+
+RapidApp provides a high-level declarative syntax to create fully working apps in just a few lines of code but still provides full access to the Catalyst development stack for extension and customization (TIMTOWTDI).
+
+In addition to covering the basics of the RapidApp APIs, several example demo applications will be shown, including creating a new app from scratch, **live**, during the presentation.
+
+Additional existing applications with different use-cases will also be shown, each with full working source-code available on GitHub:
+
+github.com/vanstyn/BlueBox
+github.com/IntelliTree/RA-SmsArc
+github.com/IntelliTree/RA-ChinookDemo
+github.com/vanstyn/MimeCas
+github.com/IntelliTree/RA-InfoSite
+
+--------
+
+RapidApp was shown in a lightning talk last year: http://www.yapcna.org/yn2013/talk/4863
+
+Much progress has been made since then including public release on GitHub/CPAN and launch of the project website with some video demos: www.rapidapp.info
+
+About Me: You can find a bio with picture, as well as a listing of some articles I've written for Linux Journal, covering topics such as Moose, Catalyst and Git, here: http://www.linuxjournal.com/users/henry-van-styn

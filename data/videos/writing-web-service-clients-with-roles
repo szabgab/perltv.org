@@ -1,0 +1,15 @@
+id: eLqoi9-ursw
+src: youtube
+title: Writing Web Service Clients with Roles
+speaker: mark-allen
+source: yapc-na-2014
+view_count: 10
+favorite_count: 0
+length: 44:50
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5375
+
+__DESCRIPTION__
+
+This talk covers a pattern that I think is powerful, flexible and fun to implement using roles from Moo(se) to develop web service clients. Along with outlining the overall pattern, this talk will present tips and tricks to write good consumable clients that are easy to get other people using.

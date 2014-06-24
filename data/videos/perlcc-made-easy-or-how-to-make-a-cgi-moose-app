@@ -1,0 +1,21 @@
+id: PkvaqgyGDEc
+src: youtube
+title: perlcc made easy or, how to make a CGI Moose app
+speaker: todd-rinaldo
+source: yapc-na-2014
+view_count: 16
+favorite_count: 0
+length: 23:42
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5603
+
+__DESCRIPTION__
+
+Based on recent work on the B::C module, it's now possible to build a working binary which can do away with the majority of startup expense a typical perl program would have. 
+
+In this talk, I'll explain:
+- What the perlcc compiler does and doesn't do.
+- How to setup the perl compiler.
+- How to pre-compile a perl script into a binary for faster execution.
+- Discuss the common mistakes one makes when building a perl binary and how to work around them.

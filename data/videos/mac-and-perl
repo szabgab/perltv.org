@@ -1,0 +1,23 @@
+id: wHQEwUpDFLQ
+src: youtube
+title: Mac and Perl
+speaker: mark-fowler
+source: yapc-na-2014
+view_count: 10
+favorite_count: 0
+length: 22:38
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5351
+
+__DESCRIPTION__
+
+It's now 2014 and three years since I gave my "Pimp Your Mac With Perl" talk at YAPC::NA in Madison[1]. In this follow up talk, consisting of entirely new material, I'll be talking about new technologies that have come along since then (having seen the prior talk is not required.)
+
+I'll be covering:
+
+- Writing Alfred Plugins, for example to search metacpan
+- Using KeyboardMaestro to fully control your Mac with Perl.
+- PopClip Extensions, and brining features of an IDE to Terminal.app
+
+[1] updated video from the London Perl Workshop here: http://www.youtube.com/watch?v=6djQ4mili6A
