@@ -20,7 +20,7 @@ sub read_file {
 
 	my %data;
 	my $section;
-	foreach my $line (Path::Tiny::path($file)->lines) {
+	foreach my $line (Path::Tiny::path($file)->lines_utf8) {
 		if ($line =~ /^__(\w+)__$/) {
 			$section = lc $1;
 			next;
