@@ -1,0 +1,21 @@
+id: TIUUVEojULE
+src: youtube
+title: MoarVM a metamodel focused runtime for NQP and Rakudo
+speaker: jonathan-worthington
+source: yapc-eu-2013
+view_count: 114
+favorite_count: 0
+length: 19:35
+date: 2013-08-14
+format: markdown
+abstract: http://act.yapc.eu/ye2013/talk/4926
+tags: Perl 6
+
+__DESCRIPTION__
+
+MoarVM, short for Metamodel On A Runtime, is a runtime engine being built with the specific needs of Rakudo and its implementation langauge, NQP, in mind. It joins the JVM, Parrot, and, given a successful GSoC project, JavaScript, as a Rakudo Perl 6 backend.
+
+In this session, I'll talk about the rationale for building MoarVM, some of the design decisions that went into it, the current status of the project, and the goals for the year to come.
+
+You can find more information on the speaker's site:
+[Talk](http://jnthn.net/papers/2013-yapceu-moarvm.pdf)
