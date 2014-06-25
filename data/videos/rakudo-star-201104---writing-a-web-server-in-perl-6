@@ -1,0 +1,15 @@
+id: VJi1hsB4vN0
+src: youtube
+title: Rakudo Star 2011.04 - writing a web server in Perl 6
+speaker: gabor-szabo
+source: perl-maven
+view_count: 1238
+favorite_count: 0
+length: 06:41
+date: 2011-06-07
+format: markdown
+abstract: http://szabgab.com/http-server-in-perl-6.html
+
+__DESCRIPTION__
+
+Screencast showing how to install Rakudo Star on Windows and how to launch a simple web server written in Perl 6. For further Perl 6 related screencasts see http://szabgab.com/perl6.html
