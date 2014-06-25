@@ -1,0 +1,24 @@
+id: YW75CXY-P3M
+src: youtube
+title: 6: what can you do today?
+speaker: jonathan-worthington
+source: fosdem-2014
+view_count: 279
+favorite_count: 0
+length: 01:00:50
+date: 2014-02-01
+format: markdown
+abstract: https://fosdem.org/2014/schedule/event/perl6_today/
+tags: Perl 6
+
+__DESCRIPTION__
+
+Perl 6: what can you do today?
+State of the Butterfly
+
+Speaker: Jonathan Worthington
+
+In this session, we'll answer "how far along is Perl 6" by exploring the things you can do with Perl 6 today. Along the way we'll discover a powerful way to parse, composable concurrent programming, a rich and extensible object system, and much more
+
+[pdf](http://jnthn.net/papers/2014-fosdem-perl6-today.pdf)
+
