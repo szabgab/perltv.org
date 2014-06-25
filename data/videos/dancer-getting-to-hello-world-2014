@@ -1,0 +1,19 @@
+id: UbzLWxU4Me8
+src: youtube
+title: Dancer: Getting to Hello World - YAPC::NA 2014
+speaker: geoffrey-avery
+source: yapc-na-2014
+view_count: 1
+favorite_count: 0
+length: 24:18
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5332
+
+__DESCRIPTION__
+
+When attempting to learn Dancer I ran into the problem that all the documentation started from "Here is a 'Hello World' script". But that was assuming many things were set up and configured and that just was not true, at least not on my server.
+
+This is a collection of what I learned.
+
+Plus a few comments of what would be different if you wanted to use Mojolicious rather than Dancer.
