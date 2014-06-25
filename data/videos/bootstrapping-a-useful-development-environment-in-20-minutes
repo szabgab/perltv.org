@@ -1,0 +1,27 @@
+id: QUHFg1IW_UA
+src: youtube
+title: Bootstrapping a useful development environment in 20 minutes
+speaker: hugh-esco
+source: yapc-na-2014
+view_count: 1
+favorite_count: 0
+length: 19:22
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5321
+
+__DESCRIPTION__
+
+This twenty minute live demo will feature the following manifests from my puppet installations: perl_toolchain, compass_sass, fpm, git, libcloud, puppet, jenkins and vagrant. (expect to add dotvim soon). 
+
+A recent apt-get dist upgrade gone awry on my home desktop led me to conscientiously rebuild my work and development environment, using infrastructure-as-code principles, under puppet management and versioned source control. 
+
+One of many beneficial results of this setback is my perl_toolchain and the related manifests listed above. It handles in a few moments, the installation and configuration of perl based tools useful to my work as a developer. 
+
+So far the perl_toolchain manifest handles installation of: app_pmuninstall, app_sqitch, carton, cpanm, critic, devel_cover, devel_hdb, milla, perlbrew, plenv, test, mojo, pinto and rex. 
+
+While I am sure that more experienced perl users may get more out of this presentation, I will offer an overview which I hope will peak the interest of beginning perl users, turning them on to useful tools and urging the pursuit of best practices. 
+
+The puppet manifests and the slides of my talk will be published to github, perhaps to the puppet forge in advanced of the talk and URLs posted here once that is ready. 
+
+I would appreciate use of a mic, projector and internet connection for the presentation. I serve as General Manager of YMD Partners LLC, offering SaaS services and IT consulting.

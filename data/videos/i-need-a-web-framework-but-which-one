@@ -1,0 +1,15 @@
+id: NN-juCnZNy0
+src: youtube
+title: I need a web framework, but which one?
+speaker: curtis-jewell
+source: yapc-na-2014
+view_count: 2
+favorite_count: 0
+length: 20:27
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5304
+
+__DESCRIPTION__
+
+There are a number of good web frameworks available for Perl. This talk will compare them by showing the same website written in different frameworks (Catalyst, Dancer 1 and 2, CGI::Application, CGI::Ex::App, and others), and what the advantages and disadvantages of each framework are, so that you can choose which one you want to use.
