@@ -14,7 +14,8 @@ my $pi = PerlTV::Import->new;
 $pi->import_people();
 $pi->import_sources();
 $pi->import_videos();
-$pi->print_not_featured;
+$pi->print_latest_featured;
+#$pi->print_not_featured;
 
 exit;
 

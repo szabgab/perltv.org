@@ -144,9 +144,10 @@ sub import_videos {
 	return \%seen;
 }
 
-sub print_not_featured {
+sub print_latest_featured {
 	say "Latest featured: $featured[0]{featured}\n";
-
+}
+sub print_not_featured {
 	if (@not_featured) {
 		say 'Not yet featured:';
 		for my $v (@not_featured) {
