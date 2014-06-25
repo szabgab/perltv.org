@@ -1,0 +1,23 @@
+id: T7EK6RZAnEA
+src: youtube
+title: Performance Profiling with Devel::NYTProf
+speaker: tim-bunce
+source: yapc-na-2014
+view_count: 1
+favorite_count: 0
+length: 49:52
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5316
+
+__DESCRIPTION__
+
+In this talk I'll be:
+
+* reviewing the principles of performance profiling perl applications
+* demonstrating how to use Devel::NYTProf
+* demonstrating the new features of version 5
+* explaining common traps when interpreting profile reports
+* describing a multi-phase approach to optimizing applications
+
+Note that the talk is almost unchanged from last year so if you've seen it before there's little reason to see it again.

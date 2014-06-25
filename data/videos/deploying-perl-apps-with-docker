@@ -1,0 +1,16 @@
+id: uyE-SUUMgU8
+src: youtube
+title: Deploying Perl apps with Docker
+speaker: mark-allen
+source: yapc-na-2014
+view_count: 1
+favorite_count: 0
+length: 27:02
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5227
+tags: Docker
+
+__DESCRIPTION__
+
+Docker is a lightweight virtualization container technology for Linux. With less overhead than a full virtual machine, and more isolation than a debian or rpm package, Docker is becoming an important emerging tool for developers and devops to handle testing and application deployment. Learn how to use Docker to solve deployment problems for your perl applications and application services such as RDBMS, cache layers, and more.
