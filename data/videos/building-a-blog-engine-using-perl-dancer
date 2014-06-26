@@ -1,0 +1,20 @@
+id: NGX5pgKWVoc
+src: youtube
+title: Building a blog engine using Perl Dancer
+speaker: gabor-szabo
+source: perl-maven
+view_count: 5399
+favorite_count: 0
+length: 17:41
+date: 2011-06-29
+format: markdown
+abstract: http://perlmaven.com/building-a-blog-engine-using-perl-dancer
+
+__DESCRIPTION__
+
+Using the Perl Dancer http://perldancer.org/ I am showing how build a simple blog engine. Editing using [Padre, the Perl IDE](http://padre.perlide.org/).
+
+The blog of this screencast cast can be found [here](http://perlmaven.com/building-a-blog-engine-using-perl-dancer)
+
+To see all the [Perl tutorials](http://perlmaven.com/perl-tutorial)
+
