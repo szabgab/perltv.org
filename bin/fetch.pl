@@ -11,5 +11,5 @@ my ($url, $file) = @ARGV;
 
 die "Usage: $0 URL [FILE]\n" if not $url;
 my $fetch = PerlTV::Fetch->new;
-$fetch->($url, $file);
+$fetch->process($url, $file);
 

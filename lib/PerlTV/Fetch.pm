@@ -19,7 +19,15 @@ my $title = '';
 
 sub new {
     my ($class) = @_;
-    return bless {}, $class;
+
+    my $self = bless {}, $class;
+
+    my $pi = PerlTV::Import->new;
+    $pi->import_people();
+    $pi->import_sources();
+    $self->{videos} = $pi->import_videos();
+
+    return $self;
 }
 
 sub process {
@@ -52,6 +60,7 @@ sub youtube {
 
 	my %form = $self->{uri}->query_form;
 	my $id = $form{v} or die "Could not find id\n";
+	die "This id '$id' has been already included\n" if $self->{videos}{youtube}{$id};
 	
 	my $yt = WebService::GData::YouTube->new();
 	my $video = $yt->get_video_by_id($id);
@@ -80,6 +89,8 @@ sub vimeo {
 	my $id = $self->{uri}->path;
 	$id =~ s{^/}{};
 	die "vimeo Id is expected to be all digits. This is '$id'\n" if $id !~ /^\d+$/;
+	die "This id '$id' has been already included\n" if $self->{videos}{vimeo}{$id};
+
 	#die $id;
 	my $url = "http://vimeo.com/api/v2/video/$id.json";
 	my $json = get $url;

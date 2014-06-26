@@ -18,7 +18,6 @@ my $m = WWW::Mechanize->new;
 $m->get($url);
 
 my $pi = PerlTV::Import->new;
-
 $pi->import_people();
 $pi->import_sources();
 my $videos = $pi->import_videos();
