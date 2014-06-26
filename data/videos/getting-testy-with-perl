@@ -9,8 +9,19 @@ length: 53:02
 date: 2014-06-25
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5341
+tags: testing
+modules: Test::Simple, Test::More, Symbol, Core::Global, UAV::Pilot::ARDrone
+featured: 2014-06-26 10:10:10
 
 __DESCRIPTION__
+
+An introduction to testing with Perl.
+
+[slides](http://www.slideshare.net/lembark/testy-12641024)
+
+Unfortnately the sound is weak in the first 5 minutes of the recording, but after that it gets ok.
+Then at the end, you can see how to live-test a quad-rotor UAV using Perl at 50:30.
+
 
 Perl testing is kind of like swimming in the ocean: it's fun to start with but gets deep pretty quickly. Even if Test::Simple does most of the work, you'll eventually have a reason to dive into deeper waters. So, think of this talk as a glass bottomed boat: it gives you a chance to see things without getting bit or drowning...
 The talk covers basics of perl testing along with mock objects and functions, using prove, filesystem-driven bulk tests and generic test modules, and ways to exercise objects in bulk.
