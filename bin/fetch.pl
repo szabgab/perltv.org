@@ -7,9 +7,14 @@ use Path::Tiny qw(path);
 use lib path($0)->absolute->parent->parent->child('lib')->stringify;
 use PerlTV::Fetch;
 
-my ($url, $file) = @ARGV;
-
-die "Usage: $0 URL [FILE]\n" if not $url;
+die "Usage: $0 URLs\n" if not @ARGV;
 my $fetch = PerlTV::Fetch->new;
-$fetch->process($url, $file);
+foreach my $url (@ARGV) {
+	eval {
+		$fetch->process($url);
+	};
+	if ($@) {
+		print $@;
+	}
+}
 

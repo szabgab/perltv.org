@@ -14,9 +14,6 @@ use PerlTV::Import;
 # http://www.youtube.com/watch?v=QFV7X1tep5I
 # https://vimeo.com/77267876
 
-my $txt = '';
-my $title = '';
-
 sub new {
     my ($class) = @_;
 
@@ -31,7 +28,11 @@ sub new {
 }
 
 sub process {
-    my ($self, $url, $file) = @_;
+    my ($self, $url) = @_;
+
+    $self->{txt}   = '';
+    $self->{title} = '';
+
 
     my $u = URI->new($url);
     $self->{uri} = $u;
@@ -44,15 +45,13 @@ sub process {
     	die "Unknown host " . $u->host;
     }
 
-    if (not $file) {
-    	$file = lc $title;
-    	$file =~ s/\s+/-/g;
-    	$file =~ s/[^a-z0-9-]//g;
-    	$file = "data/videos/$file";
-    	say $file;
-    }
+    my $file = lc $self->{title};
+    $file =~ s/\s+/-/g;
+    $file =~ s/[^a-z0-9-]//g;
+    $file = "data/videos/$file";
+    say $file;
     die "'$file' already exists" if -e $file;
-    path($file)->spew_utf8($txt);
+    path($file)->spew_utf8($self->{txt});
 }
 
 sub youtube {
@@ -64,11 +63,11 @@ sub youtube {
 	
 	my $yt = WebService::GData::YouTube->new();
 	my $video = $yt->get_video_by_id($id);
-	$title = $video->title;
+	$self->{title} = $video->title;
 	
-	$txt .= "id: $id\n";
+	my $txt = "id: $id\n";
 	$txt .= "src: youtube\n";
-	$txt .= "title: $title\n";
+	$txt .= "title: $self->{title}\n";
 	$txt .= "speaker: \n";
 	$txt .= "source: \n";
 	$txt .= "view_count: " . ($video->view_count||0) . "\n";
@@ -81,6 +80,9 @@ sub youtube {
 	#my $keywords = $video->keywords;
 	$txt .= "\n__DESCRIPTION__\n\n";
 	$txt .= $video->description . "\n";
+    $self->{txt} .= $txt;
+
+    return;
 }
 
 sub vimeo {
@@ -98,11 +100,11 @@ sub vimeo {
 	my $list = from_json $json;
 	my $data = $list->[0];
 	#die Dumper $data;
-    $title = $data->{title};
+    $self->{title} = $data->{title};
 
-	$txt .= "id: $id\n";
+	my $txt = "id: $id\n";
 	$txt .= "src: vimeo\n";
-	$txt .= "title: $title\n";
+	$txt .= "title: $self->{title}\n";
     $txt .= "speaker:\n";
 	$txt .= "source: \n";
 	$txt .= "view_count: $data->{stats_number_of_plays}\n";
@@ -116,6 +118,9 @@ sub vimeo {
 	$txt .= "tags: $data->{tags}}\n";
 	$txt .= "\n__DESCRIPTION__\n\n";
 	$txt .= "$data->{description}\n";
+    $self->{txt} .= $txt;
+
+    return;
 }
 
 
