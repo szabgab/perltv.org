@@ -1,0 +1,37 @@
+id: jiYZcV3khdY
+src: youtube
+title: Using the built-in debugger of Perl
+speaker: gabor-szabo
+source: perl-maven
+view_count: 3075
+favorite_count: 0
+length: 08:54
+date: 2011-06-15
+format: markdown
+abstract:
+
+__DESCRIPTION__
+
+Perl comes with a very powerful built-in command line debugger. In this screencast you can see basics how to use it.
+
+For blog entries and for more screencasts see [Perl Maven](http://perlmaven.com/)
+
+About Perl Programming and Perl programmers.
+
+For the blog entry of this screencast [visit](http://perlmaven.com/using-the-built-in-debugger-of-perl)
+
+Debugger commands used: 
+q - quit, 
+h - help, 
+p - print, 
+s - step in, 
+n - step over, 
+r - step out, 
+T - stack trace
+l - listing code
+
+The Padre project can be found here: http://padre.perlide.org/
+
+The book mentioned was Pro Perl Debugging: http://www.apress.com/9781590594544
+
+If you are interested an on-site Perl training contact me http://szabgab.com/contact.html
