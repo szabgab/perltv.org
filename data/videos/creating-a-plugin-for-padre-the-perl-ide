@@ -1,0 +1,27 @@
+id: RDjWFKnuhhc
+src: youtube
+title: Creating a plugin for Padre, the Perl IDE
+speaker: gabor-szabo
+source: perl-maven
+view_count: 1125
+favorite_count: 0
+length: 12:18
+date: 2011-06-13
+format: markdown
+abstract: http://szabgab.com/creating-a-plugin-for-padre-the-perl-ide.html
+
+__DESCRIPTION__
+
+Padre, the Perl IDE makes it very easy to create a plugin for additional tasks 
+To download Padre for Windows or get directions how to install on Linux and Mac visit http://padre.perlide.org/
+
+For the Padre mailing list and IRC channel see http://padre.perlide.org/contact.html
+
+The blog related to this video is here: http://szabgab.com/creating-a-plugin-for-padre-the-perl-ide.html
+
+See other Padre related screencast: http://www.youtube.com/watch?v=yGPLXNUbffY
+
+
+To see all the Perl tutorials visit http://perlmaven.com/perl-tutorial
+
+About Perl Programming and Perl programmers.

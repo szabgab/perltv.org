@@ -1,0 +1,16 @@
+id: 2M3f3uAqMWg
+src: youtube
+title: Perl 6 - part 1.5 - IRC channel and the eval bot
+speaker: gabor-szabo
+source: perl-maven
+view_count: 2985
+favorite_count: 0
+length: 06:09
+date: 2010-07-24
+format: markdown
+abstract: http://szabgab.com/how-to-use-perl6-without-installing-it.html
+tags: Perl 6
+
+__DESCRIPTION__
+
+How to get help on the IRC channel of Perl 6 from the developers of Rakudo. How to try Rakudo Perl 6 without installing it on your computer. Link to web interface http://webchat.freenode.net/  Other parts of the Perl 6 tutorials http://szabgab.com/perl6.html

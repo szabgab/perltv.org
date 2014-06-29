@@ -1,0 +1,17 @@
+id: I_XLoTQSuUk
+src: youtube
+title: Scientific Programming with NumPy and SciPy
+speaker: walt-mankowski
+source: yapc-na-2014
+view_count: 2
+favorite_count: 0
+length: 53:34
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5374
+
+__DESCRIPTION__
+
+NumPy and SciPy are a collection of packages for scientific computing in Python. Together they extend Python into a powerful open source data processing and prototyping environment many scientific programmers are choosing to use instead of expensive, proprietary commercial systems such as MATLAB.
+
+This talk will be an introduction to scientific programming in Python, focusing on the NumPy and SciPy packages. Learn why Python is kicking Perl's butt at scientific programming, and what (if anything) we can do about it.

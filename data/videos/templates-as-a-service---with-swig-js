@@ -1,0 +1,50 @@
+id: kFS9wSgTAgM
+src: youtube
+title: Templates as a service - with swig.js
+speaker: logan-bell
+source: yapc-na-2014
+view_count: 0
+favorite_count: 0
+length: 18:17
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5333
+
+__DESCRIPTION__
+
+Overview
+
+At Shutterstock we like to try occasional unorthodox ideas and see if they will fly. During one of our quarterly hackathons we came up with a surprisingly fast template service that we currently call "Swig As A Service". After we wrote the service we integrated it into Dancer.
+
+After that, we then took this hack and bundled it up and put it on
+Github. As part of this talk I would like to cover the following:
+
+* Go over what SaaS is and why it could be useful for the next web
+application one might build.
+
+* Explain why we chose to run this in Node.js and a little bit about Swig.js
+
+* Talk briefly about some of our challenges, why this is even a sane idea.
+
+* Recruit people to start taking it for a spin.
+
+Length of Presentation:
+
+20 Minutes
+
+Minimum Level of Knowledge:
+
+Interest in exploring different ways of serving up HTML Experience
+with Dancer would be beneficial. Beginner to intermediate level of web programming.
+
+Requirements:
+
+Just a projector and a sense of humor.
+
+About Speaker
+
+My name is Logan Bell and I am a lead software developer at Shutterstock. I hack a lot in Perl and think all should either work
+remotely or commute via unicycle.
+
+http://www.loganbell.org/images/loganbell_unicycle.jpg
+http://www.loganbell.org/images/loganbell.jpg

@@ -12,6 +12,8 @@ abstract: http://www.yapcna.org/yn2014/talk/5312
 
 __DESCRIPTION__
 
+[slides](http://www.houseabsolute.com/presentations/a-date-with-perl/)
+
 Dates and times are confusing and crazy. What nut invented Daylight Saving Time? Someone who'd never imagined a computer, that's who!
 
 Dealing with dates and times might seem simple at first, but there's a lot of gotchas.

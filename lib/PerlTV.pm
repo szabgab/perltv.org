@@ -8,6 +8,7 @@ use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 use List::Util qw(min);
 use List::MoreUtils qw(uniq);
+use Encode;
 
 use PerlTV::Tools qw(read_file youtube_thumbnail %languages);
 
@@ -293,7 +294,7 @@ get '/atom.xml' => sub {
 	$xml .= qq{</feed>\n};
 
 	content_type 'application/atom+xml';
-	return $xml;
+	return encode('UTF-8', $xml);
 };
 
 get '/sitemap.xml' => sub {

@@ -1,0 +1,22 @@
+id: aB90XVLWyYk
+src: youtube
+title: Contributing to a CPAN module (using Github)
+speaker: gabor-szabo
+source: perl-maven
+view_count: 642
+favorite_count: 0
+length: 15:56
+date: 2011-07-13
+format: markdown
+abstract: http://perlmaven.com/contributing-to-a-perl-module-on-cpan-using-vim-and-github
+modules: MIME::Lite
+
+__DESCRIPTION__
+
+In this video I am showing how easy it is to contribute a little bit to a Perl module on CPAN.
+Specifically to the MIME::Lite module which has its version control repository on Github.
+
+The related blog post can be found [here](http://perlmaven.com/contributing-to-a-perl-module-on-cpan-using-vim-and-github)
+
+To see all the [Perl tutorials](http://perlmaven.com/perl-tutorial)
+

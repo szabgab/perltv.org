@@ -1,0 +1,23 @@
+id: rymhMkCUtuA
+src: youtube
+title: Exceptional Perl 6 - Error handling and Reporting in Perl 6
+speaker: moritz-lenz
+source: yapc-eu-2013
+view_count: 122
+favorite_count: 0
+length: 40:41
+date: 2013-08-13
+format: markdown
+abstract: http://act.yapc.eu/ye2013/talk/4928
+tags: Perl 6
+
+__DESCRIPTION__
+
+Have you ever been annoyed with perl, because it just told you "syntax error" when you forgot to close a parenthesis? Or that you can't easily catch some exceptions, and let others pass through?
+
+In Perl 6, we strive to do better. Some syntactic constructs are reserved, just to be able to give better parsing error messages. Exception types are built into Perl 6, making it much easier to selectively catch some exceptions, and let others pass through.
+
+In this talk I want to present the Perl 6 exception mechanism, exception classes, built-in error reporting, a culture where a "less than awesome" error message is considered a bug, and possible future evolutions of error reporting.
+
+You can find more information on the speaker's site:
+[Talk](http://moritz.faui2k3.org/files/talks/2013-yapc-p6-exceptions/)

@@ -1,0 +1,21 @@
+id: xg8tAv35YFg
+src: youtube
+title: Jonathan Worthington. Concurrency, Parallelism and Asynchrony: Perl 6 plotting and prototyping
+speaker: jonathan-worthington
+source: yapc-eu-2013
+view_count: 172
+favorite_count: 0
+length: 42:35
+date: 2013-08-13
+format: markdown
+abstract: http://act.yapc.eu/ye2013/talk/4925
+tags: Perl 6
+
+__DESCRIPTION__
+
+With Rakudo now running on the JVM - a platform with solid threads and non-blocking IO support - we are finally in a position to start nailing down the concurrent, parallel and asynchronous features of the language.
+
+To get us started, I'll discuss the difference between the three, and give some examples of where they each apply. With this understanding in place, I'll move on to look at the answers the Perl 6 specification has, and implementation strategies we might take. This will lead on to prototype implementations, which will provide a starting point for iterative improvement and solidification of both the specification and Rakudo Perl 6's support in these important areas.
+
+You can find more information on the speaker's site:
+[Talk](http://jnthn.net/papers/2013-yapceu-conc.pdf)
