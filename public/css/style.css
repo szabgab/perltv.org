@@ -116,9 +116,15 @@ li {
 ul {
   padding-left: 0px;
 }
-#featured li {
-  display: inline;
+
+#featured_outer_li {
+  display: inline-block;
   padding-right: 20px;
+}
+
+#featured_img {
+  width: 120px;
+  height: 90px;
 }
 
 #embed iframe {

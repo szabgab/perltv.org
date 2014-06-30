@@ -89,6 +89,7 @@ sub import_videos {
 
 		my %item = (
 			id        => $video->{id},
+			title     => $video->{title},
 			featured  => ($video->{featured} || ''),
 			date      => $video->{date},
 			path      => $f->basename,
