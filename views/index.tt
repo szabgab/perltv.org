@@ -11,18 +11,18 @@
   <div id="featured">
     <% if featured %>
       <h2>Other featured videos</h2>
-      <table><tr>
+      <ul>
         <% FOR v IN featured %>
-          <td id="featured_td">
+          <li id="featured_outer_li">
             <a href="/v/<% v.path %>">
-                <table>
-                     <tr><td><img id="featured_img" src="<% v.thumbnail %>" /></td></tr>
-                     <tr><td><% v.title %><td></tr>
-                </table>
+                <ul>
+                     <li><img id="featured_img" src="<% v.thumbnail %>" /></li>
+                     <li><% v.title %></li>
+                </ul>
             </a>
-	  </td>
+	  </li>
         <% END %>
-      </tr></table>
+      </ul>
     <% END %>
   </div>
 

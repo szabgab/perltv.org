@@ -116,9 +116,10 @@ li {
 ul {
   padding-left: 0px;
 }
-#featured_td {
-  width: 130px;
-  vertical-align: top;
+
+#featured_outer_li {
+  display: inline-block;
+  padding-right: 20px;
 }
 
 #featured_img {
