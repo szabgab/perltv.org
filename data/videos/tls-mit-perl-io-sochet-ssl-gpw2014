@@ -14,18 +14,16 @@ modules: IO::Socket::SSL
 
 __DESCRIPTION__
 
-Der Vortragende ist Maintainer des IO::Socket::SSL Modules, welches das am
-meisten direkt genutzte Perl-Module für TLS ist.
-Der Vortrag widmet sich den aktuellen Verbesserungen am Modul, welches
-deutlich mehr Sicherheit mit den Voreinstellungen liefert und damit die
-sichere Nutzung einfacher macht. Der Autor hat auch aktuelle Nutzer des
-Modules auf CPAN analysiert und diverse Probleme entdeckt, z.B. das
-explizite Ausschalten der Zertifikatsverifikation oder das Überschreiben von
-sicheren Defaults mit weniger sicheren Varianten.
-Weiterhin wird der Vortrag auf die Nutzung von Perfect Forward Secrecy mit
-IO::Socket::SSL eingehen und auch zeigen, wie einfach man einen
-Man-In-The-Middle Proxy mit dynamischer Generierung passender Zertifikate
-mit IO::Socket::SSL::Intercept erstellt kann.
-Wenn die Zeit reicht wird auch auf die inherenten Probleme der Nutzung von
-TLS in den Browsern eingegangen, um klarzustellen, das TLS keine perfekte
-Sicherheit bieten kann.
+
+Steffen Ullrich ist seit 2006 Maintainer von IO::Socket::SSL, der meistgenutzten
+Bibliothek in Perl für SSL/TLS. Im Vortrag wird eine Einführung in SSL gegeben,
+wobei speziell auf oft unzureichend verstandene Aspekte eingegangen wird.
+Anhand von Beispielen gezeigt, wie einfach sichere Client und Server mit
+IO::Socket::SSL erstellt werden können und vermittelt, welche Komplexität an
+Aktionen hinter dieser einfachen Nutzung steckt.
+Der Vortrag geht weiterhin auf typische Fehler bei der Nutzung des Modules ein
+und wie diese die Sicherheit beeinträchtigen, sowie beschreibt diverse weniger
+einfache Einsatzfälle, z.B. was mit non-blocking Sockets zu beachten ist.
+
+Die Vortragsfolien sind unter http://noxxi.de/pws/2014/pws2014-io-socket-ssl.pdf
+verfügbar.
