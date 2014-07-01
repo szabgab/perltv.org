@@ -8,10 +8,14 @@ favorite_count: 0
 length: 21:12
 date: 2014-05-24
 format: markdown
+abstract: http://www.mojoconf.org/mojo2014/talk/5498
+modules: Mojolicious
+tags: Axis2, WSDL
+featured: 2014-07-01 08:15:00
 
 __DESCRIPTION__
 
-Case Study: The Move from Ajax2 to Mojo
+Case Study: The Move from [Axis2](http://axis.apache.org/axis2/java/core/) to [Mojo](http://mojolicio.us/)
 
 Several years ago, we designed a service management and automation engine integration using web services. At the time, Perl wasn't a natural choice for us since the platform maturity for developing web services and real time transactions was relatively weak, and much of the framework services we would have to develop ourselves. The next choice was Apache Tomcat and Axis2, which enabled the solution, but came with a lot of operational overhead, upgrade challenges, longer turnaround times, and even larger systems support problems.
 
@@ -23,4 +27,3 @@ After more than two years of Mojo under our belt with another one of our service
 
 Plus a demo.
 
-http://www.mojoconf.org/mojo2014/talk/5498
