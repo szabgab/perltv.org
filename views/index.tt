@@ -13,13 +13,13 @@
       <h2>Other featured videos</h2>
       <ul>
         <% FOR v IN featured %>
-          <li id="featured_outer_li">
-            <a href="/v/<% v.path %>">
+          <li class="featured_block">
+             <a href="/v/<% v.path %>">
                 <ul>
-                     <li><img id="featured_img" src="<% v.thumbnail %>" /></li>
+                     <li><img src="<% v.thumbnail %>" /></li>
                      <li><% v.title %></li>
                 </ul>
-            </a>
+             </a>
 	  </li>
         <% END %>
       </ul>
