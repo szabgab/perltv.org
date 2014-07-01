@@ -10,7 +10,7 @@ date: 2014-03-26
 format: markdown
 abstract: http://act.yapc.eu/gpw2014/talk/5251
 language: de
-tags: perl 6, perl 5, rakudo
+tags: Perl 6, Perl 5, Rakudo
 
 __DESCRIPTION__
 
@@ -22,4 +22,3 @@ Es wird gezeigt was alles möglich ist, welche Slangs es zur Zeit gibt, wie die 
 
 Präsentation: http://www.yapcna.org/yn2013/talk/4725
 
-Talk: http://act.yapc.eu/gpw2014/talk/5251

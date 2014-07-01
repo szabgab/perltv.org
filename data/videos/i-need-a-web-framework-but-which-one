@@ -9,7 +9,18 @@ length: 20:27
 date: 2014-06-25
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5304
+modules: Catalyst, Dancer, Dancer2, CGI::Application, CGI::Ex::App
+tags: web
+#featured:
 
 __DESCRIPTION__
 
-There are a number of good web frameworks available for Perl. This talk will compare them by showing the same website written in different frameworks (Catalyst, Dancer 1 and 2, CGI::Application, CGI::Ex::App, and others), and what the advantages and disadvantages of each framework are, so that you can choose which one you want to use.
+There are a number of good web frameworks available for Perl. This talk will compare them by showing the same website written in different frameworks,
+and what the advantages and disadvantages of each framework are, so that you can choose which one you want to use.
+
+* [Catalyst](http://www.catalystframework.org/)
+* [Dancer 1 and 2](http://perldancer.org/)
+* [CGI::Application](https://metacpan.org/pod/CGI::Application)
+* [CGI::Ex::App](https://metacpan.org/pod/CGI::Ex::App)
+
+* [slides](http://static.curtisjewell.name/which_one.odp)

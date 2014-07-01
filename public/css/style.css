@@ -117,14 +117,18 @@ ul {
   padding-left: 0px;
 }
 
-#featured_outer_li {
+.featured_block {
   display: inline-block;
   padding-right: 20px;
 }
 
-#featured_img {
-  width: 120px;
-  height: 90px;
+#featured li {
+  width: 150px;
+}
+
+#featured img {
+  width: 144px;
+  height: 108px;
 }
 
 #embed iframe {

@@ -8,6 +8,13 @@ favorite_count: 0
 length: 04:19
 date: 2014-05-24
 format: markdown
+tags: Docker, Dokku, Drone
+featured: 2014-06-30 11:26:00
 
 __DESCRIPTION__
+
+* [Docker](http://www.docker.com/)
+* [dokku](https://github.com/progrium/dokku)
+* [drone](https://github.com/drone/drone)
+* [articles](http://marcus.nordaaker.com/)
 
