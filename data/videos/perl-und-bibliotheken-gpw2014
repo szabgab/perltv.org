@@ -1,0 +1,23 @@
+id: aHUw-b6s-mc
+src: youtube
+title: Perl und Bibliotheken
+speaker: johann-rolschewski
+source: german-perl-workshop-2014
+view_count: 94
+favorite_count: 0
+length: 15:07
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5212
+language: de
+modules: MARC::Record, PICA::Record, Catmandu::PICA, Catmandu::MAB2, Catmandu::MARC, MARC::Fast, MARC::Loop, MARC::Loader, MARC::MIR, MARC::Moose, Tk::MARC, Net::Z3950, Net::Z3950::ZOOM, Search::Z3950, Catmandu::SRU, Net::Z3950::ZOOM, SRU, HTTP::OAI, Net::OAI, DAIA, App::PAIA, Plack::App::SeeAlso, Plack::App::unAPI, RDF::Trine, Catmandu::RDF, Business::ISBN, Business::ISSN, Business::ISMN, Business::LCCN
+tags: ILS, marc21, Z39.50, ERM, Ex Libris SFX, OpenURL, Koha, Catmandu
+
+__DESCRIPTION__
+
+In Bibliotheken wird Perl seit vielen Jahren eingesetzt. Im Rahmen des Vortrags soll ein Überblick über bibliotheksspezifische Anwendungsbereiche, gängige CPAN-Module und Perl basierte Bibliothekssysteme gegeben werden.
+
+Präsentation: http://jorol.de/GPW2014/perl_bibliotheken.html
+
+Talk: http://act.yapc.eu/gpw2014/talk/5212
+Event: http://act.yapc.eu/gpw2014/

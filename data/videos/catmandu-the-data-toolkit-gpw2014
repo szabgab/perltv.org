@@ -1,0 +1,24 @@
+id: qCDJnvd6hY0
+src: youtube
+title: Catmandu - the data toolkit
+speaker: johann-rolschewski
+source: german-perl-workshop-2014
+view_count: 36
+favorite_count: 0
+length: 10:46
+date: 2014-03-27
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5213
+language: de
+modules: Catmandu, Catmandu::Fix, Catmandu::Importer
+tags: bibliothek, cli, dsl, etl, library
+
+__DESCRIPTION__
+
+"Importing, transforming, storing and indexing data should be easy."
+
+Catmandu ist ein Perl-Framework für das Importieren, Speichern, Suchen, Exportieren und Transformieren von Metadaten. In Kombination mit Web Frameworks, dokumentenorientierten Datenbanken und Suchmaschinen bietet Catmandu eine "rapid development environment" für digitale Bibliotheksservices. Als Schwerpunkt werden das "command-line interface" und die "domain-specific language" vorgestellt.
+
+Further information: https://metacpan.org/pod/Catmandu::Introduction
+
+Slides: http://jorol.de/GPW2014/catmandu.html
