@@ -18,8 +18,6 @@ Recorded at the London Perl Workshop 2011
 
 See also a newer version of this talk from [YAPC::NA 2014](mac-and-perl).
 
-Slides and notes at: http://www.pimpyourmacwithperl.com/
-
 As a Perl Programmer you are the ultimate Mac power user - using a few simple techniques you can apply what you already know to automate your Mac with Perl. Avoid the rigmarole non programmers must suffer in day to day tasks and empower your Mac to act autonomously on the grunt work so you don't have to.
 
 In this session we will be briefly covering techniques to:
