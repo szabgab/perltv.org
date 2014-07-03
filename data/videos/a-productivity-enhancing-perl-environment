@@ -34,7 +34,7 @@ Over the last couple of years I have been spending almost all of my working time
   * [Pathogene](https://github.com/tpope/vim-pathogen)
   * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
   * [Fugitive](https://github.com/tpope/vim-fugitive)
-  * [GitGutter](https://github.com/jisaacks/GitGutter)
+  * [GitGutter](https://github.com/airblade/vim-gitgutter)
   * [signature](https://github.com/kshenoy/vim-signature)
   * [tagbar](http://majutsushi.github.io/tagbar/)
   * [NERD_commenter](http://www.vim.org/scripts/script.php?script_id=1218)
