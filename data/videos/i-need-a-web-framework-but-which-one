@@ -11,7 +11,7 @@ format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5304
 modules: Catalyst, Dancer, Dancer2, CGI::Application, CGI::Ex::App
 tags: web
-#featured:
+featured: 2014-07-03 14:25:00
 
 __DESCRIPTION__
 
