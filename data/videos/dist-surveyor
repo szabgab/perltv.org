@@ -9,10 +9,10 @@ length: 06:28
 date: 2011-11-12
 format: markdown
 abstract: http://conferences.yapceurope.org/lpw2011/talk/3902
+modules: Dist::Surveyor
+featured: 2014-07-03 23:20:00
 
 __DESCRIPTION__
-
-Recorded at the London Perl Workshop 2011
 
 Finding out exactly what CPAN distributions you have installed, including exactly what versions of those distributions, is remarkably tricky.
 
