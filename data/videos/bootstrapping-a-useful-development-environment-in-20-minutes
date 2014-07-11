@@ -9,16 +9,23 @@ length: 19:22
 date: 2014-06-25
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5321
+tags: Puppet, Vagrant
+#featured:
+
 
 __DESCRIPTION__
 
-This twenty minute live demo will feature the following manifests from my puppet installations: perl_toolchain, compass_sass, fpm, git, libcloud, puppet, jenkins and vagrant. (expect to add dotvim soon). 
+This twenty minute live demo will feature the following manifests from my puppet installations:
+perl_toolchain, compass_sass, fpm, git, libcloud, [puppet](http://puppetlabs.com/), jenkins and [vagrant](http://www.vagrantup.com/). (expect to add dotvim soon). 
 
 A recent apt-get dist upgrade gone awry on my home desktop led me to conscientiously rebuild my work and development environment, using infrastructure-as-code principles, under puppet management and versioned source control. 
 
 One of many beneficial results of this setback is my perl_toolchain and the related manifests listed above. It handles in a few moments, the installation and configuration of perl based tools useful to my work as a developer. 
 
-So far the perl_toolchain manifest handles installation of: app_pmuninstall, app_sqitch, carton, cpanm, critic, devel_cover, devel_hdb, milla, perlbrew, plenv, test, mojo, pinto and rex. 
+So far the perl_toolchain manifest handles installation of: app_pmuninstall, app_sqitch, [carton](https://metacpan.org/pod/carton),
+[cpanm](http://cpanmin.us/), [Perl::Critic](https://metacpan.org/pod/Perl::Critic), [Devel::Cover](https://metacpan.org/pod/Devel::Cover),
+[Devel::hdb](https://metacpan.org/pod/Devel::hdb), [milla](https://metacpan.org/pod/Dist::Milla),
+[perlbrew](http://perlbrew.pl/), plenv, test, mojo, [Pinto](https://metacpan.org/pod/Pinto) and rex. 
 
 While I am sure that more experienced perl users may get more out of this presentation, I will offer an overview which I hope will peak the interest of beginning perl users, turning them on to useful tools and urging the pursuit of best practices. 
 
