@@ -13,28 +13,36 @@ featured: 2014-06-19 22:45:00
 
 __DESCRIPTION__
 
-Over the last couple of years I have been spending almost all of my working time actually coding Perl. This made it worthwhile to optimise my development environment. I'll talk a little about some of the tools I use which allow me to focus more on the actual development problems and less on mechanisms used to create the code.
+Over the last couple of years I have been spending almost all of my working time
+actually coding Perl. This made it worthwhile to optimise my development
+environment. I'll talk a little about some of the tools I use which allow me to
+focus more on the actual development problems and less on mechanisms used to
+create the code.
+
+You can follow along with the
+[slides](http://pjcj.net/presentations/lpw-2013-environment/slides/) and view
+the [repository](https://github.com/pjcj/base).
 
 * Environment: table, chair
-* Dual 24" screen
+* Dual 24" screens
 * Keyboard with programmable keys - Logitec G15
 * Decent mouse
-* Decent Speaker or headphone
-* Hardware!  Quiet (SSD ?)
+* Decent speakers or headphones
+* Hardware!  Quiet (SSD?)
 * Operating Systems: Virtual Machines help a lot
 * OS: Whatever needed
 * Window manager
-* Terminal multiplexers: [tmux](http://tmux.sourceforge.net/), [powerline](https://github.com/Lokaltog/powerline) 
-* Shell: [zsh](http://www.zsh.org/) 
+* Terminal multiplexers: [tmux](http://tmux.sourceforge.net/), [powerline](https://github.com/Lokaltog/powerline)
+* Shell: [zsh](http://www.zsh.org/)
 * Font: Monospace: [Inconsolata](http://levien.com/type/myfonts/inconsolata.html)
-* Colour Scheme: [Solarized dark](http://ethanschoonover.com/solarized)  f.lux
+* Colour Scheme: [Solarized dark](http://ethanschoonover.com/solarized) [f.lux](https://justgetflux.com/)
 * Source Code Control: Git (aliases!)
 * Editor: Vim, Emacs
 * Vim Plugins:
-  * [Pathogene](https://github.com/tpope/vim-pathogen)
+  * [Pathogen](https://github.com/tpope/vim-pathogen)
   * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
   * [Fugitive](https://github.com/tpope/vim-fugitive)
-  * [GitGutter](https://github.com/jisaacks/GitGutter)
+  * [GitGutter](https://github.com/airblade/vim-gitgutter)
   * [signature](https://github.com/kshenoy/vim-signature)
   * [tagbar](http://majutsushi.github.io/tagbar/)
   * [NERD_commenter](http://www.vim.org/scripts/script.php?script_id=1218)
@@ -47,4 +55,3 @@ Over the last couple of years I have been spending almost all of my working time
 * [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/) (for Windows)
 * Email: [mutt](http://www.mutt.org/)
 * IRC: [irssi](http://www.irssi.org/)
-
