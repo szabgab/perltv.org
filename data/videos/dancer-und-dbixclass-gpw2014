@@ -1,0 +1,25 @@
+id: I9o0QXwy2ok
+src: youtube
+title: Dancer und DBIx::Class
+speaker: stefan-hornburg
+source: german-perl-workshop-2014
+view_count: 32
+favorite_count: 0
+length: 35:57
+date: 2014-03-27
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5262
+language: de
+
+__DESCRIPTION__
+DBIx::Class ist mit Sicherheit einer der größten Schätze von "Modern Perl" und bietet schnelle und komfortable Datenbankabfragen.
+
+Ebenso erleichtert Dancer das Erstellen von Webanwendungen mit einer leicht verständlichen Programmierung.
+
+Wie können beide zusammen genutzt werden? Zunächst mit dem DBIC Plugin für Dancer. Mit diesem können mehrere DBIx::Class Schemas innerhalb der Dancer-Anwendung verwenden werden.
+
+Um auch die Dancer-Sessions in der Datenbank zu speichern, habe ich eine Engine für Dancer und DBIC geschrieben.
+
+Außerdem werde ich ein Projekt vorstellen, mit dem man einfach den Inhalt von Datenbanken mittels eines DBIx::Class Schemas editieren kann.
+
+Slides: http://www.linuxia.de/talks/pws2014/dancer-dbic-de-beamer.pdf

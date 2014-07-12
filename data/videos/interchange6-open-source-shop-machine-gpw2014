@@ -1,0 +1,21 @@
+id: tGo--okSFWU
+src: youtube
+title: Interchange6 - Open Source Shop Machine
+speaker: stefan-hornburg
+source: german-perl-workshop-2014
+view_count: 15
+favorite_count: 0
+length: 22:14
+date: 2014-03-28
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5268
+language: de
+
+__DESCRIPTION__
+Beim letzten deutschen Perlworkshop haben wir den Mangel an einsatzbereiten "Produkte" als ein Marketingproblem von Perl identifiziert. Wir haben zwar eine große Auswahl an möglichen Lösungen, aber für klassische Aufgabenstellungen wie Blog, CMS, Shop usw. fehlen die echten "Produkte" um mit anderen Programmiersprachen konkurrieren zu können.
+
+Wir wollen das für den Bereich eCommerce/Onlineshop ändern und gestalten die altgediente Perlsoftware Interchange von Grund auf neu und planen ein fertiges, einfach zu installierendes Produkt zur Verfügung zu stellen.
+
+Dabei kommt natürlich "Modernes Perl" zum Einsatz, z.B. Moo, DBIx::Class und Dancer.
+
+Dieser Vortrag berichtet über den aktuellen Stand der Dinge.
