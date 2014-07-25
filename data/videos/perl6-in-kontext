@@ -1,0 +1,24 @@
+id: 8nYKZsC5p-8
+src: youtube
+title: Perl 6 in Kontext
+speaker: herbert-breunung
+source: german-perl-workshop-2014
+view_count: 46
+favorite_count: 0
+length: 42:52
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5142
+language: de
+
+__DESCRIPTION__
+
+In Perl 5 kennen wir Skalar- Array- und Void-Kontext. In Perl 6 gibt es da einige mehr. Und es lohnt sich die Motorhaube zu öffnen und das Zusammenspiel von Datentypen und Operatoren/Methoden anzusehen um zum einen wirklich zu verstehen was hier passiert und zum anderen wirklich Freude an Perl 6 zu haben. Denn dann kann man wirklich kurz und effektive Perl 6-Programme schreiben.
+
+P.S. Ach ja, die lazy eval von Listen ist auch ein Kontext.
+
+Weitere Infos: http://lichtkind.de/vortrag/
+
+Talk: http://act.yapc.eu/gpw2014/talk/5142
+
+Event: http://act.yapc.eu/gpw2014/
