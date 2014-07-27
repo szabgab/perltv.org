@@ -94,6 +94,7 @@ sub import_videos {
 			date      => $video->{date},
 			path      => $f->basename,
 			thumbnail => $thumbnail,
+			language  => $video->{language},
 		);
 		if ($video->{featured}) {
 			push @featured, \%item;
