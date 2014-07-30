@@ -119,8 +119,18 @@ get '/featured' => sub {
 		videos => \@videos,
 		title  => 'Featured videos',
 	};
-
 };
+
+get qr{/language/([a-z]{2})/featured} => sub {
+        my ($language) = splat;
+	my $data = setting('data');
+	my @videos = grep { $_->{featured} && ($_->{language} eq $language) } @{ $data->{videos} };
+	template 'list', {
+		videos => \@videos,
+		title  => 'Featured videos in ' . $languages{$language},
+	};
+};
+
 
 get '/nyf' => sub {
 	my $data = setting('data');
