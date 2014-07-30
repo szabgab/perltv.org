@@ -251,43 +251,15 @@ get '/atom.xml' => sub { # backward functionality for all languages
         return encode('UTF-8', get_atom_xml(featured => $featured, URL => $URL, appdir => $appdir));
 };
 
-get '/en/atom.xml' => sub {
+get qr{/language/([a-z]{2})/atom.xml} => sub {
+        my ($language) = splat;
 	my $featured = setting('featured');
 	my $URL = request->base;
 	$URL =~ s{/$}{};
 	my $appdir = abs_path config->{appdir};
 	content_type 'application/atom+xml';
-        return encode('UTF-8', get_atom_xml(language => 'en', featured => $featured, URL => $URL, appdir => $appdir));
+        return encode('UTF-8', get_atom_xml(language => $language, featured => $featured, URL => $URL, appdir => $appdir));
 };
-
-get '/de/atom.xml' => sub {
-	my $featured = setting('featured');
-	my $URL = request->base;
-	$URL =~ s{/$}{};
-	my $appdir = abs_path config->{appdir};
-	content_type 'application/atom+xml';
-        return encode('UTF-8', get_atom_xml(language => 'de', featured => $featured, URL => $URL, appdir => $appdir));
-};
-
-get '/he/atom.xml' => sub {
-	my $featured = setting('featured');
-	my $URL = request->base;
-	$URL =~ s{/$}{};
-	my $appdir = abs_path config->{appdir};
-	content_type 'application/atom+xml';
-        return encode('UTF-8', get_atom_xml(language => 'he', featured => $featured, URL => $URL, appdir => $appdir));
-};
-
-get '/nl/atom.xml' => sub {
-	my $featured = setting('featured');
-	my $URL = request->base;
-	$URL =~ s{/$}{};
-	my $appdir = abs_path config->{appdir};
-	content_type 'application/atom+xml';
-        return encode('UTF-8', get_atom_xml(language => 'nl', featured => $featured, URL => $URL, appdir => $appdir));
-};
-
-
 
 get '/sitemap.xml' => sub {
 	my $data = setting('data');
