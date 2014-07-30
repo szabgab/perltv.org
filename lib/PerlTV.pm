@@ -10,7 +10,7 @@ use List::Util qw(min);
 use List::MoreUtils qw(uniq);
 use Encode;
 
-use PerlTV::Tools qw(read_file youtube_thumbnail %languages);
+use PerlTV::Tools qw(read_file youtube_thumbnail get_atom_xml %languages);
 
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
@@ -242,59 +242,23 @@ get '/daily.atom' => sub {
 	forward '/atom.xml';
 };
 
-sub fix_ts {
-	my ($ts) = @_;
-
-	if ($ts =~ /^\d\d\d\d-\d\d-\d\d$/) {
-		$ts .= 'T12:00:00Z'; 
-	} elsif ($ts =~ /^(\d\d\d\d-\d\d-\d\d) (\d\d:\d\d:\d\d)$/) {
-		$ts = $1 . 'T' . $2 . 'Z';
-	} else {
-		warn "ts '$ts' incorrect";
-	}
-	return $ts;
-}
-
-get '/atom.xml' => sub {
+get '/atom.xml' => sub { # backward functionality for all languages
 	my $featured = setting('featured');
-	my $appdir = abs_path config->{appdir};
-
 	my $URL = request->base;
 	$URL =~ s{/$}{};
-	my $site_title = 'Perl TV Featured videos';
-	my $ts = fix_ts($featured->[0]{featured});
-
-	my $xml = '';
-	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
-	$xml .= qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
-	$xml .= qq{<link href="$URL/atom.xml" rel="self" />\n};
-	$xml .= qq{<title>$site_title</title>\n};
-	$xml .= qq{<id>$URL/</id>\n};
-	$xml .= qq{<updated>$ts</updated>\n};
-	foreach my $entry (@$featured) {
-
-		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
-		my $title = $data->{title};
-		$title =~ s/&/and/g;
-		my $language = $languages{$data->{language}};
-
-		$xml .= qq{<entry>\n};
-
-		$xml .= qq{  <title>$title ($language $data->{length})</title>\n};
-		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
-		my $ts = fix_ts($entry->{featured});
-		$xml .= qq{  <updated>$ts</updated>\n};
-		my $url = "$URL/v/$entry->{path}";
-		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
-		$xml .= qq{  <id>$URL/v/$entry->{path}</id>\n};
-		$xml .= qq{  <content type="html"><![CDATA[$data->{description}]]></content>\n};
-		$xml .= qq{  <author><name>$data->{speaker}</name></author>\n};
-		$xml .= qq{</entry>\n};
-	}
-	$xml .= qq{</feed>\n};
-
+	my $appdir = abs_path config->{appdir};
 	content_type 'application/atom+xml';
-	return encode('UTF-8', $xml);
+        return encode('UTF-8', get_atom_xml(featured => $featured, URL => $URL, appdir => $appdir));
+};
+
+get qr{/language/([a-z]{2})/atom.xml} => sub {
+        my ($language) = splat;
+	my $featured = setting('featured');
+	my $URL = request->base;
+	$URL =~ s{/$}{};
+	my $appdir = abs_path config->{appdir};
+	content_type 'application/atom+xml';
+        return encode('UTF-8', get_atom_xml(language => $language, featured => $featured, URL => $URL, appdir => $appdir));
 };
 
 get '/sitemap.xml' => sub {
