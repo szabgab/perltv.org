@@ -1,0 +1,26 @@
+id: p4U6FWyRBoQ
+src: youtube
+title: Adventures in Optimization by David Golden
+speaker: david-golden
+source: newyork-perl-mongers
+view_count: 52
+favorite_count: 0
+length: 54:25
+date: 2014-07-31
+format: markdown
+abstract:
+
+__DESCRIPTION__
+
+http://www.meetup.com/The-New-York-Perl-Meetup-Group/events/197002932/
+
+What makes your code slow?  How do you make it faster?  And how do you prove it?
+
+This talk will describe my adventures benchmarking and optimizing ordered hashes in Perl, culminating in the release of [Hash::Ordered](https://metacpan.org/pod/Hash::Ordered) — which outperforms all other CPAN alternatives, often by a substantial margin.  We will cover:
+
+• How to customize Benchmark.pm
+
+• How and why to benchmark at different scales 
+• Why tied anything in Perl is a horrible idea
+
+• How ordered hashes got faster from a simple algorithm change
