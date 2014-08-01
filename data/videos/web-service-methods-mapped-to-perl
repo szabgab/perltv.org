@@ -8,7 +8,9 @@ favorite_count: 0
 length: 02:57
 date: 2011-11-12
 format: markdown
+modules: XML::Compile::SOAP
+tags: WSDL
+fetured: 2014-07-26 10:00:00
 
 __DESCRIPTION__
 
-Recorded at the London Perl Workshop 2011
