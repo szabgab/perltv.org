@@ -168,7 +168,6 @@ ul {
 
 .length {
 	float: left;
-	text-align: right;
 	width: 65px;
 	padding-right: 5px;
 }
@@ -176,6 +175,24 @@ ul {
 
 .sort_date, .sort_featured, .sort_title, .sort_length {
 	cursor: pointer;
+}
+
+
+#content ul {
+	list-style: none outside none;
+	margin: 30px;
+	padding: 0;
+}
+
+.videos div {
+	width: 150px;
+}
+
+.videos li {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	padding: 10px 0;
 }
 
 

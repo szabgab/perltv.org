@@ -35,20 +35,24 @@
 
   <% FOR lang IN languages.keys.sort %>
     <h2><% languages.$lang %> <a href="/language/<%lang%>/atom.xml"><img src="/images/feed-icon32.png" /></a></h2>
-      <ul class="videos">
-        <li>
            <span class="sort_date date">date</span>
            <span class="sort_featured featured">featured</span>
            <span class="sort_length length">length</span>
            <span class="sort_title">title</span></li>
+      <ul class="videos">
+        <li>
         <% FOR v IN videos %>
           <% IF v.language == lang %>
              <% DEFAULT v.featured = '&nbsp;' %>
             <li>
-                <span class="date"><% v.date  %></span>
-                <span class="featured"><% v.featured.substr(0,10) %></span>
-                <span class="length"><% v.length %></span>
-                <a href="/v/<% v.path %>"><% v.title %></a>
+                <a href="/v/<% v.path %>">
+			<div><img src="<% v.thumbnail %>"></div>
+			<div><% v.title %>
+				<div class="date">Date: <% v.date  %><br></div>
+				<div class="featured">Featured: <% v.featured.substr(0,10) %><br></div>
+				<div class="length">Length: <% v.length %></div>
+		        </div>
+                </a>
             </li>
           <% END %>
       <% END %>

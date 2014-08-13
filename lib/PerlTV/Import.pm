@@ -75,6 +75,8 @@ sub import_videos {
 
 		$seen{$video->{src}}{$video->{id}} = 1;
 
+		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
+
 		#warn Dumper $video;
 		my %entry = (
 			title => $video->{title},
@@ -82,11 +84,10 @@ sub import_videos {
 			featured  => $video->{featured},
 			path  => $f->basename,
 			language => $video->{language},
+			thumbnail => $thumbnail,
 			length   => $video->{length},
 		);
 	
-		my $thumbnail = $video->{thumbnail} || youtube_thumbnail($video->{id});
-
 		my %item = (
 			id        => $video->{id},
 			title     => $video->{title},
