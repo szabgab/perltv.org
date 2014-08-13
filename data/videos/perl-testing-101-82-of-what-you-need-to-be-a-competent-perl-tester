@@ -10,6 +10,7 @@ date: 2012-06-15
 format: markdown
 tags: testing
 modules: Test::Simple, Test::More, Test::Builder, Test::Harness
+featured: 2014-08-03 20:00:00
 
 __DESCRIPTION__
 
