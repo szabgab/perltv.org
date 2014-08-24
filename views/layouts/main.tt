@@ -6,7 +6,7 @@
   <link rel=alternate type="application/atom+xml" title="Perl TV" href="<% request.uri_base %>/atom.xml">
 
   <title><% title %></title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css?24-08-2014" />
 </head>
 <body>
 
