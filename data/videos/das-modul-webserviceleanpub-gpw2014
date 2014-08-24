@@ -10,6 +10,7 @@ date: 2014-03-28
 format: markdown
 abstract: http://act.yapc.eu/gpw2014/talk/5144
 language: de
+modules: WebService::Leanpub
 
 __DESCRIPTION__
 
