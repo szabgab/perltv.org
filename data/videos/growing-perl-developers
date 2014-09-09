@@ -22,7 +22,8 @@ How does an organization such as [Booking.com](http://booking.com/) tackle this 
 
 
 Some notes
-------------
+---------
+
 
 * 3,000,000 lines of code.
 * Daily stand-ups in the morning hours.
@@ -35,6 +36,7 @@ Some notes
 
 * Why [Try::Tiny](https://metacpan.org/pod/Try::Tiny) is slow.
 
+<pre>
     eval {
        code;
        1;
@@ -42,6 +44,7 @@ Some notes
        my $err = $@;
        # deal with error
     }
+</pre>
 
 * Abigail sits in the front row and provides frequent commentary.
 
