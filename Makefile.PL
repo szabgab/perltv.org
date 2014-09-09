@@ -17,12 +17,15 @@ WriteMakefile(
       : ()),
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
-        'YAML'       => 0,
-        'Dancer2'     => 0.10,
-        'Path::Tiny'  => 0,
-        'JSON::Tiny'  => 0,
+        'YAML'           => 0,
+        'Dancer2'        => 0.10,
+        'Path::Tiny'     => 0,
+        'JSON::Tiny'     => 0,
 		'Text::Markdown' => 0,
+
+# for testing
+        'Test::More'     => 0,
+		'Carp::Always'   => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'PerlTV-*' },
