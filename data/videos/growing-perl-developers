@@ -9,9 +9,39 @@ length: 51:23
 date: 2014-06-23
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5323
+# featured: 2014-09-
 
 __DESCRIPTION__
 
+The sound and the video is broken between 2:38-3:58 , please skip that part. The actual talk ends at 25:20 and then it is QA.
+
 We hire lots of really smart people that really know software development, architecture, and scaling critical systems. There is one thing that many of them don't know and that is Perl.
 
-How does an organization such as Booking.com tackle this challenge? In this presentation I'll share our process on growing our own Perl developers, including our successes and our lessons learned.
+How does an organization such as [Booking.com](http://booking.com/) tackle this challenge? In this presentation I'll share our process on growing our own Perl developers, including our successes and our lessons learned.
+
+
+
+Some notes
+------------
+
+* 3,000,000 lines of code.
+* Daily stand-ups in the morning hours.
+* Give them important tasks immediately.
+* Let them deploy in the first week, or even in the first day.
+* Have seatbelts so they don't hurt themselves when they crash the car.
+* Face-to-face communication.
+* 2-1 the Non-Perl - Perl ratio of new hires.
+* "We don't hire junior programmers, unless they have Open Source experience."
+
+* Why [Try::Tiny](https://metacpan.org/pod/Try::Tiny) is slow.
+
+    eval {
+       code;
+       1;
+    } or do {
+       my $err = $@;
+       # deal with error
+    }
+
+* Abigail sits in the front row and provides frequent commentary.
+
