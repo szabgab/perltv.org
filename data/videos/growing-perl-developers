@@ -9,7 +9,7 @@ length: 51:23
 date: 2014-06-23
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5323
-# featured: 2014-09-
+featured: 2014-09-10 17:35:00
 
 __DESCRIPTION__
 
@@ -37,13 +37,36 @@ Some notes
 * Why [Try::Tiny](https://metacpan.org/pod/Try::Tiny) is slow.
 
 <pre>
-    eval {
-       code;
-       1;
-    } or do {
-       my $err = $@;
-       # deal with error
+    # Here is a way to get consistent error handling using eval which is
+    # much faster than using a module like Try::Tiny. The 'trick' is to
+    # inspect the return value of the eval block and base your error
+    # handling around it instead of relying upon $@ which can have
+    # clobbering issues.
+    #
+    # See this stackoverflow answer for more details:
+    # http://stackoverflow.com/a/7599303
+    
+    
+    eval
+    {
+        # do stuff that might fail like division by zero
+        1/0;
+    
+        # return true to indicate success
+        1;
     }
+    or do # this next block executes if the eval didn't return true
+    {
+        # gather the exception as soon as possible. Might already be eaten
+        # so having a default like 'Unknown failure' gives you clues.
+        my $error = $@ || 'Unknown failure';
+    
+        # handle the exception
+        ...
+    
+    # Take note of the semi-colon, it is required unless this statement is
+    # already at the end of a block
+    };
 </pre>
 
 * Abigail sits in the front row and provides frequent commentary.
