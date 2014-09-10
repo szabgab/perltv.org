@@ -33,6 +33,7 @@ Some notes
 * Face-to-face communication.
 * 2-1 the Non-Perl - Perl ratio of new hires.
 * "We don't hire junior programmers, unless they have Open Source experience."
+* Abigail sits in the front row and provides frequent commentary.
 
 * Why [Try::Tiny](https://metacpan.org/pod/Try::Tiny) is slow.
 
@@ -43,8 +44,6 @@ Some notes
     # handling around it instead of relying upon $@ which can have
     # clobbering issues.
     #
-    # See this stackoverflow answer for more details:
-    # http://stackoverflow.com/a/7599303
     
     
     eval
@@ -69,5 +68,5 @@ Some notes
     };
 </pre>
 
-* Abigail sits in the front row and provides frequent commentary.
+See [this stackoverflow answer](http://stackoverflow.com/a/7599303) for more details. 
 
