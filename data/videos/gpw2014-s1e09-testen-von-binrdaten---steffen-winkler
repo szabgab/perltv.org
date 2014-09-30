@@ -1,0 +1,25 @@
+id: naOSapEqX64
+src: youtube
+title: GPW2014 S1E09: Testen von BinÃ¤rdaten - Steffen Winkler
+speaker: steffen-winkler
+source: german-perl-workshop-2014
+view_count: 41
+favorite_count: 0
+length: 21:38
+date: 2014-03-26
+format: markdown
+abstract:
+language:de
+
+__DESCRIPTION__
+
+Vorstellung einiger Module zum Testen von BirÃ¤rdaten:
+Test::BinaryData
+Test::Bits
+Test::HexString
+Test::HexDifferences
+
+PrÃ¤sentation: http://download.steffen-winkler.de/dpws2014
+
+Talk: http://act.yapc.eu/gpw2014/talk/5259
+Event: http://act.yapc.eu/gpw2014/

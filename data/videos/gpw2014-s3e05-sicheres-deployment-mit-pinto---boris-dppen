@@ -1,0 +1,21 @@
+id: oR-8oBnbIog
+src: youtube
+title: GPW2014 S3E05: Sicheres Deployment mit Pinto - Boris DÃ¤ppen
+speaker: boris-daeppen
+source: german-perl-workshop-2014
+view_count: 56
+favorite_count: 0
+length: 21:47
+date: 2014-03-28
+format: markdown
+abstract:
+language: de
+
+__DESCRIPTION__
+
+Je lÃ¤nger und tief greifender uns IT-Produkte im Alltag begleiten, desto mehr wÃ¤chst der Druck Software mit guter QualitÃ¤t zu liefern. Ein zentraler Punkt von guter Software besteht nun nicht nur in einem ansprechenden Design fÃ¼r den Benutzer, sondern liegt zu einem bedeutenden Teil auch in der StabilitÃ¤t und VerfÃ¼gbarkeit des durch die Software offerierten Dienstes. Je mehr wir im Alltag mit Software zu tun haben, desto Ausfallsicherer muss sie sein, da unsere Handlungen und Planungen auf das Funktionieren dieser Software setzen. Bei den heute Ã¼blichen vernetzten Client- und Server-Architekturen betrifft die GewÃ¤hrleistung des Dienstes somit nicht nur den fÃ¼r den Kunden sichtbaren Teil (GUI/Frontend), sondern im Besonderen gerade das Backend, da dieses fÃ¼r die eigentliche Abwicklung verantwortlich ist. Mit Perl und CPAN lassen sich nun hervorragend Backends schreiben oder unterstÃ¼tzen. Dieser Vortrag widmet sich daher der Frage, wie man mit Perl den heutigen Anforderungen der Kunden betreffend SoftwarequalitÃ¤t gerecht werden kann. Hierbei werfen wir einen Blick auf Pinto von Jeffrey Ryan Thalhammer und dem damit in Zusammenhang stehenden Webservice Stratopan.
+
+Weitere Infos: https://metacpan.org/pod/Pinto
+
+Talk: http://act.yapc.eu/gpw2014/talk/5278
+Event: http://act.yapc.eu/gpw2014/

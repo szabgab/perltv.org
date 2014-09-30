@@ -1,0 +1,19 @@
+id: 9aCsUxfRksE
+src: youtube
+title: GPW2014 S1E11.6: Lightning Talks - You did what? - Matt S Trout
+speaker: matt-s-trout
+source: german-perl-workshop-2014
+view_count: 152
+favorite_count: 0
+length: 05:23
+date: 2014-03-26
+format: markdown
+abstract:
+language: en
+
+__DESCRIPTION__
+
+curry + Safe::Isa + Import::Into
+
+Talk: http://act.yapc.eu/gpw2014/talk/5435
+Event: http://act.yapc.eu/gpw2014/

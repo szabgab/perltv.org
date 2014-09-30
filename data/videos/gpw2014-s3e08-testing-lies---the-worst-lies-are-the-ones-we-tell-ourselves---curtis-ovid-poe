@@ -1,0 +1,20 @@
+id: 4kMySZv65gc
+src: youtube
+title: GPW2014 S3E08: Testing Lies - The Worst Lies are the Ones We Tell Ourselves - Curtis "Ovid" Poe
+speaker: curtis-ovid-poe
+source: german-perl-workshop-2014
+view_count: 429
+favorite_count: 0
+length: 36:33
+date: 2014-03-28
+format: markdown
+abstract:
+language: en
+
+__DESCRIPTION__
+
+Testing is very popular in Perl and it definitely has increased the robustness of Perl and modules developed in Perl. However, as we start to get experienced in testing, we start to tell ourselves little lies, half-truths really, about all sorts of things related to testing. This isn't malicious â it's about an overly optimistic attitude we take towards things we appreciate. Ovid will explain many of these lies, their consequences, and when possible, present techniques to help you work around them.
+
+Slides: http://de.slideshare.net/Ovid/the-lies-we-tell-about-software-testing
+Talk: http://act.yapc.eu/gpw2014/talk/5285
+Event: http://act.yapc.eu/gpw2014/
