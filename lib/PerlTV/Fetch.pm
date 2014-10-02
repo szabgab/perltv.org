@@ -15,9 +15,9 @@ use PerlTV::Import;
 # https://vimeo.com/77267876
 
 sub new {
-    my ($class) = @_;
+    my ($class, %defaults) = @_;
 
-    my $self = bless {}, $class;
+    my $self = bless \%defaults, $class;
 
     my $pi = PerlTV::Import->new;
     $pi->import_people();
@@ -28,18 +28,19 @@ sub new {
 }
 
 sub process {
-    my ($self, $url) = @_;
+    my ($self, $url, %defaults) = @_;
 
     $self->{txt}   = '';
     $self->{title} = '';
 
+    $defaults{ source } ||= $self->{source};
 
     my $u = URI->new($url);
     $self->{uri} = $u;
     if ($u->host eq 'www.youtube.com') {
-        $self->youtube;
+        $self->youtube( %defaults );
     } elsif ($u->host eq 'vimeo.com') {
-        $self->vimeo;
+        $self->vimeo( %defaults );
     
     } else {
     	die "Unknown host " . $u->host;
@@ -55,12 +56,13 @@ sub process {
 }
 
 sub youtube {
-    my ($self) = @_;
+    my ($self, %defaults) = @_;
+    $defaults{ source }||= '';
 
 	my %form = $self->{uri}->query_form;
 	my $id = $form{v} or die "Could not find id\n";
 	die "This id '$id' has been already included\n" if $self->{videos}{youtube}{$id};
-	
+
 	my $yt = WebService::GData::YouTube->new();
 	my $video = $yt->get_video_by_id($id);
 	$self->{title} = $video->title;
@@ -69,7 +71,7 @@ sub youtube {
 	$txt .= "src: youtube\n";
 	$txt .= "title: $self->{title}\n";
 	$txt .= "speaker: \n";
-	$txt .= "source: \n";
+	$txt .= "source: $defaults{ source }\n";
 	$txt .= "view_count: " . ($video->view_count||0) . "\n";
 	$txt .= "favorite_count: " . ($video->favorite_count||0) . "\n";
 	my $length = seconds_to_time($video->duration);   # in seconds
