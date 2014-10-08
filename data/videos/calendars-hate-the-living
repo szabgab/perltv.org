@@ -5,11 +5,19 @@ speaker: ashley-willis
 source: yapc-na-2014
 view_count: 20
 favorite_count: 0
-length: 23:07
+length: 15:12
 date: 2014-06-24
 format: markdown
 abstract: http://www.yapcna.org/yn2014/talk/5378
+tags: vCalendar, iCalendar
+modules: Data::ICal
+featured: 2014-09-09 16:40:00
 
 __DESCRIPTION__
 
 You know how email hates the living? iCal hates the living more. recurrence rules are likely turing complete. and the original form of ical is different enough that converting from it to the current model is anything but trivial -- i could find nothing for this task, so i wrote it, which included patches for Data::ICal.
+
+* [http://www.imc.org/pdi/vcal-10.txt](http://www.imc.org/pdi/vcal-10.txt)
+* [http://www.imc.org/pdi/vcal-10.ps](http://www.imc.org/pdi/vcal-10.ps)
+* [Personal Data Interchange (PDI) - vCard and vCalendar](http://www.imc.org/pdi/)
+
