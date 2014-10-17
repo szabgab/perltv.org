@@ -1,6 +1,6 @@
 id: jh3xZ-Xj2b8
 src: youtube
-title: GPW2014 S3E06: Philosophische Auseinandersetzung mit Software Tests - Boris DÃ¤ppen
+title: GPW2014 S3E06: Philosophische Auseinandersetzung mit Software Tests - Boris Däppen
 speaker: boris-daeppen
 source: german-perl-workshop-2014
 view_count: 54
@@ -13,8 +13,9 @@ language: de
 
 __DESCRIPTION__
 
-Testen wird in der Perl-Gemeinschaft gross geschrieben. Aber was machen wir eigentlich wenn wir das t-Verzeichnis mit Code fÃ¼llen?
-Mit Zuhilfenahme aktueller Theorien aus der DarmstÃ¤dter Technikphilosophie versuche ich hier einen Vorschlag zur Orientierung zu geben. Das Versprechen: Nachher schreibt man bessere Tests - hoffentlich.
+Testen wird in der Perl-Gemeinschaft gross geschrieben. Aber was machen wir eigentlich wenn wir das t-Verzeichnis mit Code füllen?
+Mit Zuhilfenahme aktueller Theorien aus der Darmstädter Technikphilosophie versuche ich hier einen Vorschlag zur Orientierung zu geben. Das Versprechen: Nachher schreibt man bessere Tests - hoffentlich.
 
 Talk: http://act.yapc.eu/gpw2014/talk/5279
+
 Event: http://act.yapc.eu/gpw2014/

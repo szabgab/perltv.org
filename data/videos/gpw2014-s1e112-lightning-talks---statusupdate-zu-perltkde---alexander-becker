@@ -1,6 +1,6 @@
 id: 9Uu0UX7MG7Y
 src: youtube
-title: GPW2014 S1E11.2: Lightning Talks - Statusupdate zu PerlTk.de‎ - Alexander Becker
+title: GPW2014 S1E11.2: Lightning Talks - Statusupdate zu PerlTk.de - Alexander Becker
 speaker: alexander-becker
 source: german-perl-workshop-2014
 view_count: 35
@@ -13,9 +13,10 @@ language: de
 
 __DESCRIPTION__
 
-Auf dem DPW 2012 wurde das Projekt der Perl/Tk-WidgetÃ¼bersicht vorgestellt. Das ist nun perltk.de und es gibt einen "nifty nice-looking chart pointing upwards".
+Auf dem DPW 2012 wurde das Projekt der Perl/Tk-Widgetübersicht vorgestellt. Das ist nun perltk.de und es gibt einen "nifty nice-looking chart pointing upwards".
 
 Weitere Infos: http://www.perltk.de
 
 Talk: http://act.yapc.eu/gpw2014/talk/5257
+
 Event: http://act.yapc.eu/gpw2014/

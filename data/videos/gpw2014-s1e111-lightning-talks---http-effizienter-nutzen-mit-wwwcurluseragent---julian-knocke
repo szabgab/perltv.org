@@ -13,23 +13,24 @@ language: de
 
 __DESCRIPTION__
 
-Webseiten und REST APIs werden Ã¼ber das Protokoll HTTP abgewickelt. Mit
-ParallelitÃ¤t und der Wiederverwendung bestehender TCP-Verbindungen
-(KeepAlive) kÃ¶nnen groÃe Mengen an Anfragen schneller abgearbeitet
+Webseiten und REST APIs werden über das Protokoll HTTP abgewickelt. Mit
+Parallelität und der Wiederverwendung bestehender TCP-Verbindungen
+(KeepAlive) können große Mengen an Anfragen schneller abgearbeitet
 werden. Durch eine Callback basierte Schnittstelle, wird der
 Programmcode bei gleichzeitigen Anfragen optimal durchlaufen und so
 Zeitverluste durch IO minimiert. Mit Vergleichen zu bestehenden User
 Agents wie LWP::UserAgent, LWP::Parallel::UserAgent und
-WWW::Curl::Simple kÃ¶nnen Vor- und Nachteile der Neuimplementation
+WWW::Curl::Simple können Vor- und Nachteile der Neuimplementation
 beschrieben werden.
 
 Das Modul WWW::Curl::UserAgent wurde bei XING entwickelt, dem sozialen
-Netzwerk fÃ¼r berufliche Kontakte mit 14 Millionen Mitgliedern. Mit cURL
+Netzwerk für berufliche Kontakte mit 14 Millionen Mitgliedern. Mit cURL
 wird dort bereits, basierend auf dem Rubygem Typhoeus, ein REST Client
 betrieben, der effizient einige hundert Millionen Requests am Tag
-abarbeitet. Um diesen Durchsatz und die StabilitÃ¤t ebenso zu erreichen,
+abarbeitet. Um diesen Durchsatz und die Stabilität ebenso zu erreichen,
 wurde ein UserAgent entwickelt, welcher parallele Verbindungen mit
-KeepAlive unterstÃ¼tzt und dafÃ¼r auf die Bibliothek cURL zurÃ¼ckgreift.
+KeepAlive unterstützt und dafür auf die Bibliothek cURL zurückgreift.
 
 Talk: http://act.yapc.eu/gpw2014/talk/5317
+
 Event: http://act.yapc.eu/gpw2014/

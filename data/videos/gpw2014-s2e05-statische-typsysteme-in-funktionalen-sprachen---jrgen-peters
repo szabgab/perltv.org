@@ -1,6 +1,6 @@
 id: Se-iESZOVvI
 src: youtube
-title: GPW2014 S2E05: Statische Typsysteme in funktionalen Sprachen - JÃ¼rgen Peters
+title: GPW2014 S2E05: Statische Typsysteme in funktionalen Sprachen - Jürgen Peters
 speaker: juergen-peters
 source: german-perl-workshop-2014
 view_count: 35
@@ -13,4 +13,3 @@ language: de
 
 __DESCRIPTION__
 
-WebService::GData::Node::Media::Description=HASH(0x3d113f0)
