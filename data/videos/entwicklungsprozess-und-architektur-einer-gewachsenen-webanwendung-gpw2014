@@ -1,0 +1,23 @@
+id: aWdqSyeqVg4
+src: youtube
+title: Entwicklungsprozess und Architektur einer gewachsenen Webanwendung
+speaker: kerstin-puschke
+source: german-perl-workshop-2014
+view_count: 78
+favorite_count: 0
+length: 18:31
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5260
+language: de
+
+__DESCRIPTION__
+
+Skalieren muss nicht nur die Anwendung und ihre Architektur - auch der Entwicklungsprozess verändert sich mit der Größe des Entwicklungsteams und der Komplexität der entwickelten Anwendung. Der Vortrag gibt einen Einblick in die Architektur hinter XING, dem sozialen Netzwerk für berufliche Kontakte mit 14 Millionen Mitgliedern. Wie beeinflussen sich Architektur und Entwicklungsprozess, und wie sieht die Zusammenarbeit aus in einem mehr als 80-köpfigen Engineeringteam, das auf mehrere Standorte in Europa verteilt ist und sich einer heterogenen, über mehr als zehn Jahre gewachsenen Architektur gegenübersieht? Neben der Architektur der Plattform werden auch Entwicklungstools und -umgebungen vorgestellt, die den Entwicklungsprozess von der Idee bis zum Release begleiten.
+
+Slides: https://speakerdeck.com/titanoboa/entwicklungsprozess-und-architektur
+
+
+Talk: http://act.yapc.eu/gpw2014/talk/5260
+
+Event: http://act.yapc.eu/gpw2014/

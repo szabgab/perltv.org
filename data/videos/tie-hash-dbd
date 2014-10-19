@@ -1,0 +1,22 @@
+id: 4wzpEXoIDg0
+src: youtube
+title: Tie Hash DBD
+speaker: merijn-brand
+source: london-perl-workshop-2010
+view_count: 70
+favorite_count: 0
+length: 20:12
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3094
+modules: Tie::Hash::DBD
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+When hashes grow too big for memory, and sometimes even for DB_File, alternatives are available, but most of the time that needs a lot of recoding.
+
+Tie::Hash::DBD is a drop-in replacement for DB_File hash ties that connects to databases a-la Tie::DBI
+
+It supports deep nesting using Storable and persistence.

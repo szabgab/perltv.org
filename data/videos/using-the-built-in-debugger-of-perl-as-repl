@@ -1,0 +1,29 @@
+id: pL_nDlXNqLY
+src: youtube
+title: Using the built-in debugger of Perl as REPL
+speaker: gabor-szabo
+source: perl-maven
+view_count: 2051
+favorite_count: 0
+length: 06:18
+date: 2011-06-22
+format: markdown
+
+__DESCRIPTION__
+
+The command line debugger that comes with perl is very powerful.
+Not only does it allow us to debug script but it can be used as a REPL - a Read Eval Print Loop to explore the capabilities of the language. There are a few basic examples in this screencast.
+
+For another related screencast see http://www.youtube.com/watch?v=jiYZcV3khdY
+
+To see all the Perl tutorials visit http://perlmaven.com/perl-tutorial
+
+About Perl Programming and Perl programmers.
+
+In this screencast:
+
+  perl -de1
+
+  p - print scalar
+  x - print data structure
+  b subname - set breakpoint

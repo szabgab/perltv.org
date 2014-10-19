@@ -1,0 +1,22 @@
+id: MKXtGgWi7qs
+src: youtube
+title: Padre on Strawberry Perl v5 (released on 20 June 2011)
+speaker: gabor-szabo
+source: perl-maven
+view_count: 2004
+favorite_count: 0
+length: 11:45
+date: 2011-06-20
+format: markdown
+
+__DESCRIPTION__
+
+Showing the new features of Padre on Strawberry Perl:
+The Games section written in SDL Perl (Frozen Bubble and Zumbis)
+The new Scintilla syntax highlighter
+Additional Perl modules included
+
+To download the package visit [Padre, the Perl IDE](http://padre.perlide.org/)
+
+[Perl tutorials](http://perlmaven.com/perl-tutorial)
+

@@ -1,0 +1,19 @@
+id: AfH7-DCrlNY
+src: youtube
+title: MetaCPAN API
+speaker: sawyer
+source: yapc-na-2014
+view_count: 9
+favorite_count: 0
+length: 19:50
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5338
+
+__DESCRIPTION__
+
+Are you using MetaCPAN? Do you want to hook up to its cool API? Wrong number?!
+
+MetaCPAN::API is an interface to MetaCPAN's API (get it?) that allows a comfortable access to the data MetaCPAN has to offer.
+
+Version 1.000 has been rewritten from scratch and I would like for you to be aware of it, and to use it. Come see what the hell I'm talking about. Also, bring chips.

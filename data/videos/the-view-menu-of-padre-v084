@@ -1,0 +1,28 @@
+id: zreiHLeKf6o
+src: youtube
+title: The View menu of Padre v0.84
+speaker: gabor-szabo
+source: perl-maven
+view_count: 2289
+favorite_count: 0
+length: 06:11
+date: 2011-07-10
+format: markdown
+
+__DESCRIPTION__
+
+Showing some of the tools in the View menu of Padre, the Perl IDE.
+Showing
+- Line numbers
+- Current line
+- Project browser
+- list of Functions
+- Outline (pragmata, modules, methods)
+- Automatic syntax checking
+- Calltips
+
+For more Padre related screencasts and to download Padre itself, please visit
+[http://padre.perlide.org/](Padre, the Perl IDE)
+
+[Perl tutorials](http://perlmaven.com/perl-tutorial)
+

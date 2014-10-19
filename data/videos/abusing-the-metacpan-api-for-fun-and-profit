@@ -5,6 +5,7 @@ speaker: olaf-alders
 view_count: 18
 favorite_count: 0
 length: 45:35
+date: 2013-06-03
 modules: MetaCPAN::API, MetaCPAN::API::Tiny, ElasticSearch
 tags: api, cpan, elasticsearch, metacpan,
 source: yapc-na-2013

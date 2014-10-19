@@ -1,0 +1,17 @@
+id: vPHwTtgb1m4
+src: youtube
+title: A Game Server Implementation in Perl
+speaker: uri-bruck
+source: israeli-perl-workshop-2013
+view_count: 55
+favorite_count: 0
+length: 36:13
+date: 2013-02-25
+format: markdown
+abstract: http://act.perl.org.il/ilpw2013/talk/4471
+
+__DESCRIPTION__
+
+Implementing a game server for turn-based and non-turn-based games. Handling users, game state, communication with client apps.
+
+Note - the games I'm into are typically not action games but rather games that have their roots in board games, chess variants, etc.

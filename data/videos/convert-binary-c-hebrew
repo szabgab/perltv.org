@@ -1,0 +1,18 @@
+id: pOuufu51Msg
+src: youtube
+title: Yossi Itzkovich - Convert::Binary::C (hebrew)
+speaker: yossi-itzkovich
+source: israeli-perl-workshop-2013
+view_count: 54
+favorite_count: 0
+length: 22:00
+date: 2013-02-25
+format: markdown
+abstract: http://act.perl.org.il/ilpw2013/talk/4509
+modules: Convert::Binary::C
+
+__DESCRIPTION__
+
+"Convert::Binary::C - Binary Data Conversion using C Types" - well, you can indeed use it for binary conversion, but you can also use it to query the C structures you have.
+In this talk I will present my experience with this module for parsing API header files we get , and also the binary conversion.
+If time permits I will go into details about the use cases I had

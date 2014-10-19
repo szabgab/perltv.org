@@ -1,0 +1,17 @@
+id: kJuQJ5EFM9c
+src: youtube
+title: It's a Small World and You're Doing it Wrong
+speaker: james-laver
+source: london-perl-workshop-2010
+view_count: 33
+favorite_count: 0
+length: 28:45
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3120
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+The web lets people from all over the world touch your code inappropriately. This is going to expose bugs you might not know how to deal with and that almost everybody gets wrong. I'll teach you how to deal with the common pitfalls of working with an internationally available website.

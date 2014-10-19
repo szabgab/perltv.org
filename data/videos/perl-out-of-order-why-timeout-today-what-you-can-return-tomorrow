@@ -1,0 +1,15 @@
+id: VYBLCvMu_pA
+src: youtube
+title: Perl Out Of Order: Why Timeout Today What You Can Return Tomorrow
+speaker: augustina-ragwitz
+source: yapc-na-2014
+view_count: 46
+favorite_count: 0
+length: 47:21
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5371
+
+__DESCRIPTION__
+
+So you've built a fancy web application with a fancy database back end, but now that people are using it you've got a few features timing out... and making for angry end users. In a normal procedural program, each task is done when the other finishes. Another option is to hand off the hard work to something else and give your user a status rather than a timeout! This talk will introduce asynchronous programming and the worker queue pattern. I will also provide a simple, reusable example for passing a long running SQL query off to a worker queue using RabbitMQ and AnyEvent::RabbitMQ.

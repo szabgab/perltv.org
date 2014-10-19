@@ -1,0 +1,17 @@
+id: qtHap1fhRFk
+src: youtube
+title:  How to Write Your Own Install Tool
+speaker: leon-timmermans
+source: london-perl-workshop-2011
+view_count: 34
+favorite_count: 0
+length: 21:22
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3904
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+How to write your own install tool? Build.PL and Makefile.PL demystified.

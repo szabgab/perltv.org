@@ -1,0 +1,15 @@
+id: ot5yOrMJogA
+src: youtube
+title: Sub Signatures: Next Steps
+speaker: peter-martini
+source: yapc-na-2014
+view_count: 0
+favorite_count: 0
+length: 51:24
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5357
+
+__DESCRIPTION__
+
+Sub signatures have made it into 5.20 as an experimental feature. While it's still too early to say where signatures are going, there are some very exciting directions we can go, in core or as extensions. Come listen to some elaboration of what the possibilities are, how they can benefit your code, which features would truly benefit from being in core, and which features could be added as extensions.

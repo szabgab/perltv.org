@@ -1,0 +1,22 @@
+id: NnUlCyg-io8
+src: youtube
+title: Monkey Patching, Subclassing and Accidental OverWriting
+speaker: aaron-crane
+source: london-perl-workshop-2011
+view_count: 312
+favorite_count: 0
+length: 22:43
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3707
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+We all know that CPAN is one of Perl's biggest advantages. But sometimes, you find yourself using a CPAN class that doesn't have quite enough features for what you're trying to do. What's the best way to deal with that sort of situation?
+
+One option would be to monkey-patch new code into the CPAN class you're using - just add extra subroutines to the original namespace. But unconstrained monkey-patching has consequences that make it extremely hard to use in practice. So the usual alternative recommendation is to subclass the CPAN code, add the new methods in the subclass, and then ensure that the rest of your program always uses the subclass in place of the original. But that approach has two flaws. First, it can be awkward to make sure your subclass is always used in the right places. Second, it doesn't actually fix the problem: you can still experience all the same issues as with monkey-patching!
+
+This talk examines the problems with this sort of reuse, whether you're trying to use monkey-patching or subclassing. It also offers some solutions that take advantage of Perl's flexibility to make it both easy and safe, regardless of whether you're using Perl's built-in OO or a full-featured object system like Moose.
+

@@ -1,5 +1,4 @@
 <div id="text">
-  <h1>Welcome to the <a href="/">Perl TV</a></h1>
   Total <% videos.size %><br>
 
   <% IF tag %>
@@ -34,20 +33,27 @@
    <hr>
   <% END %>
 
-  <ul>
-  <% FOR v IN videos %>
-      <% UNLESS v.language %>
-         <li><% IF v.featured %><% v.featured %> - <% END %><a href="/v/<% v.path %>"><% v.title %></a></li>
-      <% END %>
-  <% END %>
-  </ul>
-
-  <% FOR lang IN languages.keys %>
-    <h2><% languages.$lang %></h2>
-      <ul>
-      <% FOR v IN videos %>
+  <% FOR lang IN languages.keys.sort %>
+    <h2><% languages.$lang %> <a href="/language/<%lang%>/atom.xml"><img src="/images/feed-icon32.png" /></a></h2>
+           <span class="sort_date date">date</span>
+           <span class="sort_featured featured">featured</span>
+           <span class="sort_length length">length</span>
+           <span class="sort_title">title</span></li>
+      <ul class="videos">
+        <li>
+        <% FOR v IN videos %>
           <% IF v.language == lang %>
-             <li><a href="/v/<% v.path %>"><% v.title %></a></li>
+             <% DEFAULT v.featured = '&nbsp;' %>
+            <li>
+                <a href="/v/<% v.path %>">
+			<div><img src="<% v.thumbnail %>"></div>
+			<div><% v.title %>
+				<div class="date">Date: <% v.date  %><br></div>
+				<div class="featured">Featured: <% v.featured.substr(0,10) %><br></div>
+				<div class="length">Length: <% v.length %></div>
+		        </div>
+                </a>
+            </li>
           <% END %>
       <% END %>
       </ul>

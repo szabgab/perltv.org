@@ -1,0 +1,23 @@
+id: Vp2QR4NKhYw
+src: youtube
+title: Questhub A Social Todo List for your Perl Projects
+speaker: neil-bowers
+source: london-perl-workshop-2013
+view_count: 26
+favorite_count: 0
+length: 05:34
+date: 2013-11-30
+format: markdown
+abstract: http://act.yapc.eu/lpw2013/talk/4986
+featured: 2014-06-19 08:30:00
+
+__DESCRIPTION__
+
+I've been having more fun, and doing more perl side projects since I started playing with Questhub.
+
+In this talk I'll cover:
+
+* What is [Questhub](http://questhub.io/)?
+* How do you use it?
+* How do I use it?
+* Why you might want to give it a go.

@@ -1,0 +1,25 @@
+id: ghxxtbdr14M
+src: youtube
+title: Template Toolkit 3
+speaker: andy-wardley
+source: london-perl-workshop-2009
+view_count: 392
+favorite_count: 0
+length: 55:34
+date: 2009-12-05
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2009/talk/2459
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2009.
+
+The Template Toolkit is 10 years old. That's an incalculably long time in internet years and let's be honest, TT2 is showing its age. I'm not saying it's a fat, ugly pile of stinking crap that needs to be killed with fire, but, well, it is, and it should be.
+
+Admittedly I've been saying this for some time now. Rather a long time. In fact, entire civilisations have risen and fallen in the time that the long awaited version 3 has been in the pipeline. But I'm pleased to report that the end is nigh. Well, nigh-ish.
+
+In this talk, I will ramble aimlessly down wandering paths of loosely interconnected subjects relating to the design and implementation of TT3. But mostly I'll just being showing you some of the cool stuff it can do. Interspersed with some nice pictures of badgers. Badgers are nice.
+
+TT3 is a smaller, lighter, simpler and way more funner template language than that of its predecessor. It's also more configurable, extensible, malleable and generally fiddle-about-with-able than ever before. It's got more nobs than you could ever want to tweak, and most of them go up to eleven.
+
+Best of all, I'll be showing real, live, running code. Yeah, imagine that! A TT3 you can download and actually run. Who'd of thought it? Next thing you know, Perl 6 will be finished and we can all relax with a nice game of Duke Nukem Forever.

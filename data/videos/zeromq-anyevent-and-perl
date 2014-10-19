@@ -1,0 +1,24 @@
+id: BExVH7uecaE
+src: youtube
+title: ZeroMQ, AnyEvent & Perl
+speaker: thomas-klausner
+source: german-perl-workshop-2013
+view_count: 152
+favorite_count: 0
+length: 34:09
+date: 2013-03-14
+format: markdown
+language: de
+modules: ZMQ::LibZMQ3, ZMQx::Class, AnyEvent::Loop, Event::Lib
+abstract: http://act.yapc.eu/gpw2013/talk/4487
+
+__DESCRIPTION__
+
+In this talk I present the Intelligent Transport Layer ZeroMQ and show how to use it in Perl using AnyEvent, ZMQ::LibZMQ3 and "ZMQx::Class"::https://metacpan.org/module/ZMQx::Class
+
+Seit einiger Zeit beschäftige ich mit mit ZeroMQ und AnyEvent. Das ist gar nicht so leicht...
+In diesem Vortrag werde ich meine bisherigen (und zukünftigen - vom Zeitpunkt der Talk-Submission) Erkenntnisse vorstellen, damit die werten Hörer_innen den einen oder anderen Umweg vermeiden können.
+
+Die Slides sind <a href="http://domm.plix.at/talks/2013_berlin_zeromq_perl/">hier</a>
+
+

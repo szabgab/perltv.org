@@ -6,9 +6,11 @@ source: pittsburgh-perl-workshop-2013
 view_count: 17
 favorite_count: 0
 length: 24:57
+date: 2013-10-05
 format: markdown
 tags: StatsD, Graphite, Docker
 modules: Net::Statsd, Net::Statsd::Client
+abstract: http://pghpw.org/ppw2013/talk/5090
 
 __DESCRIPTION__
 
@@ -22,5 +24,4 @@ see how to set it up, and learn about my new Perl client for it.
 
 [Docker](http://www.docker.io/)
 
-
-
+[see also](statsd-and-you)

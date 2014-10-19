@@ -6,7 +6,26 @@ source: yapc-na-2013
 view_count: 77
 favorite_count: 0
 length: 15:30
+date: 2013-06-03
 format: markdown
+tags: plenv, perlbrew
+abstract: http://www.yapcna.org/yn2013/talk/4635
+featured: 2014-06-23 08:00:00
 
 __DESCRIPTION__
+
+plenv is yet another Perl5 environment manager, it's inspired from ruby's rbenv.
+
+plenv is a tools for managing multiple version of Perl installers on one computer.
+
+It is a competitor of perlbrew, but implemented as a Bash script.
+It also allows you to override the Perl version with an environment variable.
+
+plenv is ...
+
+* very fast at (ba|z)shrc
+* switch perl5 version per project, very easily
+
+* [Source](https://github.com/tokuhirom/plenv)
+* [about plenv](http://blog.64p.org/entry/2013/01/21/134639)
 

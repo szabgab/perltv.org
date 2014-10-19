@@ -1,0 +1,19 @@
+id: KFGd_ATIIsc
+src: youtube
+title: Shiny Happy Test Suites (Visualizing your test suites)
+speaker: jeffrey-goff
+source: yapc-eu-2014
+view_count: 44
+favorite_count: 0
+length: 21:14
+date: 2014-08-24
+format: markdown
+abstract: http://act.yapc.eu/ye2014/talk/5657
+featured: 2014-10-19
+tags: D3.js, testing
+modules: Test::More, Devel::Cover, Dancer
+
+__DESCRIPTION__
+
+Get a clearer picture of testing progress with D3, Dancer and Devel::Cover.
+I'll explain the basics of D3, Javascript and Dancer in order to generate shiny graphs for management showing off how good your test suites are.

@@ -1,16 +1,20 @@
 <div id="text">
-  <h1>Welcome to the <a href="/">Perl TV</a></h1>
+  <h1><% video.title %></h1>
    <% INCLUDE incl/embed.tt %>
 
    <% IF video.language %>
-      This video is in <b><% video.language_in_english %>.</b>
+      This video is in <a href="/language/<%video.language %>"><b><% video.language_in_english %></b></a>.<br>
    <% END %>
 
-  <h1><a href="/v/<% video.path %>"><% video.title %></a></h1>
-   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
+   Length: <% video.length %><br>
+   Source: <a href="/source/<% video.source %>"><% video.source_name %></a> on the <% video.date %>.<br>
    <% INCLUDE incl/speaker.tt %>
+  <% IF video.abstract %>
   <br>
-  <% video.description %>
+  <a href="<% video.abstract %>">abstract</a>
+  <% END %>
+  <br>
+  <% video.description %><br>
 
 <!--
   <div id="modules">

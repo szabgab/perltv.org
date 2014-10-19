@@ -3,10 +3,10 @@ src: youtube
 title: Perl's Functional Functions
 speaker: david-oswald
 source: salt-lake-perl-mongers
-date: 2013-06-11
 view_count: 56
 favorite_count: 0
 length: 25:19
+date: 2013-06-11
 modules: List::Util, List::MoreUtils
 tags: grep, map, sort, Schwartzian Transform
 format: markdown

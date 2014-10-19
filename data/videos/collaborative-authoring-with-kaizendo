@@ -1,0 +1,23 @@
+id: bcmTtx6AYts
+src: youtube
+title: Collaborative Authoring with Kaizendo
+speaker: salve-j-nilsen
+source: london-perl-workshop-2010
+view_count: 21
+favorite_count: 0
+length: 16:32
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3063
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+Imagine a text where you can choose different qualities of the content before reading it. Want more background info in your text? Done. Don't have time to read everything? Choose the "executive overview" aspect. Want more relevant examples? Choose a story that is closer to your field of expertise... We're imagining texts that have aspects: variations of the text, especially tailored for specific needs. Texts flavoured to your personal taste and needs, so to speak.
+
+Kaizendo is a project about making texts like these possible. We're aiming for any text that can be told in different ways and that can benefit from public scrutiny and continuous improvement - whether it's a textbook, technical documentation, a public hearing or a contract.
+
+This presentation is mainly an introduction to the Kaizendo hackathon Tomas "t0m" Doran is organizing on Sunday, but we're aiming to have enough code ready to give a demo at LPW, even if you're not coming to the hackfest.
+
+On that note: if you're interested in helping the project, feel free to join us on #kaizendo on irc.freenode.net! :)

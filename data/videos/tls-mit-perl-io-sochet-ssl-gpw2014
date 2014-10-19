@@ -1,0 +1,29 @@
+id: dwVIpkBHwOo
+src: youtube
+title: TLS mit Perl IO::Socket::SSL
+speaker: steffen-ullrich
+source: german-perl-workshop-2014
+view_count: 43
+favorite_count: 0
+length: 39:47
+date: 2014-03-27
+format: markdown
+language: de
+abstract: http://act.yapc.eu/gpw2014/talk/5192
+modules: IO::Socket::SSL
+
+__DESCRIPTION__
+
+
+Steffen Ullrich ist seit 2006 Maintainer von IO::Socket::SSL, der meistgenutzten
+Bibliothek in Perl für SSL/TLS. Im Vortrag wird eine Einführung in SSL gegeben,
+wobei speziell auf oft unzureichend verstandene Aspekte eingegangen wird.
+Anhand von Beispielen gezeigt, wie einfach sichere Client und Server mit
+IO::Socket::SSL erstellt werden können und vermittelt, welche Komplexität an
+Aktionen hinter dieser einfachen Nutzung steckt.
+Der Vortrag geht weiterhin auf typische Fehler bei der Nutzung des Modules ein
+und wie diese die Sicherheit beeinträchtigen, sowie beschreibt diverse weniger
+einfache Einsatzfälle, z.B. was mit non-blocking Sockets zu beachten ist.
+
+Die Vortragsfolien sind unter http://noxxi.de/pws/2014/pws2014-io-socket-ssl.pdf
+verfügbar.

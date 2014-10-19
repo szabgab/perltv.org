@@ -8,8 +8,9 @@ use JSON::Tiny ();
 use Data::Dumper qw(Dumper);
 use List::Util qw(min);
 use List::MoreUtils qw(uniq);
+use Encode;
 
-use PerlTV::Tools qw(read_file youtube_thumbnail %languages);
+use PerlTV::Tools qw(read_file youtube_thumbnail get_atom_xml %languages);
 
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
@@ -41,7 +42,6 @@ hook before_template => sub {
 	$t->{title} //= 'Perl TV';
 
 	my $THUMBNAILS = 4; # shown at the bottom of the front page
-	$t->{social} = 1;
 	$t->{request} = request;
 	my $featured = setting('featured');
 	my $end = min($THUMBNAILS, @$featured-1);
@@ -77,6 +77,16 @@ hook before_template => sub {
 			grep { $_->{language} } @{ $t->{videos} }};
 	}
 
+	# on development machine turn these off.
+	if (request->base =~ m{http://perltv.org/}) {
+		$t->{social} = 1;
+		$t->{statistics} = 1;
+	}
+
+	if ($t->{videos}) {
+		$t->{show_toggles} = 1;
+	}
+
 	return;
 };
 
@@ -103,41 +113,32 @@ get '/all' => sub {
 };
 
 get '/featured' => sub {
-	my $featured = setting('featured');
 	my $data = setting('data');
-	my %path_to_title = map {
-		$_->{path} => $_->{title}
-		} @{ $data->{videos} };
-	my @videos = map { {
-		path      => $_->{path},
-		title     => $path_to_title{$_->{path}},
-		featured  => $_->{featured},	
-		} } @$featured;
-#die Dumper \%path_to_title;
+	my @videos = grep { $_->{featured} } @{ $data->{videos} };
 	template 'list', {
 		videos => \@videos,
 		title  => 'Featured videos',
 	};
-
 };
 
-get '/nyf' => sub {
-	my $not_featured = setting('not_featured');
+get qr{/language/([a-z]{2})/featured} => sub {
+        my ($language) = splat;
 	my $data = setting('data');
-	my %path_to_title = map {
-		$_->{path} => $_->{title}
-		} @{ $data->{videos} };
-	my @videos = map { {
-		path      => $_->{path},
-		title     => $path_to_title{$_->{path}},
-		featured  => '',
-		} } @$not_featured;
-#die Dumper \%path_to_title;
+	my @videos = grep { $_->{featured} && ($_->{language} eq $language) } @{ $data->{videos} };
+	template 'list', {
+		videos => \@videos,
+		title  => 'Featured videos in ' . $languages{$language},
+	};
+};
+
+
+get '/nyf' => sub {
+	my $data = setting('data');
+	my @videos = grep { ! $_->{featured} } @{ $data->{videos} };
 	template 'list', {
 		videos => \@videos,
 		title  => 'Not yet featured videos',
 	};
-
 };
 
 
@@ -158,7 +159,11 @@ get '/people/:name' => sub {
 	my $person = read_file( "$appdir/data/people/$name" );
 	my $data = setting('data');
 	my @entries = grep { $_->{speaker} eq $name} @{ $data->{videos} };
-	template 'list', { videos => \@entries, %{ $people->{$name} } , person => $person };
+	template 'list', {
+		videos => \@entries, %{ $people->{$name} },
+		person => $person,
+		edit   => "people/$name",
+	};
 };
 
 get '/tag/?' => sub {
@@ -197,8 +202,26 @@ get '/source/:name' => sub {
 
 	my $data = setting('data');
 	my @entries = grep { $_->{source} eq $name} @{ $data->{videos} };
-	template 'list', { videos => \@entries, %{ $sources->{$name} } };
+	template 'list', {
+		videos => \@entries, %{ $sources->{$name} },
+		edit   => "sources/$name",
+	};
 };
+
+get '/language/?' => sub {
+	template 'list_languages', { languages => \%languages };
+};
+
+get '/language/:name' => sub {
+	my $name = params->{name};
+	my $sources = setting('sources');
+	my $data = setting('data');
+	pass if not $languages{$name};
+
+	my @entries = grep { $_->{language} eq $name} @{ $data->{videos} };
+	template 'list', { videos => \@entries, };
+};
+
 
 
 get '/' => sub {
@@ -218,7 +241,7 @@ get '/' => sub {
 get '/v/:path' => sub {
 	my $path = params->{path};
 	if ($path =~ /^[A-Za-z0-9_-]+$/) {
-		return _show('page', $path, {show_tags => 1, show_modules => 1});
+		return _show('page', $path, {show_tags => 1, show_modules => 1, edit =>  "videos/$path"});
 	} else {
 		warn "Could not find '$path'";
 		return template 'error';
@@ -229,44 +252,23 @@ get '/daily.atom' => sub {
 	forward '/atom.xml';
 };
 
-get '/atom.xml' => sub {
+get '/atom.xml' => sub { # backward functionality for all languages
 	my $featured = setting('featured');
-	my $appdir = abs_path config->{appdir};
-
 	my $URL = request->base;
 	$URL =~ s{/$}{};
-	my $site_title = 'Perl TV Featured videos';
-	my $ts = $featured->[0]{featured};
-
-	my $xml = '';
-	$xml .= qq{<?xml version="1.0" encoding="utf-8"?>\n};
-	$xml .= qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
-	$xml .= qq{<link href="$URL/atom.xml" rel="self" />\n};
-	$xml .= qq{<title>$site_title</title>\n};
-	$xml .= qq{<id>$URL/</id>\n};
-	$xml .= qq{<updated>${ts}T12:00:00Z</updated>\n};
-	foreach my $entry (@$featured) {
-
-		my $data = read_file( "$appdir/data/videos/$entry->{path}" );
-		my $title = $data->{title};
-		$title =~ s/&/and/g;
-
-		$xml .= qq{<entry>\n};
-
-		$xml .= qq{  <title>$title</title>\n};
-		$xml .= qq{  <summary type="html"><![CDATA[$data->{description}]]></summary>\n};
-		$xml .= qq{  <updated>$entry->{featured}T12:00:00Z</updated>\n};
-		my $url = "$URL/v/$entry->{path}";
-		$xml .= qq{  <link rel="alternate" type="text/html" href="$url" />};
-		$xml .= qq{  <id>$URL/v/$entry->{path}</id>\n};
-		$xml .= qq{  <content type="html"><![CDATA[$data->{description}]]></content>\n};
-		$xml .= qq{  <author><name>$data->{speaker}</name></author>\n};
-		$xml .= qq{</entry>\n};
-	}
-	$xml .= qq{</feed>\n};
-
+	my $appdir = abs_path config->{appdir};
 	content_type 'application/atom+xml';
-	return $xml;
+        return encode('UTF-8', get_atom_xml(featured => $featured, URL => $URL, appdir => $appdir));
+};
+
+get qr{/language/([a-z]{2})/atom.xml} => sub {
+        my ($language) = splat;
+	my $featured = setting('featured');
+	my $URL = request->base;
+	$URL =~ s{/$}{};
+	my $appdir = abs_path config->{appdir};
+	content_type 'application/atom+xml';
+        return encode('UTF-8', get_atom_xml(language => $language, featured => $featured, URL => $URL, appdir => $appdir));
 };
 
 get '/sitemap.xml' => sub {
@@ -307,7 +309,7 @@ sub _show {
 	}
 	my $site_title = $data->{title};
 	$data->{path} = $path;
-	template $template, { 
+	template $template, {
 		video   => $data,
 		tags    => $data->{tags},
 		modules => $data->{modules},

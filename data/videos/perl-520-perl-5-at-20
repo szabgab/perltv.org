@@ -1,0 +1,17 @@
+id: D1LHFKGHceY
+src: youtube
+title: Perl 5.20: Perl 5 at 20
+speaker: ricardo-signes
+source: yapc-na-2014
+view_count: 0
+favorite_count: 0
+length: 1:06:28
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5328
+
+__DESCRIPTION__
+
+After 20 years of popularity, Perl has established a reputation for reliability and backward compatibility, but it's also still a changing, evolving language. This year's release of Perl 5.20.0 brings some significant and exciting new features, as well as a number of little improvements to keep making easy things easier and harder things possibler.
+
+In this session, the Perl 5 project lead will walk through these new features, as well as features currently being developed for the next release.

@@ -1,0 +1,18 @@
+id: BIMREkoPYKA
+src: youtube
+title: Evolving Software with Moose
+speaker: dave-cross
+source: london-perl-workshop-2010
+view_count: 154
+favorite_count: 0
+length: 18:44
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3088
+modules: Moose
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+Moose (and, in particular, Moose traits) have made Perlanet far easier to maintain and enhance. This talk explains how (and why).

@@ -8,6 +8,7 @@ favorite_count: 0
 length: 17:20
 date: 2014-04-25
 format: markdown
+featured: 2014-06-12
 tags: CSS, YUIcompressor 
 modules: CSS::Compressor
 

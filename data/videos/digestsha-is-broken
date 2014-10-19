@@ -9,6 +9,8 @@ length: 24:38
 date: 2014-04-25
 format: markdown
 modules: Digest::SHA
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5390
+featured: 2014-06-21 09:10:00
 
 __DESCRIPTION__
 
@@ -18,6 +20,5 @@ New programmers all forgot about bits and bytes. Some of our core modules are mo
 * [CRC-Codes](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) - to even fix errors
 * Crypto Checksums: [MD4](http://en.wikipedia.org/wiki/MD4), [MD5](http://en.wikipedia.org/wiki/MD5), [SHA1](http://en.wikipedia.org/wiki/SHA1), [SHA256](http://en.wikipedia.org/wiki/SHA256)  - "one way functions", "hashing"
 * Some suggestions at the end of the presentation
-* [abstract](http://www.perlworkshop.nl/nlpw2014/talk/5390)
 
-
+See the [Reddit](http://www.reddit.com/r/perl/comments/28pefy/digestsha_is_broken_20_min_presentation/) discussiong and the [rejected bug report](https://rt.cpan.org/Public/Bug/Display.html?id=93139)

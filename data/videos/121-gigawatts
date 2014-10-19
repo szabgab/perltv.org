@@ -1,0 +1,23 @@
+id: IG425RMEkRo
+src: youtube
+title: 1.21 Gigawatts
+speaker: ricardo-signes
+source: yapc-na-2014
+view_count: 10
+favorite_count: 0
+length: 57:32
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5329
+
+__DESCRIPTION__
+
+Some talks carefully guide the listeners through the entirety of a topic, starting with the basics and ending with the fine details.
+
+That's... not the plan for this talk.
+
+Instead, we're going to see the highlight reel of a bunch of topics that caught my interest over the course of the year: a review of cool (and uncool) changes in Perl, the best modules you're not using, stupid optimization tricks, tools for handling catastrophic program failure, git scripts you'll become dependent on, numbers stations, Zork, productivity tools, and who knows what else.
+
+I will stand in place and let lightning talks strike over and over, until I am reduced to cinders.
+
+You get to witness the ordeal, and you might just learn a thing or two.

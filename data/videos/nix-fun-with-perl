@@ -1,0 +1,15 @@
+id: CV0XN2SfWHo
+src: youtube
+title: *nix Fun with Perl
+speaker: marty-pauley
+source: yapc-na-2014
+view_count: 83
+favorite_count: 0
+length: 52:08
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5345
+
+__DESCRIPTION__
+
+Perl's history starts with Unix. In this talk Marty will explain some fundamental Unix concepts in Perl.

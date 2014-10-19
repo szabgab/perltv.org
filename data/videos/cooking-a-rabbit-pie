@@ -1,0 +1,25 @@
+id: yQhPx3tQ-ms
+src: youtube
+title: Cooking a Rabbit Pie
+speaker: tomas-doran
+source: london-perl-workshop-2010
+view_count: 75
+favorite_count: 0
+length: 42:39
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3108
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+This talk will introduce the Net::RabbitFoot AMQP client, discuss the specific advantages that the AMQP protocol gives you over other messaging implementations
+
+After the initial theory, the talk will focus on specific applications over AMQP, with practical applications.
+
+It will cover simple available utilities to interact with RabbitMQ, such as the utilities included in Net::RabbitFoot, onto those which (whilst still simple), build upon them (such as App::RabbitTail).
+
+It will also cover the job scheduling and status system I have written (CatalystX::JobServer), including how to use it for basic tasks, its architecture, and how to extend it with custom messaging components for your application(s).
+
+Web::Hippie is an abstraction for creating persistent HTTP pipes - I will discuss (and demonstrate) this as used by CatalystX::JobServer to feed back realtime status information to users.

@@ -6,10 +6,12 @@ source: perl-oasis-2012
 view_count: 154
 favorite_count: 0
 length: 48:05
+date: 2012-01-14
 format: markdown
 modules: MongoDB
 tags: NoSQL
 featured: 2014-01-10
+abstract: http://www.perloasis.info/opw2012/talk/3968
 
 __DESCRIPTION__
 
@@ -24,5 +26,4 @@ The talk will be made up of a bunch of different talks and will
 be a great blend for those people in the Perl community!
 
 [slides](https://speakerdeck.com/bwmcadams/perl-oasis-introduction-to-mongodb)
-
 

@@ -6,6 +6,7 @@ source: yapc-eu-2012
 modules: DBIx::Class, DBD::mysql, SQL::Abstract, Schema::Loader
 tags: SQL, RDBM
 length: 21:39
+date: 2012-08-20
 featured: 2013-10-15
 
 __DESCRIPTION__

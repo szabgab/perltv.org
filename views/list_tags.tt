@@ -1,5 +1,5 @@
 <div id="text">
-  <h1>Tags of videos <a href="/">Perl TV</a></h1>
+  <h1>Tags of videos</h1>
 
   <ul>
   <% FOR t IN tags.keys.sort %>

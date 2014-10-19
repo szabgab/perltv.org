@@ -1,0 +1,20 @@
+id: JRyB6-8rRNE
+src: youtube
+title: Remote GeoCoding
+speaker: ed-freyfogle
+source: london-perl-workshop-2010
+view_count: 7
+favorite_count: 0
+length: 09:46
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3123
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+An overview of the state of play of remote geocoding services from one of the maintainers of Geo::Coder::Many.
+
+I look forward to seeing you at 51.52067372491456, -0.14013469219207764
+

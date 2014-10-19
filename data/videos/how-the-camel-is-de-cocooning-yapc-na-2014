@@ -1,0 +1,16 @@
+id: T4k3otua4tU
+src: youtube
+title: How the Camel is de-cocooning (YAPC::NA 2014)
+speaker: elizabeth-mattijsen
+source: yapc-na-2014
+view_count: 74
+favorite_count: 0
+length: 23:43
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5392
+tags: Perl 6
+
+__DESCRIPTION__
+
+While Rakudo Perl 6 is coming closer and closer to being production ready, good old Perl 5 has taken a lot of ideas of Perl 6, for better or for worse. I will look into how some things have worked, and some haven't. And why. And how in the end, everybody is getting more and more used to Perl 6 (like) syntax.

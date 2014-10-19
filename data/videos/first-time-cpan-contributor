@@ -1,0 +1,34 @@
+id: dCMHQQgg_Eo
+src: youtube
+title: First Time CPAN Contributor
+speaker: adam-dutko
+source: yapc-na-2014
+view_count: 35
+favorite_count: 0
+length: 23:56
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5322
+featured: 2014-07-11 09:25:00
+tags: CPAN
+
+__DESCRIPTION__
+
+Ever wanted to contribute a module to CPAN but found it difficult to navigate the in's and out's of the labyrinth? I'm a first time contributor that also found it hard to know what to do and what not to do. I still don't know everything but if you come to this talk you should leave knowing at least a little bit more about how to get your code added to CPAN.
+
+* [Cleveland.pm](http://cleveland.pm.org/)
+* [Adoption](http://neilb.org/adoption/)
+* [perlstyle](https://metacpan.org/pod/perlstyle)
+* [perlmodstyle](https://metacpan.org/pod/perlmodstyle)
+* [perlmodlib](https://metacpan.org/pod/perlmodlib)
+* [perlnewmod](https://metacpan.org/pod/perlnewmod)
+* [perlmodinstall](https://metacpan.org/pod/perlmodinstall)
+* [Task::Kensho](https://metacpan.org/pod/Task::Kensho)
+* [PAUSE](http://pause.perl.org/)
+* [RT](https://rt.cpan.org/)
+* [Module::Starter](https://metacpan.org/pod/Module::Starter)
+* [cpan minus](http://cpanmin.us/)
+* [Dist::Zilla](http://dzil.org/)
+* [Prepan](http://prepan.org/)
+* [slides](https://bitbucket.org/StylusEater/talks.git)
+

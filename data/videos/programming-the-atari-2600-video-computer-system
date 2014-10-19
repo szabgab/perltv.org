@@ -1,0 +1,18 @@
+id: Ulcq0pVlQ1c
+src: youtube
+title: Programming the Atari 2600 "Video Computer System"
+speaker: scott-walters
+source: yapc-na-2014
+view_count: 39
+favorite_count: 0
+length: 48:19
+date: 2014-06-23
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5380
+
+__DESCRIPTION__
+
+This talk drops virtually all abstraction and shows how to program the simple 8 bit processor and custom designed video hardware in the Atari 2600 "VCS". Users familiar with high level languages might find this an interesting introduction to how CPUs actually work.
+Famous for its blocky graphics and simplistic games, the 2600 was the second programmable home video game system, introduced in 1977. Graphics are generated on the fly, pixel by pixel, at 60 frames per second by setting up various bits of hardware logic and orchestrating them using the CPU. Controlling logic to display graphics is part of the challenge and creative process of creating a 2600 game.
+The 2600 demoscene and homebrew game scene are alive and well. Modern 2600 games push the hardware far beyond what was possible and benefit from original chip schematics, near perfect emulator/debuggers, documentation of graphics techniques, carts with active logic and RAM on them, and a fundamentally open source, collaborative development model.
+We'll learn how to program the MOS Technologies 6502 processor (later used in the C=64, Apple ][, NES, and many other systems but fundamentally the same as modern CPUs), control the Atari TIA video hardware, and then we'll do some shaded realtime 3D graphics.

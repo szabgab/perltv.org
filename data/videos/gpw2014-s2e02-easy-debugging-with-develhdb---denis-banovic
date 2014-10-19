@@ -1,0 +1,16 @@
+id: OJa3c5IcP10
+src: youtube
+title: GPW2014 S2E02: Easy Debugging with Devel::hdb - Denis Banovic
+speaker: denis-banovic
+source: german-perl-workshop-2014
+view_count: 60
+favorite_count: 0
+length: 20:38
+date: 2014-03-27
+format: markdown
+abstract:
+language: en
+
+__DESCRIPTION__
+
+WebService::GData::Node::Media::Description=HASH(0x3be54a8)

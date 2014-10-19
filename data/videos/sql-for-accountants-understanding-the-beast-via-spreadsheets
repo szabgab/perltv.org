@@ -1,0 +1,19 @@
+id: 63_MGcsXEzs
+src: youtube
+title: SQL for accountants: understanding the beast via SpreadSheets
+speaker: peter-rabbitson
+source: yapc-na-2014
+view_count: 32
+favorite_count: 0
+length: 52:18
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5513
+
+__DESCRIPTION__
+
+In order to enjoy this talk you do not need to know Perl, nor SQL, nor do you need to be an accountant.
+
+This is a basic-to-advanced crash-course in SQL syntax and concepts. We will cover most of the road from speaking basic CRUD SQL, through joins, resultsets and subqueries all the way to weirdness like relational division. All of this will happen without looking at any perl code (yes, this is not a DBIx::Class talk :)
+
+Even if you are a seasoned SQL veteran some of the presented techniques will no doubt surprise you, or at least make you roll your eyes.

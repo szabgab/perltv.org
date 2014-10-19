@@ -10,10 +10,10 @@ date: 2014-04-25
 format: markdown
 tags: Perl 6
 featured: 2014-06-08
+abstract: http://www.perlworkshop.nl/nlpw2014/talk/5452
 
 __DESCRIPTION__
 
-[abstract](http://www.perlworkshop.nl/nlpw2014/talk/5452)
 
 * Quick recap of Perl 5 releases
 * Releases of Perl 6 and related projects

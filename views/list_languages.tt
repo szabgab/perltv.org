@@ -1,0 +1,11 @@
+<div id="text">
+  <h1>Languages of videos</h1>
+
+  <ul>
+  <% FOR s IN languages.keys.sort %>
+      <li><a href="/language/<% s %>"><% languages.$s %></a> <a href="/language/<%s%>/atom.xml">(atom feed)</a></li>
+  <% END %>
+  </ul>
+</div>
+
+

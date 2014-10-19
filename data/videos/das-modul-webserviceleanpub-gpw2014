@@ -1,0 +1,23 @@
+id: 32WVJSRKmY4
+src: youtube
+title: Das Modul Webservice::Leanpub
+speaker: mathias-weidner
+source: german-perl-workshop-2014
+view_count: 42
+favorite_count: 0
+length: 13:19
+date: 2014-03-28
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5144
+language: de
+modules: WebService::Leanpub
+
+__DESCRIPTION__
+
+Mit dem Leanpub API lässt sich die Buchproduktion teilweise automatisieren. Das Modul hilft, das API für Perl und/oder die Kommandozeile zu erschließen.
+
+Das Thema ist für Autoren bei Leanpub und diejenigen, die ihnen bei der Buchproduktion helfen, interessant.
+
+Talk: http://act.yapc.eu/gpw2014/talk/5144
+
+Event: http://act.yapc.eu/gpw2014/

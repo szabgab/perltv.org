@@ -1,0 +1,20 @@
+id: _H973ZphnyY
+src: youtube
+title: GPW2014 S1E08: OTRS Pakete ausgiebig testen und verifizierten - Renee Bäcker
+speaker: renee-baecker
+source: german-perl-workshop-2014
+view_count: 41
+favorite_count: 0
+length: 33:44
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5141
+language: de
+
+__DESCRIPTION__
+
+Die OTRS AG hat 2013 die Paket-Verifizierung eingeführt. Leider sind nur wenige Kriterien bekannt und es gibt kein Programm für freie Erweiterungen. Mit OPAR habe ich eine Plattform für freie Pakete entwickelt. Jetzt sollen diese Pakete automatisiert getestet werden. Dieser Vortrag zeigt die aktuelle Entwicklung hierbei: Automatisiert VMs erstellen, Software installieren, Änderungen tracken, Codequalität prüfen und vieles mehr.
+
+Talk: http://act.yapc.eu/gpw2014/talk/5141
+
+Event: http://act.yapc.eu/gpw2014/

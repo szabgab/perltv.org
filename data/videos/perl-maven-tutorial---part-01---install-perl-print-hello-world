@@ -1,0 +1,24 @@
+id: c3qzmJsR2H0
+src: youtube
+title: Perl Maven Tutorial - part 01 - Install Perl, print Hello World
+speaker: gabor-szabo
+source: perl-maven
+view_count: 11459
+favorite_count: 0
+length: 09:34
+date: 2011-06-24
+format: markdown
+abstract: http://perlmaven.com/installing-perl-and-getting-started
+
+__DESCRIPTION__
+
+The first part of a new series of Perl Tutorials. We are starting to use the "Padre on Strawberry Perl for Windows" package but we'll also see example using Linux.
+
+Download the [Padre on Strawberry Perl](http://padre.perlide.org/)
+
+Exercise and blog related to this video can be found here:
+http://perlmaven.com/installing-perl-and-getting-started
+
+To see all the [Perl tutorials](http://perlmaven.com/perl-tutorial)
+
+The [Modern Perl book](http://www.onyxneon.com/books/modern_perl/index.html) mentioned in the screencast. 

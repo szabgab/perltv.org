@@ -1,0 +1,20 @@
+id: 01o0aFHYNKk
+src: youtube
+title: DBDI for Perl 6
+speaker: tim-bunce
+source: london-perl-workshop-2010
+view_count: 204
+favorite_count: 0
+length: 29:14
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3091
+tags: Perl 6
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+The DBDI project aims to provide a low-level database driver interface for Perl 6 and Parrot. DBDI provides a common low-level API on which high-level interfaces, like MiniDBI and DBI v2, can be built for Perl 6 and other languages targeting Parrot.
+
+This talk will cover the role of DBDI, the rationale behind it, the current state and future plans of the project, and how you can get involved.

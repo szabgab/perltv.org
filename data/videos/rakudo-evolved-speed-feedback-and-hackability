@@ -1,0 +1,23 @@
+id: J8K1JEQcfHs
+src: youtube
+title: Rakudo Evolved: speed, feedback and hackability
+speaker: jonathan-worthington
+source: yapc-eu-2011
+view_count: 48
+favorite_count: 0
+length: 43:42
+date: 2011-08-15
+format: markdown
+abstract: http://yapceurope.lv/ye2011/talk/3515
+tags: Perl 6
+
+__DESCRIPTION__
+
+
+About a year ago, the Rakudo Perl 6 development team released Rakudo Star. Implementing a wide range of Perl 6 features, it marked a point where more people could jump in and start exploring the Perl 6 language. They did, and over the last year the community and module ecosystem has grown.
+
+Of course, that didn't mean we could rest easy. While Rakudo Star did quite well on features, it was decidedly slow, memory hungry, not always so helpful in reporting errors and fell short of the language extensibility goals of Perl 6, especially in the area of meta-programming.
+
+Over the past year, I've led the development of "6model", a meta-programming framework with a focus on gradual typing, compile-time meta-object creation and representation polymorphism. Its goal was simple: to allow us to deliver a faster, more efficient, more helpful Rakudo. In this talk I'll discuss the design of 6model and demonstrate how we've used it to improve Rakudo.
+
+Finally, I'll give a peek into the future of Rakudo, and describe our road map for the months ahead.

@@ -1,0 +1,17 @@
+id: csGpoM5N8aQ
+src: youtube
+title: Perl and Unicode - In Search of the Holy Grail
+speaker: mike-whitaker
+source: london-perl-workshop-2010
+view_count: 55
+favorite_count: 0
+length: 19:52
+date: 2010-12-04
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2010/talk/3115
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2010
+
+A summary of some of the entertainment surrounding getting characters in various encodings into and out of Perl without mishap.

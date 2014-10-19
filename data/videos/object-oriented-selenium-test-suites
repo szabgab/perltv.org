@@ -1,0 +1,20 @@
+id: ZesUiDBjXcA
+src: youtube
+title: Object Oriented Selenium Test Suites
+speaker: phil-wells
+source: yapc-na-2014
+view_count: 27
+favorite_count: 0
+length: 16:57
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5327
+tags: testing, Selenium
+modules: Selenium::Remote::Driver
+featured: 2014-06-25 09:25:00
+
+__DESCRIPTION__
+
+Unfortunatelly the sound quality is quite bad.
+
+Phil Wells is a QA engineer at Kaplan Test Prep, and in this talk he will demonstrate how he uses Perl's Selenium bindings and good old-fashioned OOP to verify the complex configuration of KTP's student portal. Attendees will leave with a good idea of what they can do to build a maintainable, resilient functional test framework.

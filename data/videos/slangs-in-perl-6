@@ -1,0 +1,24 @@
+id: rxJpU-Ye2jQ
+src: youtube
+title: Slangs in Perl 6
+speaker: tobias-leich
+source: german-perl-workshop-2014
+view_count: 69
+favorite_count: 0
+length: 19:37
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5251
+language: de
+tags: Perl 6, Perl 5, Rakudo
+
+__DESCRIPTION__
+
+Bei diesem Talk möchte ich Slangs vorstellen, im Besonderen den Perl 5 Slang.
+
+Es geht also darum andere Sprachen lexikalisch in Perl 6 einzubetten ohne diese in irgendwelche Quotes stecken zu müssen um sie zu evaluieren.
+
+Es wird gezeigt was alles möglich ist, welche Slangs es zur Zeit gibt, wie die Zukunftsaussichten sind und wo mitgemacht werden kann.
+
+Präsentation: http://www.yapcna.org/yn2013/talk/4725
+

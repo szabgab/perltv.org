@@ -1,0 +1,27 @@
+id: wHQEwUpDFLQ
+src: youtube
+title: Mac and Perl
+speaker: mark-fowler
+source: yapc-na-2014
+view_count: 10
+favorite_count: 0
+length: 22:38
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5351
+modules: Mac::KeyboardMaestro
+tags: Mac, Apple
+featured: 2014-07-02 23:30:00
+
+__DESCRIPTION__
+
+It's now 2014 and three years since I gave my "[Pimp Your Mac With Perl](pimp-your-mac-with-perl)" talk at YAPC::NA in Madison. In this follow up talk, consisting of entirely new material, I'll be talking about new technologies that have come along since then (having seen the prior talk is not required.)
+
+* Writing [Alfred Plugins](http://www.alfredapp.com/), for example to search [MetaCPAN](https://metacpan.org/)  on [GitHub](https://github.com/2shortplanks/alfred-metacpan)
+* [TextExpander](http://smilesoftware.com/TextExpander/)
+* Using [Keyboard Maestro](http://www.keyboardmaestro.com/) to fully control your Mac with Perl using [Mac::KeyboardMaestro](https://metacpan.org/pod/Mac::KeyboardMaestro)
+* Services written in Perl [ThisService](http://wafflesoftware.net/thisservice/)
+* [PopClip](http://pilotmoon.com/popclip/) Extensions, and brining features of an IDE to Terminal.app [source](https://github.com/2shortplanks/PerlErrorSublime.popclipext)
+
+* [slides](http://tinyurl.com/macandperlyapc2014)
+

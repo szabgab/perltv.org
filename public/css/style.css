@@ -2,10 +2,7 @@ body {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  background-color: #ddd;
-  background-repeat: no-repeat;
-  background-position: top left;
-
+  background-color: #FFF;
   font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
   font-size: 13px;
   color: #333;
@@ -23,11 +20,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  background-color: #EEE;
 }
 
 #page {
-  background-color: #ddd;
   margin: auto;
   margin-left: auto;
   padding-left: 0px;
@@ -36,9 +32,7 @@ a:hover {
 }
 
 #content {
-  background-color: white;
-  border: 3px solid #aaa;
-  border-top: none;
+  background-color: #FFF;
   padding: 0px;
   float: left;
   width: 70%;
@@ -47,7 +41,6 @@ a:hover {
 #sidebar {
   float: left;
   width: 220px;
-/*  border: 1px solid;*/
   padding-left: 20px;
   top 0;
   right 0;
@@ -58,9 +51,8 @@ a:hover {
   padding-right: 30px;
   background-repeat: no-repeat;
   background-position: top left;
-  border-top: 1px solid #ccc;
   padding-top: 15px;
-  max-width: 600px;
+  max-width: 700px;
 }
 #text h1 {
   margin: 0;
@@ -76,7 +68,6 @@ a:hover {
   margin-top: 25px;
   font-size: 16px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
 }
 #sidebar li {
   list-style-type: none;
@@ -119,14 +110,25 @@ code, tt {
   list-style-type: none;
   padding-right: 20px;
 }
-
-#featured ul {
+li {
+  list-style-type: none;
+}
+ul {
   padding-left: 0px;
 }
-#featured li {
-  display: inline;
-  list-style-type: none;
+
+.featured_block {
+  display: inline-block;
   padding-right: 20px;
+}
+
+#featured li {
+  width: 150px;
+}
+
+#featured img {
+  width: 144px;
+  height: 108px;
 }
 
 #embed iframe {
@@ -153,4 +155,44 @@ code, tt {
      height: 480px;
    }
 }
+
+.date {
+	float: left;
+	width: 85px;
+}
+
+.featured {
+	float: left;
+	width: 85px;
+}
+
+.length {
+	float: left;
+	width: 65px;
+	padding-right: 5px;
+}
+
+
+.sort_date, .sort_featured, .sort_title, .sort_length {
+	cursor: pointer;
+}
+
+
+#content ul {
+	list-style: none outside none;
+	margin: 30px;
+	padding: 0;
+}
+
+.videos div {
+	width: 150px;
+}
+
+.videos li {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	padding: 10px 0;
+}
+
 

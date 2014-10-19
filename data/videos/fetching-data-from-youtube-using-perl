@@ -1,0 +1,24 @@
+id: a03jf68iz-M
+src: youtube
+title: Fetching data from YouTube using Perl
+speaker: gabor-szabo
+source: perl-maven
+view_count: 2599
+favorite_count: 0
+length: 14:12
+date: 2011-06-26
+format: markdown
+abstract: http://szabgab.com/fetching-data-from-youtube-using-perl.html
+
+__DESCRIPTION__
+
+YouTube provides and API to allow programmers to interact with the system. In this tutorial I show how you can fetch some statistics of any youtube channel using a Perl implementation of the API.
+
+The blog post about this screencast:
+http://szabgab.com/fetching-data-from-youtube-using-perl.html
+
+MetaCPAN is http://metacpan.org/
+
+To see all the Perl tutorials visit http://perlmaven.com/perl-tutorial
+
+About Perl Programming and Perl programmers.

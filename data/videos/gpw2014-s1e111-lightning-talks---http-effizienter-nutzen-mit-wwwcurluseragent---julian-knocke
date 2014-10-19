@@ -1,0 +1,36 @@
+id: PU-DQ3D7UOg
+src: youtube
+title: GPW2014 S1E11.1: Lightning Talks - HTTP effizienter nutzen mit WWW::Curl::UserAgent‎ - Julian Knocke
+speaker: julian-knocke
+source: german-perl-workshop-2014
+view_count: 35
+favorite_count: 0
+length: 04:46
+date: 2014-03-26
+format: markdown
+abstract:
+language: de
+
+__DESCRIPTION__
+
+Webseiten und REST APIs werden über das Protokoll HTTP abgewickelt. Mit
+Parallelität und der Wiederverwendung bestehender TCP-Verbindungen
+(KeepAlive) können große Mengen an Anfragen schneller abgearbeitet
+werden. Durch eine Callback basierte Schnittstelle, wird der
+Programmcode bei gleichzeitigen Anfragen optimal durchlaufen und so
+Zeitverluste durch IO minimiert. Mit Vergleichen zu bestehenden User
+Agents wie LWP::UserAgent, LWP::Parallel::UserAgent und
+WWW::Curl::Simple können Vor- und Nachteile der Neuimplementation
+beschrieben werden.
+
+Das Modul WWW::Curl::UserAgent wurde bei XING entwickelt, dem sozialen
+Netzwerk für berufliche Kontakte mit 14 Millionen Mitgliedern. Mit cURL
+wird dort bereits, basierend auf dem Rubygem Typhoeus, ein REST Client
+betrieben, der effizient einige hundert Millionen Requests am Tag
+abarbeitet. Um diesen Durchsatz und die Stabilität ebenso zu erreichen,
+wurde ein UserAgent entwickelt, welcher parallele Verbindungen mit
+KeepAlive unterstützt und dafür auf die Bibliothek cURL zurückgreift.
+
+Talk: http://act.yapc.eu/gpw2014/talk/5317
+
+Event: http://act.yapc.eu/gpw2014/

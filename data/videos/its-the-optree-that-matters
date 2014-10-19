@@ -1,0 +1,17 @@
+id: IqAFvVcWmN8
+src: youtube
+title: Its the Optree That Matters
+speaker: andrew-main
+source: london-perl-workshop-2011
+view_count: 23
+favorite_count: 0
+length: 04:18
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3799
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+People fuss a lot about source code syntax (MooseX::Declare) and layout (especially indentation). They're wasting their time: the syntax doesn't matter at all! Perl executes the optree, not the source code. Learn to embrace what really matters about your programs.

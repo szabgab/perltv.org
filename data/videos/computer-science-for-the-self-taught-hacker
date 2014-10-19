@@ -1,0 +1,28 @@
+id: UVWIEYga_l4
+src: youtube
+title: Computer science for the self taught hacker
+speaker: andrew-grangaard
+source: yapc-na-2014
+view_count: 18
+favorite_count: 0
+length: 21:41
+date: 2014-06-24
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5377
+featured: 2014-06-29 23:15:00
+
+__DESCRIPTION__
+
+Description:
+Are you a programmer without a Computer Science background? Self-conscious about what you might be missing? Don't have a favorite sorting algorithm? Let's get that chip of your shoulder! I'll introduce you to CS theory: ideas, terminology, math, and nomenclature and then show you how to dig deeper by leveraging Open Courses (and your local library)
+
+Abstract:
+What is Computer Science and how is it different than Programming? What did I miss by jumping straight into programming?
+This quick tour of topics covered in introductory computer science courses discusses why those topics are considered important. I'll provide links to delve deeper in books and online courses.
+
+After this talk, you'll be able to answer:
+Why do we discuss complexity?
+How do we reason about programs? What can we prove? What can't we prove?
+What is Big-O notation and why should I care?
+Why do data structures matter?
+Why do we care about sorting?

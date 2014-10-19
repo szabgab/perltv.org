@@ -1,0 +1,14 @@
+id: 9cfAgQRzXDA
+src: youtube
+title: Mistakes Not to Make in A Web API
+speaker: paul-evans
+source: london-perl-workshop-2013
+view_count: 46
+favorite_count: 0
+length: 05:57
+date: 2013-11-30
+format: markdown
+
+__DESCRIPTION__
+
+A brief overview of the Amazon S3 web API, and a look at the various mistakes made in its design that will frustrate and annoy anyone who attempts to use it.

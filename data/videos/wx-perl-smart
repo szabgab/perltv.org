@@ -1,0 +1,23 @@
+id: 3rgLJ3_4qOc
+src: youtube
+title: Wx::Perl::Smart
+speaker: herbert-breunung 
+source: german-perl-workshop-2014
+view_count: 42
+favorite_count: 0
+length: 20:07
+date: 2014-03-27
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5143
+language: de
+
+__DESCRIPTION__
+
+Seit Jahren sprach ich drüber, jetzt implementiere ich es: eine Zuckerschicht (DSL), die auf WxPerl gestreut die Freude am Programmieren wieder hervorlockt. Hier zeige ich:
+
+* die Ziele,
+* was davon erreicht wurde und was nicht,
+* die Syntax in Anwendungen, welche mehr sind als Demos, und
+* wie es implementiert wurde.
+
+Slides: http://lichtkind.de/vortrag/

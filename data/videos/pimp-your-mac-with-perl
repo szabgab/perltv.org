@@ -1,0 +1,32 @@
+id: 6djQ4mili6A
+src: youtube
+title: Pimp Your Mac with Perl
+speaker: mark-fowler
+source: london-perl-workshop-2011
+view_count: 473
+favorite_count: 0
+length: 18:46
+date: 2011-11-12
+format: markdown
+abstract: http://conferences.yapceurope.org/lpw2011/talk/3708
+tags: Mac, Apple
+featured: 2014-09-20 22:00:00
+
+__DESCRIPTION__
+
+Recorded at the London Perl Workshop 2011
+
+See also a newer version of this talk from [YAPC::NA 2014](mac-and-perl).
+
+As a Perl Programmer you are the ultimate Mac power user - using a few simple techniques you can apply what you already know to automate your Mac with Perl. Avoid the rigmarole non programmers must suffer in day to day tasks and empower your Mac to act autonomously on the grunt work so you don't have to.
+
+In this session we will be briefly covering techniques to:
+
+* Create new services to consume, produce or manipulate text anywhere on your system
+* Trigger scripts from utilities like TextMate, TextExpander, QuickSilver and LaunchBar
+* Write Plack powered local web tools and starting these whenever you log in
+* Configuring launchd to run Perl scripts periodically to deal with stuff so you don't have to
+* Efficiently watch directories for changes and take action using FSEvents
+* Run AppleScript from within Perl to control other applications
+* Manipulate the contents of webpages inside Safari from Perl
+* Use template XCode projects to produce simple GUIs for Perl scripts

@@ -1,0 +1,21 @@
+id: PWfsaW2XR1o
+src: youtube
+title: Modulversionierung in Perl 6
+speaker:  tobias-leich
+source: german-perl-workshop-2014
+view_count: 78
+favorite_count: 0
+length: 11:47
+date: 2014-03-26
+format: markdown
+abstract: http://act.yapc.eu/gpw2014/talk/5252
+language: de
+tags: Perl 6
+
+__DESCRIPTION__
+
+Ein Traum jedes Paketierers!
+
+Perl 6 bricht die Tradition dass man nur eine Distribution eines Modules effektiv installieren und nutzen kann.
+Ich werde zeigen wie Module installiert werden, und wie man aus einem Programm heraus verschiedene Versionen desselben Moduls nutzt, sei es weil ein Feature aus einer alten Version besser funktioniert, oder weil man in einem anderen Programmteil einen Fork des Modules nutzen möchte.
+

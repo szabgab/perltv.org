@@ -1,0 +1,18 @@
+id: ptN63wSVK9w
+src: youtube
+title: Autocompletition in Padre, the Perl IDE v0.87
+speaker: gabor-szabo
+source: perl-maven
+view_count: 1694
+favorite_count: 0
+length: 05:44
+date: 2011-07-10
+format: markdown
+
+__DESCRIPTION__
+
+Padre, the perl editor provides a configurable way to autocomplete while you are typing. This video shows the options.
+
+[Perl tutorials](http://perlmaven.com/perl-tutorial)
+
+[Download Padre](http://padre.perlide.org/)

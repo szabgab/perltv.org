@@ -1,0 +1,53 @@
+id: Jmy4tavfOdQ
+src: youtube
+title: GPW2014 S1E10: Log everything... und dann? - Sebastian Willing
+speaker: sebastian-willing
+source: german-perl-workshop-2014
+view_count: 79
+favorite_count: 0
+length: 40:28
+date: 2014-03-26
+format: markdown
+abstract:
+language:de
+
+__DESCRIPTION__
+
+Historisch gewachsene Projekte enthalten gerne viele Altlasten, meist
+entwickeln sich der Programmierstil und die Codequalität im Laufe der
+Jahre weiter. Mit zunehmender Projektgröße und steigenden Zugriffszahlen
+stellen sich Probleme ein, die in Entwicklungs- und Testumgebungen nicht
+sichtbar sind und das debugging wird zunehmend schwieriger. Spätestens
+mit use warnings wachsen die Logfiles schnell ins unermessliche und
+werden meist ignoriert.
+Vor dieser Aufgabe stand ich vor zwei Jahren. Webserver-Logfiles wurden
+meist ignoriert und Cron-Meldungen reihrum jede Woche von einem anderen
+Entwickler betreut. Dementsprechend unterschiedlich wurden die Mails
+behandelt.
+Mittlerweile laufen alle Meldungen in einem zentralen, übergeordneten
+System auf, werden dort weitgehend automatisch gruppiert, kategorisiert
+und priorisiert. Meldungen zu bestehenden Tickets werden diesen
+zugeordnet. Die Tickets werden bei Bedarf automatisch eskaliert und der
+Bearbeiter wird durch Ticketnotizen auf neue Meldungen hingewiesen.
+Das System besteht aus drei Komponenten, die ich zusammen mit dem Konzept
+gerne vorstellen würde:
+Der erste Teil sammelt alle Perl- und MySQL-Warnungen, Debug-Meldungen
+und weitere relevante Daten, ergänzt automatisch Statusinformationen zu
+HTTP-Request, Datenbank, etc.
+Die zweite Komponente nimmt Meldungen auf verschiedenen Wegen (HTTP,
+SMTP, Gearman, Syslog) an, führt diese zusammen und bewertet sie anhand
+automatischer und manuell erstellter Regeln.
+Am Ende steht ein Webinterface, das lediglich die bisher nicht
+klassifizierten Meldungsgruppen anzeigt und die einfache Bearbeitung
+ermöglicht. So können leicht 50.000 bis 100.000 Einzelmeldungen an einem
+normalen Arbeitstag mit weniger als einer halben Stunde Arbeitszeit
+bewertet, klassifiziert und bei Bedarf den zuständigen Teams übergeben
+werden.
+Dadurch werden viele potentielle Probleme rechtzeitig erkannt, bevor sie
+wirtschaftlichen Schaden anrichten können.
+
+Präsentation: http://www.pal-blog.de/entwicklung/perl/log-everything-und-dann-gpw2014.html
+
+Talk: http://act.yapc.eu/gpw2014/talk/5258
+
+Event: http://act.yapc.eu/gpw2014/

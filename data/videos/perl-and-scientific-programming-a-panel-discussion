@@ -1,0 +1,34 @@
+id: tkrwAVZZgMY
+src: youtube
+title: Perl and Scientific Programming: A panel discussion
+speaker: joe-kline
+source: yapc-na-2014
+view_count: 0
+favorite_count: 0
+length: 54:43
+date: 2014-06-25
+format: markdown
+abstract: http://www.yapcna.org/yn2014/talk/5309
+
+__DESCRIPTION__
+
+Perl and Scientific Programming: A panel discussion
+
+Estimated talk length: 50 minutes
+
+Panel Chair: Joe Kline
+
+Panel members: current pool of which 3-4 empaneled
+Joel Berger - Keynote Speaker YAPC::Brazil 2013
+appearing virtually
+Jay Hannah - Lapsed BioPerl abuser. 
+Lord of Fire, Emeritus
+John Anderson - Infinity Interactive, Senior Programmer
+Walter Mankowski - Postdoctoral researcher, Bioimage Lab, Drexel University
+
+A brief introduction of panel members followed by some topics (see following), with some free form questions and answers with the audience.
+
+Panel topics:
+Members will discuss their use of Perl in their scientific endeavors. How it was used in the past and how it might be used in the future.
+
+Also, how one might leverage Perl's strengths and mitigate its weakness in scientific programming.

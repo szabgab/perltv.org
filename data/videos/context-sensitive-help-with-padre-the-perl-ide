@@ -1,0 +1,15 @@
+id: yGPLXNUbffY
+src: youtube
+title: Context Sensitive Help with Padre, the Perl IDE
+speaker: gabor-szabo
+source: perl-maven
+view_count: 11501
+favorite_count: 0
+length: 04:25
+date: 2009-11-24
+format: markdown
+
+__DESCRIPTION__
+
+See how [Padre](http://padre.perlide.org/) can provide help for [Perl 5](http://perl.org/), [Perl 6](http://perl6.org/)
+or [Parrot](http://parrot.org/)

@@ -6,6 +6,7 @@ source: yapc-na-2012
 view_count: 526
 favorite_count: 0
 length: 32:45
+date: 2012-06-13
 format: markdown
 modules: Redis, Redis::Client, Redis::hiredis
 tags: Redis
