@@ -3,20 +3,21 @@ use warnings;
 use 5.010;
 
 use Path::Tiny qw(path);
-use Getopt::Long;
+use Getopt::Long qw(GetOptions);
+use Pod::Usage qw(pod2usage);
 
 GetOptions( 'source:s' => \my $source );
 
 =head1 USAGE
 
-  fetch.pl --source german-perl-workshop-2014 $URLs
+  fetch.pl [--source german-perl-workshop-2014] $URLs
 
 =cut
 
 use lib path($0)->absolute->parent->parent->child('lib')->stringify;
 use PerlTV::Fetch;
 
-die "Usage: $0 URLs\n" if not @ARGV;
+pod2usage() if not @ARGV;
 my $fetch = PerlTV::Fetch->new(
     source => $source,
 );

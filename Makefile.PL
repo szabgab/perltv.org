@@ -23,6 +23,8 @@ WriteMakefile(
 		'JSON::Tiny'     => 0,
 		'Text::Markdown' => 0,
 		'Plack'          => 0,
+		'Getopt::Long'   => 0,
+		'Pod::Usage'     => 0,
 
 # for testing
 		'Test::More'     => 0,
