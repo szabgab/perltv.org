@@ -42,25 +42,20 @@ function show(id, cls) {
 function sort_rows() {
 	//console.log('sort: ' + this.className);
 	var convert = function(v) { return v };
-	var column = 3; // title
         var sortClassName;
 	if (/sort_date/.exec(this.className)) {
-		column = 0;
 		sortClassName = 'date';
 	}
 	if (/sort_featured/.exec(this.className)) {
-		column = 1;
 		sortClassName = 'featured';
 	}
 	if (/sort_length/.exec(this.className)) {
-		column = 2;
 		convert = function(v) { 
                         return (v.length > 13) ?  v : v.replace("Length: ", "Length: 00:"); 
                 };
 		sortClassName = 'length';
 	}
 	if (/sort_title/.exec(this.className)) {
-		column = 3;
 		sortClassName = 'title';
 	}
 
