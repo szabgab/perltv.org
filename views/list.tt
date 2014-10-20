@@ -35,10 +35,6 @@
 
   <% FOR lang IN languages.keys.sort %>
     <h2><% languages.$lang %> <a href="/language/<%lang%>/atom.xml"><img src="/images/feed-icon32.png" /></a></h2>
-           <span class="sort_date date">date</span>
-           <span class="sort_featured featured">featured</span>
-           <span class="sort_length length">length</span>
-           <span class="sort_title">title</span></li>
       <ul class="videos">
         <li>
         <% FOR v IN videos %>
@@ -51,6 +47,7 @@
 				<div class="date">Date: <% v.date  %><br></div>
 				<div class="featured">Featured: <% v.featured.substr(0,10) %><br></div>
 				<div class="length">Length: <% v.length %></div>
+				<div class="title" style="display: none;"><% v.title %></div>
 		        </div>
                 </a>
             </li>
