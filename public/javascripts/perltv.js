@@ -42,19 +42,21 @@ function show(id, cls) {
 function sort_rows() {
 	//console.log('sort: ' + this.className);
 	var convert = function(v) { return v };
-	var column = 3; // title
+        var sortClassName;
 	if (/sort_date/.exec(this.className)) {
-		column = 0;
+		sortClassName = 'date';
 	}
 	if (/sort_featured/.exec(this.className)) {
-		column = 1;
+		sortClassName = 'featured';
 	}
 	if (/sort_length/.exec(this.className)) {
-		column = 2;
-		convert = function(v) { return (v.length == 8) ?  v : "00:" + v; };
+		convert = function(v) { 
+                        return (v.length > 13) ?  v : v.replace("Length: ", "Length: 00:"); 
+                };
+		sortClassName = 'length';
 	}
 	if (/sort_title/.exec(this.className)) {
-		column = 3;
+		sortClassName = 'title';
 	}
 
 	var blocks = document.getElementsByClassName('videos');
@@ -69,7 +71,7 @@ function sort_rows() {
 		var arr = new Array;
 		for (var j = 1; j < ch.length; j++) {
 			arr.push({
-				"field" : convert(ch[j].children[column].innerHTML),
+				"field" : convert(ch[j].getElementsByClassName(sortClassName)[0].innerHTML),
 				"html"  : ch[j].innerHTML
 			});
 		}
