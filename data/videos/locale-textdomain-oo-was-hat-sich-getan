@@ -1,0 +1,22 @@
+id: xwR0hZffQNM
+src: youtube
+title: Locale TextDomain OO was hat sich getan? - Steffen Winkler
+speaker: steffen-winkler
+source: german-perl-workshop-2015
+view_count: 1
+favorite_count: 0
+length: 21:32
+date: 2015-05-08
+format: markdown
+language: de
+abstract: http://act.yapc.eu/gpw2015/talk/5978
+modules: 
+
+__DESCRIPTION__
+
+Die vorhergehende Version war noch eine Erweiterung von Locale-TextDomain. Jetzt ist es ein eigenständiges Projekt, was letztes Jahr auch in Produktion bei meiner Arbeit ging, natürlich incl. dem zugehörigen Javascript-Framework.
+Bis zum Workshop wird die aktuelle Version auch im CPAN sichtbar sein.
+Im Vortrag wird die Idee erklärt, die dahinter steht, und warum man keine Plugins für irgendwelche Web-Frameworks braucht.
+Es wir auch um Locale-TextDomain-OO-Extract und Locale-Utils-Autotranslator gehen, damit sie Sache rund wird.
+
+Slides: http://download.steffen-winkler.de/gpw2015/1.%20Locale-TextDomain-OO%20was%20hat%20sich%20getan.html

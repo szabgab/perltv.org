@@ -1,0 +1,59 @@
+id: 37qNuBpFngU
+src: youtube
+title: GPW2015 day3 Perl IDEs am Beispiel Emacs - Rolf Langsdorf
+speaker: rolf-langsdorf
+source: german-perl-workshop-2015
+view_count: 5
+favorite_count: 0
+length: 40:52
+date: 2015-05-08
+format: markdown
+language: de
+abstract: http://act.yapc.eu/gpw2015/talk/6216
+modules: 
+tags: IDE, emacs
+
+__DESCRIPTION__
+
+Was ist ein "Integrated Development Environment" (IDE)?
+
+Wo ist ist die Grenze zu Editoren?
+
+Und was sollte eine Perl IDE leisten? 
+
+Was könnte sie überhaupt leisten?
+
+Emacs als Großmutter aller IDEs bietet sich an um verschiedene Features zu demonstrieren.
+
+Kriterien wären:
+
+Editor
+Syntax-highlighting
+Tab-expansion of variables
+Outlining ( aka Folding)
+Narrowing
+Code-snippets/Templates
+Search/Replace (Incremental, RegEx, Multifile)
+Key-Macros
+Multiple Subwindows
+X and/or Terminal
+Keybindings
+Hypertext-features 
+
+IDE
+Compile and Jump to Error
+Debugger integration
+REPL integration
+Support for Revision control (CVS,GIT,...)
+Diff support
+RegEx Editor
+Refactoring
+Flymake (syntax check on the fly)
+Project support (management of all settings)
+Browser-subwindows
+Perldoc support
+Inline display of own method/function documentation
+Tab expansion of methods (Intellisense) 
+Omni Complete (Expand by context)
+
+Further information: http://www.perlmonks.org/?node_id=788619
