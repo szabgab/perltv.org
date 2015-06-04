@@ -1,0 +1,23 @@
+id: 9m7ujyKApGo
+src: youtube
+title: Perl 6 funktional - Herbert Breunung
+speaker: herbert-breunung
+source: german-perl-workshop-2015
+view_count: 10
+favorite_count: 0
+length: 41:44
+date: 2015-05-08
+format: markdown
+abstract: http://act.yapc.eu/gpw2015/talk/5975
+language: de
+tags: Perl 6
+
+__DESCRIPTION__
+
+Haskell hat Perl 6 semantisch stark beeinflusst, trotzdem ist genug von der guten alten C-Syntax geblieben.
+
+In diesem Vortrag geht es um Konzepte der funktionalen Programmierung, wie man es in Perl 6 schreibt und auch wie Perl 6 erlaubt sich schrittweise dort ranzutasten. Falls etwas ins Perl 5 übersetzbar ist wird es zum einfacheren Verständnis zuliebe gezeigt.
+
+Slides: http://lichtkind.de/vortrag/
+
+http://act.yapc.eu/gpw2015/talk/5975
