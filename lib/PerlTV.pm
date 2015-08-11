@@ -4,7 +4,7 @@ use Dancer2;
 our $VERSION = '0.01';
 use Cwd qw(abs_path);
 use Path::Tiny ();
-use JSON::Tiny ();
+use JSON::Tiny qw(decode_json);
 use Data::Dumper qw(Dumper);
 use List::Util qw(min);
 use List::MoreUtils qw(uniq);
@@ -14,26 +14,22 @@ use PerlTV::Tools qw(read_file youtube_thumbnail get_atom_xml %languages);
 
 hook before => sub {
 	my $appdir = abs_path config->{appdir};
-	my $json = JSON::Tiny->new;
-	set people => $json->decode( Path::Tiny::path("$appdir/people.json")->slurp_utf8 );
-	set sources => $json->decode( Path::Tiny::path("$appdir/sources.json")->slurp_utf8 );
-	set tags => $json->decode( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
-	set modules => $json->decode( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
-	my $featured = $json->decode( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
+	set people => decode_json( Path::Tiny::path("$appdir/people.json")->slurp_utf8 );
+	set sources => decode_json( Path::Tiny::path("$appdir/sources.json")->slurp_utf8 );
+	set tags => decode_json( Path::Tiny::path("$appdir/tags.json")->slurp_utf8 );
+	set modules => decode_json( Path::Tiny::path("$appdir/modules.json")->slurp_utf8 );
+	my $featured = decode_json( Path::Tiny::path("$appdir/featured.json")->slurp_utf8 );
 	set featured => [ sort {$b->{featured} cmp $a->{featured} }  @$featured ];
-	set not_featured => $json->decode( Path::Tiny::path("$appdir/not_featured.json")->slurp_utf8 );
+	set not_featured => decode_json( Path::Tiny::path("$appdir/not_featured.json")->slurp_utf8 );
 	my $data;
 	eval {
-		$data = $json->decode( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
+		$data = decode_json( Path::Tiny::path("$appdir/videos.json")->slurp_utf8 );
 	};
 	if ($@) {
 		set error => 'Could not load videos.json, have you generated it?';
 		warn $@;
 	} elsif (defined $data) {
 		set data => $data;
-	} else {
-		set error => $json->error;
-		warn $json->error;
 	}
 };
 

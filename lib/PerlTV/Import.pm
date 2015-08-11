@@ -4,7 +4,7 @@ use warnings FATAL => 'all';
 use 5.010;
 
 use Path::Tiny qw(path);
-use JSON::Tiny ();
+use JSON::Tiny qw(encode_json);
 use Data::Dumper qw(Dumper);
 
 use PerlTV::Tools qw(read_file youtube_thumbnail);
@@ -12,14 +12,12 @@ use PerlTV::Tools qw(read_file youtube_thumbnail);
 my %sources;
 my %people;
 my %seen;
-my $json;
 my @not_featured;
 my @featured;
 
 
 sub new {
 	my ($class) = @_;
-	$json = JSON::Tiny->new;
 	return bless {}, $class;
 }
 
@@ -31,7 +29,7 @@ sub import_sources {
 		my $source = read_file($f);
 		$sources{ $f->basename } = $source;
 	}
-	path('sources.json')->spew_utf8( $json->encode(\%sources) );
+	path('sources.json')->spew_utf8( encode_json(\%sources) );
 }
 
 
@@ -43,7 +41,7 @@ sub import_people {
 		my $person = read_file($f);
 		$people{ $f->basename } = $person;
 	}
-	path('people.json')->spew_utf8( $json->encode(\%people) );
+	path('people.json')->spew_utf8( encode_json(\%people) );
 }
 
 
@@ -137,12 +135,12 @@ sub import_videos {
 		_comment => 'This is a generated file, please do NOT edit directly',
 		videos => [ sort { $a->{title} cmp $b->{title} } @videos ],
 	);
-	path('videos.json')->spew_utf8( $json->encode(\%data) );
-	path('featured.json')->spew_utf8( $json->encode(\@featured) );
-	path('not_featured.json')->spew_utf8( $json->encode(\@not_featured) );
-	path('tags.json')->spew_utf8( $json->encode(\%tags) );
-	path('modules.json')->spew_utf8( $json->encode(\%modules) );
-	path('public/meta.json')->spew_utf8( $json->encode(\%meta) );
+	path('videos.json')->spew_utf8( encode_json(\%data) );
+	path('featured.json')->spew_utf8( encode_json(\@featured) );
+	path('not_featured.json')->spew_utf8( encode_json(\@not_featured) );
+	path('tags.json')->spew_utf8( encode_json(\%tags) );
+	path('modules.json')->spew_utf8( encode_json(\%modules) );
+	path('public/meta.json')->spew_utf8( encode_json(\%meta) );
 	
 	return \%seen;
 }
