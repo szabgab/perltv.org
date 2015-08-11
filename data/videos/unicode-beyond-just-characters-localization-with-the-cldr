@@ -1,17 +1,33 @@
 id: DcPpUnlENAs
 src: youtube
-title: Unicode Beyond Just Characters: Localization with the CLDR
+title: Unicode beyond just characters: Localization with the CLDR
 speaker: nova-patch
 source: yapc-na-2014
-view_count: 41
-favorite_count: 0
+view_count: 334
+favorite_count: 4
 length: 40:42
 date: 2014-06-23
 format: markdown
-abstract: http://www.yapcna.org/yn2014/talk/5319
+abstract: http://patch.codes/talks/localization-with-the-unicode-cldr/
 
 __DESCRIPTION__
 
-Unicode is much more than just characters. The Unicode Consortium defines open standards for collating, parsing, and formatting data in much of the world's languages. The Common Locale Data Repository (CLDR) is the largest standard repository of locale data along with specifications for its use and is a powerful resource for software localization. Unicode CLDR is quickly becoming the de facto locale standard with widespread use among companies including Google, Apple, and IBM; projects ranging from Linux distributions to Wikipedia; and increasing support in many programming languages.
+Unicode is much more than just characters. The Unicode Consortium defines open
+standards for collating, parsing, and formatting data in much of the world’s
+languages. The Common Locale Data Repository (CLDR) is the largest standard
+repository of locale data along with specifications for its use, and is a
+powerful resource for software localization.
 
-This talk will provide an introduction to software localization with the CLDR, highlight several CLDR-based CPAN projects, demonstrate how Shutterstock uses and contributes to them, and discuss the remaining work for the Perl community to provide first-class CLDR support.
+The Unicode CLDR is quickly becoming the de facto locale standard with
+widespread use among companies, including Google, Apple, and IBM; projects
+ranging from Linux distributions to Wikipedia; and increasing support in many
+programming languages. This talk provides an introduction to software
+localization and highlights popular CLDR-based open source libraries in a
+variety of programming languages.
+
+Topics include localized formatting of:
+
+ * Numbers, percents, and ranges of numbers
+ * Prices and currencies
+ * Dates and times
+ * Localized sorting lists of strings

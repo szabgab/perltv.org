@@ -3,11 +3,29 @@ src: youtube
 title: Unicode Best Practices
 speaker: nova-patch
 source: yapc-na-2013
-view_count: 1070
-favorite_count: 0
-length: 44:56
-date: 2013-06-03
+view_count: 1172
+favorite_count: 11
+length: 44:55
+date: 2013-06-04
 format: markdown
+abstract: https://speakerdeck.com/patch/unicode-best-practices-in-perl
 
 __DESCRIPTION__
 
+Developing applications to handle the natural languages and written scripts of
+the world—or even a small handful of them—is an impressively large task.
+Fortunately, Unicode provides tools to do just that. It’s more than just a
+character set, it’s a collection of standards for working with the world’s
+textual data. The problem is: Unicode itself is complex!
+
+This talk will help make supporting Unicode easier by providing some of the best
+practices for your projects—whether CPAN modules, RESTful services, or web
+applications. We’ll briefly review Unicode and then dive into best practices for
+handling Unicode text in the following areas:
+
+ * User experience 
+ * Collation (comparison and sorting) 
+ * Input, output, and logging 
+ * Security considerations 
+ * Debugging 
+ * Testing (unit tests and QA)

@@ -1,0 +1,30 @@
+id: SKbqCB2NPXw
+src: youtube
+title: Hello, my name is __________.
+speaker: nova-patch
+source: yapc-na-2015
+view_count: 159
+favorite_count: 6
+length: 50:26
+date: 2015-06-10
+format: markdown
+abstract: http://patch.codes/talks/hello-my-name-is/
+
+__DESCRIPTION__
+
+Our personal identity is core to how we perceive ourselves and wish to be seen.
+All too often, however, applications, databases, and user interfaces are not
+designed to fully support the diversity of names expressed both locally and
+internationally. This talk demonstrates ways to build applications that respect
+users’ identities instead of limiting them.
+
+Topics include:
+
+ * Input, validation, storage, and display of personal names
+ * Unicode usernames and solutions to security concerns
+ * Internationalization and localization considerations
+
+Although names provide a powerful example and are the focus of this
+presentation, much of the topic is relevant to all types of user input. The
+intended audience includes programmers, UX designers, and QA testers. Together
+we can build inclusive software that supports diverse identities.

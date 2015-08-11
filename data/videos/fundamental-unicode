@@ -3,11 +3,20 @@ src: youtube
 title: Fundamental Unicode
 speaker: nova-patch
 source: yapc-na-2012
-view_count: 50
-favorite_count: 0
-length: 55:12
+view_count: 73
+favorite_count: 2
+length: 55:11
 date: 2012-06-13
 format: markdown
+abstract: https://speakerdeck.com/patch/fundamental-unicode-in-perl
 
 __DESCRIPTION__
 
+Unicode defines all characters in common use throughout the world and standards
+for parsing, collating, and normalizing textual data. It provides the only
+official encodings for many protocols, languages, and serialization formats
+including JSON, YAML, and XML. Websites, applications, and services have to be
+developed with an understanding of Unicode and can greatly benefit from the
+features it provides. Fortunately, Perl is the premiere language for Unicode
+programming and is rich in functionality. This talk will bring you up to speed
+on Unicode and its encodings and then dive into Perl hacking with Unicode.
