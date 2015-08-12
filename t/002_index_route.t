@@ -2,16 +2,22 @@ use Test::More tests => 6;
 use strict;
 use warnings;
 
-# the order is important
+use Plack::Test;
+use HTTP::Request::Common;
 use PerlTV;
-use Dancer2::Test apps => ['PerlTV'];
 use PerlTV::Tools qw(%languages);
 
 system "$^X bin/import_data.pl";
 
-route_exists [GET => '/'], 'a route handler is defined for /';
-response_status_is ['GET' => '/'], 200, 'response status is 200 for /';
+my $app  = PerlTV->to_app;
+my $test = Plack::Test->create($app);
+
+my $res = $test->request(GET '/');
+ok $res->is_success, 'a route handler is defined for /';
+is $res->code, 200, 'response status is 200 for /';
 
 for my $language_key (keys %languages) {
-	response_status_is ['GET' => '/language/' . $language_key], 200, "response status is 200 for $languages{$language_key}";
+	my $path = '/language/' . $language_key;
+	$res = $test->request(GET $path);
+	is $res->code, 200, "response status is 200 for $path ($languages{$language_key})";
 }

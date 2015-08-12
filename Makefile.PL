@@ -17,14 +17,15 @@ WriteMakefile(
 		: ()),
 	PL_FILES            => {},
 	PREREQ_PM => {
-		'YAML'           => 0,
-		'Dancer2'        => 0.10,
-		'Path::Tiny'     => 0,
-		'JSON::Tiny'     => 0,
-		'Text::Markdown' => 0,
-		'Plack'          => 0,
-		'Getopt::Long'   => 0,
-		'Pod::Usage'     => 0,
+		'Dancer2'                    => '0.10',
+		'Getopt::Long'               => 0,
+		'JSON::Tiny'                 => '0.41',
+		'Path::Tiny'                 => 0,
+		'Plack'                      => 0,
+		'Pod::Usage'                 => 0,
+		'Text::Markdown'             => 0,
+		'WebService::GData::YouTube' => 0,
+		'YAML::XS'                   => 0,
 
 # for testing
 		'Test::More'     => 0,
