@@ -1,11 +1,11 @@
 <div id="text">
-  <% INCLUDE incl/embed.tt %>
+  <% INCLUDE views/incl/embed.tt %>
 
   <h2><a href="/v/<% video.path %>"><% video.title %></a></h2>
   Length: <% video.length %> <a href="/source/<% video.source %>"><% video.source_name %></a><br>
   <a href="/v/<% video.path %>">details</a>
   <br>
-  <% INCLUDE incl/speaker.tt %>
+  <% INCLUDE views/incl/speaker.tt %>
   <br>
 
   <div id="featured">
