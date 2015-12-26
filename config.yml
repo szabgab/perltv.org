@@ -26,4 +26,6 @@ engines:
     template_toolkit:
        start_tag: '<%'
        end_tag:   '%>'
+       INCLUDE_PATH:
+         - 'views'
 
