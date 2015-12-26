@@ -26,7 +26,7 @@ WriteMakefile(
 		'Text::Markdown'             => 0,
 		'WebService::GData::YouTube' => 0,
 		'YAML::XS'                   => 0,
-
+		'Template'                   => 0,
 # for testing
 		'Test::More'     => 0,
 		'Carp::Always'   => 0,
