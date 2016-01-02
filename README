@@ -5,7 +5,7 @@ The objective of PerlTV.org is to collect, tag, annotate, and distribute good, P
 
 How to run the server?
 ----------------------
-* cpanm  --installdeps .     (Install the prerequsites)
+* cpanm  --installdeps .     (Install the prerequisites)
 * perl bin/import_data.pl    (will create a bunch of json files)
 * perl bin/app.pl            (or plackup bin/app.pl)
 
@@ -38,8 +38,8 @@ will create the skeleton file for the video. Some fields will need to be changed
   view_count:      number               As counted on YouTube. Filled by the fetch.pl script. Not really used now.
   favorite_count:  number               As counted on YouTube. Filled by the fetch.pl script. Not really used now.
   length:          MM::SS               The length of the video.
-  date:            YYYY-MM-DD           The date when the video was recored. (Approximate if you don't have the exact date)
-  format:          markdown             Shold be always markdown. Probably we should not need that field at all and just let 
+  date:            YYYY-MM-DD           The date when the video was recorded. (Approximate if you don't have the exact date)
+  format:          markdown             Should be always markdown. Probably we should not need that field at all and just let
   featured:        YYYY-MM-DD           Added later. See below.
   modules:         M::N, Module::Name   A list of CPAN modules mentioned in the talk
   language:        [he|nl|de|...]       The language of the video, Currently we don't use this field if the video is in English.
@@ -80,7 +80,7 @@ Languages
 
 While most of the videos are in English, we have started to add videos in other languages as well. In order to mark the language of
 the video we have a field called 'language:'. A mapping of the languages is currently hard-coded in lib/PerlTV/Tools.pm
-(TODO: shoule be in some external file?)
+(TODO: should be in some external file?)
 (TODO: probably there should be pages listing all the videos in a specific language)
 
 Renaming video files
@@ -156,7 +156,7 @@ The lists of talks should include
 
 - Take idea from http://www.confreaks.com/
 
-?- Allow people to upvode videos using their YouTube account on youtube
+?- Allow people to up vote videos using their YouTube account on youtube
 
 - Add comments ? (Disqus could be used as a start)
 
@@ -175,7 +175,7 @@ Thinking aloud:
    the language of the talk (language=he  meaning Hebrew)  There are going to
    be videos having the same subject that were given in multiple languages
    so the video-name might still need to cover. YouTube and Vimeo can handle that :)
-   But they both have criptic URLs and I'd like to have meaningful ones.
+   But they both have cryptic URLs and I'd like to have meaningful ones.
   /v/he/video-name    clear indication on the URL as of language,
   There can be duplicate videos with the same title anyway and we'll have to
   map them to different video-names even if both are in English.
