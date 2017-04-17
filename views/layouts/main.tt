@@ -24,7 +24,7 @@
 
     <ul id="sidebar-items">
       <li>
-        <% INCLUDE incl/thumbnail.tt %>
+        <% INCLUDE views/incl/thumbnail.tt %>
          
         <h3>Other sites</h3>
         <ul>
@@ -61,10 +61,10 @@
           <li><a href="/language">Languages</a></li>
         </ul>
 
-        <% INCLUDE incl/social_share.tt %>
+        <% INCLUDE views/incl/social_share.tt %>
       </li>
-      <% INCLUDE incl/tags.tt %>
-      <% INCLUDE incl/modules.tt %>
+      <% INCLUDE views/incl/tags.tt %>
+      <% INCLUDE views/incl/modules.tt %>
     </ul>
   </div>
 </div>
@@ -74,7 +74,7 @@
 </div>
 
 
-<% INCLUDE incl/statistics.tt %>
+<% INCLUDE views/incl/statistics.tt %>
 </body>
 </html>
 <script src="/javascripts/perltv.js"></script>
