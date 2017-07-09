@@ -59,7 +59,7 @@ sub import_videos {
 		die "Unindentified source '$video->{source}' in $f"
 			if not $sources{ $video->{source} };
 		die "Missing speaker in $f" if not $video->{speaker};
-		die "Unindentified speaker '$video->{speaker}' in $f"
+		die "Unidentified speaker '$video->{speaker}' in $f"
 			if not $people{ $video->{speaker} };
 		if ($video->{length} !~ /(\d\d:)?\d?\d:\d\d$/) {
 			die "Invalid length format '$video->{length}' in file '$f'\n";

@@ -3,11 +3,13 @@ use strict;
 use warnings;
 use 5.010;
 
-use WebService::GData::YouTube ();
+# use WebService::GData::YouTube ();
+# v2 youtube is dead, use oembed
 use Data::Dumper qw(Dumper);
 use Path::Tiny qw(path);
 use LWP::Simple qw(get);
 use JSON qw(from_json);
+use Text::CleanFragment;
 
 use PerlTV::Import;
 
@@ -38,7 +40,10 @@ sub process {
     my $u = URI->new($url);
     $self->{uri} = $u;
     if ($u->host eq 'www.youtube.com') {
-        $self->youtube( %defaults );
+        # https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=ojCkgU5XGdg&format=json
+        my $u = URI->new('https://www.youtube.com/oembed');
+        $self->{uri} = $u;
+        $self->youtube( url => $url, %defaults );
     } elsif ($u->host eq 'vimeo.com') {
         $self->vimeo( %defaults );
     
@@ -46,9 +51,7 @@ sub process {
     	die "Unknown host " . $u->host;
     }
 
-    my $file = lc $self->{title};
-    $file =~ s/\s+/-/g;
-    $file =~ s/[^a-z0-9-]//g;
+    my $file = clean_fragment( lc $self->{title} );
     $file = "data/videos/$file";
     say $file;
     die "'$file' already exists" if -e $file;
@@ -59,29 +62,42 @@ sub youtube {
     my ($self, %defaults) = @_;
     $defaults{ source }||= '';
 
-	my %form = $self->{uri}->query_form;
+	my %form = URI->new( $defaults{ url })->query_form();
 	my $id = $form{v} or die "Could not find id\n";
 	die "This id '$id' has been already included\n" if $self->{videos}{youtube}{$id};
 
-	my $yt = WebService::GData::YouTube->new();
-	my $video = $yt->get_video_by_id($id);
-	$self->{title} = $video->title;
+    $self->{uri}->query_form({ url => $defaults{ url }, format => 'json' });
+    my $res = get( $self->{uri });
+    my $video = from_json( $res );
+    
+	$self->{title} = $video->{title};
 	
 	my $txt = "id: $id\n";
 	$txt .= "src: youtube\n";
-	$txt .= "title: $self->{title}\n";
-	$txt .= "speaker: \n";
+    my( $speaker, $title ) = split /\s+-\s+/, $video->{title};
+    my $orgspeaker = $speaker;
+    ($speaker = lc $speaker) =~ s!\s+!-!g;
+    $speaker =~ s!^lightning-talk-by-!!i;
+    $speaker =~ s!\.$!!; # for Windows
+    
+    my $spf = "data/people/$speaker";
+    if( ! -f  $spf ) {
+        path($spf)->spew_utf8("name: $orgspeaker\n");
+    };
+    
+	$txt .= "title: $title\n";
+	$txt .= "speaker: $speaker\n";
 	$txt .= "source: $defaults{ source }\n";
-	$txt .= "view_count: " . ($video->view_count||0) . "\n";
-	$txt .= "favorite_count: " . ($video->favorite_count||0) . "\n";
-	my $length = seconds_to_time($video->duration);   # in seconds
+	$txt .= "view_count: " . (0) . "\n";
+	$txt .= "favorite_count: " . (0) . "\n";
+	my $length = seconds_to_time(300);   # in seconds
 	$txt .= "length: $length\n";
-	$txt .= "date: \n";
+	$txt .= "date: 2017-06-18\n";
 	$txt .= "format: markdown\n";
 	$txt .= "abstract:\n";
 	#my $keywords = $video->keywords;
 	$txt .= "\n__DESCRIPTION__\n\n";
-	$txt .= $video->description . "\n";
+	$txt .=  "<no description>". "\n";
     $self->{txt} .= $txt;
 
     return;
